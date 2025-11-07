@@ -1,0 +1,50 @@
+{
+  "Navbar": {
+    "home": "Início",
+    "properties": "Propriedades",
+    "about": "Sobre Nós",
+    "contact": "Contato"
+  },
+  "HomePage": {
+    "title": "Fazendas de Qualidade no Brasil",
+    "subtitle": "Descubra as melhores propriedades rurais",
+    "searchPlaceholder": "Buscar propriedades...",
+    "viewProperties": "Ver Propriedades",
+    "featured": "Propriedades em Destaque"
+  },
+  "Properties": {
+    "title": "Nossas Propriedades",
+    "filter": "Filtrar",
+    "location": "Localização",
+    "price": "Preço",
+    "area": "Área",
+    "hectares": "hectares",
+    "viewDetails": "Ver Detalhes",
+    "contactAgent": "Contatar Corretor"
+  },
+  "PropertyDetails": {
+    "description": "Descrição",
+    "features": "Características",
+    "location": "Localização",
+    "price": "Preço",
+    "area": "Área",
+    "contactUs": "Entre em Contato"
+  },
+  "Contact": {
+    "title": "Contato",
+    "name": "Nome",
+    "email": "E-mail",
+    "phone": "Telefone",
+    "message": "Mensagem",
+    "send": "Enviar",
+    "success": "Mensagem enviada com sucesso",
+    "error": "Erro ao enviar mensagem"
+  },
+  "Common": {
+    "currency": "BRL",
+    "loading": "Carregando...",
+    "error": "Erro",
+    "noResults": "Nenhum resultado encontrado",
+    "readMore": "Leia mais"
+  }
+}

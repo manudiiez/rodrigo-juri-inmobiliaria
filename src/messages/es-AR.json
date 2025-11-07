@@ -1,0 +1,50 @@
+{
+  "Navbar": {
+    "home": "Inicio",
+    "properties": "Propiedades",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "HomePage": {
+    "title": "Fincas de Calidad en Argentina",
+    "subtitle": "Descubrí las mejores propiedades rurales",
+    "searchPlaceholder": "Buscar propiedades...",
+    "viewProperties": "Ver Propiedades",
+    "featured": "Propiedades Destacadas"
+  },
+  "Properties": {
+    "title": "Nuestras Propiedades",
+    "filter": "Filtrar",
+    "location": "Ubicación",
+    "price": "Precio",
+    "area": "Superficie",
+    "hectares": "hectáreas",
+    "viewDetails": "Ver Detalles",
+    "contactAgent": "Contactar Asesor"
+  },
+  "PropertyDetails": {
+    "description": "Descripción",
+    "features": "Características",
+    "location": "Ubicación",
+    "price": "Precio",
+    "area": "Superficie",
+    "contactUs": "Contactanos"
+  },
+  "Contact": {
+    "title": "Contacto",
+    "name": "Nombre",
+    "email": "Correo Electrónico",
+    "phone": "Teléfono",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "success": "Mensaje enviado exitosamente",
+    "error": "Error al enviar el mensaje"
+  },
+  "Common": {
+    "currency": "ARS",
+    "loading": "Cargando...",
+    "error": "Error",
+    "noResults": "No se encontraron resultados",
+    "readMore": "Leer más"
+  }
+}
