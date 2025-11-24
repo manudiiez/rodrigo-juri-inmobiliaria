@@ -10,6 +10,13 @@ export const routing = defineRouting({
 
   // Prefijo de locale en URL (always = siempre mostrar /es-AR, /pt-BR, /en-US)
   localePrefix: "always",
+  pathnames: {
+    '/propiedades': {
+      'es-AR': '/propiedades',
+      'en-US': '/vineyards',
+      'pt-BR': '/propriedades'
+    },
+  }
 });
 
 // Mapeo de países a locales de mercado
