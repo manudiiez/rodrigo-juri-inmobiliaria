@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -39,6 +40,7 @@ export default function Header() {
             >
               {t('us')}
             </Link>
+            <LanguageSwitcher />
             <a
               href="https://wa.me/5492614123456"
               target="_blank"
@@ -93,12 +95,22 @@ export default function Header() {
               {t('properties')}
             </Link>
             <Link
-              href="/contacto"
+              href="/vender"
               className="block text-gray-600 hover:text-bordeaux transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
-              {t('contact')}
+              {t('sell')}
             </Link>
+            <Link
+              href="/nosotros"
+              className="block text-gray-600 hover:text-bordeaux transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {t('us')}
+            </Link>
+            <div className="pt-2">
+              <LanguageSwitcher />
+            </div>
             <a
               href="https://wa.me/5492614123456"
               target="_blank"
