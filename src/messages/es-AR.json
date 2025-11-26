@@ -11,6 +11,15 @@
     "contact": "Contacto",
     "whatsapp": "WhatsApp"
   },
+  "PropertyNavbar": {
+    "brand": "Fincas Mendoza",
+    "back": "Volver",
+    "summary": "Resumen",
+    "technical": "Ficha Técnica",
+    "location": "Ubicación",
+    "contact": "Contacto",
+    "whatsapp": "WhatsApp"
+  },
   "Hero": {
     "title": "Fincas productivas en",
     "titleHighlight": "Mendoza",
@@ -359,6 +368,71 @@
     "proof": {
       "title": "Expertos en Tupungato y Tunuyán",
       "subtitle": "Conocimiento profundo del mercado local y conexiones internacionales"
+    }
+  },
+  "AboutPage": {
+    "hero": {
+      "title": "Tu socio local en el Valle de Uco",
+      "subtitle": "Uniendo la riqueza de la tierra mendocina con inversores globales"
+    },
+    "story": {
+      "label": "Nuestra Historia",
+      "title": "Por qué Tupungato. Por qué el vino. Pasión + Negocio.",
+      "paragraph1": "Nacimos en el corazón del Valle de Uco, donde las montañas más altas de América se encuentran con algunos de los mejores terroirs del mundo. No somos una inmobiliaria tradicional: somos especialistas en inversión vitivinícola internacional.",
+      "paragraph2": "Conectamos a inversores de Brasil y Estados Unidos con propiedades excepcionales en Tupungato y Tunuyán porque conocemos cada hectárea, cada microclima, cada oportunidad real de negocio. Nuestra misión es simple: facilitarte la inversión más segura y rentable en tierra mendocina.",
+      "paragraph3": "Aquí no vendemos solo tierra. Vendemos un ecosistema completo de producción, gestión y rentabilidad a largo plazo."
+    },
+    "numbers": {
+      "stat1": {
+        "label": "Años de Experiencia",
+        "sublabel": "En el Valle de Uco"
+      },
+      "stat2": {
+        "label": "Fincas en Cartera",
+        "sublabel": "Valle de Uco y Tupungato"
+      },
+      "stat3": {
+        "label": "Clientes Internacionales",
+        "sublabel": "Brasil y Estados Unidos"
+      }
+    },
+    "profile": {
+      "name": "Rodrigo Juri",
+      "role": "Agente especializado en inversiones vitivinícolas",
+      "title": "Agente de Bienes Raíces",
+      "linkedin": "Ver LinkedIn",
+      "sectionTitle": "Experiencia y Conexiones",
+      "description1": "Con más de 5 años de experiencia en el mercado inmobiliario del Valle de Uco, Rodrigo Juri se ha posicionado como referente en la venta de fincas vitivinícolas en Tupungato y zonas aledañas.",
+      "description2": "Su enfoque se centra en conectar inversores internacionales con las mejores oportunidades de la región, brindando un servicio integral que va desde la búsqueda de la propiedad ideal hasta el acompañamiento en todo el proceso de compra.",
+      "highlight1": "Especialista en propiedades vitivinícolas premium",
+      "highlight2": "Conexiones con inversores de Brasil y Estados Unidos",
+      "highlight3": "Servicio personalizado y confidencial",
+      "highlight4": "Cartera exclusiva de más de 100 fincas disponibles"
+    },
+    "ecosystem": {
+      "title": "Red de Expertos Locales",
+      "subtitle": "Trabajamos con los mejores profesionales del Valle de Uco para garantizar el éxito de tu inversión",
+      "card1": {
+        "title": "Agrónomos Especializados",
+        "description": "Expertos en viticultura de altura que gestionan tu producción con estándares internacionales y maximizan el rendimiento de cada hectárea."
+      },
+      "card2": {
+        "title": "Enólogos Consultores",
+        "description": "Profesionales que aseguran la calidad del vino desde la uva hasta la botella, conectándote con bodegas y mercados de exportación."
+      },
+      "card3": {
+        "title": "Escribanos y Legales",
+        "description": "Equipo jurídico especializado en transacciones internacionales que garantiza seguridad total en cada operación y título de propiedad."
+      },
+      "card4": {
+        "title": "Contadores y Asesores",
+        "description": "Gestión contable, impositiva y financiera adaptada a inversores extranjeros, optimizando tu estructura fiscal y rentabilidad."
+      }
+    },
+    "cta": {
+      "title": "Conozcamos tus objetivos de inversión",
+      "description": "Agenda una videollamada sin compromiso. Te mostramos oportunidades concretas y respondemos todas tus dudas sobre invertir en el Valle de Uco.",
+      "button": "Agendar Reunión"
     }
   }
 }

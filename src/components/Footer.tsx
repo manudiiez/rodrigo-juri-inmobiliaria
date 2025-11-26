@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <div className="text-2xl font-bold text-bordeaux mb-4">
+            <div className="text-2xl font-bold text-white mb-4">
               {t('brand')}
             </div>
             <p className="text-gray-400">

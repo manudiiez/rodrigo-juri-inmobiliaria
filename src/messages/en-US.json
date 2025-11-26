@@ -11,6 +11,15 @@
     "contact": "Contact",
     "whatsapp": "WhatsApp"
   },
+  "PropertyNavbar": {
+    "brand": "Mendoza Farms",
+    "back": "Back",
+    "summary": "Summary",
+    "technical": "Technical Sheet",
+    "location": "Location",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp"
+  },
   "Hero": {
     "title": "Productive farms in",
     "titleHighlight": "Mendoza",
@@ -359,6 +368,71 @@
     "proof": {
       "title": "Experts in Tupungato and Tunuyán",
       "subtitle": "Deep knowledge of the local market and international connections"
+    }
+  },
+  "AboutPage": {
+    "hero": {
+      "title": "Your local partner in the Uco Valley",
+      "subtitle": "Connecting the richness of Mendoza's land with global investors"
+    },
+    "story": {
+      "label": "Our Story",
+      "title": "Why Tupungato. Why wine. Passion + Business.",
+      "paragraph1": "We were born in the heart of the Uco Valley, where the highest mountains in America meet some of the best terroirs in the world. We are not a traditional real estate agency: we are specialists in international wine investment.",
+      "paragraph2": "We connect investors from Brazil and the United States with exceptional properties in Tupungato and Tunuyán because we know every hectare, every microclimate, every real business opportunity. Our mission is simple: to facilitate the safest and most profitable investment in Mendoza land.",
+      "paragraph3": "Here we don't just sell land. We sell a complete ecosystem of production, management and long-term profitability."
+    },
+    "numbers": {
+      "stat1": {
+        "label": "Years of Experience",
+        "sublabel": "In the Uco Valley"
+      },
+      "stat2": {
+        "label": "Farms in Portfolio",
+        "sublabel": "Uco Valley and Tupungato"
+      },
+      "stat3": {
+        "label": "International Clients",
+        "sublabel": "Brazil and United States"
+      }
+    },
+    "profile": {
+      "name": "Rodrigo Juri",
+      "role": "Specialist in wine investment",
+      "title": "Real Estate Agent",
+      "linkedin": "View LinkedIn",
+      "sectionTitle": "Experience and Connections",
+      "description1": "With over 5 years of experience in the Uco Valley real estate market, Rodrigo Juri has positioned himself as a reference in the sale of wine farms in Tupungato and surrounding areas.",
+      "description2": "His approach focuses on connecting international investors with the best opportunities in the region, providing comprehensive service from finding the ideal property to support throughout the entire purchase process.",
+      "highlight1": "Specialist in premium wine properties",
+      "highlight2": "Connections with investors from Brazil and the United States",
+      "highlight3": "Personalized and confidential service",
+      "highlight4": "Exclusive portfolio of over 100 available farms"
+    },
+    "ecosystem": {
+      "title": "Network of Local Experts",
+      "subtitle": "We work with the best professionals in the Uco Valley to guarantee the success of your investment",
+      "card1": {
+        "title": "Specialized Agronomists",
+        "description": "Experts in high-altitude viticulture who manage your production with international standards and maximize the yield of each hectare."
+      },
+      "card2": {
+        "title": "Consulting Winemakers",
+        "description": "Professionals who ensure wine quality from grape to bottle, connecting you with wineries and export markets."
+      },
+      "card3": {
+        "title": "Notaries and Legal",
+        "description": "Legal team specialized in international transactions that guarantees total security in each operation and property title."
+      },
+      "card4": {
+        "title": "Accountants and Advisors",
+        "description": "Accounting, tax and financial management adapted to foreign investors, optimizing your tax structure and profitability."
+      }
+    },
+    "cta": {
+      "title": "Let's get to know your investment goals",
+      "description": "Schedule a video call without commitment. We show you concrete opportunities and answer all your questions about investing in the Uco Valley.",
+      "button": "Schedule Meeting"
     }
   }
 }
