@@ -54,7 +54,7 @@ export default function Buscador() {
         <button
           type="button"
           className={`relative pb-2 hover:text-white transition-colors cursor-pointer`}
-          onClick={() => route.push('design-a/vender')}
+          onClick={() => route.push('design-a#contacto')}
         >
           Contactar
         </button>

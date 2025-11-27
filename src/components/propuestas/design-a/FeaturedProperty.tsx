@@ -75,7 +75,7 @@ export default function FeaturedProperty() {
                   <span className="text-white text-2xl font-light">{property.price}</span>
                 </div>
                 <Link
-                  href={`/propiedades/${property.id}`}
+                  href={`/propuestas/design-a/propiedades/${property.id}`}
                   className="inline-flex items-center gap-2 text-white hover:gap-4 transition-all group"
                 >
                   <span className="text-sm uppercase tracking-widest font-medium">

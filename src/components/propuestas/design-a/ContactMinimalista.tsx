@@ -2,7 +2,7 @@
 
 export default function ContactMinimalista() {
   return (
-    <section className="bg-white py-24 md:py-32">
+    <section className="bg-white py-24 md:py-32" id="contacto">
       <div className="max-w-6xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left side - Contact info */}

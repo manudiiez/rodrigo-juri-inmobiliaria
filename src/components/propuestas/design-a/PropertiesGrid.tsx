@@ -42,7 +42,7 @@ export default function PropertiesGrid() {
           {properties.map((property) => (
             <Link
               key={property.id}
-              href={`/propiedades/${property.id}`}
+              href={`/propuestas/design-a/propiedades/${property.id}`}
               className="group bg-white overflow-hidden hover:shadow-xl transition-all duration-300"
             >
               <div className="relative h-80 overflow-hidden">
@@ -69,7 +69,7 @@ export default function PropertiesGrid() {
 
         <div className="text-center mt-16">
           <Link
-            href="/propiedades"
+            href="/propuestas/design-a/propiedades"
             className="inline-flex items-center gap-3 text-gray-900 hover:gap-5 transition-all group border-b border-gray-900 pb-1"
           >
             <span className="text-sm uppercase tracking-widest font-medium">Ver todas las propiedades rurales</span>

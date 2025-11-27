@@ -3,6 +3,7 @@
 import { useState } from "react";
 import NavbarMinimalista from "@/components/propuestas/NavbarMinimalista";
 import Footer from "@/components/Footer";
+import FooterMinimalista from "@/components/propuestas/design-a/FooterMinimalista";
 
 export default function SellWithUsPage() {
   const [formData, setFormData] = useState({
@@ -164,7 +165,7 @@ export default function SellWithUsPage() {
         </section>
 
         {/* Statistics Section */}
-        <section className="bg-gray-50 py-16 md:py-24">
+        <section className="bg-gray-50 py-16 md:py-24" id="nosotros">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
@@ -632,7 +633,8 @@ export default function SellWithUsPage() {
                     Ofertas serias recibidas
                   </h4>
                   <p className="text-gray-600">
-                    Estrategia de precio y marketing enfocada en compradores e inversores reales, no en simples consultas.
+                    Estrategia de precio y marketing enfocada en compradores e
+                    inversores reales, no en simples consultas.
                   </p>
                 </div>
               </div>
@@ -640,7 +642,7 @@ export default function SellWithUsPage() {
           </div>
         </section>
       </div>
-      <Footer />
+      <FooterMinimalista />
     </>
   );
 }

@@ -18,20 +18,14 @@ export default function NavbarMinimalista() {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-10">
-            <button className="flex items-center gap-2 text-white hover:text-white/80 transition-colors">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              <span className="text-sm uppercase tracking-widest">Buscar</span>
-            </button>
             <Link href="/propuestas/design-a/propiedades" className="text-white hover:text-white/80 transition-colors text-sm uppercase tracking-widest">
               Fincas
             </Link>
-            <Link href="/nosotros" className="text-white hover:text-white/80 transition-colors text-sm uppercase tracking-widest">
-              Agentes
+            <Link href="/propuestas/design-a/vender#nosotros" className="text-white hover:text-white/80 transition-colors text-sm uppercase tracking-widest">
+              Nosotros
             </Link>
-            <Link href="/vender" className="text-white hover:text-white/80 transition-colors text-sm uppercase tracking-widest">
-              Historias
+            <Link href="/propuestas/design-a#contacto" className="text-white hover:text-white/80 transition-colors text-sm uppercase tracking-widest">
+              Contacto
             </Link>
             <Link
               href="/propuestas/design-a/vender"
