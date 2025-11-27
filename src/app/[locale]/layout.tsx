@@ -103,7 +103,6 @@ export default async function LocaleLayout({
       >
         <NextIntlClientProvider>
           {children}
-          <Footer/>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -10,6 +10,7 @@ export default function GeneralLayout({
     <>
       <Header />
       {children}
+      <Footer />
     </>
   );
 }
