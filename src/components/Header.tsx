@@ -14,7 +14,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+    <header className="fixed top-12 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
       <nav className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="text-2xl font-bold text-bordeaux">

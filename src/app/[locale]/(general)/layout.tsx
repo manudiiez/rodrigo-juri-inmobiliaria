@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import DesignSwitcher from "@/components/DesignSwitcher";
 
 export default function GeneralLayout({
   children,
@@ -8,6 +9,8 @@ export default function GeneralLayout({
 }) {
   return (
     <>
+      <DesignSwitcher />
+
       <Header />
       {children}
       <Footer />
