@@ -19,10 +19,9 @@ export default function DesignSwitcher() {
   const currentDesign = getCurrentDesign();
 
   const designs = [
-    { id: 'main', name: 'Diseño Principal', path: '/propuestas' },
-    { id: 'a', name: 'Diseño A - Minimalista', path: '/propuestas/design-a' },
+    { id: 'main', name: 'Diseño Principal - moderno', path: '/' },
+    { id: 'a', name: 'Diseño A - De lujo', path: '/propuestas/design-a' },
     { id: 'b', name: 'Diseño B - Premium', path: '/propuestas/design-b' },
-    { id: 'c', name: 'Diseño C - Moderno', path: '/propuestas/design-c' },
   ];
 
   const handleDesignChange = (path: string) => {
