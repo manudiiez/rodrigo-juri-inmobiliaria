@@ -34,7 +34,7 @@ export default function NavbarMinimalista() {
               Historias
             </Link>
             <Link
-              href="/vender"
+              href="/propuestas/design-a/vender"
               className="border border-white/30 text-white px-6 py-2.5 hover:bg-white hover:text-[#0A1628] transition-all text-sm uppercase tracking-widest"
             >
               Venda con nosotros

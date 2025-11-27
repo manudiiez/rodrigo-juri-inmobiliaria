@@ -2,12 +2,14 @@ import NavbarMinimalista from '@/components/propuestas/NavbarMinimalista';
 import Footer from '@/components/Footer';
 import PropertiesSearchPage from '@/components/propuestas/design-a/PropertiesSearchPage';
 
-export default function PropiedadesPage() {
+export default async function PropiedadesPage({ searchParams }: { searchParams: { search?: string } }) {
+  const busqueda = (await searchParams).search;
+  console.log('Parámetro de búsqueda:', busqueda);
   return (
     <>
       <NavbarMinimalista />
       <main className="min-h-screen bg-white pt-32">
-        <PropertiesSearchPage />
+        <PropertiesSearchPage search={busqueda} />
       </main>
       <Footer />
     </>
