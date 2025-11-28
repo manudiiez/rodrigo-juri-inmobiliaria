@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import type { JSX } from 'react'; // Add this line
 
 interface Section {
   id: string;
