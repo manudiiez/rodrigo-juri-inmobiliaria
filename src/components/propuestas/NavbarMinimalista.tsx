@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-export default function NavbarMinimalista() {
+export default function ≈NavbarMinimalista() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -50,13 +50,16 @@ export default function NavbarMinimalista() {
         {mobileMenuOpen && (
           <div className="lg:hidden border-t border-white/10">
             <div className="px-6 py-4 space-y-3">
-              <Link href="/propiedades" className="block text-sm text-white/80 uppercase tracking-widest" onClick={() => setMobileMenuOpen(false)}>
-                Propiedades
+              <Link href="/propuestas/design-a/propiedades" className="block text-sm text-white/80 uppercase tracking-widest" onClick={() => setMobileMenuOpen(false)}>
+                Fincas
               </Link>
-              <Link href="/nosotros" className="block text-sm text-white/80 uppercase tracking-widest" onClick={() => setMobileMenuOpen(false)}>
-                Agentes
+              <Link href="/propuestas/design-a/vender#nosotros"  className="block text-sm text-white/80 uppercase tracking-widest" onClick={() => setMobileMenuOpen(false)}>
+                Nosotros
               </Link>
-              <Link href="/vender" className="block text-sm text-white/80 uppercase tracking-widest" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/propuestas/design-a#contacto" className="block text-sm text-white/80 uppercase tracking-widest" onClick={() => setMobileMenuOpen(false)}>
+                Contacto
+              </Link>
+              <Link href="/propuestas/design-a/vender" className="block text-sm text-white/80 uppercase tracking-widest" onClick={() => setMobileMenuOpen(false)}>
                 Venda con nosotros
               </Link>
             </div>
