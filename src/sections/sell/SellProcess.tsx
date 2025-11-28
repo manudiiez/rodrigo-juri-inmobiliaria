@@ -7,41 +7,61 @@ export default function SellProcess() {
 
   const steps = [
     {
-      number: '1',
-      title: t('step1Title'),
-      description: t('step1Description'),
+      number: '01',
+      title: 'Consulta Inicial',
+      description: 'Nuestro equipo se reúne con usted para entender sus necesidades y expectativas.',
     },
     {
-      number: '2',
-      title: t('step2Title'),
-      description: t('step2Description'),
+      number: '02',
+      title: 'Valuación Profesional',
+      description: 'Realizamos un análisis exhaustivo del mercado para determinar el valor óptimo de su propiedad.',
     },
     {
-      number: '3',
-      title: t('step3Title'),
-      description: t('step3Description'),
+      number: '03',
+      title: 'Marketing Estratégico',
+      description: 'Implementamos una estrategia de marketing personalizada con fotografía profesional y difusión premium.',
+    },
+    {
+      number: '04',
+      title: 'Cierre Exitoso',
+      description: 'Coordinamos todo el proceso hasta el cierre, asegurando una transacción fluida y exitosa.',
     },
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-5">
-          {t('title')}
-        </h2>
-        <p className="text-center text-lg text-gray-600 mb-16 max-w-3xl mx-auto">
-          {t('subtitle')}
-        </p>
-        <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+    <section className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl  text-neutral-900 mb-6">
+            Nuestro Proceso
+          </h2>
+          <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+            Un enfoque profesional y personalizado para vender su propiedad
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
-            <div key={index} className="text-center relative">
-              <div className="w-16 h-16 bg-bordeaux text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-5">
-                {step.number}
+            <div key={index} className="relative">
+              {/* Step Number */}
+              <div className="mb-6">
+                <span className="text-6xl text-neutral-200">
+                  {step.number}
+                </span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+
+              {/* Content */}
+              <h3 className="text-xl font-semibold text-neutral-900 mb-3">
                 {step.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">{step.description}</p>
+              <p className="text-neutral-600 leading-relaxed">
+                {step.description}
+              </p>
+
+              {/* Connector Line (desktop only) */}
+              {index < steps.length - 1 && (
+                <div className="hidden lg:block absolute top-8 left-full w-full h-px bg-neutral-200 -ml-4" />
+              )}
             </div>
           ))}
         </div>

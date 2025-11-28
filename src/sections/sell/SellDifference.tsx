@@ -5,48 +5,33 @@ import { useTranslations } from 'next-intl';
 export default function SellDifference() {
   const t = useTranslations('SellPage.difference');
 
-  const cards = [
-    {
-      icon: '🌎',
-      title: t('card1Title'),
-      description: t('card1Description'),
-    },
-    {
-      icon: '📸',
-      title: t('card2Title'),
-      description: t('card2Description'),
-    },
-    {
-      icon: '💼',
-      title: t('card3Title'),
-      description: t('card3Description'),
-    },
-  ];
-
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-5">
-          {t('title')}
-        </h2>
-        <p className="text-center text-lg text-gray-600 mb-16 max-w-3xl mx-auto">
-          {t('subtitle')}
-        </p>
-        <div className="grid md:grid-cols-3 gap-10">
-          {cards.map((card, index) => (
-            <div
-              key={index}
-              className="text-center p-10 bg-gray-50 rounded-xl hover:-translate-y-1 transition-transform"
+    <section className="py-24 bg-neutral-50">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Image */}
+          <div className="relative h-[500px] lg:h-[600px]">
+            <img
+              src="https://inmocampo.com/wp-content/uploads/2024/01/Secuencia-01.Imagen-fija007-min.jpg"
+              alt="Luxury property"
+              className="w-full h-full object-cover rounded-lg shadow-xl"
+            />
+          </div>
+
+          {/* Content */}
+          <div className="flex flex-col justify-center">
+            <h2 className="text-4xl md:text-5xl lg:text-5xl  text-neutral-900 mb-8 leading-tight">
+              Nuestra visión es ser la
+              agencia inmobiliaria más
+              confiable y respetada en Valle de Uco.
+            </h2>
+            <a
+              href="#formulario"
+              className="inline-block bg-neutral-900 text-white px-10 py-4 text-sm tracking-wider uppercase font-semibold hover:bg-neutral-700 transition-all duration-300 text-center"
             >
-              <div className="w-20 h-20 bg-bordeaux rounded-full flex items-center justify-center mx-auto mb-6 text-4xl">
-                {card.icon}
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                {card.title}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">{card.description}</p>
-            </div>
-          ))}
+              Comenzar
+            </a>
+          </div>
         </div>
       </div>
     </section>

@@ -26,139 +26,144 @@ export default function SellForm() {
   };
 
   return (
-    <section id="formulario" className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto bg-gray-50 p-12 rounded-xl border border-gray-200">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              {t('title')}
+    <section id="formulario" className="py-24 bg-neutral-50">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left Column - Info */}
+          <div>
+            <h2 className="text-4xl md:text-5xl text-neutral-900 mb-6">
+              Comience Hoy
             </h2>
-            <p className="text-gray-600">{t('subtitle')}</p>
+            <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
+              Complete el formulario y uno de nuestros especialistas se pondrá en contacto con usted para discutir cómo podemos ayudarle a vender su propiedad.
+            </p>
+
+            {/* Benefits */}
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-neutral-900 flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-neutral-900 mb-1">Valuación Gratuita</h3>
+                  <p className="text-neutral-600">Análisis profesional del valor de su propiedad sin costo</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-neutral-900 flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-neutral-900 mb-1">Respuesta en 24 horas</h3>
+                  <p className="text-neutral-600">Un especialista se comunicará con usted dentro de las 24 horas hábiles</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-neutral-900 flex items-center justify-center">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-neutral-900 mb-1">Sin Compromiso</h3>
+                  <p className="text-neutral-600">Consulta inicial completamente gratuita y sin obligación</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="flex flex-col">
-              <label htmlFor="nombre" className="text-sm font-semibold text-gray-900 mb-2">
-                {t('fullName')} *
+          {/* Right Column - Form */}
+          <div className="bg-white p-10 rounded-lg shadow-lg">
+            <div className="mb-8">
+              <h3 className="text-2xl text-neutral-900 mb-2">
+                Solicite una Consulta
+              </h3>
+              <p className="text-neutral-600">Complete sus datos y nos pondremos en contacto</p>
+            </div>
+
+          <form onSubmit={handleSubmit} className="space-y-5">
+            {/* Nombre */}
+            <div>
+              <label htmlFor="nombre" className="block text-sm font-semibold text-neutral-900 mb-2">
+                Nombre Completo *
               </label>
               <input
                 type="text"
                 id="nombre"
                 name="nombre"
                 required
-                className="px-4 py-3 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-bordeaux bg-white"
+                className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-neutral-900 focus:border-transparent outline-none transition-all"
+                placeholder="Juan Pérez"
               />
             </div>
 
-            <div className="grid md:grid-cols-2 gap-5">
-              <div className="flex flex-col">
-                <label htmlFor="email" className="text-sm font-semibold text-gray-900 mb-2">
-                  {t('email')} *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  className="px-4 py-3 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-bordeaux bg-white"
-                />
-              </div>
-              <div className="flex flex-col">
-                <label htmlFor="telefono" className="text-sm font-semibold text-gray-900 mb-2">
-                  {t('phone')} *
-                </label>
-                <input
-                  type="tel"
-                  id="telefono"
-                  name="telefono"
-                  required
-                  className="px-4 py-3 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-bordeaux bg-white"
-                />
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-5">
-              <div className="flex flex-col">
-                <label htmlFor="ubicacion" className="text-sm font-semibold text-gray-900 mb-2">
-                  {t('location')} *
-                </label>
-                <select
-                  id="ubicacion"
-                  name="ubicacion"
-                  required
-                  className="px-4 py-3 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-bordeaux bg-white"
-                >
-                  <option value="">{t('selectOption')}</option>
-                  <option value="tupungato">Tupungato</option>
-                  <option value="tunuyan">Tunuyán</option>
-                  <option value="san-carlos">San Carlos</option>
-                  <option value="lujan">Luján de Cuyo</option>
-                  <option value="maipu">Maipú</option>
-                  <option value="san-rafael">San Rafael</option>
-                  <option value="otra">{t('otherLocation')}</option>
-                </select>
-              </div>
-              <div className="flex flex-col">
-                <label htmlFor="superficie" className="text-sm font-semibold text-gray-900 mb-2">
-                  {t('surface')} *
-                </label>
-                <input
-                  type="number"
-                  id="superficie"
-                  name="superficie"
-                  placeholder={t('surfacePlaceholder')}
-                  required
-                  className="px-4 py-3 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-bordeaux bg-white"
-                />
-              </div>
-            </div>
-
-            <div className="flex flex-col">
-              <label htmlFor="tipo" className="text-sm font-semibold text-gray-900 mb-2">
-                {t('productionType')}
+            {/* Número */}
+            <div>
+              <label htmlFor="numero" className="block text-sm font-semibold text-neutral-900 mb-2">
+                Número de Teléfono *
               </label>
-              <select
-                id="tipo"
-                name="tipo"
-                className="px-4 py-3 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-bordeaux bg-white"
-              >
-                <option value="">{t('selectOption')}</option>
-                <option value="viñedos">{t('vineyards')}</option>
-                <option value="olivos">{t('olives')}</option>
-                <option value="mixto">{t('mixed')}</option>
-                <option value="frutales">{t('fruits')}</option>
-                <option value="campo">{t('noProduction')}</option>
-                <option value="otro">{t('other')}</option>
-              </select>
+              <input
+                type="tel"
+                id="numero"
+                name="numero"
+                required
+                className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-neutral-900 focus:border-transparent outline-none transition-all"
+                placeholder="+54 261 123 4567"
+              />
             </div>
 
-            <div className="flex flex-col">
-              <label htmlFor="comentarios" className="text-sm font-semibold text-gray-900 mb-2">
-                {t('comments')}
+            {/* Email */}
+            <div>
+              <label htmlFor="email" className="block text-sm font-semibold text-neutral-900 mb-2">
+                Email *
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-neutral-900 focus:border-transparent outline-none transition-all"
+                placeholder="juan@ejemplo.com"
+              />
+            </div>
+
+            {/* Mensaje */}
+            <div>
+              <label htmlFor="mensaje" className="block text-sm font-semibold text-neutral-900 mb-2">
+                Mensaje *
               </label>
               <textarea
-                id="comentarios"
-                name="comentarios"
-                placeholder={t('commentsPlaceholder')}
+                id="mensaje"
+                name="mensaje"
                 rows={4}
-                className="px-4 py-3 border border-gray-300 rounded-lg text-base focus:outline-none focus:border-bordeaux bg-white resize-vertical"
+                required
+                className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-neutral-900 focus:border-transparent outline-none transition-all resize-none"
+                placeholder="Cuéntenos sobre su propiedad..."
               />
             </div>
 
+            {/* Submit Button */}
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-bordeaux text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-bordeaux-light transition-colors disabled:opacity-50 disabled:cursor-not-allowed mt-3"
+              className="w-full bg-neutral-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-neutral-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {isSubmitting ? t('sending') : t('submit')}
+              {isSubmitting ? 'Enviando...' : 'Enviar Consulta'}
             </button>
 
             {showSuccess && (
-              <div className="bg-green-600 text-white p-5 rounded-lg text-center font-semibold">
-                {t('successMessage')}
+              <div className="bg-green-600 text-white p-4 rounded-lg text-center font-semibold">
+                ¡Mensaje enviado! Nos pondremos en contacto pronto.
               </div>
             )}
           </form>
+          </div>
         </div>
       </div>
     </section>
