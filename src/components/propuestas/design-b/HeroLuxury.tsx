@@ -5,21 +5,21 @@ import { useState, useEffect } from 'react';
 const heroSlides = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=80',
+    image: 'https://ucarecdn.com/6d2901b5-633f-45ac-9e12-d7e21d06a7c2/-/preview/',
     location: 'Finca en Tunuyán, Mendoza, Argentina',
     price: '$850.000',
     title: "Finca de Lujo en el Valle de Uco"
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80',
+    image: 'https://images.unsplash.com/photo-1691704951233-1954a27c8ce2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM2fHx8ZW58MHx8fHx8',
     location: 'Terreno en Tupungato, Mendoza, Argentina',
     price: '$1.200.000',
     title: "Tu Hogar en las Montañas"
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80',
+    image: 'https://blog.winesofargentina.com/wp-content/uploads/2021/05/Piedra_Infinita_Vineyard-4.jpg',
     location: 'Viñedo en San Carlos, Mendoza, Argentina',
     price: '$2.500.000',
     title: "Inversión Premium en Viñedos"

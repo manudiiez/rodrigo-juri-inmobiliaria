@@ -34,7 +34,7 @@ export default function FeaturedProperty() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % properties.length);
-    }, 15000); // Cambia cada 5 segundos
+    }, 5000); // Cambia cada 5 segundos
 
     return () => clearInterval(interval);
   }, []);

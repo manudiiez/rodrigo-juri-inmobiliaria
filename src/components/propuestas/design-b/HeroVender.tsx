@@ -6,7 +6,7 @@ export default function HeroVender() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop"
+          src="https://ucarecdn.com/6d2901b5-633f-45ac-9e12-d7e21d06a7c2/-/preview/"
           alt="Valle de Uco"
           className="w-full h-full object-cover"
         />
