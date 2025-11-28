@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import NavbarMinimalista from "@/components/propuestas/NavbarMinimalista";
 import Footer from "@/components/Footer";
-import ContactMinimalista from "@/components/propuestas/design-a/ContactMinimalista";
 
 // Mock data - en producción vendría de la API
 const property = {
@@ -1130,3 +1129,24 @@ export default function PropertyDetailPage() {
     </>
   );
 }
+
+
+export async function generateStaticParams() {
+  // If you have an API, fetch property ids at build time:
+  // const res = await fetch(`${process.env.API_URL}/properties`);
+  // const properties = await res.json();
+
+  // Example: fetch from API (uncomment above and adapt)
+  // const ids = properties.map(p => String(p.id));
+
+  // Temporary/local fallback: list the IDs you want to export
+  const ids = ['1', '2', '3']; // replace with real ids or fetch from API
+
+  // Locales supported by your app. Match next.config.js i18n locales
+  const locales = ['es']; // add 'en', etc. if you support them
+
+  return ids.flatMap((id) => locales.map((locale) => ({ id, locale })));
+}
+
+// Optional: if you do not allow runtime fallback (you must pre-render all)
+export const dynamicParams = false;
