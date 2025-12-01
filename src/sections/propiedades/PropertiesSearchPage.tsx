@@ -1,75 +1,77 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const properties = [
   {
     id: 1,
-    ref: 'Ref. 186-00835P',
-    title: 'Finca Los Álamos con Viñedos',
-    location: 'Luján de Cuyo, Mendoza',
-    region: 'Valle de Uco, Mendoza, Argentina',
-    price: '1.600.000 €',
-    image: '/finca1.jpg',
-    totalSize: '181.766 m²',
-    builtSize: '412 m²',
+    ref: "Ref. 186-00835P",
+    title: "Finca Los Álamos con Viñedos",
+    location: "Luján de Cuyo, Mendoza",
+    region: "Valle de Uco, Mendoza, Argentina",
+    price: "1.600.000 €",
+    image: "/finca1.jpg",
+    totalSize: "181.766 m²",
+    builtSize: "412 m²",
     bedrooms: 4,
     bathrooms: 3,
-    aptitude: 'Viñedos',
-    description: 'Finca con viñedos en venta en Valle de Uco, cerca de Tupungato, provincia de Mendoza. En esta finca de 18 hectáreas, 3 hectáreas han sido plantadas con viñas en 2003. El viñedo podría ser expandido hasta 10 hectáreas. La plantación de alta densidad tiene 16.475 vides con las variedades Cabernet Sauvignon, Syrah, Merlot, Tempranillo...',
+    aptitude: "Viñedos",
+    description:
+      "Finca con viñedos en venta en Valle de Uco, cerca de Tupungato, provincia de Mendoza. En esta finca de 18 hectáreas, 3 hectáreas han sido plantadas con viñas en 2003. El viñedo podría ser expandido hasta 10 hectáreas. La plantación de alta densidad tiene 16.475 vides con las variedades Cabernet Sauvignon, Syrah, Merlot, Tempranillo...",
   },
   {
     id: 2,
-    ref: 'Ref. 192-01247P',
-    title: 'Estancia La Merced con Bodega',
-    location: 'San Rafael, Mendoza',
-    region: 'San Rafael, Mendoza, Argentina',
-    price: '2.400.000 €',
-    image: '/finca2.jpg',
-    totalSize: '1.200.000 m²',
-    builtSize: '850 m²',
+    ref: "Ref. 192-01247P",
+    title: "Estancia La Merced con Bodega",
+    location: "San Rafael, Mendoza",
+    region: "San Rafael, Mendoza, Argentina",
+    price: "2.400.000 €",
+    image: "/finca2.jpg",
+    totalSize: "1.200.000 m²",
+    builtSize: "850 m²",
     bedrooms: 6,
     bathrooms: 5,
-    aptitude: 'Vitivinícola',
-    description: 'Excepcional estancia con bodega boutique en San Rafael, Mendoza. Esta propiedad de 120 hectáreas cuenta con viñedos de alta calidad, instalaciones de vinificación de última generación y una casa principal de estilo colonial perfectamente restaurada. Ideal para inversión turística y producción vitivinícola...',
+    aptitude: "Vitivinícola",
+    description:
+      "Excepcional estancia con bodega boutique en San Rafael, Mendoza. Esta propiedad de 120 hectáreas cuenta con viñedos de alta calidad, instalaciones de vinificación de última generación y una casa principal de estilo colonial perfectamente restaurada. Ideal para inversión turística y producción vitivinícola...",
   },
   {
     id: 3,
-    ref: 'Ref. 175-00982P',
-    title: 'Campo El Retiro Recreativo',
-    location: 'Tunuyán, Mendoza',
-    region: 'Valle de Uco, Mendoza, Argentina',
-    price: '988.000 €',
-    image: '/finca1.jpg',
-    totalSize: '650.000 m²',
-    builtSize: '620 m²',
+    ref: "Ref. 175-00982P",
+    title: "Campo El Retiro Recreativo",
+    location: "Tunuyán, Mendoza",
+    region: "Valle de Uco, Mendoza, Argentina",
+    price: "988.000 €",
+    image: "/finca1.jpg",
+    totalSize: "650.000 m²",
+    builtSize: "620 m²",
     bedrooms: 5,
     bathrooms: 4,
-    aptitude: 'Recreativo',
-    description: 'Campo de recreo en Tunuyán con vistas privilegiadas a la Cordillera de los Andes. Esta propiedad de 65 hectáreas ofrece amplias posibilidades para desarrollo turístico, agrícola o simplemente como retiro de montaña. Cuenta con riego, electricidad y acceso asfaltado...',
+    aptitude: "Recreativo",
+    description:
+      "Campo de recreo en Tunuyán con vistas privilegiadas a la Cordillera de los Andes. Esta propiedad de 65 hectáreas ofrece amplias posibilidades para desarrollo turístico, agrícola o simplemente como retiro de montaña. Cuenta con riego, electricidad y acceso asfaltado...",
   },
 ];
-
+ 
 export default function PropertiesSearchPage() {
-  const t = useTranslations('PropertiesPage');
-  const [activeFilter, setActiveFilter] = useState('comprar');
-  const [searchInput, setSearchInput] = useState('');
+  const t = useTranslations("PropertiesPage");
+  const [activeFilter, setActiveFilter] = useState("comprar");
+  const [searchInput, setSearchInput] = useState("");
   const [showPriceFilter, setShowPriceFilter] = useState(false);
   const [showHectaresFilter, setShowHectaresFilter] = useState(false);
   const [showTipoSueloFilter, setShowTipoSueloFilter] = useState(false);
-  const [selectedTipoSuelo, setSelectedTipoSuelo] = useState('');
+  const [selectedTipoSuelo, setSelectedTipoSuelo] = useState("");
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(10000000);
   const [minHectares, setMinHectares] = useState(0);
   const [maxHectares, setMaxHectares] = useState(500);
 
-  // Close filters when clicking outside
   const handleClickOutside = (e: React.MouseEvent) => {
     const target = e.target as HTMLElement;
-    if (!target.closest('.filter-dropdown')) {
+    if (!target.closest(".filter-dropdown")) {
       setShowPriceFilter(false);
       setShowHectaresFilter(false);
       setShowTipoSueloFilter(false);
@@ -99,12 +101,16 @@ export default function PropertiesSearchPage() {
               <input
                 type="text"
                 value={searchInput}
-                placeholder={t('searchPlaceholder')}
+                placeholder={t("searchPlaceholder")}
                 className="flex-1 px-4 py-3 text-gray-900 placeholder-gray-500 bg-transparent focus:outline-none"
                 onChange={(e) => setSearchInput(e.target.value)}
               />
               <button className="h-10 w-10 mr-2 flex items-center justify-center text-gray-400 hover:text-gray-600">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
                   <path
                     fillRule="evenodd"
                     d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -118,27 +124,27 @@ export default function PropertiesSearchPage() {
           {/* Filters */}
           <div className="flex flex-wrap items-center gap-4">
             <button
-              onClick={() => setActiveFilter('comprar')}
+              onClick={() => setActiveFilter("comprar")}
               className={`px-6 py-2 text-sm uppercase tracking-widest border transition-colors ${
-                activeFilter === 'comprar'
-                  ? 'bg-[#0A1628] text-white border-[#0A1628]'
-                  : 'bg-white text-gray-700 border-gray-300 hover:border-gray-400'
+                activeFilter === "comprar"
+                  ? "bg-[#0A1628] text-white border-[#0A1628]"
+                  : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
               }`}
             >
-              {t('buy')}
+              {t("buy")}
             </button>
             <button
-              onClick={() => setActiveFilter('alquilar')}
+              onClick={() => setActiveFilter("alquilar")}
               className={`px-6 py-2 text-sm uppercase tracking-widest border transition-colors ${
-                activeFilter === 'alquilar'
-                  ? 'bg-[#0A1628] text-white border-[#0A1628]'
-                  : 'bg-white text-gray-700 border-gray-300 hover:border-gray-400'
+                activeFilter === "alquilar"
+                  ? "bg-[#0A1628] text-white border-[#0A1628]"
+                  : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
               }`}
             >
-              {t('rent')}
+              {t("rent")}
             </button>
 
-            {/* Tipo de Suelo - con click dropdown */}
+            {/* Tipo de Suelo */}
             <div className="relative filter-dropdown">
               <button
                 onClick={(e) => {
@@ -149,70 +155,70 @@ export default function PropertiesSearchPage() {
                 }}
                 className="px-6 py-2 text-sm uppercase tracking-widest border border-gray-300 bg-white text-gray-700 hover:border-gray-400 transition-colors"
               >
-                {selectedTipoSuelo || t('soilType')}
+                {selectedTipoSuelo || t("soilType")}
               </button>
 
               {showTipoSueloFilter && (
                 <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-300 shadow-xl z-50">
                   <button
                     onClick={() => {
-                      setSelectedTipoSuelo('');
+                      setSelectedTipoSuelo("");
                       setShowTipoSueloFilter(false);
                     }}
                     className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors border-b border-gray-200"
                   >
-                    {t('all')}
+                    {t("all")}
                   </button>
                   <button
                     onClick={() => {
-                      setSelectedTipoSuelo(t('vineyards'));
+                      setSelectedTipoSuelo(t("vineyards"));
                       setShowTipoSueloFilter(false);
                     }}
                     className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors border-b border-gray-200"
                   >
-                    {t('vineyards')}
+                    {t("vineyards")}
                   </button>
                   <button
                     onClick={() => {
-                      setSelectedTipoSuelo(t('winemaking'));
+                      setSelectedTipoSuelo(t("winemaking"));
                       setShowTipoSueloFilter(false);
                     }}
                     className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors border-b border-gray-200"
                   >
-                    {t('winemaking')}
+                    {t("winemaking")}
                   </button>
                   <button
                     onClick={() => {
-                      setSelectedTipoSuelo(t('recreational'));
+                      setSelectedTipoSuelo(t("recreational"));
                       setShowTipoSueloFilter(false);
                     }}
                     className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors border-b border-gray-200"
                   >
-                    {t('recreational')}
+                    {t("recreational")}
                   </button>
                   <button
                     onClick={() => {
-                      setSelectedTipoSuelo(t('agricultural'));
+                      setSelectedTipoSuelo(t("agricultural"));
                       setShowTipoSueloFilter(false);
                     }}
                     className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors border-b border-gray-200"
                   >
-                    {t('agricultural')}
+                    {t("agricultural")}
                   </button>
                   <button
                     onClick={() => {
-                      setSelectedTipoSuelo(t('livestock'));
+                      setSelectedTipoSuelo(t("livestock"));
                       setShowTipoSueloFilter(false);
                     }}
                     className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors"
                   >
-                    {t('livestock')}
+                    {t("livestock")}
                   </button>
                 </div>
               )}
             </div>
 
-            {/* Precio por Hectárea - con click */}
+            {/* Precio por Hectárea */}
             <div className="relative filter-dropdown">
               <button
                 onClick={(e) => {
@@ -223,7 +229,7 @@ export default function PropertiesSearchPage() {
                 }}
                 className="px-6 py-2 text-sm uppercase tracking-widest border border-gray-300 bg-white text-gray-700 hover:border-gray-400 transition-colors"
               >
-                {t('pricePerHectare')}
+                {t("pricePerHectare")}
               </button>
 
               {showPriceFilter && (
@@ -235,21 +241,35 @@ export default function PropertiesSearchPage() {
                     onClick={() => setShowPriceFilter(false)}
                     className="absolute top-4 right-4 text-white hover:text-gray-300"
                   >
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
                     </svg>
                   </button>
 
-                  <h3 className="text-2xl font-light mb-8 tracking-wide">{t('price')}</h3>
+                  <h3 className="text-2xl font-light mb-8 tracking-wide">
+                    {t("price")}
+                  </h3>
 
                   <div className="mb-8">
-                    <p className="text-sm uppercase tracking-widest text-gray-400 mb-4">{t('any')}</p>
+                    <p className="text-sm uppercase tracking-widest text-gray-400 mb-4">
+                      {t("any")}
+                    </p>
                     <div className="relative h-2 bg-gray-600 rounded-full mb-2">
                       <div
                         className="absolute h-2 bg-secondary rounded-full"
                         style={{
                           left: `${(minPrice / 10000000) * 100}%`,
-                          right: `${100 - (maxPrice / 10000000) * 100}%`
+                          right: `${100 - (maxPrice / 10000000) * 100}%`,
                         }}
                       />
                       <input
@@ -273,11 +293,15 @@ export default function PropertiesSearchPage() {
 
                   <div className="flex items-center justify-between mb-8 pt-4">
                     <div>
-                      <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">{t('noMin')}</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">
+                        {t("noMin")}
+                      </p>
                       <p className="text-lg">${minPrice.toLocaleString()}</p>
                     </div>
                     <div className="text-right">
-                      <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">{t('noMax')}</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">
+                        {t("noMax")}
+                      </p>
                       <p className="text-lg">${maxPrice.toLocaleString()}</p>
                     </div>
                   </div>
@@ -290,20 +314,20 @@ export default function PropertiesSearchPage() {
                       }}
                       className="flex-1 px-6 py-3 border border-white/30 text-white uppercase tracking-widest text-sm hover:bg-white/10 transition-colors"
                     >
-                      {t('clear')}
+                      {t("clear")}
                     </button>
                     <button
                       onClick={() => setShowPriceFilter(false)}
                       className="flex-1 px-6 py-3 bg-white text-[#0A1628] uppercase tracking-widest text-sm hover:bg-gray-100 transition-colors"
                     >
-                      {t('apply')}
+                      {t("apply")}
                     </button>
                   </div>
                 </div>
               )}
             </div>
 
-            {/* Hectáreas - con click */}
+            {/* Hectáreas */}
             <div className="relative filter-dropdown">
               <button
                 onClick={(e) => {
@@ -314,7 +338,7 @@ export default function PropertiesSearchPage() {
                 }}
                 className="px-6 py-2 text-sm uppercase tracking-widest border border-gray-300 bg-white text-gray-700 hover:border-gray-400 transition-colors"
               >
-                {t('hectares')}
+                {t("hectares")}
               </button>
 
               {showHectaresFilter && (
@@ -326,21 +350,35 @@ export default function PropertiesSearchPage() {
                     onClick={() => setShowHectaresFilter(false)}
                     className="absolute top-4 right-4 text-white hover:text-gray-300"
                   >
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
                     </svg>
                   </button>
 
-                  <h3 className="text-2xl font-light mb-8 tracking-wide">{t('hectares')}</h3>
+                  <h3 className="text-2xl font-light mb-8 tracking-wide">
+                    {t("hectares")}
+                  </h3>
 
                   <div className="mb-8">
-                    <p className="text-sm uppercase tracking-widest text-gray-400 mb-4">{t('any')}</p>
+                    <p className="text-sm uppercase tracking-widest text-gray-400 mb-4">
+                      {t("any")}
+                    </p>
                     <div className="relative h-2 bg-gray-600 rounded-full mb-2">
                       <div
                         className="absolute h-2 bg-secondary rounded-full"
                         style={{
                           left: `${(minHectares / 500) * 100}%`,
-                          right: `${100 - (maxHectares / 500) * 100}%`
+                          right: `${100 - (maxHectares / 500) * 100}%`,
                         }}
                       />
                       <input
@@ -364,11 +402,15 @@ export default function PropertiesSearchPage() {
 
                   <div className="flex items-center justify-between mb-8 pt-4">
                     <div>
-                      <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">{t('noMin')}</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">
+                        {t("noMin")}
+                      </p>
                       <p className="text-lg">{minHectares} ha</p>
                     </div>
                     <div className="text-right">
-                      <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">{t('noMax')}</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">
+                        {t("noMax")}
+                      </p>
                       <p className="text-lg">{maxHectares} ha</p>
                     </div>
                   </div>
@@ -381,13 +423,13 @@ export default function PropertiesSearchPage() {
                       }}
                       className="flex-1 px-6 py-3 border border-white/30 text-white uppercase tracking-widest text-sm hover:bg-white/10 transition-colors"
                     >
-                      {t('clear')}
+                      {t("clear")}
                     </button>
                     <button
                       onClick={() => setShowHectaresFilter(false)}
                       className="flex-1 px-6 py-3 bg-white text-[#0A1628] uppercase tracking-widest text-sm hover:bg-gray-100 transition-colors"
                     >
-                      {t('apply')}
+                      {t("apply")}
                     </button>
                   </div>
                 </div>
@@ -402,20 +444,25 @@ export default function PropertiesSearchPage() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-light text-gray-900 mb-1">
-              {t('viewing', { count: properties.length, total: properties.length })}
+              {t("viewing", {
+                count: properties.length,
+                total: properties.length,
+              })}
             </h1>
             <p className="text-sm text-gray-600 font-light">
-              {t('showingProperties')}
+              {t("showingProperties")}
             </p>
           </div>
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
-              <span className="text-sm text-gray-600 uppercase tracking-wider">{t('sortBy')}</span>
+              <span className="text-sm text-gray-600 uppercase tracking-wider">
+                {t("sortBy")}
+              </span>
               <select className="px-4 py-2 border border-gray-300 bg-white text-sm text-gray-700 focus:outline-none focus:border-gray-400">
-                <option>{t('exclusive')}</option>
-                <option>{t('priceHighToLow')}</option>
-                <option>{t('priceLowToHigh')}</option>
-                <option>{t('mostRecent')}</option>
+                <option>{t("exclusive")}</option>
+                <option>{t("priceHighToLow")}</option>
+                <option>{t("priceLowToHigh")}</option>
+                <option>{t("mostRecent")}</option>
               </select>
             </div>
           </div>
@@ -431,7 +478,7 @@ export default function PropertiesSearchPage() {
               href={`/propiedades/${property.id}`}
               className="group flex flex-col lg:flex-row gap-8 hover:shadow-lg transition-shadow duration-300 border-b border-gray-200 pb-12"
             >
-              {/* Image - Large */}
+              {/* Image */}
               <div className="lg:w-1/2 relative h-96 lg:h-[500px] overflow-hidden">
                 <Image
                   src={property.image}
@@ -448,36 +495,59 @@ export default function PropertiesSearchPage() {
                     {property.title}
                   </h2>
 
-                  <p className="text-2xl font-light text-gray-900 mb-6">{property.price}</p>
+                  <p className="text-2xl font-light text-gray-900 mb-6">
+                    {property.price}
+                  </p>
 
                   <p className="text-gray-600 text-base leading-relaxed mb-8 font-light">
                     {property.description}
                   </p>
 
-                  {/* Reference */}
-                  <p className="text-sm text-gray-500 mb-6 uppercase tracking-wider">{property.ref}</p>
+                  <p className="text-sm text-gray-500 mb-6 uppercase tracking-wider">
+                    {property.ref}
+                  </p>
 
                   {/* Details Grid */}
                   <div className="grid grid-cols-2 gap-x-8 gap-y-4 mb-6">
                     <div>
-                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">{t('bedrooms')}</p>
-                      <p className="text-lg text-gray-900">{property.bedrooms}</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
+                        {t("bedrooms")}
+                      </p>
+                      <p className="text-lg text-gray-900">
+                        {property.bedrooms}
+                      </p>
                     </div>
                     <div>
-                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">{t('bathrooms')}</p>
-                      <p className="text-lg text-gray-900">{property.bathrooms}</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
+                        {t("bathrooms")}
+                      </p>
+                      <p className="text-lg text-gray-900">
+                        {property.bathrooms}
+                      </p>
                     </div>
                     <div>
-                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">{t('builtArea')}</p>
-                      <p className="text-lg text-gray-900">{property.builtSize}</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
+                        {t("builtArea")}
+                      </p>
+                      <p className="text-lg text-gray-900">
+                        {property.builtSize}
+                      </p>
                     </div>
                     <div>
-                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">{t('totalArea')}</p>
-                      <p className="text-lg text-gray-900">{property.totalSize}</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
+                        {t("totalArea")}
+                      </p>
+                      <p className="text-lg text-gray-900">
+                        {property.totalSize}
+                      </p>
                     </div>
                     <div className="col-span-2">
-                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">{t('aptitude')}</p>
-                      <p className="text-lg text-gray-900">{property.aptitude}</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
+                        {t("aptitude")}
+                      </p>
+                      <p className="text-lg text-gray-900">
+                        {property.aptitude}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -497,7 +567,9 @@ export default function PropertiesSearchPage() {
                       d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                     />
                   </svg>
-                  <span className="text-sm uppercase tracking-widest">{t('save')}</span>
+                  <span className="text-sm uppercase tracking-widest">
+                    {t("save")}
+                  </span>
                 </button>
               </div>
             </Link>
