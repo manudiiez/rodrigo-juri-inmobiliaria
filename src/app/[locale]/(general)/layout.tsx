@@ -1,6 +1,5 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import DesignSwitcher from "@/components/DesignSwitcher";
+import NavbarMinimalista from "@/components/NavbarMinimalista";
+import FooterMinimalista from "@/components/FooterMinimalista";
 
 export default function GeneralLayout({
   children,
@@ -9,11 +8,9 @@ export default function GeneralLayout({
 }) {
   return (
     <>
-      <DesignSwitcher />
-
-      <Header />
+      <NavbarMinimalista />
       {children}
-      <Footer />
+      <FooterMinimalista />
     </>
   );
 }

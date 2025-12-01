@@ -1,7 +1,5 @@
-import { NextIntlClientProvider } from "next-intl";
-import PropertyNavbar from "@/components/PropertyNavbar";
-import Footer from "@/components/Footer";
-import DesignSwitcher from "@/components/DesignSwitcher";
+import NavbarMinimalista from "@/components/NavbarMinimalista";
+import FooterMinimalista from "@/components/FooterMinimalista";
 
 export default function PropertyLayout({
   children,
@@ -10,11 +8,9 @@ export default function PropertyLayout({
 }) {
   return (
     <>
-      <DesignSwitcher />
-
-      <PropertyNavbar />
+      <NavbarMinimalista />
       {children}
-      <Footer />
+      <FooterMinimalista />
     </>
   );
 }

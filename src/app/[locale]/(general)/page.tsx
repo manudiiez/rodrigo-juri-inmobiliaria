@@ -1,15 +1,19 @@
-import Hero from "@/sections/home/Hero";
-import Presentation from "@/sections/home/Presentation";
-import Properties from "@/sections/home/Properties";
-import Contact from "@/sections/home/Contact";
+import HeroMinimalista from "@/sections/home/HeroMinimalista";
+import FeaturedProperty from "@/sections/home/FeaturedProperty";
+import AboutSection from "@/sections/home/AboutSection";
+import PropertiesGrid from "@/sections/home/PropertiesGrid";
+import HistorySection from "@/sections/home/HistorySection";
+import ContactMinimalista from "@/sections/home/ContactMinimalista";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Hero />
-      <Presentation />
-      <Properties />
-      <Contact />
+    <main className="min-h-screen bg-white">
+      <HeroMinimalista />
+      <FeaturedProperty />
+      <AboutSection />
+      <PropertiesGrid />
+      <HistorySection />
+      <ContactMinimalista />
     </main>
   );
 }
