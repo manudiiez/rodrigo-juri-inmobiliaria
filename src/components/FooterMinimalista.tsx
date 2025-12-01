@@ -1,8 +1,11 @@
 'use client';
 
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export default function FooterMinimalista() {
+  const t = useTranslations('Footer');
+
   return (
     <footer className="bg-gray-900 text-white border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-16">
@@ -11,37 +14,36 @@ export default function FooterMinimalista() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="mb-6">
-              <h3 className="text-2xl font-light tracking-wide mb-2">Valle de Uco</h3>
-              <p className="text-white/60 text-xs uppercase tracking-widest">International Realty</p>
+              <h3 className="text-2xl font-light tracking-wide mb-2">{t('brandName')}</h3>
+              <p className="text-white/60 text-xs uppercase tracking-widest">{t('brandSubtitle')}</p>
             </div>
             <p className="text-white/70 leading-relaxed max-w-md">
-              Especialistas en fincas premium y propiedades rurales en Mendoza.
-              Asesoramiento personalizado para encontrar tu inversión ideal en el corazón del Valle de Uco.
+              {t('description')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-sm uppercase tracking-widest text-white/60 mb-6">Navegación</h4>
+            <h4 className="text-sm uppercase tracking-widest text-white/60 mb-6">{t('navigationTitle')}</h4>
             <ul className="space-y-3">
               <li>
                 <Link href="/propiedades" className="text-white/80 hover:text-white transition-colors">
-                  Fincas en Venta
+                  {t('propertiesForSale')}
                 </Link>
               </li>
               <li>
                 <Link href="/vender#nosotros" className="text-white/80 hover:text-white transition-colors">
-                  Sobre Nosotros
+                  {t('aboutUs')}
                 </Link>
               </li>
               <li>
                 <Link href="/vender" className="text-white/80 hover:text-white transition-colors">
-                  Vender tu Finca
+                  {t('sellYourProperty')}
                 </Link>
               </li>
               <li>
                 <Link href="/vender#contacto" className="text-white/80 hover:text-white transition-colors">
-                  Contacto
+                  {t('contact')}
                 </Link>
               </li>
             </ul>
@@ -49,26 +51,26 @@ export default function FooterMinimalista() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-sm uppercase tracking-widest text-white/60 mb-6">Contacto</h4>
+            <h4 className="text-sm uppercase tracking-widest text-white/60 mb-6">{t('contactTitle')}</h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <svg className="w-5 h-5 text-[#E2B34C] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <span className="text-white/80">+54 261 123 4567</span>
+                <span className="text-white/80">{t('phone')}</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg className="w-5 h-5 text-[#E2B34C] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <span className="text-white/80">info@valledeuco.com</span>
+                <span className="text-white/80">{t('email')}</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg className="w-5 h-5 text-[#E2B34C] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span className="text-white/80">Tupungato, Mendoza<br />Argentina</span>
+                <span className="text-white/80">{t('location')}<br />{t('country')}</span>
               </li>
             </ul>
 
@@ -97,14 +99,14 @@ export default function FooterMinimalista() {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white/60 text-sm">
-              © {new Date().getFullYear()} Valle de Uco International Realty. Todos los derechos reservados.
+              © {new Date().getFullYear()} {t('copyright')}
             </p>
             <div className="flex gap-6 text-sm">
               <Link href="#" className="text-white/60 hover:text-white transition-colors">
-                Política de Privacidad
+                {t('privacyPolicy')}
               </Link>
               <Link href="#" className="text-white/60 hover:text-white transition-colors">
-                Términos y Condiciones
+                {t('termsAndConditions')}
               </Link>
             </div>
           </div>

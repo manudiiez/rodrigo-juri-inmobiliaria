@@ -1,10 +1,12 @@
-'use client';
+"use client";
 
-import { usePathname, useRouter } from 'next/navigation';
-import { useLocale } from 'next-intl';
-import { useState, useRef, useEffect } from 'react';
+import { usePathname, useRouter } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
+import { useState, useRef, useEffect } from "react";
 
 export default function LanguageSwitcher() {
+  const t = useTranslations("LanguageSwitcher");
+
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
@@ -12,16 +14,17 @@ export default function LanguageSwitcher() {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const languages = [
-    { code: 'es-AR', name: 'Español', flag: '🇦🇷' },
-    { code: 'en-US', name: 'English', flag: '🇺🇸' },
-    { code: 'pt-BR', name: 'Português', flag: '🇧🇷' },
+    { code: "es-AR", name: t("spanish"), flag: "🇦🇷" },
+    { code: "en-US", name: t("english"), flag: "🇺🇸" },
+    { code: "pt-BR", name: t("portuguese"), flag: "🇧🇷" },
   ];
 
-  const currentLanguage = languages.find(lang => lang.code === locale) || languages[0];
+  const currentLanguage =
+    languages.find((lang) => lang.code === locale) || languages[0];
 
   const handleLanguageChange = (langCode: string) => {
     // Remove the current locale from pathname
-    const pathWithoutLocale = pathname.replace(`/${locale}`, '');
+    const pathWithoutLocale = pathname.replace(`/${locale}`, "");
     // Navigate to the new locale path
     router.push(`/${langCode}${pathWithoutLocale}`);
     setIsOpen(false);
@@ -30,48 +33,58 @@ export default function LanguageSwitcher() {
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
         setIsOpen(false);
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   return (
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors"
+        className="flex items-center space-x-2 px-3 py-2 rounded-lg "
         aria-label="Change language"
       >
-        <span className="text-xl">{currentLanguage.flag}</span>
-        <span className="hidden sm:inline text-sm font-medium text-gray-700">
+        <span className="hidden sm:inline text-white hover:text-white/80 transition-colors text-sm uppercase tracking-widest">
           {currentLanguage.name}
         </span>
         <svg
-          className={`w-4 h-4 text-gray-500 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+          className={`w-4 h-4 text-white transition-transform ${
+            isOpen ? "rotate-180" : ""
+          }`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M19 9l-7 7-7-7"
+          />
         </svg>
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+        <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg py-2 z-50 border border-gray-300 shadow-xl">
           {languages.map((lang) => (
             <button
               key={lang.code}
               onClick={() => handleLanguageChange(lang.code)}
               className={`w-full flex items-center space-x-3 px-4 py-2 hover:bg-gray-50 transition-colors ${
-                lang.code === locale ? 'bg-gray-50' : ''
+                lang.code === locale ? "bg-gray-50" : ""
               }`}
             >
-              <span className="text-xl">{lang.flag}</span>
-              <span className="text-sm font-medium text-gray-700">{lang.name}</span>
+              <span className="text-sm font-medium text-gray-700">
+                {lang.name}
+              </span>
               {lang.code === locale && (
                 <svg
                   className="w-4 h-4 ml-auto text-bordeaux"

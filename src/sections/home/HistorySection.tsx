@@ -1,5 +1,8 @@
+import { useTranslations } from "next-intl";
 
 export default function HistorySection() {
+  const t = useTranslations("HomePage.History");
+
   return (
     <section className="bg-white py-24 md:py-32">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -8,23 +11,17 @@ export default function HistorySection() {
           <div>
             <div className="w-12 h-[2px] bg-[#E2B34C] mb-6"></div>
             <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8 tracking-wide font-serif">
-              Nuestra historia
+              {t("title")}
             </h2>
             <div className="space-y-6 text-gray-600 text-lg leading-relaxed font-light">
               <p>
-                La única red especializada en fincas de Mendoza que interpreta
-                el nu evo estilo de vida de quienes buscan invertir y disfrutar
-                en Tupungato. Inspirado en un espíritu innovador y en años de
-                experiencia en el mercado, Rodrigo Juri, corredor inmobiliario
-                matriculado, lidera una propuesta diferencial enfocada en fincas
-                productivas, de recreación y proyectos de inversión con alto
-                potencial.
+                {t("paragraph1")}
               </p>
               <p>
-                Más allá de las vistas a la cordillera, los viñedos y las propiedades únicas de la zona, el objetivo es ofrecerte un estilo de vida a tu medida: ya sea que busques una finca para un proyecto agrícola, turístico, vitivinícola, una inversión estratégica o simplemente un refugio rodeado de naturaleza.
+                {t("paragraph2")}
               </p>
               <p>
-                Con una selección de fincas en venta en Valle de Uco y otras zonas estratégicas de Mendoza, podés encontrar, a través del asesoramiento de Rodrigo Juri, la propiedad ideal para tu proyecto o inversión, sin importar en qué lugar del mundo te encuentres.
+                {t("paragraph3")}
               </p>
             </div>
           </div>
@@ -33,37 +30,37 @@ export default function HistorySection() {
           <div className="space-y-12">
             <div className="border-l-2 border-[#E2B34C] pl-8">
               <div className="text-6xl md:text-7xl font-light text-gray-900 mb-2">
-                +150
+                {t("stat1Value")}
               </div>
               <p className="text-sm uppercase tracking-widest text-gray-500">
-                Fincas en Mendoza
+                {t("stat1Label")}
               </p>
             </div>
 
             <div className="border-l-2 border-[#E2B34C] pl-8">
               <div className="text-6xl md:text-7xl font-light text-gray-900 mb-2">
-                +20
+                {t("stat2Value")}
               </div>
               <p className="text-sm uppercase tracking-widest text-gray-500">
-                Años de experiencia
+                {t("stat2Label")}
               </p>
             </div>
 
             <div className="border-l-2 border-[#E2B34C] pl-8">
               <div className="text-6xl md:text-7xl font-light text-gray-900 mb-2">
-                +500
+                {t("stat3Value")}
               </div>
               <p className="text-sm uppercase tracking-widest text-gray-500">
-                HECTÁREAS COMERCIALIZADAS
+                {t("stat3Label")}
               </p>
             </div>
 
             <div className="border-l-2 border-[#E2B34C] pl-8">
               <div className="text-5xl md:text-6xl font-light text-gray-900 mb-2">
-                100%
+                {t("stat4Value")}
               </div>
               <p className="text-sm uppercase tracking-widest text-gray-500">
-                ASESORAMIENTO PERSONALIZADO PARA INVERSORES
+                {t("stat4Label")}
               </p>
             </div>
           </div>

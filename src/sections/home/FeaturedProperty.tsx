@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 
 const properties = [
   {
@@ -29,6 +30,7 @@ const properties = [
 ];
 
 export default function FeaturedProperty() {
+  const t = useTranslations("HomePage.FeaturedProperty");
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -79,7 +81,7 @@ export default function FeaturedProperty() {
                   className="inline-flex items-center gap-2 text-white hover:gap-4 transition-all group"
                 >
                   <span className="text-sm uppercase tracking-widest font-medium">
-                    Ver finca
+                    {t("viewProperty")}
                   </span>
                   <svg
                     className="w-5 h-5"
@@ -112,7 +114,7 @@ export default function FeaturedProperty() {
                 ? "bg-white"
                 : "bg-white/30 hover:bg-white/60 cursor-pointer"
             }`}
-            aria-label={`Ir a propiedad ${index + 1}`}
+            aria-label={`${t("goToProperty")} ${index + 1}`}
           />
         ))}
       </div>

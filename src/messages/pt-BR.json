@@ -1,53 +1,119 @@
 {
-  "LocaleLayout": {
-    "title": "Fazendas à Venda no Brasil - Imobiliária Rodrigo Juri"
+  "HomePage": {
+    "Hero": {
+      "title": "Encontre uma fazenda que se adapte ao seu estilo de vida.",
+      "buy": "Comprar",
+      "sell": "Vender",
+      "contact": "Contato"
+    },
+    "FeaturedProperty": {
+      "viewProperty": "Ver fazenda",
+      "goToProperty": "Ir para propriedade"
+    },
+    "About": {
+      "intro": "Para quem busca uma fazenda e uma vida excepcional,",
+      "highlight": "não há melhor opção do que Valle de Uco International Realty.",
+      "mission": "Apoiado por anos de experiência e com a missão de renovar a forma de investir em fazendas em Mendoza, Rodrigo Juri, corretor imobiliário matriculado, faz a diferença para seus clientes em cada passo do caminho em Tupungato."
+    },
+    "PropertiesGrid": {
+      "title": "Fazendas e Campos em Destaque",
+      "viewAll": "Ver todas as propriedades rurais",
+      "hectares": "hectares"
+    },
+    "History": {
+      "sectionLabel": "Nossa história",
+      "title": "Nossa história",
+      "paragraph1": "A única rede especializada em fazendas de Mendoza que interpreta o novo estilo de vida de quem busca investir e aproveitar em Tupungato. Inspirado por um espírito inovador e anos de experiência no mercado, Rodrigo Juri, corretor imobiliário matriculado, lidera uma proposta diferencial focada em fazendas produtivas, de recreação e projetos de investimento com alto potencial.",
+      "paragraph2": "Além das vistas da cordilheira, vinhedos e propriedades únicas da região, o objetivo é oferecer um estilo de vida sob medida: seja você que busca uma fazenda para um projeto agrícola, turístico, vitivinícola, um investimento estratégico ou simplesmente um refúgio rodeado de natureza.",
+      "paragraph3": "Com uma seleção de fazendas à venda no Valle de Uco e outras zonas estratégicas de Mendoza, você pode encontrar, através da assessoria de Rodrigo Juri, a propriedade ideal para seu projeto ou investimento, não importa em que lugar do mundo você esteja.",
+      "stat1Value": "+150",
+      "stat1Label": "Fazendas em Mendoza",
+      "stat2Value": "+20",
+      "stat2Label": "Anos de experiência",
+      "stat3Value": "+500",
+      "stat3Label": "HECTARES COMERCIALIZADOS",
+      "stat4Value": "100%",
+      "stat4Label": "ASSESSORIA PERSONALIZADA PARA INVESTIDORES"
+    },
+    "Contact": {
+      "title": "Conecte-se conosco",
+      "description": "Nossa equipe de especialistas está pronta para ajudá-lo a encontrar a fazenda perfeita ou vender sua fazenda pelo melhor preço do mercado.",
+      "phoneLabel": "Telefone",
+      "phone": "+54 9 261 412-3456",
+      "emailLabel": "E-mail",
+      "email": "contacto@fincasmendoza.com",
+      "locationLabel": "Localização",
+      "location": "Mendoza, Argentina",
+      "whatsappButton": "Contatar pelo WhatsApp",
+      "formNamePlaceholder": "Nome completo",
+      "formEmailPlaceholder": "E-mail",
+      "formPhonePlaceholder": "Telefone",
+      "formMessagePlaceholder": "Mensagem",
+      "formSubmit": "Enviar mensagem"
+    }
   },
   "Navbar": {
-    "home": "Início",
-    "properties": "Propriedades",
-    "about": "Sobre Nós",
-    "contact": "Contato"
+    "brandName": "Valle de Uco",
+    "brandSubtitle": "International Realty",
+    "properties": "Fazendas",
+    "about": "Sobre nós",
+    "contact": "Contato",
+    "sellWithUs": "Venda conosco"
   },
-  "HomePage": {
-    "title": "Fazendas de Qualidade no Brasil",
-    "subtitle": "Descubra as melhores propriedades rurais",
-    "searchPlaceholder": "Buscar propriedades...",
-    "viewProperties": "Ver Propriedades",
-    "featured": "Propriedades em Destaque"
+  "Footer": {
+    "brandName": "Valle de Uco",
+    "brandSubtitle": "International Realty",
+    "description": "Especialistas em fazendas premium e propriedades rurais em Mendoza. Assessoria personalizada para encontrar seu investimento ideal no coração do Valle de Uco.",
+    "navigationTitle": "Navegação",
+    "propertiesForSale": "Fazendas à Venda",
+    "aboutUs": "Sobre Nós",
+    "sellYourProperty": "Venda sua Fazenda",
+    "contact": "Contato",
+    "contactTitle": "Contato",
+    "phone": "+54 261 123 4567",
+    "email": "info@valledeuco.com",
+    "location": "Tupungato, Mendoza",
+    "country": "Argentina",
+    "copyright": "Valle de Uco International Realty. Todos os direitos reservados.",
+    "privacyPolicy": "Política de Privacidade",
+    "termsAndConditions": "Termos e Condições"
   },
-  "Properties": {
-    "title": "Nossas Propriedades",
-    "filter": "Filtrar",
-    "location": "Localização",
+  "PropertiesPage": {
+    "searchPlaceholder": "Argentina",
+    "buy": "Comprar",
+    "rent": "Alugar",
+    "soilType": "Tipo de solo",
+    "all": "Todos",
+    "vineyards": "Vinhedos",
+    "winemaking": "Vinícola",
+    "recreational": "Recreativo",
+    "agricultural": "Agrícola",
+    "livestock": "Pecuário",
+    "pricePerHectare": "Preço por hectare",
+    "hectares": "Hectares",
     "price": "Preço",
-    "area": "Área",
-    "hectares": "hectares",
-    "viewDetails": "Ver Detalhes",
-    "contactAgent": "Contatar Corretor"
+    "any": "Qualquer",
+    "noMin": "sem mín.",
+    "noMax": "sem máx.",
+    "clear": "Limpar",
+    "apply": "Aplicar",
+    "viewing": "Visualizando {count} de {total} fazendas à venda na Argentina",
+    "showingProperties": "Mostrando imóveis comercializados por Valle de Uco International Realty.",
+    "sortBy": "Ordenar:",
+    "exclusive": "Exclusivo (Padrão)",
+    "priceHighToLow": "Preço: Maior ao menor",
+    "priceLowToHigh": "Preço: Menor ao maior",
+    "mostRecent": "Mais recentes",
+    "bedrooms": "Quartos",
+    "bathrooms": "Banheiros",
+    "builtArea": "Área construída",
+    "totalArea": "Área total",
+    "aptitude": "Aptidão",
+    "save": "Salvar"
   },
-  "PropertyDetails": {
-    "description": "Descrição",
-    "features": "Características",
-    "location": "Localização",
-    "price": "Preço",
-    "area": "Área",
-    "contactUs": "Entre em Contato"
-  },
-  "Contact": {
-    "title": "Contato",
-    "name": "Nome",
-    "email": "E-mail",
-    "phone": "Telefone",
-    "message": "Mensagem",
-    "send": "Enviar",
-    "success": "Mensagem enviada com sucesso",
-    "error": "Erro ao enviar mensagem"
-  },
-  "Common": {
-    "currency": "BRL",
-    "loading": "Carregando...",
-    "error": "Erro",
-    "noResults": "Nenhum resultado encontrado",
-    "readMore": "Leia mais"
+  "LanguageSwitcher": {
+    "portuguese": "Português",
+    "english": "Inglês",
+    "spanish": "Espanhol"
   }
 }

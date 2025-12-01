@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const properties = [
   {
@@ -53,6 +54,7 @@ const properties = [
 ];
 
 export default function PropertiesSearchPage() {
+  const t = useTranslations('PropertiesPage');
   const [activeFilter, setActiveFilter] = useState('comprar');
   const [searchInput, setSearchInput] = useState('');
   const [showPriceFilter, setShowPriceFilter] = useState(false);
@@ -97,7 +99,7 @@ export default function PropertiesSearchPage() {
               <input
                 type="text"
                 value={searchInput}
-                placeholder="Argentina"
+                placeholder={t('searchPlaceholder')}
                 className="flex-1 px-4 py-3 text-gray-900 placeholder-gray-500 bg-transparent focus:outline-none"
                 onChange={(e) => setSearchInput(e.target.value)}
               />
@@ -123,7 +125,7 @@ export default function PropertiesSearchPage() {
                   : 'bg-white text-gray-700 border-gray-300 hover:border-gray-400'
               }`}
             >
-              Comprar
+              {t('buy')}
             </button>
             <button
               onClick={() => setActiveFilter('alquilar')}
@@ -133,7 +135,7 @@ export default function PropertiesSearchPage() {
                   : 'bg-white text-gray-700 border-gray-300 hover:border-gray-400'
               }`}
             >
-              Alquilar
+              {t('rent')}
             </button>
 
             {/* Tipo de Suelo - con click dropdown */}
@@ -147,7 +149,7 @@ export default function PropertiesSearchPage() {
                 }}
                 className="px-6 py-2 text-sm uppercase tracking-widest border border-gray-300 bg-white text-gray-700 hover:border-gray-400 transition-colors"
               >
-                {selectedTipoSuelo || 'Tipo de suelo'}
+                {selectedTipoSuelo || t('soilType')}
               </button>
 
               {showTipoSueloFilter && (
@@ -159,52 +161,52 @@ export default function PropertiesSearchPage() {
                     }}
                     className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors border-b border-gray-200"
                   >
-                    Todos
+                    {t('all')}
                   </button>
                   <button
                     onClick={() => {
-                      setSelectedTipoSuelo('Viñedos');
+                      setSelectedTipoSuelo(t('vineyards'));
                       setShowTipoSueloFilter(false);
                     }}
                     className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors border-b border-gray-200"
                   >
-                    Viñedos
+                    {t('vineyards')}
                   </button>
                   <button
                     onClick={() => {
-                      setSelectedTipoSuelo('Vitivinícola');
+                      setSelectedTipoSuelo(t('winemaking'));
                       setShowTipoSueloFilter(false);
                     }}
                     className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors border-b border-gray-200"
                   >
-                    Vitivinícola
+                    {t('winemaking')}
                   </button>
                   <button
                     onClick={() => {
-                      setSelectedTipoSuelo('Recreativo');
+                      setSelectedTipoSuelo(t('recreational'));
                       setShowTipoSueloFilter(false);
                     }}
                     className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors border-b border-gray-200"
                   >
-                    Recreativo
+                    {t('recreational')}
                   </button>
                   <button
                     onClick={() => {
-                      setSelectedTipoSuelo('Agrícola');
+                      setSelectedTipoSuelo(t('agricultural'));
                       setShowTipoSueloFilter(false);
                     }}
                     className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors border-b border-gray-200"
                   >
-                    Agrícola
+                    {t('agricultural')}
                   </button>
                   <button
                     onClick={() => {
-                      setSelectedTipoSuelo('Ganadero');
+                      setSelectedTipoSuelo(t('livestock'));
                       setShowTipoSueloFilter(false);
                     }}
                     className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors"
                   >
-                    Ganadero
+                    {t('livestock')}
                   </button>
                 </div>
               )}
@@ -221,7 +223,7 @@ export default function PropertiesSearchPage() {
                 }}
                 className="px-6 py-2 text-sm uppercase tracking-widest border border-gray-300 bg-white text-gray-700 hover:border-gray-400 transition-colors"
               >
-                Precio por hectárea
+                {t('pricePerHectare')}
               </button>
 
               {showPriceFilter && (
@@ -238,10 +240,10 @@ export default function PropertiesSearchPage() {
                     </svg>
                   </button>
 
-                  <h3 className="text-2xl font-light mb-8 tracking-wide">Precio</h3>
+                  <h3 className="text-2xl font-light mb-8 tracking-wide">{t('price')}</h3>
 
                   <div className="mb-8">
-                    <p className="text-sm uppercase tracking-widest text-gray-400 mb-4">Cualquiera</p>
+                    <p className="text-sm uppercase tracking-widest text-gray-400 mb-4">{t('any')}</p>
                     <div className="relative h-2 bg-gray-600 rounded-full mb-2">
                       <div
                         className="absolute h-2 bg-[#E2B34C] rounded-full"
@@ -271,11 +273,11 @@ export default function PropertiesSearchPage() {
 
                   <div className="flex items-center justify-between mb-8 pt-4">
                     <div>
-                      <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">sin mín.</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">{t('noMin')}</p>
                       <p className="text-lg">${minPrice.toLocaleString()}</p>
                     </div>
                     <div className="text-right">
-                      <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">sin máx.</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">{t('noMax')}</p>
                       <p className="text-lg">${maxPrice.toLocaleString()}</p>
                     </div>
                   </div>
@@ -288,13 +290,13 @@ export default function PropertiesSearchPage() {
                       }}
                       className="flex-1 px-6 py-3 border border-white/30 text-white uppercase tracking-widest text-sm hover:bg-white/10 transition-colors"
                     >
-                      Borrar
+                      {t('clear')}
                     </button>
                     <button
                       onClick={() => setShowPriceFilter(false)}
                       className="flex-1 px-6 py-3 bg-white text-[#0A1628] uppercase tracking-widest text-sm hover:bg-gray-100 transition-colors"
                     >
-                      Aplicar
+                      {t('apply')}
                     </button>
                   </div>
                 </div>
@@ -312,7 +314,7 @@ export default function PropertiesSearchPage() {
                 }}
                 className="px-6 py-2 text-sm uppercase tracking-widest border border-gray-300 bg-white text-gray-700 hover:border-gray-400 transition-colors"
               >
-                Hectáreas
+                {t('hectares')}
               </button>
 
               {showHectaresFilter && (
@@ -329,10 +331,10 @@ export default function PropertiesSearchPage() {
                     </svg>
                   </button>
 
-                  <h3 className="text-2xl font-light mb-8 tracking-wide">Hectáreas</h3>
+                  <h3 className="text-2xl font-light mb-8 tracking-wide">{t('hectares')}</h3>
 
                   <div className="mb-8">
-                    <p className="text-sm uppercase tracking-widest text-gray-400 mb-4">Cualquiera</p>
+                    <p className="text-sm uppercase tracking-widest text-gray-400 mb-4">{t('any')}</p>
                     <div className="relative h-2 bg-gray-600 rounded-full mb-2">
                       <div
                         className="absolute h-2 bg-[#E2B34C] rounded-full"
@@ -362,11 +364,11 @@ export default function PropertiesSearchPage() {
 
                   <div className="flex items-center justify-between mb-8 pt-4">
                     <div>
-                      <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">sin mín.</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">{t('noMin')}</p>
                       <p className="text-lg">{minHectares} ha</p>
                     </div>
                     <div className="text-right">
-                      <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">sin máx.</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">{t('noMax')}</p>
                       <p className="text-lg">{maxHectares} ha</p>
                     </div>
                   </div>
@@ -379,13 +381,13 @@ export default function PropertiesSearchPage() {
                       }}
                       className="flex-1 px-6 py-3 border border-white/30 text-white uppercase tracking-widest text-sm hover:bg-white/10 transition-colors"
                     >
-                      Borrar
+                      {t('clear')}
                     </button>
                     <button
                       onClick={() => setShowHectaresFilter(false)}
                       className="flex-1 px-6 py-3 bg-white text-[#0A1628] uppercase tracking-widest text-sm hover:bg-gray-100 transition-colors"
                     >
-                      Aplicar
+                      {t('apply')}
                     </button>
                   </div>
                 </div>
@@ -400,20 +402,20 @@ export default function PropertiesSearchPage() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-light text-gray-900 mb-1">
-              Visualizando {properties.length} de {properties.length} fincas en venta en Argentina
+              {t('viewing', { count: properties.length, total: properties.length })}
             </h1>
             <p className="text-sm text-gray-600 font-light">
-              Mostrando inmuebles comercializados por Valle de Uco International Realty.
+              {t('showingProperties')}
             </p>
           </div>
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
-              <span className="text-sm text-gray-600 uppercase tracking-wider">Ordenar:</span>
+              <span className="text-sm text-gray-600 uppercase tracking-wider">{t('sortBy')}</span>
               <select className="px-4 py-2 border border-gray-300 bg-white text-sm text-gray-700 focus:outline-none focus:border-gray-400">
-                <option>Exclusive (Default)</option>
-                <option>Precio: Mayor a menor</option>
-                <option>Precio: Menor a mayor</option>
-                <option>Más recientes</option>
+                <option>{t('exclusive')}</option>
+                <option>{t('priceHighToLow')}</option>
+                <option>{t('priceLowToHigh')}</option>
+                <option>{t('mostRecent')}</option>
               </select>
             </div>
           </div>
@@ -458,23 +460,23 @@ export default function PropertiesSearchPage() {
                   {/* Details Grid */}
                   <div className="grid grid-cols-2 gap-x-8 gap-y-4 mb-6">
                     <div>
-                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">Dormitorios</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">{t('bedrooms')}</p>
                       <p className="text-lg text-gray-900">{property.bedrooms}</p>
                     </div>
                     <div>
-                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">Baños</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">{t('bathrooms')}</p>
                       <p className="text-lg text-gray-900">{property.bathrooms}</p>
                     </div>
                     <div>
-                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">Superficie construida</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">{t('builtArea')}</p>
                       <p className="text-lg text-gray-900">{property.builtSize}</p>
                     </div>
                     <div>
-                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">Superficie total</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">{t('totalArea')}</p>
                       <p className="text-lg text-gray-900">{property.totalSize}</p>
                     </div>
                     <div className="col-span-2">
-                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">Aptitud</p>
+                      <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">{t('aptitude')}</p>
                       <p className="text-lg text-gray-900">{property.aptitude}</p>
                     </div>
                   </div>
@@ -495,7 +497,7 @@ export default function PropertiesSearchPage() {
                       d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                     />
                   </svg>
-                  <span className="text-sm uppercase tracking-widest">Guardar</span>
+                  <span className="text-sm uppercase tracking-widest">{t('save')}</span>
                 </button>
               </div>
             </Link>

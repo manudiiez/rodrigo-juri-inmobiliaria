@@ -1,6 +1,10 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 export default function ContactMinimalista() {
+  const t = useTranslations('HomePage.Contact');
+
   return (
     <section className="bg-white py-24 md:py-32" id="contacto">
       <div className="max-w-6xl mx-auto px-6 md:px-12">
@@ -8,29 +12,28 @@ export default function ContactMinimalista() {
           {/* Left side - Contact info */}
           <div>
             <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8 tracking-wide">
-              Conecte con nosotros
+              {t('title')}
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-12 font-light">
-              Nuestro equipo de expertos está listo para ayudarle a encontrar la finca perfecta
-              o vender su finca al mejor precio del mercado.
+              {t('description')}
             </p>
 
             <div className="space-y-6">
               <div>
-                <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">Teléfono</p>
+                <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">{t('phoneLabel')}</p>
                 <a href="tel:+5492614123456" className="text-xl text-gray-900 hover:text-bordeaux transition-colors">
-                  +54 9 261 412-3456
+                  {t('phone')}
                 </a>
               </div>
               <div>
-                <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">Email</p>
+                <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">{t('emailLabel')}</p>
                 <a href="mailto:contacto@fincasmendoza.com" className="text-xl text-gray-900 hover:text-bordeaux transition-colors">
-                  contacto@fincasmendoza.com
+                  {t('email')}
                 </a>
               </div>
               <div>
-                <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">Ubicación</p>
-                <p className="text-xl text-gray-900">Mendoza, Argentina</p>
+                <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">{t('locationLabel')}</p>
+                <p className="text-xl text-gray-900">{t('location')}</p>
               </div>
             </div>
 
@@ -41,7 +44,7 @@ export default function ContactMinimalista() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-gray-900 text-white px-8 py-4 hover:bg-bordeaux transition-all group"
               >
-                <span className="text-sm uppercase tracking-widest font-medium">Contactar por WhatsApp</span>
+                <span className="text-sm uppercase tracking-widest font-medium">{t('whatsappButton')}</span>
                 <svg
                   className="w-5 h-5 group-hover:translate-x-1 transition-transform"
                   fill="none"
@@ -65,28 +68,28 @@ export default function ContactMinimalista() {
               <div>
                 <input
                   type="text"
-                  placeholder="Nombre completo"
+                  placeholder={t('formNamePlaceholder')}
                   className="w-full px-0 py-3 border-b border-gray-300 bg-transparent focus:border-gray-900 focus:outline-none text-gray-900 placeholder-gray-500"
                 />
               </div>
               <div>
                 <input
                   type="email"
-                  placeholder="Email"
+                  placeholder={t('formEmailPlaceholder')}
                   className="w-full px-0 py-3 border-b border-gray-300 bg-transparent focus:border-gray-900 focus:outline-none text-gray-900 placeholder-gray-500"
                 />
               </div>
               <div>
                 <input
                   type="tel"
-                  placeholder="Teléfono"
+                  placeholder={t('formPhonePlaceholder')}
                   className="w-full px-0 py-3 border-b border-gray-300 bg-transparent focus:border-gray-900 focus:outline-none text-gray-900 placeholder-gray-500"
                 />
               </div>
               <div>
                 <textarea
                   rows={4}
-                  placeholder="Mensaje"
+                  placeholder={t('formMessagePlaceholder')}
                   className="w-full px-0 py-3 border-b border-gray-300 bg-transparent focus:border-gray-900 focus:outline-none text-gray-900 placeholder-gray-500 resize-none"
                 />
               </div>
@@ -94,7 +97,7 @@ export default function ContactMinimalista() {
                 type="submit"
                 className="w-full bg-gray-900 text-white py-4 hover:bg-bordeaux transition-colors text-sm uppercase tracking-widest font-medium"
               >
-                Enviar mensaje
+                {t('formSubmit')}
               </button>
             </form>
           </div>

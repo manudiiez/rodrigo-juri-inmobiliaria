@@ -1,438 +1,120 @@
 {
-  "LocaleLayout": {
-    "title": "Farms for sale in Mendoza | Specialized technical advisor"
+  "HomePage": {
+    "Hero": {
+      "title": "Find an estate that suits your lifestyle.",
+      "buy": "Buy",
+      "sell": "Sell",
+      "contact": "Contact"
+    },
+    "FeaturedProperty": {
+      "viewProperty": "View estate",
+      "goToProperty": "Go to property"
+    },
+    "About": {
+      "intro": "For those seeking an exceptional estate and lifestyle,",
+      "highlight": "there is no better choice than Valle de Uco International Realty.",
+      "mission": "Backed by years of experience and with the mission to revolutionize the way of investing in estates in Mendoza, Rodrigo Juri, licensed real estate broker, makes a difference for his clients at every step of the way in Tupungato."
+    },
+    "PropertiesGrid": {
+      "title": "Featured Estates and Farms",
+      "viewAll": "View all rural properties",
+      "hectares": "hectares"
+    },
+    "History": {
+      "sectionLabel": "Our story",
+      "title": "Our story",
+      "paragraph1": "The only specialized network in Mendoza estates that interprets the new lifestyle of those seeking to invest and enjoy in Tupungato. Inspired by an innovative spirit and years of market experience, Rodrigo Juri, licensed real estate broker, leads a differential proposal focused on productive estates, recreational properties, and investment projects with high potential.",
+      "paragraph2": "Beyond the mountain views, vineyards, and unique properties of the area, the goal is to offer you a tailored lifestyle: whether you're looking for an estate for an agricultural, tourism, wine-making project, a strategic investment, or simply a refuge surrounded by nature.",
+      "paragraph3": "With a selection of estates for sale in Valle de Uco and other strategic areas of Mendoza, you can find, through Rodrigo Juri's advisory, the ideal property for your project or investment, no matter where in the world you are.",
+      "stat1Value": "+150",
+      "stat1Label": "Estates in Mendoza",
+      "stat2Value": "+20",
+      "stat2Label": "Years of experience",
+      "stat3Value": "+500",
+      "stat3Label": "HECTARES TRADED",
+      "stat4Value": "100%",
+      "stat4Label": "PERSONALIZED ADVISORY FOR INVESTORS"
+    },
+    "Contact": {
+      "title": "Connect with us",
+      "description": "Our team of experts is ready to help you find the perfect estate or sell your estate at the best market price.",
+      "phoneLabel": "Phone",
+      "phone": "+54 9 261 412-3456",
+      "emailLabel": "Email",
+      "email": "contacto@fincasmendoza.com",
+      "locationLabel": "Location",
+      "location": "Mendoza, Argentina",
+      "whatsappButton": "Contact via WhatsApp",
+      "formNamePlaceholder": "Full name",
+      "formEmailPlaceholder": "Email",
+      "formPhonePlaceholder": "Phone",
+      "formMessagePlaceholder": "Message",
+      "formSubmit": "Send message"
+    }
   },
-  "Header": {
-    "brand": "Mendoza Farms",
-    "home": "Home",
-    "properties": "Properties",
-    "sell": "Sell",
-    "us": "About Us",
+  "Navbar": {
+    "brandName": "Valle de Uco",
+    "brandSubtitle": "International Realty",
+    "properties": "Estates",
+    "about": "About",
     "contact": "Contact",
-    "whatsapp": "WhatsApp"
-  },
-  "PropertyNavbar": {
-    "brand": "Mendoza Farms",
-    "back": "Back",
-    "summary": "Summary",
-    "technical": "Technical Sheet",
-    "location": "Location",
-    "contact": "Contact",
-    "whatsapp": "WhatsApp"
-  },
-  "Hero": {
-    "title": "Productive farms in",
-    "titleHighlight": "Mendoza",
-    "subtitle": "Comprehensive advisory with technical analysis, complete due diligence and total support in the purchase of rural properties",
-    "credential1Value": "+20 years",
-    "credential1Text": "experience in rural market",
-    "credential2Value": "100%",
-    "credential2Text": "verifiable technical reports",
-    "credential3Value": "CCPI",
-    "credential3Text": "licensed auctioneer",
-    "ctaPrimary": "View available properties",
-    "ctaSecondary": "Request consultation"
-  },
-  "Presentation": {
-    "title": "We connect investors with the best farms in Cuyo",
-    "description": "I'm {name}, a licensed Real Estate Broker with extensive experience in the industry. I work with clear metrics, in-depth technical analysis and total transparency so you can make informed decisions in the rural market.",
-    "name": "Rodrigo Juri",
-    "feature1": "Soil and water analysis",
-    "feature2": "Accurate and clear appraisals",
-    "feature3": "Support until deed signing"
-  },
-  "Properties": {
-    "title": "Available Properties",
-    "subtitle": "Curated selection of productive farms with complete technical analysis and verified documentation",
-    "property1Name": "Los Álamos Farm",
-    "property1Location": "Luján de Cuyo",
-    "property1Size": "42 hectares",
-    "property1PricePerHa": "USD 18,500/ha",
-    "property1Total": "Total: USD 777,000",
-    "property1Aptitude": "Premium vineyards / Olive trees",
-    "property1Irrigation": "Technified drip irrigation",
-    "property1Energy": "Three-phase 25 kW",
-    "property1AltText": "Los Álamos Farm - Premium vineyards in Luján de Cuyo",
-    "property2Name": "La Merced Estate",
-    "property2Location": "San Rafael",
-    "property2Size": "120 hectares",
-    "property2PricePerHa": "USD 9,800/ha",
-    "property2Total": "Total: USD 1,176,000",
-    "property2Aptitude": "Fruit trees / Livestock",
-    "property2Irrigation": "Flood + sprinkler",
-    "property2Energy": "Single-phase 15 kW",
-    "property2AltText": "La Merced Estate - Fruit trees and livestock in San Rafael",
-    "property3Name": "El Retiro Field",
-    "property3Location": "Tunuyán",
-    "property3Size": "65 hectares",
-    "property3PricePerHa": "USD 15,200/ha",
-    "property3Total": "Total: USD 988,000",
-    "property3Aptitude": "High-altitude vineyard / Walnut trees",
-    "property3Irrigation": "Drip + well 45 m³/h",
-    "property3Energy": "Three-phase 30 kW",
-    "property3Altitude": "1,100 masl",
-    "property3AltText": "El Retiro Field - High-altitude vineyard in Tunuyán",
-    "aptitude": "Aptitude:",
-    "irrigation": "Irrigation:",
-    "energy": "Energy:",
-    "altitude": "Altitude:",
-    "viewFull": "View complete farm",
-    "consult": "Inquire",
-    "viewAll": "View all available properties"
-  },
-  "Contact": {
-    "title": "Ready to invest?",
-    "subtitle": "Let's talk about your investment goals. I will accompany you throughout the process with technical analysis and total transparency.",
-    "whatsappButton": "Contact via WhatsApp",
-    "emailButton": "Send email",
-    "phone": "+54 9 261 412-3456",
-    "email": "rodrigo@fincasmendoza.com",
-    "location": "Mendoza, Argentina"
+    "sellWithUs": "Sell with us"
   },
   "Footer": {
-    "brand": "Mendoza Farms",
-    "description": "Comprehensive advisory on rural properties in Mendoza and Cuyo",
+    "brandName": "Valle de Uco",
+    "brandSubtitle": "International Realty",
+    "description": "Specialists in premium estates and rural properties in Mendoza. Personalized advice to find your ideal investment in the heart of Valle de Uco.",
+    "navigationTitle": "Navigation",
+    "propertiesForSale": "Estates for Sale",
+    "aboutUs": "About Us",
+    "sellYourProperty": "Sell Your Estate",
+    "contact": "Contact",
     "contactTitle": "Contact",
-    "phone": "+54 9 261 412-3456",
-    "email": "rodrigo@fincasmendoza.com",
-    "location": "Mendoza, Argentina",
-    "legalTitle": "Legal",
-    "legal1": "CCPI MZA 12.345",
-    "legal2": "Public Auctioneer",
-    "legal3": "Agronomist Engineer",
-    "copyright": "© 2024 Mendoza Farms. All rights reserved."
-  },
-  "Common": {
-    "currency": "USD",
-    "loading": "Loading...",
-    "error": "Error",
-    "noResults": "No results found",
-    "readMore": "Read more"
+    "phone": "+54 261 123 4567",
+    "email": "info@valledeuco.com",
+    "location": "Tupungato, Mendoza",
+    "country": "Argentina",
+    "copyright": "Valle de Uco International Realty. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsAndConditions": "Terms and Conditions"
   },
   "PropertiesPage": {
-    "title": "Available Properties",
-    "subtitle": "Productive farms in Mendoza with complete technical analysis",
-    "available": "available properties",
-    "previous": "Previous",
-    "next": "Next",
-    "noResults": "No properties found",
-    "noResultsMessage": "Try adjusting your search filters",
-    "surface": "Surface",
-    "hectares": "ha",
-    "pricePerHa": "Price per ha",
+    "searchPlaceholder": "Argentina",
+    "buy": "Buy",
+    "rent": "Rent",
+    "soilType": "Soil type",
+    "all": "All",
+    "vineyards": "Vineyards",
+    "winemaking": "Winemaking",
+    "recreational": "Recreational",
+    "agricultural": "Agricultural",
+    "livestock": "Livestock",
+    "pricePerHectare": "Price per hectare",
+    "hectares": "Hectares",
+    "price": "Price",
+    "any": "Any",
+    "noMin": "no min.",
+    "noMax": "no max.",
+    "clear": "Clear",
+    "apply": "Apply",
+    "viewing": "Viewing {count} of {total} estates for sale in Argentina",
+    "showingProperties": "Showing properties marketed by Valle de Uco International Realty.",
+    "sortBy": "Sort by:",
+    "exclusive": "Exclusive (Default)",
+    "priceHighToLow": "Price: High to Low",
+    "priceLowToHigh": "Price: Low to High",
+    "mostRecent": "Most Recent",
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "builtArea": "Built area",
+    "totalArea": "Total area",
     "aptitude": "Aptitude",
-    "irrigation": "Irrigation",
-    "energy": "Energy",
-    "access": "Access",
-    "pavedRoad": "Paved road",
-    "viewComplete": "View complete farm",
-    "whatsappMessage": "Hello, I'm interested in the property {property}",
-    "propertyDescription": "Property with {cultivos} ideal for {tipo} in Mendoza",
-    "investment": {
-      "wine": "wine investment",
-      "agricultural": "agricultural production"
-    },
-    "departamentos": {
-      "lujan": "Luján de Cuyo",
-      "maipu": "Maipú",
-      "tupungato": "Tupungato",
-      "san-martin": "San Martín",
-      "rivadavia": "Rivadavia",
-      "junin": "Junín",
-      "san-rafael": "San Rafael"
-    },
-    "cultivos": {
-      "vinedos": "Vineyards",
-      "olivos": "Olive trees",
-      "frutales": "Fruit trees",
-      "sin-cultivo": "No crops"
-    },
-    "riego": {
-      "goteo": "Drip",
-      "aspersion": "Sprinkler",
-      "surco": "Furrow",
-      "manto": "Flood"
-    },
-    "energia": {
-      "trifasica": "Three-phase",
-      "monofasica": "Single-phase",
-      "sin-energia": "No power"
-    },
-    "filters": {
-      "title": "Filters",
-      "locationPrice": "Location and Price",
-      "department": "Department",
-      "all": "All",
-      "pricePerHa": "Price per hectare",
-      "surface": "Surface",
-      "technicalFeatures": "Technical Features",
-      "soilType": "Soil type",
-      "soilPh": "Soil pH",
-      "irrigationSystem": "Irrigation system",
-      "energyType": "Energy type",
-      "productivity": "Productivity",
-      "currentCrops": "Current crops",
-      "yield": "Yield",
-      "plantationAge": "Plantation age",
-      "servicesInstallations": "Services and Installations",
-      "waterSource": "Water source",
-      "installations": "Installations",
-      "clearFilters": "Clear filters",
-      "showFilters": "Show filters",
-      "hideFilters": "Hide filters",
-      "departments": {
-        "lujan": "Luján de Cuyo",
-        "maipu": "Maipú",
-        "tupungato": "Tupungato",
-        "san-martin": "San Martín",
-        "rivadavia": "Rivadavia",
-        "junin": "Junín",
-        "san-rafael": "San Rafael"
-      },
-      "soilTypes": {
-        "franco": "Loam",
-        "franco-arcilloso": "Clay loam",
-        "franco-arenoso": "Sandy loam",
-        "arcilloso": "Clay",
-        "arenoso": "Sandy"
-      },
-      "phTypes": {
-        "acid": "Acidic (< 6.5)",
-        "neutral": "Neutral (6.5 - 7.5)",
-        "alkaline": "Alkaline (> 7.5)"
-      },
-      "irrigationTypes": {
-        "goteo": "Drip",
-        "aspersion": "Sprinkler",
-        "surco": "Furrow",
-        "manto": "Flood"
-      },
-      "energyTypes": {
-        "trifasica": "Three-phase",
-        "monofasica": "Single-phase",
-        "sin-energia": "No power"
-      },
-      "cropTypes": {
-        "vinedos": "Vineyards",
-        "olivos": "Olive trees",
-        "frutales": "Fruit trees",
-        "sin-cultivo": "No crops"
-      },
-      "ageTypes": {
-        "new": "New (0-5 years)",
-        "young": "Young (6-15 years)",
-        "adult": "Adult (16-30 years)",
-        "old": "Old (30+ years)"
-      },
-      "waterSources": {
-        "canal": "Irrigation canal",
-        "pozo": "Well",
-        "rio": "River"
-      },
-      "installationTypes": {
-        "casa": "House",
-        "galpon": "Shed",
-        "sala-riego": "Irrigation room",
-        "cercos": "Fences"
-      }
-    }
+    "save": "Save"
   },
-  "PropertyPage": {
-    "whatsappConsult": "Inquiry about {property}",
-    "consultWhatsApp": "Contact via WhatsApp",
-    "summary": {
-      "title": "General Summary",
-      "totalSurface": "Total surface",
-      "pricePerHa": "Price per hectare",
-      "totalValue": "Total value",
-      "altitude": "Altitude",
-      "productiveAptitude": "Productive aptitude",
-      "currentState": "Current state",
-      "mainAccess": "Main access",
-      "coordinates": "Coordinates",
-      "distanceToCity": "Distance to Mendoza",
-      "nearbyServices": "Nearby services"
-    },
-    "technical": {
-      "title": "Complete Technical Sheet",
-      "soilClimate": "Soil and Climate",
-      "soilType": "Soil type",
-      "ph": "pH",
-      "slope": "Slope",
-      "drainage": "Drainage",
-      "gentle": "gentle",
-      "good": "Good",
-      "waterIrrigation": "Water and Irrigation",
-      "waterSource": "Water source",
-      "irrigationSystem": "Irrigation system",
-      "installations": "Installations and Improvements",
-      "available": "Available",
-      "energyProductivity": "Energy and Productivity",
-      "energyType": "Energy type",
-      "productivity": "Productivity",
-      "plantationAge": "Plantation age",
-      "legalDocs": "Legal Documentation",
-      "upToDate": "Up to date",
-      "nearbyServices": "Nearby Services"
-    },
-    "location": {
-      "title": "Location",
-      "interactiveMap": "Interactive map",
-      "coordinates": "Coordinates",
-      "access": "Access",
-      "gravel": "consolidated gravel",
-      "advantages": "Location advantages",
-      "advantage1": "World-renowned wine region",
-      "advantage2": "Proximity to premium wineries for grape sales",
-      "advantage3": "Direct access from provincial route",
-      "advantage4": "Urban services at short distance",
-      "advantage5": "Ideal climate for high-end vineyards"
-    },
-    "cta": {
-      "title": "Interested in this property?",
-      "description": "Request the complete technical report with soil, water and legal documentation analysis, or schedule a visit to get to know the property in detail.",
-      "requestReport": "Request complete technical report for {property}",
-      "requestTechnicalReport": "Request technical report",
-      "scheduleVisit": "I want to schedule a visit to {property}",
-      "scheduleVisitButton": "Schedule visit",
-      "directContact": "Direct contact",
-      "whatsappAvailable": "WhatsApp available",
-      "response24h": "Response within 24h",
-      "credentials": "Agronomist Engineer - Auctioneer"
-    }
-  },
-  "SellPage": {
-    "hero": {
-      "title": "Want to sell your farm in Valle de Uco?",
-      "subtitle": "We connect your property with an exclusive network of investors in Brazil and the United States",
-      "ctaPrimary": "I want to sell my farm",
-      "ctaSecondary": "Let's talk on WhatsApp"
-    },
-    "difference": {
-      "title": "Why sell with us?",
-      "subtitle": "Access an international market of real buyers with purchasing power and immediate buying decision",
-      "card1Title": "International Marketing",
-      "card1Description": "Your property is promoted directly in Brazil and the United States through our exclusive network of active investors.",
-      "card2Title": "Professional Photography",
-      "card2Description": "Drone images, virtual tours and high-quality material that highlights the true value of your farm.",
-      "card3Title": "Active Investor Portfolio",
-      "card3Description": "Direct contact with qualified buyers who are looking for properties in Valle de Uco right now."
-    },
-    "process": {
-      "title": "Simple and transparent process",
-      "subtitle": "In just 3 steps your farm will be exposed to the international market",
-      "step1Title": "Contact",
-      "step1Description": "Fill out the form or write to us on WhatsApp. We'll contact you in less than 24 hours.",
-      "step2Title": "Appraisal and Visit",
-      "step2Description": "We visit your property, make a technical report and establish the real market value.",
-      "step3Title": "Global Publication",
-      "step3Description": "Your farm is promoted with professional material in our international network of investors."
-    },
-    "form": {
-      "title": "Leave us your details",
-      "subtitle": "We will contact you to learn about your property",
-      "fullName": "Full name",
-      "email": "Email",
-      "phone": "Phone",
-      "location": "Farm location",
-      "surface": "Surface (hectares)",
-      "surfacePlaceholder": "E.g.: 25",
-      "productionType": "Production type",
-      "selectOption": "Select...",
-      "otherLocation": "Other location",
-      "vineyards": "Vineyards",
-      "olives": "Olive trees",
-      "mixed": "Mixed (vineyards and olives)",
-      "fruits": "Fruit trees",
-      "noProduction": "Field without production",
-      "other": "Other",
-      "comments": "Additional comments",
-      "commentsPlaceholder": "Tell us more about your property...",
-      "submit": "Send inquiry",
-      "sending": "Sending...",
-      "successMessage": "Thank you for your inquiry! We will contact you shortly."
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "question1": "Do you charge for the appraisal?",
-      "answer1": "No. The initial visit and appraisal are completely free and without commitment. We only charge a commission when the sale is completed.",
-      "question2": "Do you work exclusively?",
-      "answer2": "We prefer to work exclusively because it allows us to dedicate more resources to marketing your property, but we analyze each case individually.",
-      "question3": "How long does it take to sell a property?",
-      "answer3": "Time varies depending on location, price and characteristics. Thanks to our international network, many well-priced properties sell in 3 to 6 months.",
-      "question4": "What areas do you cover?",
-      "answer4": "We specialize in Valle de Uco (Tupungato, Tunuyán, San Carlos) but we also work with properties in Luján de Cuyo, Maipú and San Rafael.",
-      "question5": "Can I sell if I still have active production?",
-      "answer5": "Yes, no problem. In fact, farms with active production are usually more attractive to investors because they demonstrate immediate profitability."
-    },
-    "proof": {
-      "title": "Experts in Tupungato and Tunuyán",
-      "subtitle": "Deep knowledge of the local market and international connections"
-    }
-  },
-  "AboutPage": {
-    "hero": {
-      "title": "Your local partner in the Uco Valley",
-      "subtitle": "Connecting the richness of Mendoza's land with global investors"
-    },
-    "story": {
-      "label": "Our Story",
-      "title": "Why Tupungato. Why wine. Passion + Business.",
-      "paragraph1": "We were born in the heart of the Uco Valley, where the highest mountains in America meet some of the best terroirs in the world. We are not a traditional real estate agency: we are specialists in international wine investment.",
-      "paragraph2": "We connect investors from Brazil and the United States with exceptional properties in Tupungato and Tunuyán because we know every hectare, every microclimate, every real business opportunity. Our mission is simple: to facilitate the safest and most profitable investment in Mendoza land.",
-      "paragraph3": "Here we don't just sell land. We sell a complete ecosystem of production, management and long-term profitability."
-    },
-    "numbers": {
-      "stat1": {
-        "label": "Years of Experience",
-        "sublabel": "In the Uco Valley"
-      },
-      "stat2": {
-        "label": "Farms in Portfolio",
-        "sublabel": "Uco Valley and Tupungato"
-      },
-      "stat3": {
-        "label": "International Clients",
-        "sublabel": "Brazil and United States"
-      }
-    },
-    "profile": {
-      "name": "Rodrigo Juri",
-      "role": "Specialist in wine investment",
-      "title": "Real Estate Agent",
-      "linkedin": "View LinkedIn",
-      "sectionTitle": "Experience and Connections",
-      "description1": "With over 5 years of experience in the Uco Valley real estate market, Rodrigo Juri has positioned himself as a reference in the sale of wine farms in Tupungato and surrounding areas.",
-      "description2": "His approach focuses on connecting international investors with the best opportunities in the region, providing comprehensive service from finding the ideal property to support throughout the entire purchase process.",
-      "highlight1": "Specialist in premium wine properties",
-      "highlight2": "Connections with investors from Brazil and the United States",
-      "highlight3": "Personalized and confidential service",
-      "highlight4": "Exclusive portfolio of over 100 available farms"
-    },
-    "ecosystem": {
-      "title": "Network of Local Experts",
-      "subtitle": "We work with the best professionals in the Uco Valley to guarantee the success of your investment",
-      "card1": {
-        "title": "Specialized Agronomists",
-        "description": "Experts in high-altitude viticulture who manage your production with international standards and maximize the yield of each hectare."
-      },
-      "card2": {
-        "title": "Consulting Winemakers",
-        "description": "Professionals who ensure wine quality from grape to bottle, connecting you with wineries and export markets."
-      },
-      "card3": {
-        "title": "Notaries and Legal",
-        "description": "Legal team specialized in international transactions that guarantees total security in each operation and property title."
-      },
-      "card4": {
-        "title": "Accountants and Advisors",
-        "description": "Accounting, tax and financial management adapted to foreign investors, optimizing your tax structure and profitability."
-      }
-    },
-    "cta": {
-      "title": "Let's get to know your investment goals",
-      "description": "Schedule a video call without commitment. We show you concrete opportunities and answer all your questions about investing in the Uco Valley.",
-      "button": "Schedule Meeting"
-    }
+  "LanguageSwitcher": {
+    "english": "English",
+    "spanish": "Spanish",
+    "portuguese": "Portuguese"
   }
+
 }

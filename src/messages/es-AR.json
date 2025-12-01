@@ -1,438 +1,119 @@
 {
-  "LocaleLayout": {
-    "title": "Fincas en venta en Mendoza | Asesor técnico especializado"
+  "HomePage": {
+    "Hero": {
+      "title": "Encuentre una finca que se adapte a su estilo de vida.",
+      "buy": "Comprar",
+      "sell": "Vender",
+      "contact": "Contactar"
+    },
+    "FeaturedProperty": {
+      "viewProperty": "Ver finca",
+      "goToProperty": "Ir a propiedad"
+    },
+    "About": {
+      "intro": "Para quienes buscan una finca y una vida excepcional,",
+      "highlight": "no hay mejor opción que Valle de uco International Realty.",
+      "mission": "Respaldado por años de experiencia y con la misión de renovar la forma de invertir en fincas en Mendoza, Rodrigo Juri, corredor inmobiliario matriculado, marca la diferencia para sus clientes en cada paso del camino en Tupungato."
+    },
+    "PropertiesGrid": {
+      "title": "Fincas y Campos destacados",
+      "viewAll": "Ver todas las propiedades rurales",
+      "hectares": "hectáreas"
+    },
+    "History": {
+      "sectionLabel": "Nuestra historia",
+      "title": "Nuestra historia",
+      "paragraph1": "La única red especializada en fincas de Mendoza que interpreta el nu evo estilo de vida de quienes buscan invertir y disfrutar en Tupungato. Inspirado en un espíritu innovador y en años de experiencia en el mercado, Rodrigo Juri, corredor inmobiliario matriculado, lidera una propuesta diferencial enfocada en fincas productivas, de recreación y proyectos de inversión con alto potencial.",
+      "paragraph2": "Más allá de las vistas a la cordillera, los viñedos y las propiedades únicas de la zona, el objetivo es ofrecerte un estilo de vida a tu medida: ya sea que busques una finca para un proyecto agrícola, turístico, vitivinícola, una inversión estratégica o simplemente un refugio rodeado de naturaleza.",
+      "paragraph3": "Con una selección de fincas en venta en Valle de Uco y otras zonas estratégicas de Mendoza, podés encontrar, a través del asesoramiento de Rodrigo Juri, la propiedad ideal para tu proyecto o inversión, sin importar en qué lugar del mundo te encuentres.",
+      "stat1Value": "+150",
+      "stat1Label": "Fincas en Mendoza",
+      "stat2Value": "+20",
+      "stat2Label": "Años de experiencia",
+      "stat3Value": "+500",
+      "stat3Label": "HECTÁREAS COMERCIALIZADAS",
+      "stat4Value": "100%",
+      "stat4Label": "ASESORAMIENTO PERSONALIZADO PARA INVERSORES"
+    },
+    "Contact": {
+      "title": "Conecte con nosotros",
+      "description": "Nuestro equipo de expertos está listo para ayudarle a encontrar la finca perfecta o vender su finca al mejor precio del mercado.",
+      "phoneLabel": "Teléfono",
+      "phone": "+54 9 261 412-3456",
+      "emailLabel": "Email",
+      "email": "contacto@fincasmendoza.com",
+      "locationLabel": "Ubicación",
+      "location": "Mendoza, Argentina",
+      "whatsappButton": "Contactar por WhatsApp",
+      "formNamePlaceholder": "Nombre completo",
+      "formEmailPlaceholder": "Email",
+      "formPhonePlaceholder": "Teléfono",
+      "formMessagePlaceholder": "Mensaje",
+      "formSubmit": "Enviar mensaje"
+    }
   },
-  "Header": {
-    "brand": "Fincas Mendoza",
-    "home": "Inicio",
-    "properties": "Propiedades",
-    "sell": "Vender",
-    "us": "Nosotros",
+  "Navbar": {
+    "brandName": "Valle de Uco",
+    "brandSubtitle": "International Realty",
+    "properties": "Fincas",
+    "about": "Nosotros",
     "contact": "Contacto",
-    "whatsapp": "WhatsApp"
-  },
-  "PropertyNavbar": {
-    "brand": "Fincas Mendoza",
-    "back": "Volver",
-    "summary": "Resumen",
-    "technical": "Ficha Técnica",
-    "location": "Ubicación",
-    "contact": "Contacto",
-    "whatsapp": "WhatsApp"
-  },
-  "Hero": {
-    "title": "Fincas productivas en",
-    "titleHighlight": "Mendoza",
-    "subtitle": "Asesoría integral con análisis técnico, due diligence completo y acompañamiento total en la compra de propiedades rurales",
-    "credential1Value": "+20 años",
-    "credential1Text": "experiencia en mercado rural",
-    "credential2Value": "100%",
-    "credential2Text": "informes técnicos verificables",
-    "credential3Value": "CCPI",
-    "credential3Text": "martillero matriculado",
-    "ctaPrimary": "Ver propiedades disponibles",
-    "ctaSecondary": "Consultar asesoría"
-  },
-  "Presentation": {
-    "title": "Conectamos inversores con las mejores fincas de Valle de Uco",
-    "description": "Soy {name}, Corredor Inmobiliario matriculado, con amplia trayectoria en el rubro. Trabajo con métricas claras, análisis técnico profundo y total transparencia para que tomes decisiones informadas en el mercado rural.",
-    "name": "Rodrigo Juri",
-    "feature1": "Análisis de suelo y agua",
-    "feature2": "Tasaciones precisas y claras",
-    "feature3": "Acompañamiento hasta escritura"
-  },
-  "Properties": {
-    "title": "Propiedades Disponibles",
-    "subtitle": "Selección curada de fincas productivas con análisis técnico completo y documentación verificada",
-    "property1Name": "Finca Los Álamos",
-    "property1Location": "Luján de Cuyo",
-    "property1Size": "42 hectáreas",
-    "property1PricePerHa": "USD 18.500/ha",
-    "property1Total": "Total: USD 777.000",
-    "property1Aptitude": "Viñedos premium / Olivos",
-    "property1Irrigation": "Goteo tecnificado",
-    "property1Energy": "Trifásica 25 kW",
-    "property1AltText": "Finca Los Álamos - Viñedos premium en Luján de Cuyo",
-    "property2Name": "Estancia La Merced",
-    "property2Location": "San Rafael",
-    "property2Size": "120 hectáreas",
-    "property2PricePerHa": "USD 9.800/ha",
-    "property2Total": "Total: USD 1.176.000",
-    "property2Aptitude": "Frutales / Ganadería",
-    "property2Irrigation": "Manto + aspersión",
-    "property2Energy": "Monofásica 15 kW",
-    "property2AltText": "Estancia La Merced - Frutales y ganadería en San Rafael",
-    "property3Name": "Campo El Retiro",
-    "property3Location": "Tunuyán",
-    "property3Size": "65 hectáreas",
-    "property3PricePerHa": "USD 15.200/ha",
-    "property3Total": "Total: USD 988.000",
-    "property3Aptitude": "Viñedo de altura / Nogales",
-    "property3Irrigation": "Goteo + pozo 45 m³/h",
-    "property3Energy": "Trifásica 30 kW",
-    "property3Altitude": "1.100 msnm",
-    "property3AltText": "Campo El Retiro - Viñedo de altura en Tunuyán",
-    "aptitude": "Aptitud:",
-    "irrigation": "Riego:",
-    "energy": "Energía:",
-    "altitude": "Altitud:",
-    "viewFull": "Ver finca completa",
-    "consult": "Consultar",
-    "viewAll": "Ver todas las propiedades disponibles"
-  },
-  "Contact": {
-    "title": "¿Listo para invertir?",
-    "subtitle": "Conversemos sobre tus objetivos de inversión. Te acompaño en todo el proceso con análisis técnico y transparencia total.",
-    "whatsappButton": "Consultar por WhatsApp",
-    "emailButton": "Enviar email",
-    "phone": "+54 9 261 412-3456",
-    "email": "rodrigo@fincasmendoza.com",
-    "location": "Mendoza, Argentina"
+    "sellWithUs": "Venda con nosotros"
   },
   "Footer": {
-    "brand": "Fincas Mendoza",
-    "description": "Asesoría integral en propiedades rurales de Mendoza y Cuyo",
+    "brandName": "Valle de Uco",
+    "brandSubtitle": "International Realty",
+    "description": "Especialistas en fincas premium y propiedades rurales en Mendoza. Asesoramiento personalizado para encontrar tu inversión ideal en el corazón del Valle de Uco.",
+    "navigationTitle": "Navegación",
+    "propertiesForSale": "Fincas en Venta",
+    "aboutUs": "Sobre Nosotros",
+    "sellYourProperty": "Vender tu Finca",
+    "contact": "Contacto",
     "contactTitle": "Contacto",
-    "phone": "+54 9 261 412-3456",
-    "email": "rodrigo@fincasmendoza.com",
-    "location": "Mendoza, Argentina",
-    "legalTitle": "Legal",
-    "legal1": "CCPI MZA 12.345",
-    "legal2": "Martillero Público",
-    "legal3": "Ingeniero Agrónomo",
-    "copyright": "© 2024 Fincas Mendoza. Todos los derechos reservados."
-  },
-  "Common": {
-    "currency": "USD",
-    "loading": "Cargando...",
-    "error": "Error",
-    "noResults": "No se encontraron resultados",
-    "readMore": "Leer más"
+    "phone": "+54 261 123 4567",
+    "email": "info@valledeuco.com",
+    "location": "Tupungato, Mendoza",
+    "country": "Argentina",
+    "copyright": "Valle de Uco International Realty. Todos los derechos reservados.",
+    "privacyPolicy": "Política de Privacidad",
+    "termsAndConditions": "Términos y Condiciones"
   },
   "PropertiesPage": {
-    "title": "Propiedades Disponibles",
-    "subtitle": "Fincas productivas en Mendoza con análisis técnico completo",
-    "available": "propiedades disponibles",
-    "previous": "Anterior",
-    "next": "Siguiente",
-    "noResults": "No se encontraron propiedades",
-    "noResultsMessage": "Intenta ajustar tus filtros de búsqueda",
-    "surface": "Superficie",
-    "hectares": "ha",
-    "pricePerHa": "Precio por ha",
+    "searchPlaceholder": "Argentina",
+    "buy": "Comprar",
+    "rent": "Alquilar",
+    "soilType": "Tipo de suelo",
+    "all": "Todos",
+    "vineyards": "Viñedos",
+    "winemaking": "Vitivinícola",
+    "recreational": "Recreativo",
+    "agricultural": "Agrícola",
+    "livestock": "Ganadero",
+    "pricePerHectare": "Precio por hectárea",
+    "hectares": "Hectáreas",
+    "price": "Precio",
+    "any": "Cualquiera",
+    "noMin": "sin mín.",
+    "noMax": "sin máx.",
+    "clear": "Borrar",
+    "apply": "Aplicar",
+    "viewing": "Visualizando {count} de {total} fincas en venta en Argentina",
+    "showingProperties": "Mostrando inmuebles comercializados por Valle de Uco International Realty.",
+    "sortBy": "Ordenar:",
+    "exclusive": "Exclusive (Default)",
+    "priceHighToLow": "Precio: Mayor a menor",
+    "priceLowToHigh": "Precio: Menor a mayor",
+    "mostRecent": "Más recientes",
+    "bedrooms": "Dormitorios",
+    "bathrooms": "Baños",
+    "builtArea": "Superficie construida",
+    "totalArea": "Superficie total",
     "aptitude": "Aptitud",
-    "irrigation": "Riego",
-    "energy": "Energía",
-    "access": "Acceso",
-    "pavedRoad": "Ruta asfaltada",
-    "viewComplete": "Ver finca completa",
-    "whatsappMessage": "Hola, me interesa la propiedad {property}",
-    "propertyDescription": "Propiedad de {cultivos} ideal para {tipo} en Mendoza",
-    "investment": {
-      "wine": "inversión vitivinícola",
-      "agricultural": "producción agrícola"
-    },
-    "departamentos": {
-      "lujan": "Luján de Cuyo",
-      "maipu": "Maipú",
-      "tupungato": "Tupungato",
-      "san-martin": "San Martín",
-      "rivadavia": "Rivadavia",
-      "junin": "Junín",
-      "san-rafael": "San Rafael"
-    },
-    "cultivos": {
-      "vinedos": "Viñedos",
-      "olivos": "Olivos",
-      "frutales": "Frutales",
-      "sin-cultivo": "Sin cultivo"
-    },
-    "riego": {
-      "goteo": "Goteo",
-      "aspersion": "Aspersión",
-      "surco": "Surco",
-      "manto": "Manto"
-    },
-    "energia": {
-      "trifasica": "Trifásica",
-      "monofasica": "Monofásica",
-      "sin-energia": "Sin energía"
-    },
-    "filters": {
-      "title": "Filtros",
-      "locationPrice": "Ubicación y Precio",
-      "department": "Departamento",
-      "all": "Todos",
-      "pricePerHa": "Precio por hectárea",
-      "surface": "Superficie",
-      "technicalFeatures": "Características Técnicas",
-      "soilType": "Tipo de suelo",
-      "soilPh": "pH del suelo",
-      "irrigationSystem": "Sistema de riego",
-      "energyType": "Tipo de energía",
-      "productivity": "Productividad",
-      "currentCrops": "Cultivos actuales",
-      "yield": "Rendimiento",
-      "plantationAge": "Edad de plantaciones",
-      "servicesInstallations": "Servicios e Instalaciones",
-      "waterSource": "Fuente de agua",
-      "installations": "Instalaciones",
-      "clearFilters": "Limpiar filtros",
-      "showFilters": "Mostrar filtros",
-      "hideFilters": "Ocultar filtros",
-      "departments": {
-        "lujan": "Luján de Cuyo",
-        "maipu": "Maipú",
-        "tupungato": "Tupungato",
-        "san-martin": "San Martín",
-        "rivadavia": "Rivadavia",
-        "junin": "Junín",
-        "san-rafael": "San Rafael"
-      },
-      "soilTypes": {
-        "franco": "Franco",
-        "franco-arcilloso": "Franco-arcilloso",
-        "franco-arenoso": "Franco-arenoso",
-        "arcilloso": "Arcilloso",
-        "arenoso": "Arenoso"
-      },
-      "phTypes": {
-        "acid": "Ácido (< 6.5)",
-        "neutral": "Neutro (6.5 - 7.5)",
-        "alkaline": "Alcalino (> 7.5)"
-      },
-      "irrigationTypes": {
-        "goteo": "Goteo",
-        "aspersion": "Aspersión",
-        "surco": "Por surco",
-        "manto": "Por manto"
-      },
-      "energyTypes": {
-        "trifasica": "Trifásica",
-        "monofasica": "Monofásica",
-        "sin-energia": "Sin energía"
-      },
-      "cropTypes": {
-        "vinedos": "Viñedos",
-        "olivos": "Olivos",
-        "frutales": "Frutales",
-        "sin-cultivo": "Sin cultivo"
-      },
-      "ageTypes": {
-        "new": "Nueva (0-5 años)",
-        "young": "Joven (6-15 años)",
-        "adult": "Adulta (16-30 años)",
-        "old": "Vieja (30+ años)"
-      },
-      "waterSources": {
-        "canal": "Canal de riego",
-        "pozo": "Pozo",
-        "rio": "Río"
-      },
-      "installationTypes": {
-        "casa": "Casa",
-        "galpon": "Galpón",
-        "sala-riego": "Sala de riego",
-        "cercos": "Cercos"
-      }
-    }
+    "save": "Guardar"
   },
-  "PropertyPage": {
-    "whatsappConsult": "Consulta por {property}",
-    "consultWhatsApp": "Consultar por WhatsApp",
-    "summary": {
-      "title": "Resumen General",
-      "totalSurface": "Superficie total",
-      "pricePerHa": "Precio por hectárea",
-      "totalValue": "Valor total",
-      "altitude": "Altitud",
-      "productiveAptitude": "Aptitud productiva",
-      "currentState": "Estado actual",
-      "mainAccess": "Acceso principal",
-      "coordinates": "Coordenadas",
-      "distanceToCity": "Distancia a Mendoza",
-      "nearbyServices": "Servicios cercanos"
-    },
-    "technical": {
-      "title": "Ficha Técnica Completa",
-      "soilClimate": "Suelo y Clima",
-      "soilType": "Tipo de suelo",
-      "ph": "pH",
-      "slope": "Pendiente",
-      "drainage": "Drenaje",
-      "gentle": "suave",
-      "good": "Bueno",
-      "waterIrrigation": "Agua y Riego",
-      "waterSource": "Fuente de agua",
-      "irrigationSystem": "Sistema de riego",
-      "installations": "Instalaciones y Mejoras",
-      "available": "Disponible",
-      "energyProductivity": "Energía y Productividad",
-      "energyType": "Tipo de energía",
-      "productivity": "Productividad",
-      "plantationAge": "Edad de plantaciones",
-      "legalDocs": "Documentación Legal",
-      "upToDate": "Al día",
-      "nearbyServices": "Servicios Cercanos"
-    },
-    "location": {
-      "title": "Ubicación",
-      "interactiveMap": "Mapa interactivo",
-      "coordinates": "Coordenadas",
-      "access": "Acceso",
-      "gravel": "ripio consolidado",
-      "advantages": "Ventajas de la ubicación",
-      "advantage1": "Zona vitivinícola reconocida mundialmente",
-      "advantage2": "Proximidad a bodegas premium para venta de uva",
-      "advantage3": "Acceso directo desde ruta provincial",
-      "advantage4": "Servicios urbanos a corta distancia",
-      "advantage5": "Clima ideal para viñedos de alta gama"
-    },
-    "cta": {
-      "title": "¿Interesado en esta finca?",
-      "description": "Solicite el informe técnico completo con análisis de suelo, agua y documentación legal, o programe una visita para conocer la propiedad en detalle.",
-      "requestReport": "Solicito informe técnico completo de {property}",
-      "requestTechnicalReport": "Solicitar informe técnico",
-      "scheduleVisit": "Quiero programar visita a {property}",
-      "scheduleVisitButton": "Programar visita",
-      "directContact": "Contacto directo",
-      "whatsappAvailable": "WhatsApp disponible",
-      "response24h": "Respuesta en 24hs",
-      "credentials": "Ing. Agrónomo - Martillero"
-    }
-  },
-  "SellPage": {
-    "hero": {
-      "title": "¿Querés vender tu finca en Valle de Uco?",
-      "subtitle": "Conectamos tu propiedad con una red exclusiva de inversores en Brasil y Estados Unidos",
-      "ctaPrimary": "Quiero vender mi finca",
-      "ctaSecondary": "Hablemos por WhatsApp"
-    },
-    "difference": {
-      "title": "¿Por qué vender con nosotros?",
-      "subtitle": "Accedés a un mercado internacional de compradores reales con poder adquisitivo y decisión de compra inmediata",
-      "card1Title": "Marketing Internacional",
-      "card1Description": "Tu propiedad se promociona directamente en Brasil y Estados Unidos a través de nuestra red exclusiva de inversores activos.",
-      "card2Title": "Fotografía Profesional",
-      "card2Description": "Imágenes con drones, tours virtuales y material de alta calidad que destaca el verdadero valor de tu finca.",
-      "card3Title": "Cartera Activa de Inversores",
-      "card3Description": "Contacto directo con compradores calificados que están buscando propiedades en Valle de Uco ahora mismo."
-    },
-    "process": {
-      "title": "Proceso simple y transparente",
-      "subtitle": "En solo 3 pasos tu finca estará expuesta al mercado internacional",
-      "step1Title": "Contacto",
-      "step1Description": "Completás el formulario o nos escribís por WhatsApp. Te contactamos en menos de 24 horas.",
-      "step2Title": "Tasación y Visita",
-      "step2Description": "Visitamos tu propiedad, hacemos un informe técnico y establecemos el valor de mercado real.",
-      "step3Title": "Publicación Global",
-      "step3Description": "Tu finca se promociona con material profesional en nuestra red internacional de inversores."
-    },
-    "form": {
-      "title": "Dejanos tus datos",
-      "subtitle": "Nos pondremos en contacto para conocer tu propiedad",
-      "fullName": "Nombre completo",
-      "email": "Email",
-      "phone": "Teléfono",
-      "location": "Ubicación de la finca",
-      "surface": "Superficie (hectáreas)",
-      "surfacePlaceholder": "Ej: 25",
-      "productionType": "Tipo de producción",
-      "selectOption": "Seleccionar...",
-      "otherLocation": "Otra ubicación",
-      "vineyards": "Viñedos",
-      "olives": "Olivos",
-      "mixed": "Mixto (viñedos y olivos)",
-      "fruits": "Frutales",
-      "noProduction": "Campo sin producción",
-      "other": "Otro",
-      "comments": "Comentarios adicionales",
-      "commentsPlaceholder": "Contanos más sobre tu propiedad...",
-      "submit": "Enviar consulta",
-      "sending": "Enviando...",
-      "successMessage": "¡Gracias por tu consulta! Nos pondremos en contacto a la brevedad."
-    },
-    "faq": {
-      "title": "Preguntas Frecuentes",
-      "question1": "¿Cobran por la tasación?",
-      "answer1": "No. La visita y tasación inicial son completamente gratuitas y sin compromiso. Solo cobramos una comisión cuando se concreta la venta.",
-      "question2": "¿Trabajan con exclusividad?",
-      "answer2": "Preferimos trabajar con exclusividad porque nos permite dedicar más recursos al marketing de tu propiedad, pero analizamos cada caso en particular.",
-      "question3": "¿Cuánto tarda en venderse una propiedad?",
-      "answer3": "El tiempo varía según ubicación, precio y características. Gracias a nuestra red internacional, muchas propiedades bien tasadas se venden en 3 a 6 meses.",
-      "question4": "¿Qué zonas cubren?",
-      "answer4": "Nos especializamos en Valle de Uco (Tupungato, Tunuyán, San Carlos) pero también trabajamos propiedades en Luján de Cuyo, Maipú y San Rafael.",
-      "question5": "¿Puedo vender si aún tengo producción activa?",
-      "answer5": "Sí, sin problema. De hecho, las fincas con producción activa suelen ser más atractivas para inversores porque demuestran rentabilidad inmediata."
-    },
-    "proof": {
-      "title": "Expertos en Tupungato y Tunuyán",
-      "subtitle": "Conocimiento profundo del mercado local y conexiones internacionales"
-    }
-  },
-  "AboutPage": {
-    "hero": {
-      "title": "Tu socio local en el Valle de Uco",
-      "subtitle": "Uniendo la riqueza de la tierra mendocina con inversores globales"
-    },
-    "story": {
-      "label": "Nuestra Historia",
-      "title": "Por qué Tupungato. Por qué el vino. Pasión + Negocio.",
-      "paragraph1": "Nacimos en el corazón del Valle de Uco, donde las montañas más altas de América se encuentran con algunos de los mejores terroirs del mundo. No somos una inmobiliaria tradicional: somos especialistas en inversión vitivinícola internacional.",
-      "paragraph2": "Conectamos a inversores de Brasil y Estados Unidos con propiedades excepcionales en Tupungato y Tunuyán porque conocemos cada hectárea, cada microclima, cada oportunidad real de negocio. Nuestra misión es simple: facilitarte la inversión más segura y rentable en tierra mendocina.",
-      "paragraph3": "Aquí no vendemos solo tierra. Vendemos un ecosistema completo de producción, gestión y rentabilidad a largo plazo."
-    },
-    "numbers": {
-      "stat1": {
-        "label": "Años de Experiencia",
-        "sublabel": "En el Valle de Uco"
-      },
-      "stat2": {
-        "label": "Fincas en Cartera",
-        "sublabel": "Valle de Uco y Tupungato"
-      },
-      "stat3": {
-        "label": "Clientes Internacionales",
-        "sublabel": "Brasil y Estados Unidos"
-      }
-    },
-    "profile": {
-      "name": "Rodrigo Juri",
-      "role": "Agente especializado en inversiones vitivinícolas",
-      "title": "Agente de Bienes Raíces",
-      "linkedin": "Ver LinkedIn",
-      "sectionTitle": "Experiencia y Conexiones",
-      "description1": "Con más de 5 años de experiencia en el mercado inmobiliario del Valle de Uco, Rodrigo Juri se ha posicionado como referente en la venta de fincas vitivinícolas en Tupungato y zonas aledañas.",
-      "description2": "Su enfoque se centra en conectar inversores internacionales con las mejores oportunidades de la región, brindando un servicio integral que va desde la búsqueda de la propiedad ideal hasta el acompañamiento en todo el proceso de compra.",
-      "highlight1": "Especialista en propiedades vitivinícolas premium",
-      "highlight2": "Conexiones con inversores de Brasil y Estados Unidos",
-      "highlight3": "Servicio personalizado y confidencial",
-      "highlight4": "Cartera exclusiva de más de 100 fincas disponibles"
-    },
-    "ecosystem": {
-      "title": "Red de Expertos Locales",
-      "subtitle": "Trabajamos con los mejores profesionales del Valle de Uco para garantizar el éxito de tu inversión",
-      "card1": {
-        "title": "Agrónomos Especializados",
-        "description": "Expertos en viticultura de altura que gestionan tu producción con estándares internacionales y maximizan el rendimiento de cada hectárea."
-      },
-      "card2": {
-        "title": "Enólogos Consultores",
-        "description": "Profesionales que aseguran la calidad del vino desde la uva hasta la botella, conectándote con bodegas y mercados de exportación."
-      },
-      "card3": {
-        "title": "Escribanos y Legales",
-        "description": "Equipo jurídico especializado en transacciones internacionales que garantiza seguridad total en cada operación y título de propiedad."
-      },
-      "card4": {
-        "title": "Contadores y Asesores",
-        "description": "Gestión contable, impositiva y financiera adaptada a inversores extranjeros, optimizando tu estructura fiscal y rentabilidad."
-      }
-    },
-    "cta": {
-      "title": "Conozcamos tus objetivos de inversión",
-      "description": "Agenda una videollamada sin compromiso. Te mostramos oportunidades concretas y respondemos todas tus dudas sobre invertir en el Valle de Uco.",
-      "button": "Agendar Reunión"
-    }
+  "LanguageSwitcher": {
+    "english": "Inglés",
+    "spanish": "Español",
+    "portuguese": "Portugués"
   }
 }

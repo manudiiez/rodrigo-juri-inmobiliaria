@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const properties = [
   {
@@ -31,11 +32,13 @@ const properties = [
 ];
 
 export default function PropertiesGrid() {
+  const t = useTranslations('HomePage.PropertiesGrid');
+
   return (
     <section className="bg-gray-50 py-24">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-gray-900 mb-16 tracking-wide">
-          Fincas y Campos destacados
+          {t('title')}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -72,7 +75,7 @@ export default function PropertiesGrid() {
             href="/propiedades"
             className="inline-flex items-center gap-3 text-gray-900 hover:gap-5 transition-all group border-b border-gray-900 pb-1"
           >
-            <span className="text-sm uppercase tracking-widest font-medium">Ver todas las propiedades rurales</span>
+            <span className="text-sm uppercase tracking-widest font-medium">{t('viewAll')}</span>
             <svg
               className="w-4 h-4"
               fill="none"

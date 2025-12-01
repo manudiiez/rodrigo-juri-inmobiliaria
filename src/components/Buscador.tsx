@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 export default function Buscador() {
+  const t = useTranslations("HomePage.Hero");
   const [activeTab, setActiveTab] = useState("comprar");
   const [search, setSearch] = useState("Valle de Uco, Mendoza");
   const route = useRouter();
@@ -22,7 +24,7 @@ export default function Buscador() {
           }`}
           onClick={() => setActiveTab("comprar")}
         >
-          Comprar
+          {t("buy")}
           {activeTab === "comprar" && (
             <span className="absolute left-0 -bottom-0.5 h-[2px] w-full bg-[#E2B34C]" />
           )}
@@ -31,17 +33,17 @@ export default function Buscador() {
         <button
           type="button"
           className={`relative pb-2 hover:text-white transition-colors cursor-pointer`}
-          onClick={() => route.push('/vender')}
+          onClick={() => route.push("/vender")}
         >
-          Vender
+          {t("sell")}
         </button>
 
         <button
           type="button"
           className={`relative pb-2 hover:text-white transition-colors cursor-pointer`}
-          onClick={() => route.push('/vender#contacto')}
+          onClick={() => route.push("/vender#contacto")}
         >
-          Contactar
+          {t("contact")}
         </button>
       </div>
 
