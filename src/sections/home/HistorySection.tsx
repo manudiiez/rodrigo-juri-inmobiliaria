@@ -9,7 +9,7 @@ export default function HistorySection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Texto de historia */}
           <div>
-            <div className="w-12 h-[2px] bg-[#E2B34C] mb-6"></div>
+            <div className="w-12 h-[2px] bg-secondary mb-6"></div>
             <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8 tracking-wide font-serif">
               {t("title")}
             </h2>
@@ -28,7 +28,7 @@ export default function HistorySection() {
 
           {/* Métricas */}
           <div className="space-y-12">
-            <div className="border-l-2 border-[#E2B34C] pl-8">
+            <div className="border-l-2 border-secondary pl-8">
               <div className="text-6xl md:text-7xl font-light text-gray-900 mb-2">
                 {t("stat1Value")}
               </div>
@@ -37,7 +37,7 @@ export default function HistorySection() {
               </p>
             </div>
 
-            <div className="border-l-2 border-[#E2B34C] pl-8">
+            <div className="border-l-2 border-secondary pl-8">
               <div className="text-6xl md:text-7xl font-light text-gray-900 mb-2">
                 {t("stat2Value")}
               </div>
@@ -46,7 +46,7 @@ export default function HistorySection() {
               </p>
             </div>
 
-            <div className="border-l-2 border-[#E2B34C] pl-8">
+            <div className="border-l-2 border-secondary pl-8">
               <div className="text-6xl md:text-7xl font-light text-gray-900 mb-2">
                 {t("stat3Value")}
               </div>
@@ -55,7 +55,7 @@ export default function HistorySection() {
               </p>
             </div>
 
-            <div className="border-l-2 border-[#E2B34C] pl-8">
+            <div className="border-l-2 border-secondary pl-8">
               <div className="text-5xl md:text-6xl font-light text-gray-900 mb-2">
                 {t("stat4Value")}
               </div>

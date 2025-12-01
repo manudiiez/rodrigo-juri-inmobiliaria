@@ -26,7 +26,7 @@ export default function Buscador() {
         >
           {t("buy")}
           {activeTab === "comprar" && (
-            <span className="absolute left-0 -bottom-0.5 h-[2px] w-full bg-[#E2B34C]" />
+            <span className="absolute left-0 -bottom-0.5 h-[2px] w-full bg-secondary" />
           )}
         </button>
 

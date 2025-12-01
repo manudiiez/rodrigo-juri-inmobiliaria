@@ -27,7 +27,7 @@ export default function PropertyProductivity({
 
   return (
     <section id="productividad" className="mb-20 scroll-mt-24">
-      <h2 className="text-3xl font-light text-gray-900 mb-8 pb-4 border-b-2 border-[#E2B34C]">
+      <h2 className="text-3xl font-light text-gray-900 mb-8 pb-4 border-b-2 border-secondary">
         {t('title')}
       </h2>
 
@@ -106,7 +106,7 @@ export default function PropertyProductivity({
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="border-l-4 border-[#E2B34C] pl-4">
+          <div className="border-l-4 border-secondary pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
               {t('varieties')}
             </p>

@@ -33,7 +33,7 @@ export default function SideNavigation({
               onClick={() => onSectionClick(section.id)}
               className={`block w-full text-left px-4 py-2 text-sm transition-colors ${
                 activeSection === section.id
-                  ? "text-[#0A1628] font-medium border-l-2 border-[#E2B34C] bg-gray-50"
+                  ? "text-[#0A1628] font-medium border-l-2 border-secondary bg-gray-50"
                   : "text-gray-600 hover:text-gray-900 border-l-2 border-transparent hover:border-gray-300"
               }`}
             >

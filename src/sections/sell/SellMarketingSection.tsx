@@ -19,7 +19,7 @@ export default function SellMarketingSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Marketing Card 1 */}
-          <div className="border border-gray-200 p-6 hover:border-[#E2B34C] transition-colors">
+          <div className="border border-gray-200 p-6 hover:border-secondary transition-colors">
             <div className="mb-4">
               <svg
                 className="w-12 h-12 text-[#0A1628]"
@@ -50,7 +50,7 @@ export default function SellMarketingSection() {
           </div>
 
           {/* Marketing Card 2 */}
-          <div className="border border-gray-200 p-6 hover:border-[#E2B34C] transition-colors">
+          <div className="border border-gray-200 p-6 hover:border-secondary transition-colors">
             <div className="mb-4">
               <svg
                 className="w-12 h-12 text-[#0A1628]"
@@ -75,7 +75,7 @@ export default function SellMarketingSection() {
           </div>
 
           {/* Marketing Card 3 */}
-          <div className="border border-gray-200 p-6 hover:border-[#E2B34C] transition-colors">
+          <div className="border border-gray-200 p-6 hover:border-secondary transition-colors">
             <div className="mb-4">
               <svg
                 className="w-12 h-12 text-[#0A1628]"
@@ -100,7 +100,7 @@ export default function SellMarketingSection() {
           </div>
 
           {/* Marketing Card 4 */}
-          <div className="border border-gray-200 p-6 hover:border-[#E2B34C] transition-colors">
+          <div className="border border-gray-200 p-6 hover:border-secondary transition-colors">
             <div className="mb-4">
               <svg
                 className="w-12 h-12 text-[#0A1628]"

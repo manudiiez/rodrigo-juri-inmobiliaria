@@ -23,7 +23,7 @@ export default function SellStatisticsSection() {
             <div className="bg-white p-8 md:p-10 shadow-lg hover:shadow-xl transition-shadow">
               <div className="mb-4">
                 <svg
-                  className="w-16 h-16 mx-auto text-[#E2B34C]"
+                  className="w-16 h-16 mx-auto text-secondary"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -53,7 +53,7 @@ export default function SellStatisticsSection() {
             <div className="bg-white p-8 md:p-10 shadow-lg hover:shadow-xl transition-shadow">
               <div className="mb-4">
                 <svg
-                  className="w-16 h-16 mx-auto text-[#E2B34C]"
+                  className="w-16 h-16 mx-auto text-secondary"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -83,7 +83,7 @@ export default function SellStatisticsSection() {
             <div className="bg-white p-8 md:p-10 shadow-lg hover:shadow-xl transition-shadow">
               <div className="mb-4">
                 <svg
-                  className="w-16 h-16 mx-auto text-[#E2B34C]"
+                  className="w-16 h-16 mx-auto text-secondary"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

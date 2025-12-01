@@ -229,7 +229,7 @@ export default function PropertiesSearchPage() {
               {showPriceFilter && (
                 <div
                   onClick={(e) => e.stopPropagation()}
-                  className="absolute top-full left-0 mt-2 w-96 bg-[#0A1628] text-white p-8 shadow-2xl z-50 border-t-4 border-[#E2B34C]"
+                  className="absolute top-full left-0 mt-2 w-96 bg-[#0A1628] text-white p-8 shadow-2xl z-50 border-t-4 border-secondary"
                 >
                   <button
                     onClick={() => setShowPriceFilter(false)}
@@ -246,7 +246,7 @@ export default function PropertiesSearchPage() {
                     <p className="text-sm uppercase tracking-widest text-gray-400 mb-4">{t('any')}</p>
                     <div className="relative h-2 bg-gray-600 rounded-full mb-2">
                       <div
-                        className="absolute h-2 bg-[#E2B34C] rounded-full"
+                        className="absolute h-2 bg-secondary rounded-full"
                         style={{
                           left: `${(minPrice / 10000000) * 100}%`,
                           right: `${100 - (maxPrice / 10000000) * 100}%`
@@ -320,7 +320,7 @@ export default function PropertiesSearchPage() {
               {showHectaresFilter && (
                 <div
                   onClick={(e) => e.stopPropagation()}
-                  className="absolute top-full left-0 mt-2 w-96 bg-[#0A1628] text-white p-8 shadow-2xl z-50 border-t-4 border-[#E2B34C]"
+                  className="absolute top-full left-0 mt-2 w-96 bg-[#0A1628] text-white p-8 shadow-2xl z-50 border-t-4 border-secondary"
                 >
                   <button
                     onClick={() => setShowHectaresFilter(false)}
@@ -337,7 +337,7 @@ export default function PropertiesSearchPage() {
                     <p className="text-sm uppercase tracking-widest text-gray-400 mb-4">{t('any')}</p>
                     <div className="relative h-2 bg-gray-600 rounded-full mb-2">
                       <div
-                        className="absolute h-2 bg-[#E2B34C] rounded-full"
+                        className="absolute h-2 bg-secondary rounded-full"
                         style={{
                           left: `${(minHectares / 500) * 100}%`,
                           right: `${100 - (maxHectares / 500) * 100}%`
@@ -511,7 +511,7 @@ export default function PropertiesSearchPage() {
           width: 20px;
           height: 20px;
           border-radius: 50%;
-          background: #E2B34C;
+          background: var(--secondary);
           cursor: pointer;
           position: relative;
           z-index: 3;
@@ -520,7 +520,7 @@ export default function PropertiesSearchPage() {
           width: 20px;
           height: 20px;
           border-radius: 50%;
-          background: #E2B34C;
+          background: var(--secondary);
           cursor: pointer;
           border: none;
           position: relative;

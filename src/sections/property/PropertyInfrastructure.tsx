@@ -24,7 +24,7 @@ export default function PropertyInfrastructure({
 
   return (
     <section id="infraestructura" className="mb-20 scroll-mt-24">
-      <h2 className="text-3xl font-light text-gray-900 mb-8 pb-4 border-b-2 border-[#E2B34C]">
+      <h2 className="text-3xl font-light text-gray-900 mb-8 pb-4 border-b-2 border-secondary">
         {t('title')}
       </h2>
 

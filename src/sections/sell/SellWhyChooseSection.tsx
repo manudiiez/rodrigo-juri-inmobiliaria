@@ -20,7 +20,7 @@ export default function SellWhyChooseSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center">
             <div className="bg-gray-50 p-8 h-full">
-              <p className="text-5xl font-light text-[#E2B34C] mb-4">{t('stat1Value')}</p>
+              <p className="text-5xl font-light text-secondary mb-4">{t('stat1Value')}</p>
               <h4 className="text-xl font-medium text-gray-900 mb-2">
                 {t('stat1Title')}
               </h4>
@@ -31,7 +31,7 @@ export default function SellWhyChooseSection() {
           </div>
           <div className="text-center">
             <div className="bg-gray-50 p-8 h-full">
-              <p className="text-5xl font-light text-[#E2B34C] mb-4">{t('stat2Value')}</p>
+              <p className="text-5xl font-light text-secondary mb-4">{t('stat2Value')}</p>
               <h4 className="text-xl font-medium text-gray-900 mb-2">
                 {t('stat2Title')}
               </h4>
@@ -42,7 +42,7 @@ export default function SellWhyChooseSection() {
           </div>
           <div className="text-center">
             <div className="bg-gray-50 p-8 h-full">
-              <p className="text-5xl font-light text-[#E2B34C] mb-4">
+              <p className="text-5xl font-light text-secondary mb-4">
                 {t('stat3Value')}
               </p>
               <h4 className="text-xl font-medium text-gray-900 mb-2">
