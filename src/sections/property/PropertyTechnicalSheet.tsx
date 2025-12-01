@@ -1,3 +1,7 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 interface SueloYClima {
   tipoDeSuelo: string;
   textura: string;
@@ -39,21 +43,23 @@ export default function PropertyTechnicalSheet({
   sueloYClima,
   aguaYRiego,
 }: PropertyTechnicalSheetProps) {
+  const t = useTranslations('PropertyDetailPage.technical');
+
   return (
     <section id="ficha-tecnica" className="mb-20 scroll-mt-24">
       <h2 className="text-3xl font-light text-gray-900 mb-8 pb-4 border-b-2 border-[#E2B34C]">
-        Ficha Técnica
+        {t('title')}
       </h2>
 
       {/* Suelo y Clima */}
       <div className="mb-10">
         <h3 className="text-2xl font-light text-gray-900 mb-6">
-          Suelo y Clima
+          {t('soilAndClimate')}
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border-l-4 border-gray-200 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Tipo de Suelo
+              {t('soilType')}
             </p>
             <p className="text-lg text-gray-900">
               {sueloYClima.tipoDeSuelo}
@@ -61,7 +67,7 @@ export default function PropertyTechnicalSheet({
           </div>
           <div className="border-l-4 border-gray-200 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Textura
+              {t('texture')}
             </p>
             <p className="text-lg text-gray-900">
               {sueloYClima.textura}
@@ -69,7 +75,7 @@ export default function PropertyTechnicalSheet({
           </div>
           <div className="border-l-4 border-gray-200 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              pH del Suelo
+              {t('soilPh')}
             </p>
             <p className="text-lg text-gray-900">
               {sueloYClima.phSuelo.valor} (
@@ -78,7 +84,7 @@ export default function PropertyTechnicalSheet({
           </div>
           <div className="border-l-4 border-gray-200 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Materia Orgánica
+              {t('organicMatter')}
             </p>
             <p className="text-lg text-gray-900">
               {sueloYClima.materiaOrganicaPorc}%
@@ -86,7 +92,7 @@ export default function PropertyTechnicalSheet({
           </div>
           <div className="border-l-4 border-gray-200 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Pendiente
+              {t('slope')}
             </p>
             <p className="text-lg text-gray-900">
               {sueloYClima.pendiente}
@@ -94,7 +100,7 @@ export default function PropertyTechnicalSheet({
           </div>
           <div className="border-l-4 border-gray-200 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Drenaje
+              {t('drainage')}
             </p>
             <p className="text-lg text-gray-900">
               {sueloYClima.drenaje}
@@ -102,7 +108,7 @@ export default function PropertyTechnicalSheet({
           </div>
           <div className="border-l-4 border-[#E2B34C] pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Grados Día
+              {t('degreeDays')}
             </p>
             <p className="text-lg text-gray-900">
               {sueloYClima.gradosDia.valor} (
@@ -112,7 +118,7 @@ export default function PropertyTechnicalSheet({
           </div>
           <div className="border-l-4 border-gray-200 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Heladas
+              {t('frost')}
             </p>
             <p className="text-lg text-gray-900">
               {sueloYClima.heladas}
@@ -124,12 +130,12 @@ export default function PropertyTechnicalSheet({
       {/* Agua y Riego */}
       <div>
         <h3 className="text-2xl font-light text-gray-900 mb-6">
-          Agua y Riego
+          {t('waterAndIrrigation')}
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border-l-4 border-blue-500 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Derecho de Agua
+              {t('waterRight')}
             </p>
             <p className="text-lg text-gray-900">
               {aguaYRiego.derechoDeAgua}
@@ -137,7 +143,7 @@ export default function PropertyTechnicalSheet({
           </div>
           <div className="border-l-4 border-blue-500 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Caudal Total
+              {t('totalFlow')}
             </p>
             <p className="text-lg text-gray-900">
               {aguaYRiego.caudalTotal}
@@ -145,7 +151,7 @@ export default function PropertyTechnicalSheet({
           </div>
           <div className="border-l-4 border-gray-200 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Fuente
+              {t('source')}
             </p>
             <p className="text-lg text-gray-900">
               {aguaYRiego.fuente}
@@ -153,7 +159,7 @@ export default function PropertyTechnicalSheet({
           </div>
           <div className="border-l-4 border-gray-200 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Turno de Riego
+              {t('irrigationTurn')}
             </p>
             <p className="text-lg text-gray-900">
               {aguaYRiego.turnoDeRiego}
@@ -161,7 +167,7 @@ export default function PropertyTechnicalSheet({
           </div>
           <div className="border-l-4 border-blue-500 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              CE del Agua
+              {t('waterConductivity')}
             </p>
             <p className="text-lg text-gray-900">
               {aguaYRiego.ceAgua.valor}{" "}
@@ -175,7 +181,7 @@ export default function PropertyTechnicalSheet({
           </div>
           <div className="border-l-4 border-gray-200 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              pH del Agua
+              {t('waterPh')}
             </p>
             <p className="text-lg text-gray-900">
               {aguaYRiego.phAgua}
@@ -183,7 +189,7 @@ export default function PropertyTechnicalSheet({
           </div>
           <div className="border-l-4 border-[#E2B34C] pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Sistema de Riego
+              {t('irrigationSystem')}
             </p>
             <p className="text-lg text-gray-900">
               {aguaYRiego.sistemaDeRiego}
@@ -191,7 +197,7 @@ export default function PropertyTechnicalSheet({
           </div>
           <div className="border-l-4 border-gray-200 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Año de Instalación
+              {t('installationYear')}
             </p>
             <p className="text-lg text-gray-900">
               {aguaYRiego.anioInstalacion}

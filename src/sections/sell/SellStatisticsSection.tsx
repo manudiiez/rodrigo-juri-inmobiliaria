@@ -1,15 +1,19 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export default function SellStatisticsSection() {
+  const t = useTranslations('SellPage.statistics');
+
   return (
     <section className="bg-gray-50 py-16 md:py-24" id="nosotros">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
-            Alcance de mercado incomparable
+            {t('title')}
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Tu finca merece la máxima exposición. Mi plataforma combina
-            canales online y offline para llegar a compradores e inversores
-            calificados en Mendoza, Argentina y el exterior.
+            {t('description')}
           </p>
         </div>
 
@@ -33,14 +37,13 @@ export default function SellStatisticsSection() {
                 </svg>
               </div>
               <p className="text-5xl md:text-6xl font-light text-gray-900 mb-2">
-                +10.000
+                {t('stat1Value')}
               </p>
               <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">
-                CONTACTOS E INVERSORES POTENCIALES
+                {t('stat1Label')}
               </p>
               <p className="text-sm text-gray-600">
-                Red propia y alianzas estratégicas en el sector agrícola y
-                vitivinícola.
+                {t('stat1Description')}
               </p>
             </div>
           </div>
@@ -64,14 +67,13 @@ export default function SellStatisticsSection() {
                 </svg>
               </div>
               <p className="text-5xl md:text-6xl font-light text-gray-900 mb-2">
-                +300
+                {t('stat2Value')}
               </p>
               <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">
-                MCONSULTAS ANUALES POR FINCAS
+                {t('stat2Label')}
               </p>
               <p className="text-sm text-gray-600">
-                Propietarios y compradores activos interesados en Tupungato
-                y zonas aledañas.
+                {t('stat2Description')}
               </p>
             </div>
           </div>
@@ -95,14 +97,13 @@ export default function SellStatisticsSection() {
                 </svg>
               </div>
               <p className="text-5xl md:text-6xl font-light text-gray-900 mb-2">
-                100%
+                {t('stat3Value')}
               </p>
               <p className="text-sm uppercase tracking-widest text-gray-500 mb-2">
-                FOCO EN FINCAS Y CAMPOS
+                {t('stat3Label')}
               </p>
               <p className="text-sm text-gray-600">
-                Especialización en propiedades rurales, productivas y de
-                inversión.
+                {t('stat3Description')}
               </p>
             </div>
           </div>

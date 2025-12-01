@@ -1,3 +1,7 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 interface EnergiaYProductividad {
   tipoDeEnergia: string;
   potenciaKw: number;
@@ -19,21 +23,23 @@ interface PropertyProductivityProps {
 export default function PropertyProductivity({
   energiaYProductividad,
 }: PropertyProductivityProps) {
+  const t = useTranslations('PropertyDetailPage.productivity');
+
   return (
     <section id="productividad" className="mb-20 scroll-mt-24">
       <h2 className="text-3xl font-light text-gray-900 mb-8 pb-4 border-b-2 border-[#E2B34C]">
-        Energía y Productividad
+        {t('title')}
       </h2>
 
       {/* Energía */}
       <div className="mb-10">
         <h3 className="text-2xl font-light text-gray-900 mb-6">
-          Suministro Eléctrico
+          {t('electricSupply')}
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border-l-4 border-yellow-500 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Tipo de Energía
+              {t('energyType')}
             </p>
             <p className="text-lg text-gray-900">
               {energiaYProductividad.tipoDeEnergia}
@@ -41,7 +47,7 @@ export default function PropertyProductivity({
           </div>
           <div className="border-l-4 border-yellow-500 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Potencia
+              {t('power')}
             </p>
             <p className="text-lg text-gray-900">
               {energiaYProductividad.potenciaKw} kW
@@ -49,7 +55,7 @@ export default function PropertyProductivity({
           </div>
           <div className="border-l-4 border-gray-200 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Transformador
+              {t('transformer')}
             </p>
             <p className="text-lg text-gray-900">
               {energiaYProductividad.transformador}
@@ -57,7 +63,7 @@ export default function PropertyProductivity({
           </div>
           <div className="border-l-4 border-gray-200 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Medidor
+              {t('meter')}
             </p>
             <p className="text-lg text-gray-900">
               {energiaYProductividad.medidor}
@@ -69,31 +75,31 @@ export default function PropertyProductivity({
       {/* Producción */}
       <div>
         <h3 className="text-2xl font-light text-gray-900 mb-6">
-          Producción Vitivinícola
+          {t('wineProduction')}
         </h3>
         <div className="bg-gradient-to-br from-[#0A1628] to-[#1a2d4d] text-white p-8 mb-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">
-                Productividad
+                {t('grapeProductivity')}
               </p>
               <p className="text-4xl font-light mb-2">
                 {energiaYProductividad.productividadUva}
               </p>
               <p className="text-sm text-gray-300">
-                Rendimiento por hectárea
+                {t('yieldPerHectare')}
               </p>
             </div>
             <div>
               <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">
-                Precio Uva 2024
+                {t('grapePrice')}
               </p>
               <p className="text-4xl font-light mb-2">
                 {energiaYProductividad.precioUva2024.valor}{" "}
                 {energiaYProductividad.precioUva2024.unidad}
               </p>
               <p className="text-sm text-gray-300">
-                Precio de mercado
+                {t('marketPrice')}
               </p>
             </div>
           </div>
@@ -102,7 +108,7 @@ export default function PropertyProductivity({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border-l-4 border-[#E2B34C] pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Variedades
+              {t('varieties')}
             </p>
             <div className="flex flex-wrap gap-2 mt-2">
               {energiaYProductividad.variedades.map(
@@ -119,7 +125,7 @@ export default function PropertyProductivity({
           </div>
           <div className="border-l-4 border-gray-200 pl-4">
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              Edad de Viñedos
+              {t('vineyardAge')}
             </p>
             <p className="text-lg text-gray-900">
               {energiaYProductividad.edadVinedos}

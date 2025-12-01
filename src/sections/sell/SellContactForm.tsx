@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function SellContactForm() {
+  const t = useTranslations('SellPage.form');
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -30,12 +32,10 @@ export default function SellContactForm() {
       <div className="max-w-3xl mx-auto px-6 md:px-12">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
-            Empezá hoy mismo
+            {t('title')}
           </h2>
           <p className="text-lg text-gray-600">
-            Accedé a una tasación profesional y a una estrategia de venta
-            diseñada especialmente para fincas en Tupungato y el resto de
-            Mendoza, para obtener el mejor valor por tu propiedad.
+            {t('description')}
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export default function SellContactForm() {
                   htmlFor="firstName"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Nombre *
+                  {t('firstName')} {t('required')}
                 </label>
                 <input
                   type="text"
@@ -64,7 +64,7 @@ export default function SellContactForm() {
                   htmlFor="lastName"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Apellido *
+                  {t('lastName')} {t('required')}
                 </label>
                 <input
                   type="text"
@@ -82,7 +82,7 @@ export default function SellContactForm() {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700 mb-2"
               >
-                Email *
+                {t('email')} {t('required')}
               </label>
               <input
                 type="email"
@@ -99,7 +99,7 @@ export default function SellContactForm() {
                 htmlFor="phone"
                 className="block text-sm font-medium text-gray-700 mb-2"
               >
-                Teléfono *
+                {t('phone')} {t('required')}
               </label>
               <input
                 type="tel"
@@ -116,7 +116,7 @@ export default function SellContactForm() {
                 htmlFor="message"
                 className="block text-sm font-medium text-gray-700 mb-2"
               >
-                Mensaje
+                {t('message')}
               </label>
               <textarea
                 id="message"
@@ -125,14 +125,14 @@ export default function SellContactForm() {
                 value={formData.message}
                 onChange={handleChange}
                 className="w-full px-4 py-3 border border-gray-300 focus:border-[#0A1628] focus:ring-1 focus:ring-[#0A1628] outline-none transition-colors resize-none"
-                placeholder="Contame sobre tu propiedad…"
+                placeholder={t('messagePlaceholder')}
               />
             </div>
             <button
               type="submit"
               className="w-full bg-[#0A1628] text-white py-4 px-6 hover:bg-[#1a2d4d] transition-colors font-medium text-lg"
             >
-              Enviar consulta
+              {t('submit')}
             </button>
           </form>
         </div>

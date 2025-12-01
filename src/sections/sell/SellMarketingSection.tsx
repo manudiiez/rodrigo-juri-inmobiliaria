@@ -1,15 +1,19 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export default function SellMarketingSection() {
+  const t = useTranslations('SellPage.marketing');
+
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
-            Estrategia integral de marketing para tu finca
+            {t('title')}
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Utilizo herramientas de marketing específicas para destacar el
-            valor productivo, turístico y de inversión de cada propiedad y
-            conectarla con el comprador adecuado.
+            {t('description')}
           </p>
         </div>
 
@@ -38,11 +42,10 @@ export default function SellMarketingSection() {
               </svg>
             </div>
             <h3 className="text-xl font-medium text-gray-900 mb-2">
-              Publicidad digital segmentada
+              {t('card1Title')}
             </h3>
             <p className="text-gray-600">
-              Campañas en portales inmobiliarios, redes sociales y bases de
-              datos de inversores interesados en Mendoza.
+              {t('card1Description')}
             </p>
           </div>
 
@@ -64,11 +67,10 @@ export default function SellMarketingSection() {
               </svg>
             </div>
             <h3 className="text-xl font-medium text-gray-900 mb-2">
-              Material comercial y planos
+              {t('card2Title')}
             </h3>
             <p className="text-gray-600">
-              Folletos digitales, información técnica, mapas y datos
-              productivos claros para facilitar decisiones de inversión.
+              {t('card2Description')}
             </p>
           </div>
 
@@ -90,12 +92,10 @@ export default function SellMarketingSection() {
               </svg>
             </div>
             <h3 className="text-xl font-medium text-gray-900 mb-2">
-              Red de contactos y alianzas
+              {t('card3Title')}
             </h3>
             <p className="text-gray-600">
-              Conexión con bodegas, desarrolladores, productores e
-              inversores nacionales e internacionales interesados en la
-              zona.
+              {t('card3Description')}
             </p>
           </div>
 
@@ -117,11 +117,10 @@ export default function SellMarketingSection() {
               </svg>
             </div>
             <h3 className="text-xl font-medium text-gray-900 mb-2">
-              Fotografía y video profesional
+              {t('card4Title')}
             </h3>
             <p className="text-gray-600">
-              Imágenes, video y tomas aéreas con drone para mostrar el
-              potencial de la finca, sus vistas y su producción.
+              {t('card4Description')}
             </p>
           </div>
         </div>

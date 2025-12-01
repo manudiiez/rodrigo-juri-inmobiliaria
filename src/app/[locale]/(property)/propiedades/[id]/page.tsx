@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 import PropertyHeader from "@/sections/property/PropertyHeader";
 import PropertyImageCarousel from "@/sections/property/PropertyImageCarousel";
 import PropertySummarySection from "@/sections/property/PropertySummarySection";
@@ -145,18 +146,19 @@ La finca cuenta con viñedos de alta calidad plantados con las mejores variedade
 Con una productividad de 12.000 kg/ha y precios de uva en 0.45 USD/kg, esta propiedad representa una excelente oportunidad de inversión con retornos comprobados.`,
 };
 
-const sections = [
-  { id: "resumen", label: "Resumen" },
-  { id: "ficha-tecnica", label: "Ficha Técnica" },
-  { id: "infraestructura", label: "Infraestructura" },
-  { id: "productividad", label: "Productividad" },
-  { id: "ubicacion", label: "Ubicación" },
-  { id: "documentacion", label: "Documentación" },
-  { id: "contacto-finca", label: "Contacto" },
-];
-
 export default function PropertyDetailPage() {
+  const t = useTranslations('PropertyDetailPage.navigation');
   const [activeSection, setActiveSection] = useState("resumen");
+
+  const sections = [
+    { id: "resumen", label: t('summary') },
+    { id: "ficha-tecnica", label: t('technicalSheet') },
+    { id: "infraestructura", label: t('infrastructure') },
+    { id: "productividad", label: t('productivity') },
+    { id: "ubicacion", label: t('location') },
+    { id: "documentacion", label: t('documentation') },
+    { id: "contacto-finca", label: t('contact') },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {

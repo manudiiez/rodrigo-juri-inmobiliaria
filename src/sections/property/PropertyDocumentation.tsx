@@ -1,3 +1,7 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 interface DocumentacionLegal {
   escritura: string;
   mensura: string;
@@ -14,10 +18,12 @@ interface PropertyDocumentationProps {
 export default function PropertyDocumentation({
   documentacionLegal,
 }: PropertyDocumentationProps) {
+  const t = useTranslations('PropertyDetailPage.documentation');
+
   return (
     <section id="documentacion" className="mb-20 scroll-mt-24">
       <h2 className="text-3xl font-light text-gray-900 mb-8 pb-4 border-b-2 border-[#E2B34C]">
-        Documentación Legal
+        {t('title')}
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -35,7 +41,7 @@ export default function PropertyDocumentation({
           </svg>
           <div>
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
-              Escritura
+              {t('deed')}
             </p>
             <p className="text-lg text-gray-900">
               {documentacionLegal.escritura}
@@ -56,7 +62,7 @@ export default function PropertyDocumentation({
           </svg>
           <div>
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
-              Mensura
+              {t('survey')}
             </p>
             <p className="text-lg text-gray-900">
               {documentacionLegal.mensura}
@@ -77,7 +83,7 @@ export default function PropertyDocumentation({
           </svg>
           <div>
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
-              Planos Municipales
+              {t('municipalPlans')}
             </p>
             <p className="text-lg text-gray-900">
               {documentacionLegal.planosMunicipales}
@@ -98,7 +104,7 @@ export default function PropertyDocumentation({
           </svg>
           <div>
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
-              Impuestos
+              {t('taxes')}
             </p>
             <p className="text-lg text-gray-900">
               {documentacionLegal.impuestos}
@@ -119,7 +125,7 @@ export default function PropertyDocumentation({
           </svg>
           <div>
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
-              Apto Crédito
+              {t('creditEligible')}
             </p>
             <p className="text-lg text-gray-900">
               {documentacionLegal.aptoCredito}
@@ -140,7 +146,7 @@ export default function PropertyDocumentation({
           </svg>
           <div>
             <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
-              Inhibiciones
+              {t('encumbrances')}
             </p>
             <p className="text-lg text-gray-900">
               {documentacionLegal.inhibiciones}

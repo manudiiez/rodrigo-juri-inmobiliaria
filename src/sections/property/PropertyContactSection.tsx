@@ -1,13 +1,19 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export default function PropertyContactSection() {
+  const t = useTranslations('PropertyDetailPage.contact');
+
   return (
     <section id="contacto-finca" className="py-16 md:py-24 bg-white">
       <div>
         <div className="mb-12">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
-            Empezá hoy mismo
+            {t('title')}
           </h2>
           <p className="text-lg text-gray-600">
-            Recibí asesoramiento personalizado para encontrar la finca ideal en Tupungato y el resto de Mendoza, según tu proyecto: agrícola, turístico, vitivinícola, de inversión o para disfrutar en familia.
+            {t('description')}
           </p>
         </div>
 
@@ -19,7 +25,7 @@ export default function PropertyContactSection() {
                   htmlFor="firstName"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Nombre *
+                  {t('firstName')} {t('required')}
                 </label>
                 <input
                   type="text"
@@ -34,7 +40,7 @@ export default function PropertyContactSection() {
                   htmlFor="lastName"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Apellido *
+                  {t('lastName')} {t('required')}
                 </label>
                 <input
                   type="text"
@@ -50,7 +56,7 @@ export default function PropertyContactSection() {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700 mb-2"
               >
-                Email *
+                {t('email')} {t('required')}
               </label>
               <input
                 type="email"
@@ -65,7 +71,7 @@ export default function PropertyContactSection() {
                 htmlFor="phone"
                 className="block text-sm font-medium text-gray-700 mb-2"
               >
-                Teléfono *
+                {t('phone')} {t('required')}
               </label>
               <input
                 type="tel"
@@ -80,21 +86,21 @@ export default function PropertyContactSection() {
                 htmlFor="message"
                 className="block text-sm font-medium text-gray-700 mb-2"
               >
-                Mensaje
+                {t('message')}
               </label>
               <textarea
                 id="message"
                 name="message"
                 rows={4}
                 className="w-full px-4 py-3 border border-gray-300 focus:border-[#0A1628] focus:ring-1 focus:ring-[#0A1628] outline-none transition-colors resize-none"
-                placeholder="Contame sobre tu idea..."
+                placeholder={t('messagePlaceholder')}
               />
             </div>
             <button
               type="submit"
               className="w-full bg-[#0A1628] text-white py-4 px-6 hover:bg-[#1a2d4d] transition-colors font-medium text-lg"
             >
-              Enviar consulta
+              {t('submit')}
             </button>
           </form>
         </div>

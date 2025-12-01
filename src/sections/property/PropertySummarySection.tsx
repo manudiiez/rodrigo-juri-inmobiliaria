@@ -1,3 +1,7 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 interface ResumenGeneral {
   superficieTotal: {
     valor: number;
@@ -40,6 +44,8 @@ export default function PropertySummarySection({
   aptitudProductiva,
   descripcion,
 }: PropertySummarySectionProps) {
+  const t = useTranslations('PropertyDetailPage.summary');
+
   return (
     <section id="resumen" className="mb-20 scroll-mt-24">
       <div className="mb-8">
@@ -80,7 +86,7 @@ export default function PropertySummarySection({
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8 pb-8 border-b border-gray-200">
         <div className="bg-gray-50 p-6">
           <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-            {resumenGeneral.superficieTotal.label}
+            {t('totalArea')}
           </p>
           <p className="text-3xl font-light text-gray-900">
             {resumenGeneral.superficieTotal.valor}{" "}
@@ -89,7 +95,7 @@ export default function PropertySummarySection({
         </div>
         <div className="bg-gray-50 p-6">
           <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-            {resumenGeneral.precioPorHectarea.label}
+            {t('pricePerHectare')}
           </p>
           <p className="text-3xl font-light text-gray-900">
             {resumenGeneral.precioPorHectarea.valor.toLocaleString()}
@@ -100,7 +106,7 @@ export default function PropertySummarySection({
         </div>
         <div className="bg-gray-50 p-6">
           <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-            {resumenGeneral.altitud.label}
+            {t('altitude')}
           </p>
           <p className="text-3xl font-light text-gray-900">
             {resumenGeneral.altitud.valor}
@@ -111,7 +117,7 @@ export default function PropertySummarySection({
         </div>
         <div className="bg-gray-50 p-6">
           <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-            Estado Actual
+            {t('currentStatus')}
           </p>
           <p className="text-lg font-light text-gray-900 mt-4">
             {estadoActual}
@@ -122,7 +128,7 @@ export default function PropertySummarySection({
       {/* Descripción */}
       <div>
         <h3 className="text-2xl font-light text-gray-900 mb-4">
-          Descripción General
+          {t('generalDescription')}
         </h3>
         <p className="whitespace-pre-line text-base leading-relaxed text-gray-700">
           {descripcion}
@@ -132,7 +138,7 @@ export default function PropertySummarySection({
       {/* Aptitud Productiva */}
       <div className="mt-8 bg-[#0A1628] text-white p-8">
         <h4 className="text-sm uppercase tracking-widest text-gray-400 mb-2">
-          Aptitud Productiva
+          {t('productiveAptitude')}
         </h4>
         <p className="text-2xl font-light">
           {aptitudProductiva}

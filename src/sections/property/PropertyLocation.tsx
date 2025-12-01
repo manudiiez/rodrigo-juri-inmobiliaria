@@ -1,3 +1,7 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 interface UbicacionYAccesos {
   accesoPrincipal: string;
   distanciaAMendozaKm: number;
@@ -25,10 +29,12 @@ export default function PropertyLocation({
   ubicacionYAccesos,
   serviciosCercanos,
 }: PropertyLocationProps) {
+  const t = useTranslations('PropertyDetailPage.location');
+
   return (
     <section id="ubicacion" className="mb-20 scroll-mt-24">
       <h2 className="text-3xl font-light text-gray-900 mb-8 pb-4 border-b-2 border-[#E2B34C]">
-        Ubicación y Accesos
+        {t('title')}
       </h2>
 
       {/* Mapa placeholder */}
@@ -53,7 +59,7 @@ export default function PropertyLocation({
               d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
             />
           </svg>
-          <p className="text-gray-500">Mapa interactivo</p>
+          <p className="text-gray-500">{t('interactiveMap')}</p>
           <p className="text-xs text-gray-400 mt-1">
             Lat: {ubicacionYAccesos.coordenadas.lat}, Lng:{" "}
             {ubicacionYAccesos.coordenadas.lng}
@@ -64,7 +70,7 @@ export default function PropertyLocation({
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         <div className="bg-gray-50 p-6">
           <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-            Acceso Principal
+            {t('mainAccess')}
           </p>
           <p className="text-lg text-gray-900">
             {ubicacionYAccesos.accesoPrincipal}
@@ -72,7 +78,7 @@ export default function PropertyLocation({
         </div>
         <div className="bg-gray-50 p-6">
           <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-            Distancia a Mendoza
+            {t('distanceToMendoza')}
           </p>
           <p className="text-lg text-gray-900">
             {ubicacionYAccesos.distanciaAMendozaKm} km
@@ -81,41 +87,41 @@ export default function PropertyLocation({
       </div>
 
       <h4 className="text-xl font-light text-gray-900 mb-4">
-        Servicios Cercanos
+        {t('nearbyServices')}
       </h4>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="flex items-center justify-between border-b border-gray-200 pb-3">
-          <span className="text-gray-700">Centro Urbano</span>
+          <span className="text-gray-700">{t('urbanCenter')}</span>
           <span className="text-gray-900 font-medium">
             {serviciosCercanos.centroUrbanoKm} km
           </span>
         </div>
         <div className="flex items-center justify-between border-b border-gray-200 pb-3">
-          <span className="text-gray-700">Bodegas</span>
+          <span className="text-gray-700">{t('wineries')}</span>
           <span className="text-gray-900 font-medium">
             {serviciosCercanos.bodegasKm}
           </span>
         </div>
         <div className="flex items-center justify-between border-b border-gray-200 pb-3">
-          <span className="text-gray-700">Cooperativa</span>
+          <span className="text-gray-700">{t('cooperative')}</span>
           <span className="text-gray-900 font-medium">
             {serviciosCercanos.cooperativaKm} km
           </span>
         </div>
         <div className="flex items-center justify-between border-b border-gray-200 pb-3">
-          <span className="text-gray-700">Escuela</span>
+          <span className="text-gray-700">{t('school')}</span>
           <span className="text-gray-900 font-medium">
             {serviciosCercanos.escuelaKm} km
           </span>
         </div>
         <div className="flex items-center justify-between border-b border-gray-200 pb-3">
-          <span className="text-gray-700">Hospital</span>
+          <span className="text-gray-700">{t('hospital')}</span>
           <span className="text-gray-900 font-medium">
             {serviciosCercanos.hospitalKm} km
           </span>
         </div>
         <div className="flex items-center justify-between border-b border-gray-200 pb-3">
-          <span className="text-gray-700">Aeropuerto</span>
+          <span className="text-gray-700">{t('airport')}</span>
           <span className="text-gray-900 font-medium">
             {serviciosCercanos.aeropuertoKm} km
           </span>

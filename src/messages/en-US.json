@@ -111,6 +111,167 @@
     "aptitude": "Aptitude",
     "save": "Save"
   },
+  "PropertyDetailPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "properties": "Properties"
+    },
+    "navigation": {
+      "onThisPage": "On this page",
+      "summary": "Summary",
+      "technicalSheet": "Technical Sheet",
+      "infrastructure": "Infrastructure",
+      "productivity": "Productivity",
+      "location": "Location",
+      "documentation": "Documentation",
+      "contact": "Contact"
+    },
+    "summary": {
+      "currentStatus": "Current Status",
+      "generalDescription": "General Description",
+      "productiveAptitude": "Productive Aptitude",
+      "totalArea": "Total Area",
+      "pricePerHectare": "Price per Hectare",
+      "altitude": "Altitude"
+    },
+    "technical": {
+      "title": "Technical Sheet",
+      "soilAndClimate": "Soil and Climate",
+      "soilType": "Soil Type",
+      "texture": "Texture",
+      "soilPh": "Soil pH",
+      "organicMatter": "Organic Matter",
+      "slope": "Slope",
+      "drainage": "Drainage",
+      "degreeDays": "Degree Days",
+      "frost": "Frost",
+      "waterAndIrrigation": "Water and Irrigation",
+      "waterRight": "Water Right",
+      "totalFlow": "Total Flow",
+      "source": "Source",
+      "irrigationTurn": "Irrigation Turn",
+      "waterConductivity": "Electrical Conductivity",
+      "waterPh": "Water pH",
+      "irrigationSystem": "Irrigation System",
+      "installationYear": "Installation Year"
+    },
+    "infrastructure": {
+      "title": "Facilities and Improvements",
+      "mainHouse": "Main House",
+      "houseCondition": "Condition",
+      "shed": "Shed",
+      "irrigationRoom": "Irrigation Room",
+      "fences": "Fences",
+      "internalRoads": "Internal Roads",
+      "waterWell": "Water Well",
+      "australianTank": "Australian Tank"
+    },
+    "productivity": {
+      "title": "Energy and Productivity",
+      "electricSupply": "Electric Supply",
+      "energyType": "Energy Type",
+      "power": "Power",
+      "transformer": "Transformer",
+      "meter": "Meter",
+      "wineProduction": "Wine Production",
+      "grapeProductivity": "Productivity",
+      "yieldPerHectare": "Yield per hectare",
+      "varieties": "Varieties",
+      "vineyardAge": "Vineyard Age",
+      "grapePrice": "Grape Price 2024",
+      "marketPrice": "Market price"
+    },
+    "location": {
+      "title": "Location and Access",
+      "interactiveMap": "Interactive map",
+      "mainAccess": "Main Access",
+      "distanceToMendoza": "Distance to Mendoza",
+      "nearbyServices": "Nearby Services",
+      "urbanCenter": "Urban Center",
+      "wineries": "Wineries",
+      "cooperative": "Cooperative",
+      "school": "School",
+      "hospital": "Hospital",
+      "airport": "Airport"
+    },
+    "documentation": {
+      "title": "Legal Documentation",
+      "deed": "Deed",
+      "survey": "Survey",
+      "municipalPlans": "Municipal Plans",
+      "taxes": "Taxes",
+      "creditEligible": "Credit Eligible",
+      "encumbrances": "Encumbrances"
+    },
+    "contact": {
+      "title": "Start today",
+      "description": "Receive personalized advice to find the ideal estate in Tupungato and the rest of Mendoza, according to your project: agricultural, tourist, wine-making, investment or to enjoy with family.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your idea...",
+      "submit": "Send inquiry",
+      "required": "*"
+    }
+  },
+  "SellPage": {
+    "hero": {
+      "title": "Sell with us",
+      "subtitle": "Exceptional estates deserve exceptional service."
+    },
+    "form": {
+      "title": "Start today",
+      "description": "Get access to a professional valuation and a sales strategy designed especially for estates in Tupungato and the rest of Mendoza, to obtain the best value for your property.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your property…",
+      "submit": "Send inquiry",
+      "required": "*"
+    },
+    "statistics": {
+      "title": "Unmatched market reach",
+      "description": "Your estate deserves maximum exposure. My platform combines online and offline channels to reach qualified buyers and investors in Mendoza, Argentina, and abroad.",
+      "stat1Value": "+10,000",
+      "stat1Label": "POTENTIAL CONTACTS AND INVESTORS",
+      "stat1Description": "Proprietary network and strategic alliances in the agricultural and wine sectors.",
+      "stat2Value": "+300",
+      "stat2Label": "ANNUAL ESTATE INQUIRIES",
+      "stat2Description": "Active owners and buyers interested in Tupungato and surrounding areas.",
+      "stat3Value": "100%",
+      "stat3Label": "FOCUS ON ESTATES AND FARMS",
+      "stat3Description": "Specialization in rural, productive, and investment properties."
+    },
+    "marketing": {
+      "title": "Comprehensive marketing strategy for your estate",
+      "description": "I use specific marketing tools to highlight the productive, tourism, and investment value of each property and connect it with the right buyer.",
+      "card1Title": "Targeted digital advertising",
+      "card1Description": "Campaigns on real estate portals, social media, and investor databases interested in Mendoza.",
+      "card2Title": "Commercial material and plans",
+      "card2Description": "Digital brochures, technical information, maps, and clear production data to facilitate investment decisions.",
+      "card3Title": "Network of contacts and alliances",
+      "card3Description": "Connection with wineries, developers, producers, and national and international investors interested in the area.",
+      "card4Title": "Professional photography and video",
+      "card4Description": "Images, video, and aerial drone footage to showcase the estate's potential, views, and production."
+    },
+    "whyChoose": {
+      "title": "Why estate owners choose Rodrigo Juri",
+      "description": "Estate owners in Tupungato and other areas of Mendoza trust a specialized advisor to sell safely, at the best value, and with a clear process from start to finish.",
+      "stat1Value": "98%",
+      "stat1Title": "Client satisfaction",
+      "stat1Description": "Most owners value transparency, personalized treatment, and follow-up throughout the sale.",
+      "stat2Value": "98%",
+      "stat2Title": "Of listing value achieved",
+      "stat2Description": "Professional negotiation to get close to the expected price, taking care of both the economic value and the terms of the operation.",
+      "stat3Value": "100%",
+      "stat3Title": "Serious offers received",
+      "stat3Description": "Pricing and marketing strategy focused on real buyers and investors, not just simple inquiries."
+    }
+  },
   "LanguageSwitcher": {
     "english": "English",
     "spanish": "Spanish",

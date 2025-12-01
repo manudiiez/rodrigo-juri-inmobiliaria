@@ -111,6 +111,167 @@
     "aptitude": "Aptidão",
     "save": "Salvar"
   },
+  "PropertyDetailPage": {
+    "breadcrumb": {
+      "home": "Início",
+      "properties": "Propriedades"
+    },
+    "navigation": {
+      "onThisPage": "Nesta página",
+      "summary": "Resumo",
+      "technicalSheet": "Ficha Técnica",
+      "infrastructure": "Infraestrutura",
+      "productivity": "Produtividade",
+      "location": "Localização",
+      "documentation": "Documentação",
+      "contact": "Contato"
+    },
+    "summary": {
+      "currentStatus": "Status Atual",
+      "generalDescription": "Descrição Geral",
+      "productiveAptitude": "Aptidão Produtiva",
+      "totalArea": "Área total",
+      "pricePerHectare": "Preço por hectare",
+      "altitude": "Altitude"
+    },
+    "technical": {
+      "title": "Ficha Técnica",
+      "soilAndClimate": "Solo e Clima",
+      "soilType": "Tipo de Solo",
+      "texture": "Textura",
+      "soilPh": "pH do Solo",
+      "organicMatter": "Matéria Orgânica",
+      "slope": "Inclinação",
+      "drainage": "Drenagem",
+      "degreeDays": "Graus Dia",
+      "frost": "Geadas",
+      "waterAndIrrigation": "Água e Irrigação",
+      "waterRight": "Direito de Água",
+      "totalFlow": "Fluxo Total",
+      "source": "Fonte",
+      "irrigationTurn": "Turno de Irrigação",
+      "waterConductivity": "Condutividade Elétrica",
+      "waterPh": "pH da Água",
+      "irrigationSystem": "Sistema de Irrigação",
+      "installationYear": "Ano de Instalação"
+    },
+    "infrastructure": {
+      "title": "Instalações e Melhorias",
+      "mainHouse": "Casa Principal",
+      "houseCondition": "Condição",
+      "shed": "Galpão",
+      "irrigationRoom": "Sala de Irrigação",
+      "fences": "Cercas",
+      "internalRoads": "Estradas Internas",
+      "waterWell": "Poço de Água",
+      "australianTank": "Tanque Australiano"
+    },
+    "productivity": {
+      "title": "Energia e Produtividade",
+      "electricSupply": "Fornecimento Elétrico",
+      "energyType": "Tipo de Energia",
+      "power": "Potência",
+      "transformer": "Transformador",
+      "meter": "Medidor",
+      "wineProduction": "Produção Vinícola",
+      "grapeProductivity": "Produtividade",
+      "yieldPerHectare": "Rendimento por hectare",
+      "varieties": "Variedades",
+      "vineyardAge": "Idade dos Vinhedos",
+      "grapePrice": "Preço da Uva 2024",
+      "marketPrice": "Preço de mercado"
+    },
+    "location": {
+      "title": "Localização e Acesso",
+      "interactiveMap": "Mapa interativo",
+      "mainAccess": "Acesso Principal",
+      "distanceToMendoza": "Distância até Mendoza",
+      "nearbyServices": "Serviços Próximos",
+      "urbanCenter": "Centro Urbano",
+      "wineries": "Vinícolas",
+      "cooperative": "Cooperativa",
+      "school": "Escola",
+      "hospital": "Hospital",
+      "airport": "Aeroporto"
+    },
+    "documentation": {
+      "title": "Documentação Legal",
+      "deed": "Escritura",
+      "survey": "Medição",
+      "municipalPlans": "Planos Municipais",
+      "taxes": "Impostos",
+      "creditEligible": "Elegível para Crédito",
+      "encumbrances": "Gravames"
+    },
+    "contact": {
+      "title": "Comece hoje",
+      "description": "Receba assessoria personalizada para encontrar a fazenda ideal em Tupungato e no resto de Mendoza, de acordo com seu projeto: agrícola, turístico, vinícola, de investimento ou para desfrutar em família.",
+      "firstName": "Nome",
+      "lastName": "Sobrenome",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "message": "Mensagem",
+      "messagePlaceholder": "Conte-me sobre sua ideia...",
+      "submit": "Enviar consulta",
+      "required": "*"
+    }
+  },
+  "SellPage": {
+    "hero": {
+      "title": "Venda conosco",
+      "subtitle": "Fazendas excepcionais merecem assessoria à sua altura."
+    },
+    "form": {
+      "title": "Comece hoje",
+      "description": "Acesse uma avaliação profissional e uma estratégia de venda projetada especialmente para fazendas em Tupungato e no resto de Mendoza, para obter o melhor valor pela sua propriedade.",
+      "firstName": "Nome",
+      "lastName": "Sobrenome",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "message": "Mensagem",
+      "messagePlaceholder": "Conte-me sobre sua propriedade…",
+      "submit": "Enviar consulta",
+      "required": "*"
+    },
+    "statistics": {
+      "title": "Alcance de mercado incomparável",
+      "description": "Sua fazenda merece a máxima exposição. Minha plataforma combina canais online e offline para alcançar compradores e investidores qualificados em Mendoza, Argentina e no exterior.",
+      "stat1Value": "+10.000",
+      "stat1Label": "CONTATOS E INVESTIDORES POTENCIAIS",
+      "stat1Description": "Rede própria e alianças estratégicas no setor agrícola e vitivinícola.",
+      "stat2Value": "+300",
+      "stat2Label": "CONSULTAS ANUAIS POR FAZENDAS",
+      "stat2Description": "Proprietários e compradores ativos interessados em Tupungato e áreas adjacentes.",
+      "stat3Value": "100%",
+      "stat3Label": "FOCO EM FAZENDAS E CAMPOS",
+      "stat3Description": "Especialização em propriedades rurais, produtivas e de investimento."
+    },
+    "marketing": {
+      "title": "Estratégia integral de marketing para sua fazenda",
+      "description": "Utilizo ferramentas de marketing específicas para destacar o valor produtivo, turístico e de investimento de cada propriedade e conectá-la com o comprador adequado.",
+      "card1Title": "Publicidade digital segmentada",
+      "card1Description": "Campanhas em portais imobiliários, redes sociais e bases de dados de investidores interessados em Mendoza.",
+      "card2Title": "Material comercial e plantas",
+      "card2Description": "Folhetos digitais, informação técnica, mapas e dados produtivos claros para facilitar decisões de investimento.",
+      "card3Title": "Rede de contatos e alianças",
+      "card3Description": "Conexão com vinícolas, incorporadores, produtores e investidores nacionais e internacionais interessados na região.",
+      "card4Title": "Fotografia e vídeo profissional",
+      "card4Description": "Imagens, vídeo e tomadas aéreas com drone para mostrar o potencial da fazenda, suas vistas e sua produção."
+    },
+    "whyChoose": {
+      "title": "Por que os proprietários de fazendas escolhem Rodrigo Juri",
+      "description": "Donos de fazendas em Tupungato e outras zonas de Mendoza confiam em um assessor especializado para vender com segurança, pelo melhor valor e com um processo claro do início ao fim.",
+      "stat1Value": "98%",
+      "stat1Title": "Satisfação dos clientes",
+      "stat1Description": "A maioria dos proprietários valoriza a transparência, o tratamento personalizado e o acompanhamento durante toda a venda.",
+      "stat2Value": "98%",
+      "stat2Title": "Do valor de publicação alcançado",
+      "stat2Description": "Negociação profissional para se aproximar do preço esperado, cuidando tanto do valor econômico quanto das condições da operação.",
+      "stat3Value": "100%",
+      "stat3Title": "Ofertas sérias recebidas",
+      "stat3Description": "Estratégia de preço e marketing focada em compradores e investidores reais, não em simples consultas."
+    }
+  },
   "LanguageSwitcher": {
     "portuguese": "Português",
     "english": "Inglês",

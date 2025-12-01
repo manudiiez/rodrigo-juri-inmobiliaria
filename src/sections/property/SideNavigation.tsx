@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 interface Section {
   id: string;
   label: string;
@@ -16,11 +18,13 @@ export default function SideNavigation({
   activeSection,
   onSectionClick,
 }: SideNavigationProps) {
+  const t = useTranslations('PropertyDetailPage.navigation');
+
   return (
     <div className="hidden lg:block w-64">
       <div className="sticky top-24">
         <h3 className="text-sm uppercase tracking-widest text-gray-500 mb-4">
-          En esta página
+          {t('onThisPage')}
         </h3>
         <nav className="space-y-1">
           {sections.map((section) => (

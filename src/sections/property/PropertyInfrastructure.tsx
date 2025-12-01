@@ -1,3 +1,7 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 interface InstalacionesYMejoras {
   casaPrincipal: string;
   estadoCasa: string;
@@ -16,27 +20,29 @@ interface PropertyInfrastructureProps {
 export default function PropertyInfrastructure({
   instalacionesYMejoras,
 }: PropertyInfrastructureProps) {
+  const t = useTranslations('PropertyDetailPage.infrastructure');
+
   return (
     <section id="infraestructura" className="mb-20 scroll-mt-24">
       <h2 className="text-3xl font-light text-gray-900 mb-8 pb-4 border-b-2 border-[#E2B34C]">
-        Instalaciones y Mejoras
+        {t('title')}
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-gray-50 p-6">
           <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-            Casa Principal
+            {t('mainHouse')}
           </p>
           <p className="text-lg text-gray-900 mb-1">
             {instalacionesYMejoras.casaPrincipal}
           </p>
           <p className="text-sm text-gray-600">
-            Estado: {instalacionesYMejoras.estadoCasa}
+            {t('houseCondition')}: {instalacionesYMejoras.estadoCasa}
           </p>
         </div>
         <div className="bg-gray-50 p-6">
           <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-            Galpón
+            {t('shed')}
           </p>
           <p className="text-lg text-gray-900">
             {instalacionesYMejoras.galpon}
@@ -44,7 +50,7 @@ export default function PropertyInfrastructure({
         </div>
         <div className="bg-gray-50 p-6">
           <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-            Sala de Riego
+            {t('irrigationRoom')}
           </p>
           <p className="text-lg text-gray-900">
             {instalacionesYMejoras.salaDeRiego}
@@ -52,7 +58,7 @@ export default function PropertyInfrastructure({
         </div>
         <div className="bg-gray-50 p-6">
           <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-            Cercos
+            {t('fences')}
           </p>
           <p className="text-lg text-gray-900">
             {instalacionesYMejoras.cercos}
@@ -60,7 +66,7 @@ export default function PropertyInfrastructure({
         </div>
         <div className="bg-gray-50 p-6">
           <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-            Caminos Internos
+            {t('internalRoads')}
           </p>
           <p className="text-lg text-gray-900">
             {instalacionesYMejoras.caminosInternos}
@@ -68,7 +74,7 @@ export default function PropertyInfrastructure({
         </div>
         <div className="bg-gray-50 p-6">
           <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-            Pozo de Agua
+            {t('waterWell')}
           </p>
           <p className="text-lg text-gray-900">
             {instalacionesYMejoras.pozoDeAgua}
@@ -76,7 +82,7 @@ export default function PropertyInfrastructure({
         </div>
         <div className="bg-gray-50 p-6 md:col-span-2">
           <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-            Tanque Australiano
+            {t('australianTank')}
           </p>
           <p className="text-lg text-gray-900">
             {instalacionesYMejoras.tanqueAustraliano}
