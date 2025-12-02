@@ -1,8 +1,7 @@
-import { features } from "process";
 
 export const properties = [
   {
-    id: "finca-los-alamos",
+    id: 1,
     slug: "finca-los-alamos-vinedos-lujan",
     type: "finca",
     price: 777000, //
@@ -19,8 +18,11 @@ export const properties = [
     },
 
     images: [
-      "/images/fincas/alamos/hero.jpg",
-      // ... tus otras rutas de imágenes
+      "/finca1.jpg",
+      "/finca2.jpg",
+      "/finca1.jpg",
+      "/finca2.jpg",
+      "/finca1.jpg",
     ],
 
     content: {
@@ -28,6 +30,16 @@ export const properties = [
         title: "Finca Los Álamos con Viñedos",
         description:
           "Excepcional finca con viñedos en venta en Valle de Uco, cerca de Tupungato, provincia de Mendoza. Esta propiedad de 42 hectáreas representa una oportunidad única para inversores o amantes del vino que buscan combinar producción vitivinícola de calidad con un estilo de vida campestre de lujo.\n  La finca cuenta con viñedos de alta calidad plantados con las mejores variedades de la región, principalmente Malbec y Cabernet Sauvignon. El sistema de riego por goteo tecnificado instalado en 2018 garantiza la máxima eficiencia hídrica y calidad de producción.\n  Con una productividad de 12.000 kg/ha y precios de uva en 0.45 USD/kg, esta propiedad representa una excelente oportunidad de inversión con retornos comprobados.",
+
+        sections: [
+          { id: "resumen", label: "Resumen" },
+          { id: "ficha-tecnica", label: "Ficha Técnica" },
+          { id: "infraestructura", label: "Infraestructura" },
+          { id: "productividad", label: "Productividad" },
+          { id: "ubicacion", label: "Ubicación" },
+          { id: "documentacion", label: "Documentación" },
+          { id: "contacto-finca", label: "Contacto" },
+        ],
 
         // --- 1. FICHA TÉCNICA (Suelo y Clima) ---
         summary: [
@@ -202,7 +214,7 @@ export const properties = [
     },
   },
   {
-    id: "bodega-sinfin-maipu",
+    id: 2,
     slug: "bodega-sinfin-maipu-mendoza-venta",
     type: "bodega", // Cambiado de 'finca' a 'bodega'
     price: 0, // Se sugiere usar 0 o null para que el frontend muestre "Consultar Precio"
@@ -230,6 +242,16 @@ export const properties = [
         title: "Bodega SinFin: Industria, Marcas y Enoturismo en Maipú",
         description:
           "Importante bodega operativa en venta bajo modalidad de 'llave en mano' o fondo de comercio. Ubicada en el corazón de Maipú, a solo 20 minutos de la capital de Mendoza , esta propiedad combina una impresionante capacidad industrial de 6 millones de litros [cite: 19] con una unidad de negocios de enoturismo y eventos totalmente consolidada.\n\nLa empresa, de trayectoria familiar desde 1975 , posee una infraestructura versátil que incluye tanques de acero inoxidable, piletas de hormigón epoxipadas y cavas subterráneas para barricas[cite: 20, 21, 52]. Además de su capacidad productiva, la bodega cuenta con marcas posicionadas en el mercado interno y externo, exportando a más de 10 países incluyendo EE.UU., China y Reino Unido[cite: 27].\n\nIdeal para inversores que buscan una operación en marcha con viñedos propios, gestión de terceros y múltiples canales de ingresos (granel premium, fraccionado y turismo).",
+
+        sections: [
+          { id: "resumen", label: "Resumen" },
+          { id: "ficha-tecnica", label: "Ficha Técnica" },
+          { id: "infraestructura", label: "Infraestructura" },
+          { id: "productividad", label: "Productividad" },
+          { id: "ubicacion", label: "Ubicación" },
+          { id: "documentacion", label: "Documentación" },
+          { id: "contacto-finca", label: "Contacto" },
+        ],
 
         // --- 1. RESUMEN EJECUTIVO (Summary) ---
         summary: [

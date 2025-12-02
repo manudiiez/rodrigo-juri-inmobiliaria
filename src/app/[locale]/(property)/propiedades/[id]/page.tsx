@@ -12,6 +12,7 @@ import PropertyLocation from "@/sections/property/PropertyLocation";
 import PropertyDocumentation from "@/sections/property/PropertyDocumentation";
 import PropertyContactSection from "@/sections/property/PropertyContactSection";
 import SideNavigation from "@/sections/property/SideNavigation";
+import { properties } from "@/data/properties";
 
 // Mock data - en producción vendría de la API
 const property = {
@@ -146,6 +147,8 @@ La finca cuenta con viñedos de alta calidad plantados con las mejores variedade
 Con una productividad de 12.000 kg/ha y precios de uva en 0.45 USD/kg, esta propiedad representa una excelente oportunidad de inversión con retornos comprobados.`,
 };
 
+
+const propertyData = properties[0]
 export default function PropertyDetailPage() {
   const t = useTranslations('PropertyDetailPage.navigation');
   const [activeSection, setActiveSection] = useState("resumen");
