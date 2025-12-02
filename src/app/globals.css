@@ -20,6 +20,7 @@
   --color-bordeaux-light: var(--bordeaux-light);
   --color-bordeaux-dark: var(--bordeaux-dark);
   --color-secondary: var(--secondary);
+  --color-blueo: var(--blueo);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -50,7 +51,9 @@ html {
   scroll-behavior: smooth;
 }
 
-
+.border-blueo {
+  border-left: 4px solid #3080ff !important;
+}
 
 /* Range slider */
 .range-slider {

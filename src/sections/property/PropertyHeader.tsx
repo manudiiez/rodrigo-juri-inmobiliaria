@@ -4,15 +4,11 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 interface PropertyHeaderProps {
-  ref: string;
   title: string;
-  location: string;
 }
 
 export default function PropertyHeader({
-  ref,
   title,
-  location,
 }: PropertyHeaderProps) {
   const t = useTranslations('PropertyDetailPage.breadcrumb');
 

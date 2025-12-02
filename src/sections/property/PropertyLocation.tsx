@@ -2,39 +2,35 @@
 
 import { useTranslations } from "next-intl";
 
-interface UbicacionYAccesos {
-  accesoPrincipal: string;
-  distanciaAMendozaKm: number;
-  coordenadas: {
+interface location {
+  label: string;
+  map: {
     lat: number;
     lng: number;
   };
-}
-
-interface ServiciosCercanos {
-  centroUrbanoKm: number;
-  bodegasKm: string;
-  cooperativaKm: number;
-  escuelaKm: number;
-  hospitalKm: number;
-  aeropuertoKm: number;
+  featured?: { label: string; value: string }[];
+  groups: {
+    featured?: boolean;
+    title?: string;
+    fields: { label: string; value: string }[];
+  }[];
 }
 
 interface PropertyLocationProps {
-  ubicacionYAccesos: UbicacionYAccesos;
-  serviciosCercanos: ServiciosCercanos;
+  location: location;
 }
 
+
+
 export default function PropertyLocation({
-  ubicacionYAccesos,
-  serviciosCercanos,
+  location,
 }: PropertyLocationProps) {
-  const t = useTranslations('PropertyDetailPage.location');
+  const t = useTranslations("PropertyDetailPage.location");
 
   return (
     <section id="ubicacion" className="mb-20 scroll-mt-24">
       <h2 className="text-3xl font-light text-gray-900 mb-8 pb-4 border-b-2 border-secondary">
-        {t('title')}
+        {location.label}
       </h2>
 
       {/* Mapa placeholder */}
@@ -59,74 +55,42 @@ export default function PropertyLocation({
               d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
             />
           </svg>
-          <p className="text-gray-500">{t('interactiveMap')}</p>
+          <p className="text-gray-500">{t("interactiveMap")}</p>
           <p className="text-xs text-gray-400 mt-1">
-            Lat: {ubicacionYAccesos.coordenadas.lat}, Lng:{" "}
-            {ubicacionYAccesos.coordenadas.lng}
+            Lat: {location.map.lat}, Lng: {location.map.lng}
           </p>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-        <div className="bg-gray-50 p-6">
-          <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-            {t('mainAccess')}
-          </p>
-          <p className="text-lg text-gray-900">
-            {ubicacionYAccesos.accesoPrincipal}
-          </p>
+      {location.featured && location.featured.length > 0 && (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          {location.featured.map((item, index) => (
+            <div className="bg-gray-50 p-6" key={`${index}-featured-location`}>
+              <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
+                {item.label}
+              </p>
+              <p className="text-lg text-gray-900">{item.value}</p>
+            </div>
+          ))}
         </div>
-        <div className="bg-gray-50 p-6">
-          <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-            {t('distanceToMendoza')}
-          </p>
-          <p className="text-lg text-gray-900">
-            {ubicacionYAccesos.distanciaAMendozaKm} km
-          </p>
+      )}
+      {location.groups.map((group, groupIndex) => (
+        <div key={`${groupIndex}-group-location`}>
+          <h4 className="text-xl font-light text-gray-900 mb-4">
+            {group.title}
+          </h4>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {group.fields.map((field, fieldIndex) => (
+              <div className="flex items-center justify-between border-b border-gray-200 pb-3" key={`${fieldIndex}-field-location`}>
+                <span className="text-gray-700">{field.label}</span>
+                <span className="text-gray-900 font-medium">
+                  {field.value}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-
-      <h4 className="text-xl font-light text-gray-900 mb-4">
-        {t('nearbyServices')}
-      </h4>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="flex items-center justify-between border-b border-gray-200 pb-3">
-          <span className="text-gray-700">{t('urbanCenter')}</span>
-          <span className="text-gray-900 font-medium">
-            {serviciosCercanos.centroUrbanoKm} km
-          </span>
-        </div>
-        <div className="flex items-center justify-between border-b border-gray-200 pb-3">
-          <span className="text-gray-700">{t('wineries')}</span>
-          <span className="text-gray-900 font-medium">
-            {serviciosCercanos.bodegasKm}
-          </span>
-        </div>
-        <div className="flex items-center justify-between border-b border-gray-200 pb-3">
-          <span className="text-gray-700">{t('cooperative')}</span>
-          <span className="text-gray-900 font-medium">
-            {serviciosCercanos.cooperativaKm} km
-          </span>
-        </div>
-        <div className="flex items-center justify-between border-b border-gray-200 pb-3">
-          <span className="text-gray-700">{t('school')}</span>
-          <span className="text-gray-900 font-medium">
-            {serviciosCercanos.escuelaKm} km
-          </span>
-        </div>
-        <div className="flex items-center justify-between border-b border-gray-200 pb-3">
-          <span className="text-gray-700">{t('hospital')}</span>
-          <span className="text-gray-900 font-medium">
-            {serviciosCercanos.hospitalKm} km
-          </span>
-        </div>
-        <div className="flex items-center justify-between border-b border-gray-200 pb-3">
-          <span className="text-gray-700">{t('airport')}</span>
-          <span className="text-gray-900 font-medium">
-            {serviciosCercanos.aeropuertoKm} km
-          </span>
-        </div>
-      </div>
+      ))}
     </section>
   );
 }
