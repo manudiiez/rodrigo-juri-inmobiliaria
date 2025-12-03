@@ -33,18 +33,18 @@ export default function PropertiesSearchPage() {
       return {
         id: index + 1,
         slug: prop.slug,
-        title: content.title,
+        title: content?.title,
         location: prop.location.address,
         region: `${prop.location.province}, ${prop.location.country}`,
         price: priceValue !== null
           ? `${priceValue.toLocaleString()} ${prop.price.currency}`
-          : "Consultar precio",
+          : t("noPriceInfo"),
         image: prop.images[0] || "/finca1.jpg",
         aptitude: prop.type,
-        description: typeof content.description === 'string'
+        description: typeof content?.description === 'string'
           ? content.description
-          : content.description.text,
-        summaryFields: content.summary || [],
+          : content?.description.text,
+        summaryFields: content?.summary || [],
         hectares: prop.hectares,
         priceValue: priceValue || 0,
         pricePerHectare: pricePerHa || 0,

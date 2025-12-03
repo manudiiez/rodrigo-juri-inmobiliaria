@@ -92,6 +92,7 @@
     "pricePerHectare": "Price per hectare",
     "hectares": "Hectares",
     "price": "Price",
+    "noPriceInfo": "Contact for price",
     "any": "Any",
     "noMin": "no min.",
     "noMax": "no max.",

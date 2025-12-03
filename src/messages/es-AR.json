@@ -92,6 +92,7 @@
     "pricePerHectare": "Precio por hectárea",
     "hectares": "Hectáreas",
     "price": "Precio",
+    "noPriceInfo": "Consultar precio",
     "any": "Cualquiera",
     "noMin": "sin mín.",
     "noMax": "sin máx.",

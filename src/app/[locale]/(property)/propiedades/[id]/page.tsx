@@ -29,7 +29,10 @@ export default function PropertyDetailPage() {
     notFound();
   }
 
-  const propertyContent = propertyData.content[locale as keyof typeof propertyData.content] || propertyData.content.es;
+  // Usar el locale completo (es-AR, en-US, pt-BR) para acceder al contenido
+  const propertyContent = (propertyData.content[locale as keyof typeof propertyData.content] ||
+                           propertyData.content['es-AR'] ||
+                           Object.values(propertyData.content)[0]);
 
   const [activeSection, setActiveSection] = useState("resumen");
 
@@ -45,7 +48,7 @@ export default function PropertyDetailPage() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sectionElements = propertyContent.sections.map((section) => ({
+      const sectionElements = propertyContent.sections.map((section: { id: string; label: string }) => ({
         id: section.id,
         element: document.getElementById(section.id),
       }));

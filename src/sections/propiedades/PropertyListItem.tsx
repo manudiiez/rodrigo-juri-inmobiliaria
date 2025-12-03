@@ -7,18 +7,18 @@ import Link from "next/link";
 interface Property {
   id: number;
   slug: string;
-  title: string;
+  title: string | undefined;
   location: string;
   region: string;
   price: string;
   image: string;
   aptitude: string;
-  description: string;
+  description: string | undefined;
   summaryFields: {
     label: string;
     value: string;
     extra?: string;
-  }[];
+  }[] | undefined;
 } 
 
 interface PropertyListItemProps {
