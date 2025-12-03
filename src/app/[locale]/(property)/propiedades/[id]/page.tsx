@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import { useParams, notFound } from "next/navigation";
 import PropertyHeader from "@/sections/property/PropertyHeader";
 import PropertyImageCarousel from "@/sections/property/PropertyImageCarousel";
 import PropertySummarySection from "@/sections/property/PropertySummarySection";
@@ -14,11 +15,22 @@ import PropertyContactSection from "@/sections/property/PropertyContactSection";
 import SideNavigation from "@/sections/property/SideNavigation";
 import { properties } from "@/data/properties";
 
-
-const propertyData = properties[2];
-const propertyContent = properties[2].content.es;
 export default function PropertyDetailPage() {
   const t = useTranslations('PropertyDetailPage.navigation');
+  const locale = useLocale();
+  const params = useParams();
+  const slug = params.id as string;
+
+  // Buscar la propiedad por slug
+  const propertyData = properties.find(p => p.slug === slug);
+
+  // Si no se encuentra la propiedad, mostrar 404
+  if (!propertyData) {
+    notFound();
+  }
+
+  const propertyContent = propertyData.content[locale as keyof typeof propertyData.content] || propertyData.content.es;
+
   const [activeSection, setActiveSection] = useState("resumen");
 
   const sections = [

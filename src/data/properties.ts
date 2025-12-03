@@ -564,12 +564,14 @@ export const properties = [
       country: "AR",
     },
     images: [
-      "/casir_fachada_historica.jpg",
-      "/cava_barricas.jpg",
-      "/vinedos_agrelo_montana.jpg",
-      "/linea_avatar_wines.jpg",
-      "/lucas_moran_enologo.jpg",
-      "/sala_degustacion.jpg",
+      "/finca1.jpg",
+      "/finca2.jpg",
+      "/finca1.jpg",
+      "/finca2.jpg",
+      "/finca1.jpg",
+      "/finca2.jpg",
+      "/finca1.jpg",
+      "/finca2.jpg",
     ],
     content: {
       es: {

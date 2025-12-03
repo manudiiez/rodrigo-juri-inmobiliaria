@@ -6,19 +6,20 @@ import Link from "next/link";
 
 interface Property {
   id: number;
-  ref: string;
+  slug: string;
   title: string;
   location: string;
   region: string;
   price: string;
   image: string;
-  totalSize: string;
-  builtSize: string;
-  bedrooms: number;
-  bathrooms: number;
   aptitude: string;
   description: string;
-}
+  summaryFields: {
+    label: string;
+    value: string;
+    extra?: string;
+  }[];
+} 
 
 interface PropertyListItemProps {
   property: Property;
@@ -29,7 +30,7 @@ export default function PropertyListItem({ property }: PropertyListItemProps) {
 
   return (
     <Link
-      href={`/propiedades/${property.id}`}
+      href={`/propiedades/${property.slug}`}
       className="group flex flex-col lg:flex-row gap-8 hover:shadow-lg transition-shadow duration-300 border-b border-gray-200 pb-12"
     >
       {/* Image */}
@@ -61,38 +62,18 @@ export default function PropertyListItem({ property }: PropertyListItemProps) {
             {property.ref}
           </p>
 
-          {/* Details Grid */}
-          <div className="grid grid-cols-2 gap-x-8 gap-y-4 mb-6">
-            <div>
-              <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
-                {t("bedrooms")}
-              </p>
-              <p className="text-lg text-gray-900">{property.bedrooms}</p>
-            </div>
-            <div>
-              <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
-                {t("bathrooms")}
-              </p>
-              <p className="text-lg text-gray-900">{property.bathrooms}</p>
-            </div>
-            <div>
-              <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
-                {t("builtArea")}
-              </p>
-              <p className="text-lg text-gray-900">{property.builtSize}</p>
-            </div>
-            <div>
-              <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
-                {t("totalArea")}
-              </p>
-              <p className="text-lg text-gray-900">{property.totalSize}</p>
-            </div>
-            <div className="col-span-2">
-              <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
-                {t("aptitude")}
-              </p>
-              <p className="text-lg text-gray-900">{property.aptitude}</p>
-            </div>
+          {/* Details Grid - Summary Fields */}
+          <div className="grid grid-cols-2 gap-x-8 gap-y-6 mb-6">
+            {property.summaryFields.map((field, index) => (
+              <div key={index} className={index === property.summaryFields.length - 1 && property.summaryFields.length % 2 !== 0 ? "col-span-2" : ""}>
+                <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">
+                  {field.label}
+                </p>
+                <p className="text-lg text-gray-900">
+                  {field.value} {field.extra && <span className="text-sm text-gray-600">{field.extra}</span>}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
 
