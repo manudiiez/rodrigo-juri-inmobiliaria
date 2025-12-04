@@ -2,8 +2,8 @@ name: Build & Deploy
 
 on:
   push:
-    branches: ['designs']       # Construye imagen :main (o :latest)
-    tags: ['v*']             # Construye imagen específica (ej: :v1.0.1)
+    branches: ['main']       # AHORA: Escucha cambios en 'main'
+    tags: ['v*']             # MANTIENE: Escucha tags de versión (ej: v1.0.1)
 
 permissions:
   contents: read
@@ -23,16 +23,16 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      # Lógica para definir el TAG exacto, ej. v1.0.0
+      # Lógica de etiquetas
       - name: Extract Docker metadata
         id: meta
         uses: docker/metadata-action@v5
         with:
           images: ghcr.io/${{ github.repository_owner }}/rodrigo-juri-inmobiliaria
           tags: |
-            # Si es main -> usa 'latest'
-            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/designs' }}
-            # Si es un tag (v1.0.1) -> usa 'v1.0.1'
+            # 1. Si es rama 'main' -> la imagen se llama 'latest'
+            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
+            # 2. Si es un tag de git (v1.0.1) -> la imagen se llama 'v1.0.1'
             type=ref,event=tag
 
       - name: Build & Push
@@ -40,14 +40,23 @@ jobs:
         with:
           context: .
           push: true
-          # Aquí usa los tags generados arriba (latest O v1.0.1)
           tags: ${{ steps.meta.outputs.tags }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-      # --- Solo notificamos STAGING (Pre-deploy) ---
-      # Production no tiene webhook aquí porque lo harás manual en el panel
-      - name: Trigger EasyPanel Deploy (STAGING ONLY)
-        if: github.ref == 'refs/heads/designs'
+      # --- WEBHOOK PARA PRE-DEPLOY (STAGING) ---
+      # Se ejecuta AUTOMÁTICAMENTE solo cuando actualizas 'main'
+      - name: Trigger EasyPanel Deploy (Auto Pre-Deploy)
+        if: github.ref == 'refs/heads/main'
         run: |
           curl -fsSL -X POST "${{ secrets.EASYPANEL_DEPLOY_HOOK_STAGING }}"
+
+      # --- OPCIONAL: WEBHOOK PARA PRODUCCIÓN ---
+      # Si quisieras que producción TAMBIÉN se actualice sola al crear un tag,
+      # descomenta las líneas de abajo y agrega el secreto correspondiente.
+      # Si prefieres hacerlo manual en EasyPanel (cambiando el tag), déjalo así.
+      
+      # - name: Trigger EasyPanel Deploy (PRODUCTION)
+      #   if: startsWith(github.ref, 'refs/tags/v')
+      #   run: |
+      #     curl -fsSL -X POST "${{ secrets.EASYPANEL_DEPLOY_HOOK_PROD }}"
