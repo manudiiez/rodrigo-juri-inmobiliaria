@@ -16,6 +16,8 @@ export default function PropertyInfrastructure({
   instalaciones,
 }: PropertyInfrastructureProps) {
   const t = useTranslations("PropertyDetailPage.infrastructure");
+  // Guard: don't render if instalaciones or fields missing
+  if (!instalaciones || !Array.isArray(instalaciones.fields) || instalaciones.fields.length === 0) return null;
 
   return (
     <section id="infraestructura" className="mb-20 scroll-mt-24">

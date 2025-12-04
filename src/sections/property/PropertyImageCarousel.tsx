@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 interface PropertyImageCarouselProps {
-  images: string[];
+  images: {url: string, class?: string}[];
   title: string;
 }
 
@@ -12,6 +12,8 @@ export default function PropertyImageCarousel({
   images,
   title,
 }: PropertyImageCarouselProps) {
+  // No render if no images supplied
+  if (!images || !Array.isArray(images) || images.length === 0) return null;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = () => {
@@ -36,10 +38,11 @@ export default function PropertyImageCarousel({
               }`}
             >
               <Image
-                src={image}
+                src={image.url}
                 alt={`${title} - Imagen ${index + 1}`}
                 fill
-                className="object-cover"
+                // className="object-contain"
+                className={image.class || "object-cover"}
                 priority={index === 0}
               />
             </div>

@@ -20,6 +20,9 @@ export default function SideNavigation({
 }: SideNavigationProps) {
   const t = useTranslations('PropertyDetailPage.navigation');
 
+  // Guard: if no sections, don't render navigation
+  if (!sections || !Array.isArray(sections) || sections.length === 0) return null;
+
   return (
     <div className="hidden lg:block w-64">
       <div className="sticky top-24">

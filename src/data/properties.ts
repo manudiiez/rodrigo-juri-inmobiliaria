@@ -19,12 +19,12 @@ export const properties = [
     },
 
     images: [
-      "/finca1.jpg",
-      "/finca2.jpg",
-      "/finca1.jpg",
-      "/finca2.jpg",
-      "/finca1.jpg",
-      "/finca2.jpg",
+      { url: "/finca1.jpg" },
+      { url: "/finca2.jpg" },
+      { url: "/finca1.jpg" },
+      { url: "/finca2.jpg" },
+      { url: "/finca1.jpg" },
+      { url: "/finca2.jpg" },
     ],
 
     content: {
@@ -783,233 +783,6 @@ export const properties = [
     },
   },
   {
-    slug: "bodega-casir-dos-santos-maipu",
-    type: "bodega",
-    price: {
-      value: null,
-      currency: "USD",
-      pricePerHectare: null,
-    },
-    hectares: null,
-    location: {
-      lat: -33.0234,
-      lng: -68.7905,
-      address: "Maipú, Mendoza (Lunlunta)",
-      province: "Mendoza",
-      country: "AR",
-    },
-    images: [
-      "/finca1.jpg",
-      "/finca2.jpg",
-      "/finca1.jpg",
-      "/finca2.jpg",
-      "/finca1.jpg",
-      "/finca2.jpg",
-      "/finca1.jpg",
-      "/finca2.jpg",
-    ],
-    content: {
-      es: {
-        title: "Bodega Casir dos Santos",
-        description: {
-          text: "Bodega histórica fundada en 1862 (antiguamente Bodega Viña Maipú), siendo una de las más antiguas en funcionamiento de la provincia de Mendoza. Casir dos Santos combina más de un siglo de tradición vitivinícola con una visión moderna y tecnológica.\n\nBajo la dirección enológica de Lucas Moran, la bodega elabora vinos de alta gama provenientes de tres terroirs privilegiados: Lunlunta (Maipú), Agrelo (Luján de Cuyo) y Valle de Uco. Su filosofía se centra en cuidar cada paso del proceso sin dejar variables al azar, buscando la máxima expresión de cada región.",
-          callout: {
-            label: "LEGADO",
-            value: "Fundada en 1862 / Vinos de Terroir",
-          },
-        },
-        sections: [
-          { id: "resumen", label: "Resumen" },
-          { id: "ficha-tecnica", label: "Viñedos y Terroir" },
-          { id: "infraestructura", label: "Portafolio de Vinos" },
-          { id: "productividad", label: "Equipo Enológico" },
-          { id: "ubicacion", label: "Ubicación" },
-          { id: "documentacion", label: "Información Institucional" },
-          { id: "contacto-finca", label: "Contacto" },
-        ],
-
-        summary: [
-          {
-            label: "Fundación",
-            value: "1862",
-            extra: "Más de 150 años",
-          },
-          {
-            label: "Origen",
-            value: "Maipú",
-            extra: "Lunlunta",
-          },
-          {
-            label: "Enólogo",
-            value: "Lucas Moran",
-            extra: "22 Vendimias",
-          },
-          {
-            label: "Estado",
-            value: "En Producción",
-            class: "text-lg mt-4",
-          },
-        ],
-
-        techSpecs: {
-          label: "Viñedos y Terroirs",
-          groups: [
-            {
-              title: "Zonas de Cultivo",
-              fields: [
-                {
-                  label: "LUNLUNTA (Maipú)",
-                  value: "950 msnm",
-                  subText: "La zona baja del Río Mendoza (20 km de la ciudad)",
-                  class: "border-secondary",
-                },
-                {
-                  label: "AGRELO (Luján)",
-                  value: "1.050 msnm",
-                  subText: "El Valle (40 km de la ciudad)",
-                },
-                {
-                  label: "VALLE DE UCO",
-                  value: "1.250 msnm",
-                  subText:
-                    "La ladera superior de los Andes (100 km de la ciudad)",
-                },
-              ],
-            },
-            {
-              title: "Dirección Enológica",
-              fields: [
-                {
-                  label: "DIRECTOR",
-                  value: "Lucas Moran",
-                  class: "border-blueo",
-                },
-                {
-                  label: "EXPERIENCIA",
-                  value: "+22 Cosechas",
-                  subText: "Ex Don Bosco y Ciencias Agrarias",
-                },
-                {
-                  label: "FILOSOFÍA",
-                  value: "Intervención precisa",
-                  subText: "Tecnología y compromiso experto",
-                },
-              ],
-            },
-          ],
-        },
-
-        improvements: {
-          label: "Portafolio de Vinos",
-          fields: [
-            {
-              label: "LÍNEA ESTATE",
-              value: "Malbec, Cab. Sauvignon, Petit Verdot",
-              subText: "Vinos de Finca",
-            },
-            {
-              label: "LÍNEA RESERVE",
-              value: "Malbec, Cab. Sauvignon, Petit Verdot, Chardonnay",
-              subText: "Crianza en barrica",
-            },
-            {
-              label: "GRAN CORTE",
-              value: "Red Blend",
-              subText: "Icono de la bodega",
-            },
-            {
-              label: "AVATAR WINES",
-              value: "Línea Joven y Moderna",
-              subText:
-                "Varietales, Ultra Range (Syrah/Malbec/Cab) y Extra Brut (Pink Pinot Noir)",
-            },
-            {
-              label: "EDICIONES ESPECIALES",
-              value:
-                "Inspiración (Blend de Enólogas), Elijo Creer (Malbec 2023)",
-            },
-          ],
-        },
-
-        energy: {
-          label: "Reconocimientos y Puntajes",
-          groups: [
-            {
-              title: "Puntajes Destacados",
-              borderColor: "border-indigo-900",
-              featured: [
-                {
-                  label: "GRAN CORTE",
-                  value: "95 Pts",
-                  subText: "James Suckling",
-                },
-                {
-                  label: "RESERVE MALBEC",
-                  value: "93 Pts",
-                  subText: "James Suckling",
-                },
-              ],
-              fields: [
-                {
-                  label: "Tim Atkin",
-                  value: "92 Pts (Reserve Malbec)",
-                  class: "border-secondary",
-                },
-                {
-                  label: "Robert Parker",
-                  value: "91 Pts (Gran Corte)",
-                  class: "border-secondary",
-                },
-                {
-                  label: "Descorchados",
-                  value: "90 Pts (Estate Malbec 2022)",
-                },
-                {
-                  label: "IWSC",
-                  value: "93 Pts",
-                },
-              ],
-            },
-          ],
-        },
-
-        locationDetails: {
-          label: "Ubicación",
-          map: {
-            lat: -33.0234,
-            lng: -68.7905,
-          },
-          featured: [
-            { label: "REGIÓN", value: "Primera Zona (Maipú)" },
-            { label: "PAISAJE", value: "Vistas a la Cordillera" },
-          ],
-          groups: [
-            {
-              title: "Contexto",
-              fields: [
-                { label: "Entorno", value: "Viñedos históricos y olivos" },
-                { label: "Acceso", value: "Ruta del Vino de Maipú" },
-              ],
-            },
-          ],
-        },
-
-        legal: {
-          label: "Información Institucional",
-          groups: [
-            {
-              fields: [
-                { label: "MARCA", value: "Casir dos Santos" },
-                { label: "REDES", value: "@bodegacasirdossantos" },
-                { label: "PROPIETARIOS", value: "Familia Casir dos Santos" },
-              ],
-            },
-          ],
-        },
-      },
-    },
-  },
-  {
     slug: "bodega-sinfin-maipu-mendoza",
     type: "bodega",
     price: {
@@ -1026,14 +799,46 @@ export const properties = [
       country: "AR",
     },
     images: [
-      "/finca2.jpg",
-      "/finca1.jpg",
-      "/finca2.jpg",
-      "/finca1.jpg",
-      "/finca2.jpg",
-      "/finca1.jpg",
-      "/finca2.jpg",
-      "/finca1.jpg",
+      {
+        url: "/images/sinfin/bodega-sinfin-1.png",
+        class: "object-cover object-bottom",
+      },
+      {
+        url: "/images/sinfin/bodega-sinfin-10.png",
+        class: "object-cover object-bottom",
+      },
+      {
+        url: "/images/sinfin/bodega-sinfin-2.png",
+        class: "object-cover object-bottom",
+      },
+      {
+        url: "/images/sinfin/bodega-sinfin-3.png",
+        class: "object-contain",
+      },
+      {
+        url: "/images/sinfin/bodega-sinfin-4.png",
+        class: "object-contain",
+      },
+      {
+        url: "/images/sinfin/bodega-sinfin-5.png",
+        class: "object-contain",
+      },
+      {
+        url: "/images/sinfin/bodega-sinfin-6.png",
+        class: "object-contain",
+      },
+      {
+        url: "/images/sinfin/bodega-sinfin-7.png",
+        class: "object-contain",
+      },
+      {
+        url: "/images/sinfin/bodega-sinfin-8.png",
+        class: "object-contain",
+      },
+      {
+        url: "/images/sinfin/bodega-sinfin-9.png",
+        class: "object-contain",
+      },
     ],
     content: {
       "es-AR": {
@@ -1253,22 +1058,20 @@ export const properties = [
           ],
         },
         legal: {
-          label: "Desempeño Operativo",
+          label: "Documentos",
           groups: [
             {
               title: "Resumen Financiero (Histórico)",
               fields: [
-                { label: "PERÍODO ANALIZADO", value: "2016 - 2025" },
-                { label: "VOLUMEN PROMEDIO", value: "2.776.109 Lts" },
-                {
-                  label: "EBITDA PROM. HISTÓRICO",
-                  value: "USD 193.082",
-                  subText: "Promedio de la serie",
-                },
                 {
                   label: "ESTRUCTURA",
                   value: "Organigrama completo",
                   subText: "Gerencia, Enología, Comercial, RRHH",
+                },
+                {
+                  label: "Presentación",
+                  value: "Ver documento adjunto",
+                  link: "/docs/bodega-sinfin.pdf",
                 },
               ],
             },
@@ -1740,11 +1543,13 @@ export const properties = [
       country: "AR",
     },
     images: [
-      "/casir1.jpg",
-      "/casir2.jpg",
-      "/casir3.jpg",
-      "/casir4.jpg",
-      "/casir5.jpg",
+      {url: "/images/casirdossantos/bodega-casirdossantos-1.jpg", class: "object-cover"},
+      {url: "/images/casirdossantos/bodega-casirdossantos-2.png", class: "object-contain"},
+      {url: "/images/casirdossantos/bodega-casirdossantos-3.png", class: "object-contain"},
+      {url: "/images/casirdossantos/bodega-casirdossantos-4.png", class: "object-contain"},
+      {url: "/images/casirdossantos/bodega-casirdossantos-5.png", class: "object-contain"},
+      {url: "/images/casirdossantos/bodega-casirdossantos-6.png", class: "object-contain"},
+      {url: "/images/casirdossantos/bodega-casirdossantos-7.png", class: "object-contain"},
     ],
     content: {
       "es-AR": {
@@ -1753,7 +1558,8 @@ export const properties = [
           text: "Oportunidad de inversión en una de las bodegas en funcionamiento más antiguas de Mendoza. Fundada originalmente en 1862 (antigua Viña Maipú), Casir dos Santos combina más de un siglo de patrimonio vitivinícola con una visión moderna de enología de precisión.\n\nLa propiedad destaca por su enfoque multi-terroir, gestionando viñedos en las tres zonas más prestigiosas de la provincia: Lunlunta (Maipú), Agrelo (Luján de Cuyo) y Valle de Uco. Esta diversidad permite obtener la mejor expresión varietal para sus líneas de vinos premium (Estate, Reserve, Gran Corte y la innovadora línea Avatar), todas reconocidas internacionalmente con puntajes superiores a 90 puntos por críticos como James Suckling, Tim Atkin y Robert Parker.\n\nBajo la dirección enológica de Lucas Moran, la bodega ha modernizado sus procesos sin perder su esencia histórica, utilizando tecnología de vanguardia y barricas de roble francés para la crianza. Es una propiedad ideal para inversores que buscan una marca consolidada, con historia, capacidad productiva y un portfolio de productos ya posicionado en el mercado de alta gama.",
           callout: {
             label: "VALOR DIFERENCIAL",
-            value: "Bodega Histórica (1862) / 3 Terroirs Premium / Muchos Reconocimientos",
+            value:
+              "Bodega Histórica (1862) / 3 Terroirs Premium / Muchos Reconocimientos",
           },
         },
         sections: [
@@ -1767,11 +1573,11 @@ export const properties = [
           },
           {
             id: "infraestructura",
-            label: "Portfolio y Puntajes",
+            label: "Infraestructura",
           },
           {
             id: "productividad",
-            label: "Infraestructura",
+            label: "Portfolio y Puntajes",
           },
           {
             id: "ubicacion",
@@ -1888,7 +1694,11 @@ export const properties = [
                 },
                 {
                   label: "Nuevos Lanzamientos",
-                  value: ["Inspiración Blend de Tintas", "Malbec Elijo Creer", "Reserve Chardonnay"],
+                  value: [
+                    "Inspiración Blend de Tintas",
+                    "Malbec Elijo Creer",
+                    "Reserve Chardonnay",
+                  ],
                 },
               ],
             },
@@ -1982,9 +1792,8 @@ export const properties = [
               subText: "Sala de barricas",
             },
             {
-              label: "CAPITAL HUMANO",
-              value: "Equipo experto",
-              subText: "Gerencia y operarios",
+              label: "NUESTROS VIÑEDOS",
+              value: "Lunlinta, Agrelo, Valle de Uco",
             },
           ],
         },
@@ -2021,17 +1830,18 @@ export const properties = [
           ],
         },
         legal: {
-          label: "Documentación",
+          label: "Documentos",
           groups: [
             {
               fields: [
                 {
-                  label: "ESTADO",
-                  value: "A consultar",
+                  label: "Mas Informacion",
+                  value: "Ver presentacion vinos",
+                  link: "/docs/Presentación-Bodega-Casir-dos-Santos-ESP.pdf",
                 },
                 {
-                  label: "HABILITACIÓN",
-                  value: "Vigente (INV)",
+                  label: "Estado",
+                  value: "En Producción",
                 },
               ],
             },

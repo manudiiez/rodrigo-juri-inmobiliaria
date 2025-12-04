@@ -31,6 +31,10 @@ export default function PropertySummarySection({
 }: PropertySummarySectionProps) {
   const t = useTranslations("PropertyDetailPage.summary");
 
+  // If required summary data is missing, don't render
+  if (!title && !propertyRef) return null;
+  if (!resumenGeneral || !Array.isArray(resumenGeneral)) return null;
+
   // Normalizar descripcion si es string
   const normalizedDescripcion = typeof descripcion === 'string'
     ? { text: descripcion, callout: undefined }

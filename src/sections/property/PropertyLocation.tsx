@@ -26,6 +26,8 @@ export default function PropertyLocation({
   location,
 }: PropertyLocationProps) {
   const t = useTranslations("PropertyDetailPage.location");
+  // Guard: don't render if location or map or groups missing
+  if (!location || !location.map || !Array.isArray(location.groups) || location.groups.length === 0) return null;
 
   return (
     <section id="ubicacion" className="mb-20 scroll-mt-24">

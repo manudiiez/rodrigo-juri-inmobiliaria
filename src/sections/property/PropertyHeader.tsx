@@ -12,6 +12,9 @@ export default function PropertyHeader({
 }: PropertyHeaderProps) {
   const t = useTranslations('PropertyDetailPage.breadcrumb');
 
+  // If no title, don't render header
+  if (!title) return null;
+
   return (
     <div className="bg-white border-b border-gray-200 px-6 md:px-12 py-4 pt-24">
       <div>
@@ -21,7 +24,7 @@ export default function PropertyHeader({
           </Link>
           <span>/</span>
           <Link
-            href="/design-a/propiedades"
+            href="/propiedades"
             className="hover:text-gray-900"
           >
             {t('properties')}

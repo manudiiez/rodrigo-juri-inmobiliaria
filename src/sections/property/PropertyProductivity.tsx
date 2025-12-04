@@ -74,6 +74,8 @@ export default function PropertyProductivity({
   production,
 }: ProductionInterface) {
   const t = useTranslations("PropertyDetailPage.productivity");
+  // Guard: don't render if production or groups missing
+  if (!production || !Array.isArray(production.groups) || production.groups.length === 0) return null;
 
   return (
     <section id="productividad" className="mb-20 scroll-mt-24">

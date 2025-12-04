@@ -34,6 +34,9 @@ export default function PropertyTechnicalSheet({
 }: PropertyTechnicalSheetProps) {
   const t = useTranslations("PropertyDetailPage.technical");
 
+  // Guard: don't render if no technical specs provided
+  if (!techSpecs || !Array.isArray((techSpecs as any).groups) || (techSpecs as any).groups.length === 0) return null;
+
   return (
     <section id="ficha-tecnica" className="mb-20 scroll-mt-24">
       <h2 className="text-3xl font-light text-gray-900 mb-8 pb-4 border-b-2 border-secondary">

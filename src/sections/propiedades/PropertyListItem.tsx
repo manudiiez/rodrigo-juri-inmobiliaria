@@ -11,14 +11,14 @@ interface Property {
   location: string;
   region: string;
   price: string;
-  image: string;
+  image: { url: string, class?: string };
   aptitude: string;
   description: string | undefined;
   summaryFields: {
     label: string;
     value: string;
     extra?: string;
-  }[] | undefined;
+  }[];
 } 
 
 interface PropertyListItemProps {
@@ -28,6 +28,13 @@ interface PropertyListItemProps {
 export default function PropertyListItem({ property }: PropertyListItemProps) {
   const t = useTranslations("PropertiesPage");
 
+  // Limitar descripción a 720 caracteres
+  const truncateDescription = (text: string | undefined, maxLength: number = 720): string => {
+    if (!text) return '';
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength).trim() + '.......';
+  };
+
   return (
     <Link
       href={`/propiedades/${property.slug}`}
@@ -36,8 +43,8 @@ export default function PropertyListItem({ property }: PropertyListItemProps) {
       {/* Image */}
       <div className="lg:w-1/2 relative h-96 lg:h-[500px] overflow-hidden">
         <Image
-          src={property.image}
-          alt={property.title}
+          src={property.image.url || '/finca1.jpg'}
+          alt={property.title || 'Imagen de propiedad'}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-700"
         />
@@ -55,11 +62,11 @@ export default function PropertyListItem({ property }: PropertyListItemProps) {
           </p>
 
           <p className="text-gray-600 text-base leading-relaxed mb-8 font-light">
-            {property.description}
+            {truncateDescription(property.description)}
           </p>
 
           <p className="text-sm text-gray-500 mb-6 uppercase tracking-wider">
-            {property.ref}
+            {property.slug}
           </p>
 
           {/* Details Grid - Summary Fields */}
