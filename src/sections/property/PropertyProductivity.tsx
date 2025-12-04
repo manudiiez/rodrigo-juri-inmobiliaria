@@ -17,6 +17,7 @@ interface EnergiaYProductividad {
       value: string | string[];
       border?: string;
       class?: string;
+      subText?: string;
     }[];
   }[];
 }
@@ -125,6 +126,9 @@ export default function PropertyProductivity({
                   </div>
                 ) : (
                   <p className="text-lg text-gray-900">{field.value}</p>
+                )}
+                {field.subText && (
+                  <p className="text-sm text-gray-500 mt-2">{field.subText}</p>
                 )}
               </div>
             ))}

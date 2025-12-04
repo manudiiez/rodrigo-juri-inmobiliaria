@@ -783,269 +783,6 @@ export const properties = [
     },
   },
   {
-    slug: "bodega-sinfin-maipu-mendoza",
-    type: "bodega",
-    price: {
-      value: null,
-      currency: "USD",
-      pricePerHectare: null,
-    },
-    hectares: 440,
-    location: {
-      lat: -32.9765,
-      lng: -68.7892,
-      address: "Maipú, Mendoza (a 20 min de la Ciudad)",
-      province: "Mendoza",
-      country: "AR",
-    },
-    images: [
-      "/bodega-sinfin-1.png",
-      "/bodega-sinfin-2.png",
-      "/bodega-sinfin-3.png",
-      "/finca1.jpg",
-      "/finca2.jpg",
-      "/finca1.jpg",
-    ],
-    content: {
-      es: {
-        title: "Bodega SinFin - Maipú",
-        description: {
-          text: "Bodega familiar ubicada en Maipú, Mendoza, con una trayectoria que data de 1975 en la producción de uvas y desde 2005 en la elaboración de vinos de alta gama. La bodega combina una sólida capacidad industrial con una filosofía centrada en que el vino trasciende y emociona.\n\nPosee una capacidad total de vasija de 6.000.000 de litros y gestiona 440 hectáreas de viñedos (propios y de terceros) distribuidos en los mejores terruiros de Mendoza. Se destaca por su fuerte presencia en el mercado externo (granel de alta calidad y fraccionado) y una propuesta de enoturismo integral con espacios para eventos corporativos y sociales.",
-          callout: {
-            label: "PERFIL",
-            value: "Vinos Alta Gama / Exportación / Enoturismo",
-          },
-        },
-        sections: [
-          { id: "resumen", label: "Resumen" },
-          { id: "ficha-tecnica", label: "Capacidad e Infraestructura" },
-          { id: "infraestructura", label: "Enoturismo y Eventos" },
-          { id: "productividad", label: "Mercados y Productos" },
-          { id: "ubicacion", label: "Ubicación" },
-          { id: "documentacion", label: "Desempeño Operativo" },
-          { id: "contacto-finca", label: "Contacto" },
-        ],
-
-        summary: [
-          {
-            label: "Capacidad Total",
-            value: "6 M",
-            extra: "Litros",
-          },
-          {
-            label: "Elaboración Anual",
-            value: "4.5 M",
-            extra: "Litros (máx)",
-          },
-          {
-            label: "Viñedos Gestionados",
-            value: "440",
-            extra: "Hectáreas",
-          },
-          {
-            label: "Estado",
-            value: "En funcionamiento",
-            class: "text-lg mt-4",
-          },
-        ],
-
-        techSpecs: {
-          label: "Capacidad e Infraestructura",
-          groups: [
-            {
-              title: "Capacidad de Vasija",
-              fields: [
-                {
-                  label: "CAPACIDAD TOTAL",
-                  value: "6.000.000 Litros",
-                  class: "border-secondary",
-                },
-                {
-                  label: "CEMENTO C/ EPOXI",
-                  value: "5.740.000 Litros",
-                },
-                {
-                  label: "ACERO INOXIDABLE",
-                  value: "200.000 Litros",
-                  subText: "Tanques con control de temperatura",
-                },
-                {
-                  label: "BARRICAS ROBLE",
-                  value: "60.000 Litros",
-                  subText: "Roble Francés",
-                },
-              ],
-            },
-            {
-              title: "Viñedos y Terroir",
-              fields: [
-                {
-                  label: "SUPERFICIE TOTAL",
-                  value: "440 has",
-                },
-                {
-                  label: "VIÑEDOS PROPIOS",
-                  value: "90 has",
-                  class: "border-blueo",
-                },
-                {
-                  label: "VIÑEDOS TERCEROS",
-                  value: "350 has",
-                },
-                {
-                  label: "UBICACIONES",
-                  value: "Maipú, Luján, Valle de Uco, Este",
-                  subText: "Diversidad de terroirs",
-                },
-                {
-                  label: "VARIETALES TINTOS",
-                  value:
-                    "Malbec, Cab. Franc, Cab. Sauv, Bonarda, Merlot, Petit Verdot",
-                  class: "text-sm",
-                },
-                {
-                  label: "VARIETALES BLANCOS",
-                  value: "Sauvignon Blanc",
-                  class: "text-sm",
-                },
-              ],
-            },
-          ],
-        },
-
-        improvements: {
-          label: "Enoturismo y Eventos",
-          fields: [
-            {
-              label: "PROPUESTA",
-              value: "Visitas guiadas y Degustaciones",
-              subText: "Maridajes con chocolates y picadas",
-            },
-            {
-              label: "SALONES",
-              value: "3 Espacios Diferenciados",
-            },
-            {
-              label: "ESPACIO JARDINES",
-              value: "Fuente de agua y jardines",
-              subText: "Para eventos al aire libre",
-            },
-            {
-              label: "CAVA SUBTERRÁNEA",
-              value: "Antiguas piletas renovadas",
-              subText: "Para eventos íntimos y originales",
-            },
-            {
-              label: "CASA DE FAMILIA",
-              value: "Con piscina y parrillas",
-              subText: "Rodeada de viñedos",
-            },
-            {
-              label: "GASTRONOMÍA",
-              value: "Catering propio de primer nivel",
-            },
-          ],
-        },
-
-        energy: {
-          label: "Negocio y Mercados",
-          groups: [
-            {
-              title: "Mercado Externo",
-              fields: [
-                {
-                  label: "EXPERIENCIA EXPORT",
-                  value: "+15 años",
-                  class: "border-secondary",
-                },
-                {
-                  label: "MERCADOS PRINCIPALES",
-                  value: "EEUU, Canadá, China, UK",
-                  subText: "También Brasil, Japón, Suiza, Irlanda",
-                },
-                {
-                  label: "GRANEL ALTA GAMA",
-                  value: "Especialidad",
-                  subText: "Premiada en Ámsterdam (Bulk Wine)",
-                },
-              ],
-            },
-            {
-              title: "Líneas de Producto",
-              borderColor: "border-indigo-900",
-              featured: [
-                {
-                  label: "ELABORACIÓN MÁX",
-                  value: "4.500.000 Lts",
-                  subText: "Potencial anual",
-                },
-              ],
-              fields: [
-                {
-                  label: "MARCAS",
-                  value: [
-                    "SinFin",
-                    "Guarda",
-                    "Gran Guarda",
-                    "El Interminable",
-                    "Fugaz",
-                    "Presente",
-                  ],
-                  class: "border-secondary",
-                },
-                {
-                  label: "INNOVACIÓN",
-                  value: "Rosado de Bequignol, Blends de Terroir",
-                },
-              ],
-            },
-          ],
-        },
-
-        locationDetails: {
-          label: "Ubicación",
-          map: {
-            lat: -32.9765,
-            lng: -68.7892,
-          },
-          featured: [
-            { label: "ZONA", value: "Maipú, Primera Zona" },
-            { label: "DISTANCIA A CIUDAD", value: "20 minutos" },
-          ],
-          groups: [
-            {
-              title: "Accesibilidad",
-              fields: [
-                {
-                  label: "Rutas",
-                  value: "Acceso directo por rutas principales",
-                },
-                {
-                  label: "Entorno",
-                  value: "Rodeado de olivares y viñedos históricos",
-                },
-              ],
-            },
-          ],
-        },
-
-        legal: {
-          label: "Desempeño Operativo",
-          groups: [
-            {
-              title: "Resumen Financiero (Histórico)",
-              fields: [
-                { label: "VOLUMEN PROM. ELABORADO", value: "2.776.109 Lts" },
-                { label: "EBITDA PROMEDIO (Histórico)", value: "USD 193.082" },
-                { label: "ANÁLISIS", value: "2016 - 2025" },
-              ],
-            },
-          ],
-        },
-      },
-    },
-  },
-  {
     slug: "bodega-casir-dos-santos-maipu",
     type: "bodega",
     price: {
@@ -1273,138 +1010,86 @@ export const properties = [
     },
   },
   {
-    slug: "bodega-sinfin-maipu-mendoza-2",
+    slug: "bodega-sinfin-maipu-mendoza",
     type: "bodega",
     price: {
       value: null,
       currency: "USD",
       pricePerHectare: null,
     },
-    hectares: 90,
+    hectares: 440,
     location: {
-      lat: -32.9778,
-      lng: -68.7812,
-      address: "Ruta 50, Maipú, Mendoza",
+      lat: -33.0054,
+      lng: -68.7497,
+      address: "Maipú, Mendoza (a 20 min de la Ciudad)",
       province: "Mendoza",
       country: "AR",
     },
     images: [
-      "/finca1.jpg",
       "/finca2.jpg",
       "/finca1.jpg",
       "/finca2.jpg",
       "/finca1.jpg",
       "/finca2.jpg",
+      "/finca1.jpg",
+      "/finca2.jpg",
+      "/finca1.jpg",
     ],
     content: {
       "es-AR": {
-        title: "Bodega SinFin: Inversión Productiva y Turística en Maipú",
+        title: "Bodega SinFin: Capacidad Industrial y Enoturismo en Maipú",
         description: {
-          text: "Excelente oportunidad de inversión en una bodega familiar consolidada, ubicada estratégicamente en Maipú, a solo 20 minutos de la Ciudad de Mendoza. Bodega SinFin combina una impresionante capacidad industrial con una propuesta enoturística de primer nivel.\n\nLa propiedad cuenta con 90 hectáreas de viñedos propios (parte de un esquema productivo de 440 ha) y una capacidad total de vasija de 6.000.000 de litros, destacándose por sus instalaciones de cemento con epoxi y acero inoxidable. La bodega posee una sólida trayectoria en la elaboración de vinos de alta gama y granel premium, exportando a mercados exigentes como EE.UU., Reino Unido y Asia.\n\nAdemás de su perfil productivo, el inmueble incluye infraestructura para turismo y eventos corporativos o sociales, con salones, jardines y una cava subterránea histórica, ofreciendo un potencial de negocio diversificado y rentable.",
+          text: "Excelente oportunidad de inversión en una bodega familiar con sólida trayectoria y fuerte posicionamiento internacional, ubicada en Maipú, Mendoza. Operativa desde 1975 en la producción de uvas y desde 2005 en la elaboración de vinos de alta gama, Bodega SinFin combina una gran escala industrial con una filosofía de calidad premium.\n\nLa propiedad cuenta con una capacidad total de vasija de 6.000.000 de litros y gestiona una superficie de 440 hectáreas de viñedos (propios y de terceros) distribuidos en los terruños más prestigiosos de la provincia. Se destaca por ser una de las pocas bodegas especializadas en 'Bulk Wine' (vino a granel) de alta gama, exportando a mercados exigentes como EE.UU., Reino Unido y China, habiendo sido premiada internacionalmente en Ámsterdam.\n\nAdemás de su perfil productivo, posee una unidad de enoturismo y eventos totalmente desarrollada, con salones, jardines y una cava subterránea histórica, generando un flujo de ingresos diversificado.",
           callout: {
-            label: "PERFIL",
-            value: "Vinos Alta Gama / Exportación / Enoturismo",
+            label: "PERFIL DE NEGOCIO",
+            value: "Exportación Granel Premium / Enoturismo / Eventos",
           },
         },
         sections: [
-          {
-            id: "resumen",
-            label: "Resumen",
-          },
-          {
-            id: "ficha-tecnica",
-            label: "Ficha Técnica",
-          },
-          {
-            id: "infraestructura",
-            label: "Infraestructura",
-          },
-          {
-            id: "productividad",
-            label: "Negocios y Mercados",
-          },
-          {
-            id: "ubicacion",
-            label: "Ubicación",
-          },
-          {
-            id: "documentacion",
-            label: "Documentación",
-          },
-          {
-            id: "contacto-finca",
-            label: "Contacto",
-          },
+          { id: "resumen", label: "Resumen" },
+          { id: "ficha-tecnica", label: "Capacidad e Infraestructura" },
+          { id: "infraestructura", label: "Enoturismo y Eventos" },
+          { id: "productividad", label: "Mercados y Productos" },
+          { id: "ubicacion", label: "Ubicación" },
+          { id: "documentacion", label: "Desempeño Operativo" },
+          { id: "contacto-finca", label: "Contacto" },
         ],
         summary: [
           {
-            label: "Superficie Propia",
-            value: "90 has",
-          },
-          {
-            label: "Capacidad Vasija",
+            label: "Capacidad Total",
             value: "6 M",
             extra: "Litros",
           },
           {
-            label: "Elaboración Anual",
+            label: "Elaboración Máx",
             value: "4.5 M",
-            extra: "Litros (Max)",
+            extra: "Litros/Año",
           },
           {
-            label: "ESTADO",
-            value: "En funcionamiento",
+            label: "Superficie Viñedos",
+            value: "440",
+            extra: "Hectáreas (Gestionadas)",
+          },
+          {
+            label: "Estado",
+            value: "En plena producción",
             class: "text-lg mt-4",
           },
         ],
         techSpecs: {
-          label: "Ficha Técnica",
+          label: "Capacidad e Infraestructura",
           groups: [
-            {
-              title: "Viñedos y Zonas",
-              fields: [
-                {
-                  label: "VIÑEDOS PROPIOS",
-                  value: "90 has",
-                },
-                {
-                  label: "VIÑEDOS TERCEROS",
-                  value: "350 has",
-                },
-                {
-                  label: "ZONAS CULTIVO",
-                  value: "Maipú, Luján, Valle de Uco",
-                },
-                {
-                  label: "VARIEDADES TINTAS",
-                  value: "Malbec, Cab. Franc, Bonarda, Merlot",
-                },
-                {
-                  label: "VARIEDADES BLANCAS",
-                  value: "Sauvignon Blanc",
-                },
-                {
-                  label: "OTRAS VARIEDADES",
-                  value: "Syrah, Petit Verdot, Pinot Noir",
-                },
-                {
-                  label: "ANTIGÜEDAD",
-                  value: "Producción desde 1975",
-                },
-              ],
-            },
             {
               title: "Capacidad de Vasija",
               fields: [
                 {
                   label: "CAPACIDAD TOTAL",
                   value: "6.000.000 Litros",
-                  class: "border-blueo",
+                  class: "border-secondary",
                 },
                 {
                   label: "CEMENTO C/ EPOXI",
                   value: "5.740.000 Litros",
-                  class: "border-secondary",
                 },
                 {
                   label: "ACERO INOXIDABLE",
@@ -1417,124 +1102,173 @@ export const properties = [
                 },
               ],
             },
+            {
+              title: "Viñedos y Materia Prima",
+              fields: [
+                {
+                  label: "SUPERFICIE TOTAL",
+                  value: "440 has",
+                },
+                {
+                  label: "VIÑEDOS PROPIOS",
+                  value: "90 has",
+                  class: "border-blueo",
+                },
+                {
+                  label: "VIÑEDOS TERCEROS",
+                  value: "350 has",
+                },
+                {
+                  label: "ZONAS DE CULTIVO",
+                  value: "Maipú, Luján, Valle de Uco, Este",
+                  subText: "Diversidad de orígenes",
+                },
+                {
+                  label: "VARIETALES TINTOS",
+                  value:
+                    "Malbec, Cab. Franc, Cab. Sauv, Merlot, Bonarda, Syrah",
+                  class: "text-sm",
+                },
+                {
+                  label: "VARIETALES BLANCOS",
+                  value: "Sauvignon Blanc",
+                  class: "text-sm",
+                },
+              ],
+            },
           ],
         },
         improvements: {
-          label: "Instalaciones y Mejoras",
+          label: "Enoturismo y Eventos",
           fields: [
             {
-              label: "ENOTURISMO",
+              label: "TURISMO",
               value: "Visitas y Degustaciones",
-              subText: "Salas equipadas",
+              subText: "Con maridajes (chocolates/picadas)",
             },
             {
-              label: "SALONES EVENTOS",
-              value: "3 Espacios diferenciados",
+              label: "ESPACIOS EVENTOS",
+              value: "3 Salones diferenciados",
+              subText: "Corporativos y Sociales",
             },
             {
               label: "CAVA SUBTERRÁNEA",
-              value: "Renovada para eventos",
-            },
-            {
-              label: "JARDINES",
-              value: "Con fuente de agua",
+              value: "Piletas renovadas",
+              subText: "Para eventos íntimos",
             },
             {
               label: "CASA DE FAMILIA",
-              value: "Con piscina y parrillas",
+              value: "Con piscina y viñedo",
+              subText: "Estilo campestre",
             },
             {
               label: "GASTRONOMÍA",
-              value: "Cocina para eventos",
-            },
-            {
-              label: "PROYECTO",
-              value: "Futuro Restaurante",
+              value: "Servicio propio",
+              subText: "Proyección de restaurante",
             },
           ],
         },
         energy: {
-          label: "Negocio y Mercados",
+          label: "Mercados y Productos",
           groups: [
             {
-              title: "Perfil Comercial",
+              title: "Mercado Externo (Granel)",
+              fields: [
+                {
+                  label: "POSICIONAMIENTO",
+                  value: "Granel Alta Gama",
+                  class: "border-secondary",
+                },
+                {
+                  label: "DESTINOS",
+                  value: "EEUU, UK, China, Canadá",
+                  subText: "Japón, Australia, Europa",
+                },
+                {
+                  label: "RECONOCIMIENTOS",
+                  value: "Oro - WBWE Ámsterdam",
+                  subText: "Top 8 Bodegas (2018/2019)",
+                },
+              ],
+            },
+            {
+              title: "Producto Fraccionado",
               borderColor: "border-indigo-900",
               featured: [
                 {
-                  label: "ELABORACIÓN MAX",
+                  label: "ELABORACIÓN",
                   value: "4.500.000 Lts",
-                  subText: "Anual",
-                },
-                {
-                  label: "MERCADOS",
-                  value: "Local e Internacional",
+                  subText: "Máximo anual",
                 },
               ],
               fields: [
                 {
-                  label: "EXPORTACIÓN",
-                  value: "EE.UU, Canadá, China, UK",
+                  label: "Guarda",
+                  value: [
+                    "Malbec",
+                    "Cabernet Franc",
+                    "Bonarda",
+                    "Sauvignon Blanc",
+                  ],
+                  class: "border-secondary",
                 },
                 {
-                  label: "GRANEL PREMIUM",
-                  value: "Especialidad Malbec",
+                  label: "Gran Guarda",
+                  value: ["Malbec", "Cabernet Franc", "Merlot"],
                 },
                 {
-                  label: "PREMIOS",
-                  value: "Oro (WBWE Amsterdam)",
+                  label: "Interminable",
+                  value: ["Red Blend 1", "Blend de Malbec 2", "Red Blend 3"],
+                },
+                {
+                  label: "Fugaz",
+                  value: ["Rozado de Bequignol"],
+                },
+                {
+                  label: "Presente",
+                  value: ["Blend"],
                 },
               ],
             },
           ],
         },
         locationDetails: {
-          label: "Ubicación y Accesos",
+          label: "Ubicación",
           map: {
-            lat: -32.9778,
-            lng: -68.7812,
+            lat: -33.0054,
+            lng: -68.7497,
           },
           featured: [
-            {
-              label: "ZONA",
-              value: "Maipú, Mendoza",
-            },
-            {
-              label: "DISTANCIA CIUDAD",
-              value: "20 Minutos",
-            },
+            { label: "REGIÓN", value: "Maipú, Mendoza" },
+            { label: "ACCESIBILIDAD", value: "20 min de Ciudad" },
           ],
           groups: [
             {
-              title: "Contexto",
+              title: "Entorno",
               fields: [
-                {
-                  label: "Entorno",
-                  value: "Zona vitivinícola tradicional",
-                },
-                {
-                  label: "Accesibilidad",
-                  value: "Excelente (Cercano a Ciudad)",
-                },
+                { label: "Perfil de Zona", value: "Vitivinícola histórica" },
+                { label: "Cercanía", value: "Rutas del Vino" },
               ],
             },
           ],
         },
         legal: {
-          label: "Documentación Legal",
+          label: "Desempeño Operativo",
           groups: [
             {
+              title: "Resumen Financiero (Histórico)",
               fields: [
+                { label: "PERÍODO ANALIZADO", value: "2016 - 2025" },
+                { label: "VOLUMEN PROMEDIO", value: "2.776.109 Lts" },
                 {
-                  label: "ESTADO",
-                  value: "Sociedad Activa",
+                  label: "EBITDA PROM. HISTÓRICO",
+                  value: "USD 193.082",
+                  subText: "Promedio de la serie",
                 },
                 {
-                  label: "AUDITORÍA",
-                  value: "Balances Disponibles",
-                },
-                {
-                  label: "ORGANIGRAMA",
-                  value: "Estructura gerencial completa",
+                  label: "ESTRUCTURA",
+                  value: "Organigrama completo",
+                  subText: "Gerencia, Enología, Comercial, RRHH",
                 },
               ],
             },
@@ -1542,113 +1276,59 @@ export const properties = [
         },
       },
       "en-US": {
-        title: "Bodega SinFin: Productive Winery & Tourism Investment",
+        title: "SinFin Winery: Industrial Capacity & Wine Tourism in Maipú",
         description: {
-          text: "Excellent investment opportunity in an established family winery, strategically located in Maipú, just 20 minutes from Mendoza City. Bodega SinFin combines impressive industrial capacity with a top-tier wine tourism proposal.\n\nThe property features 90 hectares of owned vineyards (part of a 440-ha productive scheme) and a total vessel capacity of 6,000,000 liters, highlighted by its epoxy-lined concrete and stainless steel facilities. The winery has a solid track record in producing high-end wines and premium bulk wine, exporting to demanding markets such as the USA, UK, and Asia.\n\nIn addition to its productive profile, the property includes infrastructure for tourism and corporate or social events, with halls, gardens, and a historic underground cellar, offering a diversified and profitable business potential.",
+          text: "Excellent investment opportunity in a family-owned winery with a solid track record and strong international positioning, located in Maipú, Mendoza. Producing grapes since 1975 and high-end wines since 2005, Bodega SinFin combines large industrial scale with a premium quality philosophy.\n\nThe property boasts a total vessel capacity of 6,000,000 liters and manages a surface area of 440 hectares of vineyards (owned and third-party) distributed across the province's most prestigious terroirs. It stands out as one of the few wineries specializing in high-end 'Bulk Wine', exporting to demanding markets such as the USA, UK, and China, having been awarded internationally in Amsterdam.\n\nIn addition to its productive profile, it has a fully developed wine tourism and events unit, with halls, gardens, and a historic underground cellar, generating a diversified revenue stream.",
           callout: {
-            label: "TOTAL CAPACITY",
-            value: "6,000,000 Liters",
+            label: "BUSINESS PROFILE",
+            value: "Premium Bulk Export / Wine Tourism / Events",
           },
         },
         sections: [
-          {
-            id: "resumen",
-            label: "Summary",
-          },
-          {
-            id: "ficha-tecnica",
-            label: "Technical Sheet",
-          },
-          {
-            id: "infraestructura",
-            label: "Infrastructure",
-          },
-          {
-            id: "productividad",
-            label: "Productivity",
-          },
-          {
-            id: "ubicacion",
-            label: "Location",
-          },
-          {
-            id: "documentacion",
-            label: "Documentation",
-          },
-          {
-            id: "contacto-finca",
-            label: "Contact",
-          },
+          { id: "resumen", label: "Summary" },
+          { id: "ficha-tecnica", label: "Capacity & Infrastructure" },
+          { id: "infraestructura", label: "Wine Tourism & Events" },
+          { id: "productividad", label: "Markets & Products" },
+          { id: "ubicacion", label: "Location" },
+          { id: "documentacion", label: "Operating Performance" },
+          { id: "contacto-finca", label: "Contact" },
         ],
         summary: [
           {
-            label: "Owned Area",
-            value: "90 has",
-          },
-          {
-            label: "Vessel Capacity",
+            label: "Total Capacity",
             value: "6 M",
             extra: "Liters",
           },
           {
-            label: "Annual Production",
+            label: "Max Production",
             value: "4.5 M",
-            extra: "Liters (Max)",
+            extra: "Liters/Year",
           },
           {
-            label: "Location",
-            value: "Maipú",
+            label: "Vineyard Area",
+            value: "440",
+            extra: "Hectares (Managed)",
+          },
+          {
+            label: "Status",
+            value: "Fully operational",
             class: "text-lg mt-4",
           },
         ],
         techSpecs: {
-          label: "Technical Sheet",
+          label: "Capacity & Infrastructure",
           groups: [
-            {
-              title: "Vineyards and Zones",
-              fields: [
-                {
-                  label: "OWNED VINEYARDS",
-                  value: "90 has",
-                },
-                {
-                  label: "THIRD-PARTY VINEYARDS",
-                  value: "350 has",
-                },
-                {
-                  label: "CULTIVATION ZONES",
-                  value: "Maipú, Luján, Uco Valley",
-                },
-                {
-                  label: "RED VARIETIES",
-                  value: "Malbec, Cab. Franc, Bonarda, Merlot",
-                },
-                {
-                  label: "WHITE VARIETIES",
-                  value: "Sauvignon Blanc",
-                },
-                {
-                  label: "OTHER VARIETIES",
-                  value: "Syrah, Petit Verdot, Pinot Noir",
-                },
-                {
-                  label: "AGE",
-                  value: "Production since 1975",
-                },
-              ],
-            },
             {
               title: "Vessel Capacity",
               fields: [
                 {
                   label: "TOTAL CAPACITY",
                   value: "6,000,000 Liters",
-                  class: "border-blueo",
+                  class: "border-secondary",
                 },
                 {
-                  label: "EPOXY CONCRETE",
+                  label: "CEMENT W/ EPOXY",
                   value: "5,740,000 Liters",
-                  class: "border-secondary",
                 },
                 {
                   label: "STAINLESS STEEL",
@@ -1661,124 +1341,157 @@ export const properties = [
                 },
               ],
             },
+            {
+              title: "Vineyards & Raw Material",
+              fields: [
+                {
+                  label: "TOTAL AREA",
+                  value: "440 has",
+                },
+                {
+                  label: "OWNED VINEYARDS",
+                  value: "90 has",
+                  class: "border-blueo",
+                },
+                {
+                  label: "THIRD-PARTY VINEYARDS",
+                  value: "350 has",
+                },
+                {
+                  label: "GROWING ZONES",
+                  value: "Maipú, Luján, Uco Valley, East",
+                  subText: "Diversity of origins",
+                },
+                {
+                  label: "RED VARIETIES",
+                  value:
+                    "Malbec, Cab. Franc, Cab. Sauv, Merlot, Bonarda, Syrah",
+                  class: "text-sm",
+                },
+                {
+                  label: "WHITE VARIETIES",
+                  value: "Sauvignon Blanc",
+                  class: "text-sm",
+                },
+              ],
+            },
           ],
         },
         improvements: {
-          label: "Facilities and Improvements",
+          label: "Wine Tourism & Events",
           fields: [
             {
-              label: "WINE TOURISM",
-              value: "Tours and Tastings",
-              subText: "Equipped rooms",
+              label: "TOURISM",
+              value: "Tours & Tastings",
+              subText: "With pairings (chocolate/platters)",
             },
             {
-              label: "EVENT HALLS",
-              value: "3 Distinct spaces",
+              label: "EVENT SPACES",
+              value: "3 Distinct Halls",
+              subText: "Corporate & Social",
             },
             {
               label: "UNDERGROUND CELLAR",
-              value: "Renovated for events",
-            },
-            {
-              label: "GARDENS",
-              value: "With water fountain",
+              value: "Renovated pools",
+              subText: "For intimate events",
             },
             {
               label: "FAMILY HOUSE",
-              value: "With pool and BBQ",
+              value: "With pool & vineyard",
+              subText: "Country style",
             },
             {
               label: "GASTRONOMY",
-              value: "Event kitchen",
-            },
-            {
-              label: "PROJECT",
-              value: "Future Restaurant",
+              value: "In-house service",
+              subText: "Restaurant projected",
             },
           ],
         },
         energy: {
-          label: "Business and Markets",
+          label: "Markets & Products",
           groups: [
             {
-              title: "Commercial Profile",
+              title: "External Market (Bulk)",
+              fields: [
+                {
+                  label: "POSITIONING",
+                  value: "High-End Bulk",
+                  class: "border-secondary",
+                },
+                {
+                  label: "DESTINATIONS",
+                  value: "USA, UK, China, Canada",
+                  subText: "Japan, Australia, Europe",
+                },
+                {
+                  label: "AWARDS",
+                  value: "Gold - WBWE Amsterdam",
+                  subText: "Top 8 Wineries (2018/2019)",
+                },
+              ],
+            },
+            {
+              title: "Bottled Product",
               borderColor: "border-indigo-900",
               featured: [
                 {
-                  label: "MAX PRODUCTION",
+                  label: "PRODUCTION",
                   value: "4,500,000 Lts",
-                  subText: "Annual",
-                },
-                {
-                  label: "MARKETS",
-                  value: "Local and International",
+                  subText: "Annual max",
                 },
               ],
               fields: [
                 {
-                  label: "EXPORTS",
-                  value: "USA, Canada, China, UK",
+                  label: "LINES",
+                  value: ["Guarda", "Gran Guarda", "El Interminable"],
+                  class: "border-secondary",
                 },
                 {
-                  label: "PREMIUM BULK",
-                  value: "Malbec Specialty",
-                },
-                {
-                  label: "AWARDS",
-                  value: "Gold (WBWE Amsterdam)",
+                  label: "HIGH END",
+                  value: "SinFin Presente / Fugaz",
+                  subText: "Exclusive Blends & Rosés",
                 },
               ],
             },
           ],
         },
         locationDetails: {
-          label: "Location and Access",
+          label: "Location",
           map: {
-            lat: -32.9778,
-            lng: -68.7812,
+            lat: -33.0054,
+            lng: -68.7497,
           },
           featured: [
-            {
-              label: "ZONE",
-              value: "Maipú, Mendoza",
-            },
-            {
-              label: "CITY DISTANCE",
-              value: "20 Minutes",
-            },
+            { label: "REGION", value: "Maipú, Mendoza" },
+            { label: "ACCESSIBILITY", value: "20 min from City" },
           ],
           groups: [
             {
-              title: "Context",
+              title: "Surroundings",
               fields: [
-                {
-                  label: "Environment",
-                  value: "Traditional wine zone",
-                },
-                {
-                  label: "Accessibility",
-                  value: "Excellent (Near City)",
-                },
+                { label: "Area Profile", value: "Historic Wine Region" },
+                { label: "Proximity", value: "Wine Routes" },
               ],
             },
           ],
         },
         legal: {
-          label: "Legal Documentation",
+          label: "Operating Performance",
           groups: [
             {
+              title: "Financial Summary (Historical)",
               fields: [
+                { label: "PERIOD ANALYZED", value: "2016 - 2025" },
+                { label: "AVG VOLUME", value: "2,776,109 Lts" },
                 {
-                  label: "STATUS",
-                  value: "Active Company",
+                  label: "AVG HISTORICAL EBITDA",
+                  value: "USD 193,082",
+                  subText: "Series average",
                 },
                 {
-                  label: "AUDIT",
-                  value: "Available Balance Sheets",
-                },
-                {
-                  label: "ORG CHART",
-                  value: "Complete mgmt structure",
+                  label: "STRUCTURE",
+                  value: "Full Organigram",
+                  subText: "Management, Enology, Commercial, HR",
                 },
               ],
             },
@@ -1786,113 +1499,59 @@ export const properties = [
         },
       },
       "pt-BR": {
-        title: "Bodega SinFin: Investimento Produtivo e Turístico em Maipú",
+        title: "Bodega SinFin: Capacidade Industrial e Enoturismo em Maipú",
         description: {
-          text: "Excelente oportunidade de investimento em uma vinícola familiar consolidada, localizada estrategicamente em Maipú, a apenas 20 minutos da cidade de Mendoza. A Bodega SinFin combina uma impressionante capacidade industrial com uma proposta de enoturismo de alto nível.\n\nA propriedade conta com 90 hectares de vinhedos próprios (parte de um esquema produtivo de 440 ha) e uma capacidade total de armazenamento de 6.000.000 de litros, destacando-se por suas instalações de cimento com epóxi e aço inoxidável. A vinícola possui uma sólida trajetória na elaboração de vinhos de alta gama e granel premium, exportando para mercados exigentes como EUA, Reino Unido e Ásia.\n\nAlém de seu perfil produtivo, o imóvel inclui infraestrutura para turismo e eventos corporativos ou sociais, com salões, jardins e uma cava subterrânea histórica, oferecendo um potencial de negócio diversificado e rentável.",
+          text: "Excelente oportunidade de investimento em uma vinícola familiar com sólida trajetória e forte posicionamento internacional, localizada em Maipú, Mendoza. Operando desde 1975 na produção de uvas e desde 2005 na elaboração de vinhos de alta gama, a Bodega SinFin combina grande escala industrial com uma filosofia de qualidade premium.\n\nA propriedade possui uma capacidade total de vasilha de 6.000.000 de litros e administra uma superfície de 440 hectares de vinhedos (próprios e de terceiros) distribuídos nos terroirs mais prestigiados da província. Destaca-se por ser uma das poucas vinícolas especializadas em 'Bulk Wine' (vinho a granel) de alta gama, exportando para mercados exigentes como EUA, Reino Unido e China, tendo sido premiada internacionalmente em Amsterdã.\n\nAlém de seu perfil produtivo, possui uma unidade de enoturismo e eventos totalmente desenvolvida, com salões, jardins e uma adega subterrânea histórica, gerando um fluxo de receitas diversificado.",
           callout: {
-            label: "CAPACIDADE TOTAL",
-            value: "6.000.000 Litros",
+            label: "PERFIL DE NEGÓCIO",
+            value: "Exportação Granel Premium / Enoturismo / Eventos",
           },
         },
         sections: [
-          {
-            id: "resumen",
-            label: "Resumo",
-          },
-          {
-            id: "ficha-tecnica",
-            label: "Ficha Técnica",
-          },
-          {
-            id: "infraestructura",
-            label: "Infraestrutura",
-          },
-          {
-            id: "productividad",
-            label: "Produtividade",
-          },
-          {
-            id: "ubicacion",
-            label: "Localização",
-          },
-          {
-            id: "documentacion",
-            label: "Documentação",
-          },
-          {
-            id: "contacto-finca",
-            label: "Contato",
-          },
+          { id: "resumen", label: "Resumo" },
+          { id: "ficha-tecnica", label: "Capacidade e Infraestrutura" },
+          { id: "infraestructura", label: "Enoturismo e Eventos" },
+          { id: "productividad", label: "Mercados e Produtos" },
+          { id: "ubicacion", label: "Localização" },
+          { id: "documentacion", label: "Desempenho Operacional" },
+          { id: "contacto-finca", label: "Contato" },
         ],
         summary: [
           {
-            label: "Superfície Própria",
-            value: "90 has",
-          },
-          {
-            label: "Capacidade Tanques",
+            label: "Capacidade Total",
             value: "6 M",
             extra: "Litros",
           },
           {
-            label: "Elaboração Anual",
+            label: "Elaboração Máx",
             value: "4.5 M",
-            extra: "Litros (Max)",
+            extra: "Litros/Ano",
           },
           {
-            label: "Localização",
-            value: "Maipú",
+            label: "Área de Vinhedos",
+            value: "440",
+            extra: "Hectares (Gerenciados)",
+          },
+          {
+            label: "Status",
+            value: "Em plena produção",
             class: "text-lg mt-4",
           },
         ],
         techSpecs: {
-          label: "Ficha Técnica",
+          label: "Capacidade e Infraestrutura",
           groups: [
             {
-              title: "Vinhedos e Zonas",
-              fields: [
-                {
-                  label: "VINHEDOS PRÓPRIOS",
-                  value: "90 has",
-                },
-                {
-                  label: "VINHEDOS TERCEIROS",
-                  value: "350 has",
-                },
-                {
-                  label: "ZONAS CULTIVO",
-                  value: "Maipú, Luján, Valle de Uco",
-                },
-                {
-                  label: "VARIEDADES TINTAS",
-                  value: "Malbec, Cab. Franc, Bonarda, Merlot",
-                },
-                {
-                  label: "VARIEDADES BRANCAS",
-                  value: "Sauvignon Blanc",
-                },
-                {
-                  label: "OUTRAS VARIEDADES",
-                  value: "Syrah, Petit Verdot, Pinot Noir",
-                },
-                {
-                  label: "ANTIGUIDADE",
-                  value: "Produção desde 1975",
-                },
-              ],
-            },
-            {
-              title: "Capacidade de Tanques",
+              title: "Capacidade de Vasilha",
               fields: [
                 {
                   label: "CAPACIDADE TOTAL",
                   value: "6.000.000 Litros",
-                  class: "border-blueo",
+                  class: "border-secondary",
                 },
                 {
                   label: "CIMENTO C/ EPÓXI",
                   value: "5.740.000 Litros",
-                  class: "border-secondary",
                 },
                 {
                   label: "AÇO INOXIDÁVEL",
@@ -1905,124 +1564,474 @@ export const properties = [
                 },
               ],
             },
+            {
+              title: "Vinhedos e Matéria-Prima",
+              fields: [
+                {
+                  label: "ÁREA TOTAL",
+                  value: "440 has",
+                },
+                {
+                  label: "VINHEDOS PRÓPRIOS",
+                  value: "90 has",
+                  class: "border-blueo",
+                },
+                {
+                  label: "VINHEDOS TERCEIROS",
+                  value: "350 has",
+                },
+                {
+                  label: "ZONAS DE CULTIVO",
+                  value: "Maipú, Luján, Vale de Uco, Leste",
+                  subText: "Diversidade de origens",
+                },
+                {
+                  label: "VARIEDADES TINTAS",
+                  value:
+                    "Malbec, Cab. Franc, Cab. Sauv, Merlot, Bonarda, Syrah",
+                  class: "text-sm",
+                },
+                {
+                  label: "VARIEDADES BRANCAS",
+                  value: "Sauvignon Blanc",
+                  class: "text-sm",
+                },
+              ],
+            },
           ],
         },
         improvements: {
-          label: "Instalações e Melhorias",
+          label: "Enoturismo e Eventos",
           fields: [
             {
-              label: "ENOTURISMO",
+              label: "TURISMO",
               value: "Visitas e Degustações",
-              subText: "Salas equipadas",
+              subText: "Com harmonizações (chocolates/tábuas)",
             },
             {
-              label: "SALÕES EVENTOS",
-              value: "3 Espaços diferenciados",
+              label: "ESPAÇOS EVENTOS",
+              value: "3 Salões diferenciados",
+              subText: "Corporativos e Sociais",
             },
             {
-              label: "CAVA SUBTERRÂNEA",
-              value: "Renovada para eventos",
-            },
-            {
-              label: "JARDINS",
-              value: "Com fonte de água",
+              label: "ADEGA SUBTERRÂNEA",
+              value: "Piscinas renovadas",
+              subText: "Para eventos íntimos",
             },
             {
               label: "CASA DE FAMÍLIA",
-              value: "Com piscina e churrasqueiras",
+              value: "Com piscina e vinhedo",
+              subText: "Estilo campestre",
             },
             {
               label: "GASTRONOMIA",
-              value: "Cozinha para eventos",
-            },
-            {
-              label: "PROJETO",
-              value: "Futuro Restaurante",
+              value: "Serviço próprio",
+              subText: "Restaurante projetado",
             },
           ],
         },
         energy: {
-          label: "Negócios e Mercados",
+          label: "Mercados e Produtos",
           groups: [
             {
-              title: "Perfil Comercial",
+              title: "Mercado Externo (Granel)",
+              fields: [
+                {
+                  label: "POSICIONAMENTO",
+                  value: "Granel Alta Gama",
+                  class: "border-secondary",
+                },
+                {
+                  label: "DESTINOS",
+                  value: "EUA, Reino Unido, China, Canadá",
+                  subText: "Japão, Austrália, Europa",
+                },
+                {
+                  label: "PRÊMIOS",
+                  value: "Ouro - WBWE Amsterdã",
+                  subText: "Top 8 Vinícolas (2018/2019)",
+                },
+              ],
+            },
+            {
+              title: "Produto Engarrafado",
               borderColor: "border-indigo-900",
               featured: [
                 {
-                  label: "ELABORAÇÃO MAX",
+                  label: "ELABORAÇÃO",
                   value: "4.500.000 Lts",
-                  subText: "Anual",
-                },
-                {
-                  label: "MERCADOS",
-                  value: "Local e Internacional",
+                  subText: "Máximo anual",
                 },
               ],
               fields: [
                 {
-                  label: "EXPORTAÇÃO",
-                  value: "EUA, Canadá, China, UK",
+                  label: "LINHAS",
+                  value: ["Guarda", "Gran Guarda", "El Interminable"],
+                  class: "border-secondary",
                 },
                 {
-                  label: "GRANEL PREMIUM",
-                  value: "Especialidade Malbec",
-                },
-                {
-                  label: "PRÊMIOS",
-                  value: "Ouro (WBWE Amsterdam)",
+                  label: "ALTA GAMA",
+                  value: "SinFin Presente / Fugaz",
+                  subText: "Blends e Rosés exclusivos",
                 },
               ],
             },
           ],
         },
         locationDetails: {
-          label: "Localização e Acessos",
+          label: "Localização",
           map: {
-            lat: -32.9778,
-            lng: -68.7812,
+            lat: -33.0054,
+            lng: -68.7497,
+          },
+          featured: [
+            { label: "REGIÃO", value: "Maipú, Mendoza" },
+            { label: "ACESSIBILIDADE", value: "20 min da Cidade" },
+          ],
+          groups: [
+            {
+              title: "Arredores",
+              fields: [
+                { label: "Perfil da Zona", value: "Vitivinícola histórica" },
+                { label: "Proximidade", value: "Rotas do Vinho" },
+              ],
+            },
+          ],
+        },
+        legal: {
+          label: "Desempenho Operacional",
+          groups: [
+            {
+              title: "Resumo Financeiro (Histórico)",
+              fields: [
+                { label: "PERÍODO ANALISADO", value: "2016 - 2025" },
+                { label: "VOLUME MÉDIO", value: "2.776.109 Lts" },
+                {
+                  label: "EBITDA MÉDIO HISTÓRICO",
+                  value: "USD 193.082",
+                  subText: "Média da série",
+                },
+                {
+                  label: "ESTRUTURA",
+                  value: "Organograma completo",
+                  subText: "Gerência, Enologia, Comercial, RH",
+                },
+              ],
+            },
+          ],
+        },
+      },
+    },
+  },
+  {
+    slug: "bodega-casir-dos-santos-maipu-mendoza",
+    type: "bodega",
+    price: {
+      value: null,
+      currency: "USD",
+      pricePerHectare: null,
+    },
+    hectares: null,
+    location: {
+      lat: -33.0525,
+      lng: -68.8045,
+      address: "Videla Aranda, Maipú",
+      province: "Mendoza",
+      country: "AR",
+    },
+    images: [
+      "/casir1.jpg",
+      "/casir2.jpg",
+      "/casir3.jpg",
+      "/casir4.jpg",
+      "/casir5.jpg",
+    ],
+    content: {
+      "es-AR": {
+        title: "Bodega Casir dos Santos: Historia (1862) y Vinos de Alta Gama",
+        description: {
+          text: "Oportunidad de inversión en una de las bodegas en funcionamiento más antiguas de Mendoza. Fundada originalmente en 1862 (antigua Viña Maipú), Casir dos Santos combina más de un siglo de patrimonio vitivinícola con una visión moderna de enología de precisión.\n\nLa propiedad destaca por su enfoque multi-terroir, gestionando viñedos en las tres zonas más prestigiosas de la provincia: Lunlunta (Maipú), Agrelo (Luján de Cuyo) y Valle de Uco. Esta diversidad permite obtener la mejor expresión varietal para sus líneas de vinos premium (Estate, Reserve, Gran Corte y la innovadora línea Avatar), todas reconocidas internacionalmente con puntajes superiores a 90 puntos por críticos como James Suckling, Tim Atkin y Robert Parker.\n\nBajo la dirección enológica de Lucas Moran, la bodega ha modernizado sus procesos sin perder su esencia histórica, utilizando tecnología de vanguardia y barricas de roble francés para la crianza. Es una propiedad ideal para inversores que buscan una marca consolidada, con historia, capacidad productiva y un portfolio de productos ya posicionado en el mercado de alta gama.",
+          callout: {
+            label: "VALOR DIFERENCIAL",
+            value: "Bodega Histórica (1862) / 3 Terroirs Premium / Muchos Reconocimientos",
+          },
+        },
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumen",
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Nuestros Viñedos",
+          },
+          {
+            id: "infraestructura",
+            label: "Portfolio y Puntajes",
+          },
+          {
+            id: "productividad",
+            label: "Infraestructura",
+          },
+          {
+            id: "ubicacion",
+            label: "Ubicación",
+          },
+          {
+            id: "contacto-finca",
+            label: "Contacto",
+          },
+        ],
+        summary: [
+          {
+            label: "Fundación",
+            value: "1862",
+            extra: "Una de las más antiguas",
+          },
+          {
+            label: "Enólogo",
+            value: "Lucas Moran",
+            extra: "22 Vendimias",
+          },
+          {
+            label: "Viñedos en",
+            value: "3",
+            extra: "Maipú, Agrelo, Uco",
+          },
+          {
+            label: "Estado",
+            value: "En Producción",
+            class: "text-lg mt-4",
+          },
+        ],
+        techSpecs: {
+          label: "Nuestros Viñedos (Terroirs)",
+          groups: [
+            {
+              title: "Finca Lunlunta (Maipú)",
+              fields: [
+                {
+                  label: "UBICACIÓN",
+                  value: "Zona baja de los Andes",
+                },
+                {
+                  label: "ALTITUD",
+                  value: "1.050 msnm",
+                },
+                {
+                  label: "DISTANCIA",
+                  value: "20 km de Mendoza",
+                },
+              ],
+            },
+            {
+              title: "Finca Agrelo (Luján de Cuyo)",
+              fields: [
+                {
+                  label: "UBICACIÓN",
+                  value: "El Valle",
+                },
+                {
+                  label: "ALTITUD",
+                  value: "950 msnm",
+                  class: "border-secondary",
+                },
+                {
+                  label: "DISTANCIA",
+                  value: "40 km al Sur",
+                },
+              ],
+            },
+            {
+              title: "Valle de Uco",
+              fields: [
+                {
+                  label: "UBICACIÓN",
+                  value: "Ladera Sup. Andes",
+                },
+                {
+                  label: "ALTITUD",
+                  value: "1.250 msnm",
+                  class: "border-blueo",
+                },
+                {
+                  label: "DISTANCIA",
+                  value: "100 km al Suroeste",
+                },
+              ],
+            },
+          ],
+        },
+        energy: {
+          label: "Portfolio y Puntajes",
+          groups: [
+            {
+              title: "Líneas de Vinos",
+
+              fields: [
+                {
+                  label: "ESTATE",
+                  value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
+                },
+                {
+                  label: "RESERVE",
+                  value: [
+                    "Malbec",
+                    "Cabernet Sauvignon",
+                    "Petit Verdot",
+                    "Chardonnay",
+                  ],
+                },
+                {
+                  label: "CORTE",
+                  value: ["Red Blend"],
+                },
+                {
+                  label: "Nuevos Lanzamientos",
+                  value: ["Inspiración Blend de Tintas", "Malbec Elijo Creer", "Reserve Chardonnay"],
+                },
+              ],
+            },
+            {
+              title: "Linea Avatar",
+              featured: [
+                {
+                  label: "LÍNEA AVATAR",
+                  value: "Concepto Innovador",
+                  subText: "Malbec, Cab, Syrah, Bonarda",
+                },
+              ],
+              fields: [
+                {
+                  label: "Variedades Disponibles",
+                  value: [
+                    "Torrentés",
+                    "Chardonnay",
+                    "Malbec",
+                    "Cabernet Sauvignon",
+                    "Bonarda",
+                  ],
+                },
+                {
+                  label: "Ultra Range",
+                  value: ["Malbec", "Cabernet Sauvignon", "Syrah"],
+                },
+                {
+                  label: "Extra Brut",
+                  value: ["Pínk Pínot Noír"],
+                },
+                {
+                  label: "Revolución Range",
+                  value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
+                },
+              ],
+            },
+            {
+              title: "Reconocimientos",
+              borderColor: "border-indigo-900",
+              fields: [
+                {
+                  label: "Estate Malbec 2022",
+                  value: "90 pts",
+                  subText: "Descorchados",
+                },
+                {
+                  label: "Avatar Malbec 2022 - 2023",
+                  value: "90 pts (2022) - 90 pts (2023)",
+                  subText: "James Suckling - Descorchados",
+                },
+                {
+                  label: "Reserve Malbec 2017",
+                  value: "92 pts",
+                  subText: "Tim Atkin Mw",
+                },
+                {
+                  label: "Reserve Cabernet 2017",
+                  value: "90 pts",
+                  subText: "Tim Atkin Mw",
+                },
+                {
+                  label: "Gran Corte 2015",
+                  value: "93 pts",
+                  subText: "James Suckling",
+                },
+                {
+                  label: "Inspiración 2021 Blend de Tintas",
+                  value: "91 pts",
+                  subText: "James Suckling",
+                },
+              ],
+            },
+          ],
+        },
+        improvements: {
+          label: "Infraestructura",
+          fields: [
+            {
+              label: "EDIFICIO",
+              value: "Histórico (1862)",
+              subText: "Conservado y renovado",
+            },
+            {
+              label: "TECNOLOGÍA",
+              value: "Enología de precisión",
+            },
+            {
+              label: "CRIANZA",
+              value: "Barricas Roble Francés",
+              subText: "Sala de barricas",
+            },
+            {
+              label: "CAPITAL HUMANO",
+              value: "Equipo experto",
+              subText: "Gerencia y operarios",
+            },
+          ],
+        },
+        locationDetails: {
+          label: "Ubicación",
+          map: {
+            lat: -33.0525,
+            lng: -68.8045,
           },
           featured: [
             {
-              label: "ZONA",
+              label: "BODEGA",
               value: "Maipú, Mendoza",
             },
             {
-              label: "DISTÂNCIA CIDADE",
-              value: "20 Minutos",
+              label: "ACCESIBILIDAD",
+              value: "Cercana a Ciudad",
             },
           ],
           groups: [
             {
-              title: "Contexto",
+              title: "Distancias a la Bodega",
               fields: [
                 {
-                  label: "Ambiente",
-                  value: "Zona vitivinícola tradicional",
+                  label: "Mendoza Capital",
+                  value: "20-25 min",
                 },
                 {
-                  label: "Acessibilidade",
-                  value: "Excelente (Perto da Cidade)",
+                  label: "Aeropuerto",
+                  value: "35 min",
                 },
               ],
             },
           ],
         },
         legal: {
-          label: "Documentação Legal",
+          label: "Documentación",
           groups: [
             {
               fields: [
                 {
-                  label: "STATUS",
-                  value: "Sociedade Ativa",
+                  label: "ESTADO",
+                  value: "A consultar",
                 },
                 {
-                  label: "AUDITORIA",
-                  value: "Balanços Disponíveis",
-                },
-                {
-                  label: "ORGANOGRAMA",
-                  value: "Estrutura gerencial completa",
+                  label: "HABILITACIÓN",
+                  value: "Vigente (INV)",
                 },
               ],
             },
