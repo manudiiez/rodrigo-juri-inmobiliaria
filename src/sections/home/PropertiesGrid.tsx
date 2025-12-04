@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-const properties = [
+const properties2 = [
   {
     id: 1,
     title: 'Finca Los Álamos',
@@ -31,6 +31,53 @@ const properties = [
   },
 ];
 
+const properties = [
+  {
+    slug: "bodega-sinfin-maipu-mendoza",
+    location: "Valle de Uco, Mendoza",
+    image: "/images/sinfin/bodega-sinfin.jpg",
+    content: {
+      "es-AR": {
+        title: "Bodega SinFin",
+        info: "440 hectáreas",
+        info2: "6 M Capacidad total",
+      },
+      "en-US": {
+        title: "SinFin Winery",
+        info: "440 hectares",
+        info2: "6 M Total Capacity",
+      },
+      "pt-BR": {
+        title: "Vinícola SinFin",
+        info: "440 hectares",
+        info2: "6 M Capacidade total",
+      },
+    },
+  },
+  {
+    slug: "bodega-casir-dos-santos-maipu-mendoza",
+    location: "Maipú, Mendoza",
+    image: "/images/casirdossantos/bodega-casirdossantos-1.jpg",
+    content: {
+      "es-AR": {
+        title: "Bodega Casir dos Santos",
+        info: "Vinos de Alta Gama",
+        info2: "Fundada en 1862",
+      },
+      "en-US": {
+        title: "Casir dos Santos Winery",
+        info: "Premium Wines",
+        info2: "Founded in 1862",
+      },
+      "pt-BR": {
+        title: "Vinícola Casir dos Santos",
+        info: "Vinhos Premium",
+        info2: "Fundação em 1862",
+      },
+    },
+  },
+];
+
 export default function PropertiesGrid() {
   const t = useTranslations('HomePage.PropertiesGrid');
 
@@ -44,26 +91,26 @@ export default function PropertiesGrid() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {properties.map((property) => (
             <Link
-              key={property.id}
-              href={`/propiedades/${property.id}`}
+              key={property.slug}
+              href={`/propiedades/${property.slug}`}
               className="group bg-white overflow-hidden hover:shadow-xl transition-all duration-300"
             >
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src={property.image}
-                  alt={property.title}
+                  alt={property.content["es-AR"].title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-light text-gray-900 mb-2 group-hover:text-bordeaux transition-colors">
-                  {property.title}
+                  {property.content["es-AR"].title}
                 </h3>
                 <p className="text-gray-600 text-sm mb-4">{property.location}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-gray-900 text-lg font-light">{property.price}</span>
-                  <span className="text-gray-500 text-sm">{property.size}</span>
+                  <span className="text-gray-900 text-lg font-light">{property.content["es-AR"].info}</span>
+                  <span className="text-gray-500 text-sm">{property.content["es-AR"].info2}</span>
                 </div>
               </div>
             </Link>

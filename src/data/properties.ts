@@ -16,6 +16,7 @@ export const properties = [
       address: "Luján de Cuyo, Mendoza",
       province: "Mendoza",
       country: "AR",
+      state: "Tupungato",
     },
 
     images: [
@@ -797,6 +798,7 @@ export const properties = [
       address: "Maipú, Mendoza (a 20 min de la Ciudad)",
       province: "Mendoza",
       country: "AR",
+      state: "Valle de Uco",
     },
     images: [
       {
@@ -925,7 +927,8 @@ export const properties = [
                 },
                 {
                   label: "ZONAS DE CULTIVO",
-                  value: "Maipú, Luján, Valle de Uco, Este",
+                  value:
+                    "Maipú, Luján de Cuyo, Valle de Uco, Rivadavia, San Martín, Santa Rosa y Junín",
                   subText: "Diversidad de orígenes",
                 },
                 {
@@ -1162,7 +1165,8 @@ export const properties = [
                 },
                 {
                   label: "CULTIVATION ZONES",
-                  value: "Maipú, Luján, Uco Valley, East",
+                  value:
+                    "Maipú, Luján de Cuyo, Valle de Uco, Rivadavia, San Martín, Santa Rosa y Junín",
                   subText: "Diversity of origins",
                 },
                 {
@@ -1399,7 +1403,8 @@ export const properties = [
                 },
                 {
                   label: "ZONAS DE CULTIVO",
-                  value: "Maipú, Luján, Vale de Uco, Leste",
+                  value:
+                    "Maipú, Luján de Cuyo, Valle de Uco, Rivadavia, San Martín, Santa Rosa y Junín",
                   subText: "Diversidade de origens",
                 },
                 {
@@ -1569,6 +1574,7 @@ export const properties = [
       address: "Videla Aranda, Maipú",
       province: "Mendoza",
       country: "AR",
+      state: "Maipú",
     },
     images: [
       {

@@ -7,25 +7,48 @@ import { useTranslations } from "next-intl";
 
 const properties = [
   {
-    id: 1,
-    title: "Tupungato",
-    location: "Mendoza - Argentina",
-    price: "$4,000,000",
-    image: "/finca2.jpg",
+    slug: "bodega-sinfin-maipu-mendoza",
+    location: "Valle de Uco",
+    image: "/images/sinfin/bodega-sinfin.jpg",
+    content: {
+      "es-AR": {
+        title: "Bodega SinFin - Mendoza, Argentina",
+        info: "440 Hectáreas",
+        button: "Ver Bodega",
+      },
+      "en-US": {
+        title: "SinFin Winery - Mendoza, Argentina",
+        info: "440 Hectares",
+        button: "View Winery",
+      },
+      "pt-BR": {
+        title: "Vinícola SinFin - Mendoza, Argentina",
+        info: "440 Hectares",
+        button: "Ver Vinícola",
+      },
+    },
   },
   {
-    id: 2,
-    title: "Valle de Uco",
-    location: "Mendoza - Argentina",
-    price: "$3,500,000",
-    image: "/finca1.jpg",
-  },
-  {
-    id: 3,
-    title: "Maipú",
-    location: "Mendoza - Argentina",
-    price: "$5,200,000",
-    image: "/finca2.jpg",
+    slug: "bodega-casir-dos-santos-maipu-mendoza",
+    location: "Maipú",
+    image: "/images/casirdossantos/bodega-casirdossantos-1.jpg",
+    content: {
+      "es-AR": {
+        title: "Bodega Casir dos Santos - Mendoza, Argentina",
+        info: "Vinos de Alta Gama",
+        button: "Ver Bodega",
+      },
+      "en-US": {
+        title: "Casir dos Santos Winery - Mendoza, Argentina",
+        info: "Premium Wines",
+        button: "View Winery",
+      },
+      "pt-BR": {
+        title: "Vinícola Casir dos Santos - Mendoza, Argentina",
+        info: "Vinhos Premium",
+        button: "Ver Vinícola",
+      },
+    },
   },
 ];
 
@@ -36,7 +59,7 @@ export default function FeaturedProperty() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % properties.length);
-    }, 5000); // Cambia cada 5 segundos
+    }, 10000); // Cambia cada 5 segundos
 
     return () => clearInterval(interval);
   }, []);
@@ -53,11 +76,14 @@ export default function FeaturedProperty() {
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
         {properties.map((property, index) => (
-          <div key={property.id} className="relative w-full h-full flex-shrink-0 px-6 md:px-12 lg:px-12">
+          <div
+            key={property.slug}
+            className="relative w-full h-full flex-shrink-0 px-6 md:px-12 lg:px-12"
+          >
             {/* Property image */}
             <Image
               src={property.image}
-              alt={property.title}
+              alt={property.content["es-AR"].title}
               fill
               className="object-cover"
               priority={index === 0}
@@ -69,19 +95,23 @@ export default function FeaturedProperty() {
             <div className="relative z-10 h-full flex flex-col justify-between max-w-7xl mx-auto py-14 ">
               <div className="max-w-2xl">
                 <h2 className="font-serif text-4xl md:text-5xl lg:text-7xl text-white mb-4 tracking-wide">
-                  {property.title}
+                  {property.location}
                 </h2>
                 <div className="flex items-center gap-4 mb-6">
-                  <span className="text-white/80 text-lg">{property.location}</span>
+                  <span className="text-white/80 text-lg">
+                    {property.content["es-AR"].title}
+                  </span>
                   <span className="text-white/60">•</span>
-                  <span className="text-white text-2xl font-light">{property.price}</span>
+                  <span className="text-white text-2xl font-light">
+                    {property.content["es-AR"].info}
+                  </span>
                 </div>
                 <Link
-                  href={`/propiedades/${property.id}`}
+                  href={`/propiedades/${property.slug}`}
                   className="inline-flex items-center gap-2 text-white hover:gap-4 transition-all group"
                 >
                   <span className="text-sm uppercase tracking-widest font-medium">
-                    {t("viewProperty")}
+                    {property.content["es-AR"].button}
                   </span>
                   <svg
                     className="w-5 h-5"
