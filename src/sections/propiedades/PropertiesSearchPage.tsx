@@ -26,7 +26,7 @@ export default function PropertiesSearchPage() {
   // Transformar los datos de properties.ts al formato que espera PropertyListItem
   const properties = useMemo(() => {
     return propertiesData.map((prop, index) => {
-      const content = prop.content[locale as keyof typeof prop.content] || prop.content.es;
+      const content = prop.content[locale as keyof typeof prop.content] || prop.content["es-AR"];
       const priceValue = prop.price.value;
       const pricePerHa = prop.price.pricePerHectare;
 
