@@ -133,6 +133,7 @@
       "productiveAptitude": "Aptitud Productiva",
       "totalArea": "Superficie total",
       "pricePerHectare": "Precio por hectárea",
+      "noPriceInfo": "Consultar precio",
       "altitude": "Altitud"
     },
     "technical": {

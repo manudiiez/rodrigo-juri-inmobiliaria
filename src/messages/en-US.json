@@ -133,6 +133,7 @@
       "productiveAptitude": "Productive Aptitude",
       "totalArea": "Total Area",
       "pricePerHectare": "Price per Hectare",
+      "noPriceInfo": "Contact for price",
       "altitude": "Altitude"
     },
     "technical": {
@@ -278,5 +279,4 @@
     "spanish": "Spanish",
     "portuguese": "Portuguese"
   }
-
 }

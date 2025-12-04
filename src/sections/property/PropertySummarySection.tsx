@@ -65,15 +65,15 @@ export default function PropertySummarySection({
               <p className="text-4xl font-light text-gray-900">
                 {price.value.toLocaleString()} {price.currency}
               </p>
-              {(price.pricePerHerctare || price.pricePerHectare) && (
+              {(price.pricePerHectare) && (
                 <p className="text-lg text-gray-600">
-                  ({(price.pricePerHerctare || price.pricePerHectare)!.toLocaleString()} {price.currency}/ha)
+                  ({(price.pricePerHectare)!.toLocaleString()} {price.currency}/ha)
                 </p>
               )}
             </>
           ) : (
             <p className="text-4xl font-light text-gray-900">
-              Consultar precio
+              {t("noPriceInfo")}
             </p>
           )}
         </div>

@@ -1079,9 +1079,9 @@ export const properties = [
         },
       },
       "en-US": {
-        title: "SinFin Winery: Industrial Capacity & Wine Tourism in Maipú",
+        title: "SinFin Winery: Industrial Capacity and Wine Tourism in Maipú",
         description: {
-          text: "Excellent investment opportunity in a family-owned winery with a solid track record and strong international positioning, located in Maipú, Mendoza. Producing grapes since 1975 and high-end wines since 2005, Bodega SinFin combines large industrial scale with a premium quality philosophy.\n\nThe property boasts a total vessel capacity of 6,000,000 liters and manages a surface area of 440 hectares of vineyards (owned and third-party) distributed across the province's most prestigious terroirs. It stands out as one of the few wineries specializing in high-end 'Bulk Wine', exporting to demanding markets such as the USA, UK, and China, having been awarded internationally in Amsterdam.\n\nIn addition to its productive profile, it has a fully developed wine tourism and events unit, with halls, gardens, and a historic underground cellar, generating a diversified revenue stream.",
+          text: "Excellent investment opportunity in a family winery with a solid track record and strong international positioning, located in Maipú, Mendoza. Operational since 1975 in grape production and since 2005 in high-end winemaking, Bodega SinFin combines large industrial scale with a premium quality philosophy.\n\nThe property has a total vessel capacity of 6,000,000 liters and manages 440 hectares of vineyards (owned and third-party) distributed across the most prestigious terroirs of the province. It stands out as one of the few wineries specializing in high-end 'Bulk Wine', exporting to demanding markets such as the USA, UK, and China, having been internationally awarded in Amsterdam.\n\nIn addition to its production profile, it has a fully developed wine tourism and events unit, with halls, gardens, and a historic underground cellar, generating a diversified income stream.",
           callout: {
             label: "BUSINESS PROFILE",
             value: "Premium Bulk Export / Wine Tourism / Events",
@@ -1093,7 +1093,7 @@ export const properties = [
           { id: "infraestructura", label: "Wine Tourism & Events" },
           { id: "productividad", label: "Markets & Products" },
           { id: "ubicacion", label: "Location" },
-          { id: "documentacion", label: "Operating Performance" },
+          { id: "documentacion", label: "Operational Performance" },
           { id: "contacto-finca", label: "Contact" },
         ],
         summary: [
@@ -1114,7 +1114,7 @@ export const properties = [
           },
           {
             label: "Status",
-            value: "Fully operational",
+            value: "In full production",
             class: "text-lg mt-4",
           },
         ],
@@ -1130,7 +1130,7 @@ export const properties = [
                   class: "border-secondary",
                 },
                 {
-                  label: "CEMENT W/ EPOXY",
+                  label: "EPOXY-LINED CEMENT",
                   value: "5,740,000 Liters",
                 },
                 {
@@ -1145,34 +1145,34 @@ export const properties = [
               ],
             },
             {
-              title: "Vineyards & Raw Material",
+              title: "Vineyards & Raw Materials",
               fields: [
                 {
                   label: "TOTAL AREA",
-                  value: "440 has",
+                  value: "440 ha",
                 },
                 {
                   label: "OWNED VINEYARDS",
-                  value: "90 has",
+                  value: "90 ha",
                   class: "border-blueo",
                 },
                 {
                   label: "THIRD-PARTY VINEYARDS",
-                  value: "350 has",
+                  value: "350 ha",
                 },
                 {
-                  label: "GROWING ZONES",
+                  label: "CULTIVATION ZONES",
                   value: "Maipú, Luján, Uco Valley, East",
                   subText: "Diversity of origins",
                 },
                 {
-                  label: "RED VARIETIES",
+                  label: "RED VARIETALS",
                   value:
                     "Malbec, Cab. Franc, Cab. Sauv, Merlot, Bonarda, Syrah",
                   class: "text-sm",
                 },
                 {
-                  label: "WHITE VARIETIES",
+                  label: "WHITE VARIETALS",
                   value: "Sauvignon Blanc",
                   class: "text-sm",
                 },
@@ -1185,13 +1185,13 @@ export const properties = [
           fields: [
             {
               label: "TOURISM",
-              value: "Tours & Tastings",
-              subText: "With pairings (chocolate/platters)",
+              value: "Visits and Tastings",
+              subText: "With pairings (chocolates/charcuterie)",
             },
             {
               label: "EVENT SPACES",
-              value: "3 Distinct Halls",
-              subText: "Corporate & Social",
+              value: "3 Differentiated halls",
+              subText: "Corporate and Social",
             },
             {
               label: "UNDERGROUND CELLAR",
@@ -1200,13 +1200,13 @@ export const properties = [
             },
             {
               label: "FAMILY HOUSE",
-              value: "With pool & vineyard",
+              value: "With pool and vineyard",
               subText: "Country style",
             },
             {
               label: "GASTRONOMY",
               value: "In-house service",
-              subText: "Restaurant projected",
+              subText: "Restaurant projection",
             },
           ],
         },
@@ -1214,7 +1214,7 @@ export const properties = [
           label: "Markets & Products",
           groups: [
             {
-              title: "External Market (Bulk)",
+              title: "Export Market (Bulk)",
               fields: [
                 {
                   label: "POSITIONING",
@@ -1240,19 +1240,35 @@ export const properties = [
                 {
                   label: "PRODUCTION",
                   value: "4,500,000 Lts",
-                  subText: "Annual max",
+                  subText: "Maximum annual",
                 },
               ],
               fields: [
                 {
-                  label: "LINES",
-                  value: ["Guarda", "Gran Guarda", "El Interminable"],
+                  label: "Reserve",
+                  value: [
+                    "Malbec",
+                    "Cabernet Franc",
+                    "Bonarda",
+                    "Sauvignon Blanc",
+                  ],
                   class: "border-secondary",
                 },
                 {
-                  label: "HIGH END",
-                  value: "SinFin Presente / Fugaz",
-                  subText: "Exclusive Blends & Rosés",
+                  label: "Grand Reserve",
+                  value: ["Malbec", "Cabernet Franc", "Merlot"],
+                },
+                {
+                  label: "Interminable",
+                  value: ["Red Blend 1", "Malbec Blend 2", "Red Blend 3"],
+                },
+                {
+                  label: "Fugaz",
+                  value: ["Bequignol Rosé"],
+                },
+                {
+                  label: "Presente",
+                  value: ["Blend"],
                 },
               ],
             },
@@ -1272,29 +1288,27 @@ export const properties = [
             {
               title: "Surroundings",
               fields: [
-                { label: "Area Profile", value: "Historic Wine Region" },
+                { label: "Zone Profile", value: "Historic wine region" },
                 { label: "Proximity", value: "Wine Routes" },
               ],
             },
           ],
         },
         legal: {
-          label: "Operating Performance",
+          label: "Documents",
           groups: [
             {
               title: "Financial Summary (Historical)",
               fields: [
-                { label: "PERIOD ANALYZED", value: "2016 - 2025" },
-                { label: "AVG VOLUME", value: "2,776,109 Lts" },
-                {
-                  label: "AVG HISTORICAL EBITDA",
-                  value: "USD 193,082",
-                  subText: "Series average",
-                },
                 {
                   label: "STRUCTURE",
-                  value: "Full Organigram",
+                  value: "Complete organizational chart",
                   subText: "Management, Enology, Commercial, HR",
+                },
+                {
+                  label: "Presentation",
+                  value: "See attached document",
+                  link: "/docs/bodega-sinfin.pdf",
                 },
               ],
             },
@@ -1302,9 +1316,9 @@ export const properties = [
         },
       },
       "pt-BR": {
-        title: "Bodega SinFin: Capacidade Industrial e Enoturismo em Maipú",
+        title: "Vinícola SinFin: Capacidade Industrial e Enoturismo em Maipú",
         description: {
-          text: "Excelente oportunidade de investimento em uma vinícola familiar com sólida trajetória e forte posicionamento internacional, localizada em Maipú, Mendoza. Operando desde 1975 na produção de uvas e desde 2005 na elaboração de vinhos de alta gama, a Bodega SinFin combina grande escala industrial com uma filosofia de qualidade premium.\n\nA propriedade possui uma capacidade total de vasilha de 6.000.000 de litros e administra uma superfície de 440 hectares de vinhedos (próprios e de terceiros) distribuídos nos terroirs mais prestigiados da província. Destaca-se por ser uma das poucas vinícolas especializadas em 'Bulk Wine' (vinho a granel) de alta gama, exportando para mercados exigentes como EUA, Reino Unido e China, tendo sido premiada internacionalmente em Amsterdã.\n\nAlém de seu perfil produtivo, possui uma unidade de enoturismo e eventos totalmente desenvolvida, com salões, jardins e uma adega subterrânea histórica, gerando um fluxo de receitas diversificado.",
+          text: "Excelente oportunidade de investimento em uma vinícola familiar com sólida trajetória e forte posicionamento internacional, localizada em Maipú, Mendoza. Operacional desde 1975 na produção de uvas e desde 2005 na elaboração de vinhos de alta gama, a Bodega SinFin combina grande escala industrial com uma filosofia de qualidade premium.\n\nA propriedade conta com uma capacidade total de vasilhame de 6.000.000 de litros e administra uma superfície de 440 hectares de vinhedos (próprios e de terceiros) distribuídos nos terroirs mais prestigiosos da província. Destaca-se por ser uma das poucas vinícolas especializadas em 'Bulk Wine' (vinho a granel) de alta gama, exportando para mercados exigentes como EUA, Reino Unido e China, tendo sido premiada internacionalmente em Amsterdã.\n\nAlém do seu perfil produtivo, possui uma unidade de enoturismo e eventos totalmente desenvolvida, com salões, jardins e uma adega subterrânea histórica, gerando um fluxo de receitas diversificado.",
           callout: {
             label: "PERFIL DE NEGÓCIO",
             value: "Exportação Granel Premium / Enoturismo / Eventos",
@@ -1327,13 +1341,13 @@ export const properties = [
           },
           {
             label: "Elaboração Máx",
-            value: "4.5 M",
+            value: "4,5 M",
             extra: "Litros/Ano",
           },
           {
             label: "Área de Vinhedos",
             value: "440",
-            extra: "Hectares (Gerenciados)",
+            extra: "Hectares (Administrados)",
           },
           {
             label: "Status",
@@ -1345,7 +1359,7 @@ export const properties = [
           label: "Capacidade e Infraestrutura",
           groups: [
             {
-              title: "Capacidade de Vasilha",
+              title: "Capacidade de Vasilhame",
               fields: [
                 {
                   label: "CAPACIDADE TOTAL",
@@ -1361,7 +1375,7 @@ export const properties = [
                   value: "200.000 Litros",
                 },
                 {
-                  label: "BARRICAS CARVALHO",
+                  label: "BARRICAS DE CARVALHO",
                   value: "60.000 Litros",
                   subText: "Carvalho Francês",
                 },
@@ -1372,16 +1386,16 @@ export const properties = [
               fields: [
                 {
                   label: "ÁREA TOTAL",
-                  value: "440 has",
+                  value: "440 ha",
                 },
                 {
                   label: "VINHEDOS PRÓPRIOS",
-                  value: "90 has",
+                  value: "90 ha",
                   class: "border-blueo",
                 },
                 {
-                  label: "VINHEDOS TERCEIROS",
-                  value: "350 has",
+                  label: "VINHEDOS DE TERCEIROS",
+                  value: "350 ha",
                 },
                 {
                   label: "ZONAS DE CULTIVO",
@@ -1389,13 +1403,13 @@ export const properties = [
                   subText: "Diversidade de origens",
                 },
                 {
-                  label: "VARIEDADES TINTAS",
+                  label: "VARIETAIS TINTOS",
                   value:
                     "Malbec, Cab. Franc, Cab. Sauv, Merlot, Bonarda, Syrah",
                   class: "text-sm",
                 },
                 {
-                  label: "VARIEDADES BRANCAS",
+                  label: "VARIETAIS BRANCOS",
                   value: "Sauvignon Blanc",
                   class: "text-sm",
                 },
@@ -1412,24 +1426,24 @@ export const properties = [
               subText: "Com harmonizações (chocolates/tábuas)",
             },
             {
-              label: "ESPAÇOS EVENTOS",
+              label: "ESPAÇOS PARA EVENTOS",
               value: "3 Salões diferenciados",
               subText: "Corporativos e Sociais",
             },
             {
               label: "ADEGA SUBTERRÂNEA",
-              value: "Piscinas renovadas",
+              value: "Tanques renovados",
               subText: "Para eventos íntimos",
             },
             {
-              label: "CASA DE FAMÍLIA",
+              label: "CASA DA FAMÍLIA",
               value: "Com piscina e vinhedo",
               subText: "Estilo campestre",
             },
             {
               label: "GASTRONOMIA",
               value: "Serviço próprio",
-              subText: "Restaurante projetado",
+              subText: "Projeção de restaurante",
             },
           ],
         },
@@ -1446,11 +1460,11 @@ export const properties = [
                 },
                 {
                   label: "DESTINOS",
-                  value: "EUA, Reino Unido, China, Canadá",
+                  value: "EUA, UK, China, Canadá",
                   subText: "Japão, Austrália, Europa",
                 },
                 {
-                  label: "PRÊMIOS",
+                  label: "RECONHECIMENTOS",
                   value: "Ouro - WBWE Amsterdã",
                   subText: "Top 8 Vinícolas (2018/2019)",
                 },
@@ -1468,14 +1482,30 @@ export const properties = [
               ],
               fields: [
                 {
-                  label: "LINHAS",
-                  value: ["Guarda", "Gran Guarda", "El Interminable"],
+                  label: "Reserva",
+                  value: [
+                    "Malbec",
+                    "Cabernet Franc",
+                    "Bonarda",
+                    "Sauvignon Blanc",
+                  ],
                   class: "border-secondary",
                 },
                 {
-                  label: "ALTA GAMA",
-                  value: "SinFin Presente / Fugaz",
-                  subText: "Blends e Rosés exclusivos",
+                  label: "Grande Reserva",
+                  value: ["Malbec", "Cabernet Franc", "Merlot"],
+                },
+                {
+                  label: "Interminable",
+                  value: ["Red Blend 1", "Blend de Malbec 2", "Red Blend 3"],
+                },
+                {
+                  label: "Fugaz",
+                  value: ["Rosé de Bequignol"],
+                },
+                {
+                  label: "Presente",
+                  value: ["Blend"],
                 },
               ],
             },
@@ -1493,7 +1523,7 @@ export const properties = [
           ],
           groups: [
             {
-              title: "Arredores",
+              title: "Entorno",
               fields: [
                 { label: "Perfil da Zona", value: "Vitivinícola histórica" },
                 { label: "Proximidade", value: "Rotas do Vinho" },
@@ -1502,22 +1532,20 @@ export const properties = [
           ],
         },
         legal: {
-          label: "Desempenho Operacional",
+          label: "Documentos",
           groups: [
             {
               title: "Resumo Financeiro (Histórico)",
               fields: [
-                { label: "PERÍODO ANALISADO", value: "2016 - 2025" },
-                { label: "VOLUME MÉDIO", value: "2.776.109 Lts" },
-                {
-                  label: "EBITDA MÉDIO HISTÓRICO",
-                  value: "USD 193.082",
-                  subText: "Média da série",
-                },
                 {
                   label: "ESTRUTURA",
                   value: "Organograma completo",
                   subText: "Gerência, Enologia, Comercial, RH",
+                },
+                {
+                  label: "Apresentação",
+                  value: "Ver documento anexo",
+                  link: "/docs/bodega-sinfin.pdf",
                 },
               ],
             },
@@ -1543,13 +1571,34 @@ export const properties = [
       country: "AR",
     },
     images: [
-      {url: "/images/casirdossantos/bodega-casirdossantos-1.jpg", class: "object-cover"},
-      {url: "/images/casirdossantos/bodega-casirdossantos-2.png", class: "object-contain"},
-      {url: "/images/casirdossantos/bodega-casirdossantos-3.png", class: "object-contain"},
-      {url: "/images/casirdossantos/bodega-casirdossantos-4.png", class: "object-contain"},
-      {url: "/images/casirdossantos/bodega-casirdossantos-5.png", class: "object-contain"},
-      {url: "/images/casirdossantos/bodega-casirdossantos-6.png", class: "object-contain"},
-      {url: "/images/casirdossantos/bodega-casirdossantos-7.png", class: "object-contain"},
+      {
+        url: "/images/casirdossantos/bodega-casirdossantos-1.jpg",
+        class: "object-cover",
+      },
+      {
+        url: "/images/casirdossantos/bodega-casirdossantos-2.png",
+        class: "object-contain",
+      },
+      {
+        url: "/images/casirdossantos/bodega-casirdossantos-3.png",
+        class: "object-contain",
+      },
+      {
+        url: "/images/casirdossantos/bodega-casirdossantos-4.png",
+        class: "object-contain",
+      },
+      {
+        url: "/images/casirdossantos/bodega-casirdossantos-5.png",
+        class: "object-contain",
+      },
+      {
+        url: "/images/casirdossantos/bodega-casirdossantos-6.png",
+        class: "object-contain",
+      },
+      {
+        url: "/images/casirdossantos/bodega-casirdossantos-7.png",
+        class: "object-contain",
+      },
     ],
     content: {
       "es-AR": {
@@ -1842,6 +1891,596 @@ export const properties = [
                 {
                   label: "Estado",
                   value: "En Producción",
+                },
+              ],
+            },
+          ],
+        },
+      },
+      "en-US": {
+        title: "Casir dos Santos Winery: History (1862) and High-End Wines",
+        description: {
+          text: "Investment opportunity in one of the oldest operating wineries in Mendoza. Originally founded in 1862 (formerly Viña Maipú), Casir dos Santos combines over a century of winemaking heritage with a modern vision of precision enology.\n\nThe property stands out for its multi-terroir approach, managing vineyards in the three most prestigious zones of the province: Lunlunta (Maipú), Agrelo (Luján de Cuyo), and Uco Valley. This diversity allows obtaining the best varietal expression for their premium wine lines (Estate, Reserve, Gran Corte, and the innovative Avatar line), all internationally recognized with scores above 90 points by critics such as James Suckling, Tim Atkin, and Robert Parker.\n\nUnder the enological direction of Lucas Moran, the winery has modernized its processes without losing its historic essence, using cutting-edge technology and French oak barrels for aging. It is an ideal property for investors seeking an established brand, with history, production capacity, and a product portfolio already positioned in the high-end market.",
+          callout: {
+            label: "DIFFERENTIAL VALUE",
+            value: "Historic Winery (1862) / 3 Premium Terroirs / Many Awards",
+          },
+        },
+        sections: [
+          {
+            id: "resumen",
+            label: "Summary",
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Our Vineyards",
+          },
+          {
+            id: "infraestructura",
+            label: "Infrastructure",
+          },
+          {
+            id: "productividad",
+            label: "Portfolio & Scores",
+          },
+          {
+            id: "ubicacion",
+            label: "Location",
+          },
+          {
+            id: "contacto-finca",
+            label: "Contact",
+          },
+        ],
+        summary: [
+          {
+            label: "Founded",
+            value: "1862",
+            extra: "One of the oldest",
+          },
+          {
+            label: "Winemaker",
+            value: "Lucas Moran",
+            extra: "22 Harvests",
+          },
+          {
+            label: "Vineyards in",
+            value: "3",
+            extra: "Maipú, Agrelo, Uco",
+          },
+          {
+            label: "Status",
+            value: "In Production",
+            class: "text-lg mt-4",
+          },
+        ],
+        techSpecs: {
+          label: "Our Vineyards (Terroirs)",
+          groups: [
+            {
+              title: "Lunlunta Estate (Maipú)",
+              fields: [
+                {
+                  label: "LOCATION",
+                  value: "Lower Andes zone",
+                },
+                {
+                  label: "ALTITUDE",
+                  value: "1,050 masl",
+                },
+                {
+                  label: "DISTANCE",
+                  value: "20 km from Mendoza",
+                },
+              ],
+            },
+            {
+              title: "Agrelo Estate (Luján de Cuyo)",
+              fields: [
+                {
+                  label: "LOCATION",
+                  value: "The Valley",
+                },
+                {
+                  label: "ALTITUDE",
+                  value: "950 masl",
+                  class: "border-secondary",
+                },
+                {
+                  label: "DISTANCE",
+                  value: "40 km South",
+                },
+              ],
+            },
+            {
+              title: "Uco Valley",
+              fields: [
+                {
+                  label: "LOCATION",
+                  value: "Upper Andes Slope",
+                },
+                {
+                  label: "ALTITUDE",
+                  value: "1,250 masl",
+                  class: "border-blueo",
+                },
+                {
+                  label: "DISTANCE",
+                  value: "100 km Southwest",
+                },
+              ],
+            },
+          ],
+        },
+        energy: {
+          label: "Portfolio & Scores",
+          groups: [
+            {
+              title: "Wine Lines",
+              fields: [
+                {
+                  label: "ESTATE",
+                  value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
+                },
+                {
+                  label: "RESERVE",
+                  value: [
+                    "Malbec",
+                    "Cabernet Sauvignon",
+                    "Petit Verdot",
+                    "Chardonnay",
+                  ],
+                },
+                {
+                  label: "CORTE",
+                  value: ["Red Blend"],
+                },
+                {
+                  label: "New Releases",
+                  value: [
+                    "Inspiración Red Blend",
+                    "Malbec Elijo Creer",
+                    "Reserve Chardonnay",
+                  ],
+                },
+              ],
+            },
+            {
+              title: "Avatar Line",
+              featured: [
+                {
+                  label: "AVATAR LINE",
+                  value: "Innovative Concept",
+                  subText: "Malbec, Cab, Syrah, Bonarda",
+                },
+              ],
+              fields: [
+                {
+                  label: "Available Varietals",
+                  value: [
+                    "Torrontés",
+                    "Chardonnay",
+                    "Malbec",
+                    "Cabernet Sauvignon",
+                    "Bonarda",
+                  ],
+                },
+                {
+                  label: "Ultra Range",
+                  value: ["Malbec", "Cabernet Sauvignon", "Syrah"],
+                },
+                {
+                  label: "Extra Brut",
+                  value: ["Pink Pinot Noir"],
+                },
+                {
+                  label: "Revolución Range",
+                  value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
+                },
+              ],
+            },
+            {
+              title: "Awards",
+              borderColor: "border-indigo-900",
+              fields: [
+                {
+                  label: "Estate Malbec 2022",
+                  value: "90 pts",
+                  subText: "Descorchados",
+                },
+                {
+                  label: "Avatar Malbec 2022 - 2023",
+                  value: "90 pts (2022) - 90 pts (2023)",
+                  subText: "James Suckling - Descorchados",
+                },
+                {
+                  label: "Reserve Malbec 2017",
+                  value: "92 pts",
+                  subText: "Tim Atkin MW",
+                },
+                {
+                  label: "Reserve Cabernet 2017",
+                  value: "90 pts",
+                  subText: "Tim Atkin MW",
+                },
+                {
+                  label: "Gran Corte 2015",
+                  value: "93 pts",
+                  subText: "James Suckling",
+                },
+                {
+                  label: "Inspiración 2021 Red Blend",
+                  value: "91 pts",
+                  subText: "James Suckling",
+                },
+              ],
+            },
+          ],
+        },
+        improvements: {
+          label: "Infrastructure",
+          fields: [
+            {
+              label: "BUILDING",
+              value: "Historic (1862)",
+              subText: "Preserved and renovated",
+            },
+            {
+              label: "TECHNOLOGY",
+              value: "Precision enology",
+            },
+            {
+              label: "AGING",
+              value: "French Oak Barrels",
+              subText: "Barrel room",
+            },
+            {
+              label: "OUR VINEYARDS",
+              value: "Lunlunta, Agrelo, Uco Valley",
+            },
+          ],
+        },
+        locationDetails: {
+          label: "Location",
+          map: {
+            lat: -33.0525,
+            lng: -68.8045,
+          },
+          featured: [
+            {
+              label: "WINERY",
+              value: "Maipú, Mendoza",
+            },
+            {
+              label: "ACCESSIBILITY",
+              value: "Close to City",
+            },
+          ],
+          groups: [
+            {
+              title: "Distances to the Winery",
+              fields: [
+                {
+                  label: "Mendoza City",
+                  value: "20-25 min",
+                },
+                {
+                  label: "Airport",
+                  value: "35 min",
+                },
+              ],
+            },
+          ],
+        },
+        legal: {
+          label: "Documents",
+          groups: [
+            {
+              fields: [
+                {
+                  label: "More Information",
+                  value: "See wine presentation",
+                  link: "/docs/Presentación-Bodega-Casir-dos-Santos-ESP.pdf",
+                },
+                {
+                  label: "Status",
+                  value: "In Production",
+                },
+              ],
+            },
+          ],
+        },
+      },
+      "pt-BR": {
+        title:
+          "Vinícola Casir dos Santos: História (1862) e Vinhos de Alta Gama",
+        description: {
+          text: "Oportunidade de investimento em uma das vinícolas em funcionamento mais antigas de Mendoza. Fundada originalmente em 1862 (antiga Viña Maipú), Casir dos Santos combina mais de um século de patrimônio vitivinícola com uma visão moderna de enologia de precisão.\n\nA propriedade destaca-se pela sua abordagem multi-terroir, administrando vinhedos nas três zonas mais prestigiosas da província: Lunlunta (Maipú), Agrelo (Luján de Cuyo) e Vale de Uco. Esta diversidade permite obter a melhor expressão varietal para suas linhas de vinhos premium (Estate, Reserve, Gran Corte e a inovadora linha Avatar), todas reconhecidas internacionalmente com pontuações superiores a 90 pontos por críticos como James Suckling, Tim Atkin e Robert Parker.\n\nSob a direção enológica de Lucas Moran, a vinícola modernizou seus processos sem perder sua essência histórica, utilizando tecnologia de ponta e barricas de carvalho francês para a maturação. É uma propriedade ideal para investidores que buscam uma marca consolidada, com história, capacidade produtiva e um portfólio de produtos já posicionado no mercado de alta gama.",
+          callout: {
+            label: "VALOR DIFERENCIAL",
+            value:
+              "Vinícola Histórica (1862) / 3 Terroirs Premium / Muitos Reconhecimentos",
+          },
+        },
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumo",
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Nossos Vinhedos",
+          },
+          {
+            id: "infraestructura",
+            label: "Infraestrutura",
+          },
+          {
+            id: "productividad",
+            label: "Portfólio e Pontuações",
+          },
+          {
+            id: "ubicacion",
+            label: "Localização",
+          },
+          {
+            id: "contacto-finca",
+            label: "Contato",
+          },
+        ],
+        summary: [
+          {
+            label: "Fundação",
+            value: "1862",
+            extra: "Uma das mais antigas",
+          },
+          {
+            label: "Enólogo",
+            value: "Lucas Moran",
+            extra: "22 Safras",
+          },
+          {
+            label: "Vinhedos em",
+            value: "3",
+            extra: "Maipú, Agrelo, Uco",
+          },
+          {
+            label: "Status",
+            value: "Em Produção",
+            class: "text-lg mt-4",
+          },
+        ],
+        techSpecs: {
+          label: "Nossos Vinhedos (Terroirs)",
+          groups: [
+            {
+              title: "Fazenda Lunlunta (Maipú)",
+              fields: [
+                {
+                  label: "LOCALIZAÇÃO",
+                  value: "Zona baixa dos Andes",
+                },
+                {
+                  label: "ALTITUDE",
+                  value: "1.050 m.a.n.m.",
+                },
+                {
+                  label: "DISTÂNCIA",
+                  value: "20 km de Mendoza",
+                },
+              ],
+            },
+            {
+              title: "Fazenda Agrelo (Luján de Cuyo)",
+              fields: [
+                {
+                  label: "LOCALIZAÇÃO",
+                  value: "O Vale",
+                },
+                {
+                  label: "ALTITUDE",
+                  value: "950 m.a.n.m.",
+                  class: "border-secondary",
+                },
+                {
+                  label: "DISTÂNCIA",
+                  value: "40 km ao Sul",
+                },
+              ],
+            },
+            {
+              title: "Vale de Uco",
+              fields: [
+                {
+                  label: "LOCALIZAÇÃO",
+                  value: "Encosta Superior dos Andes",
+                },
+                {
+                  label: "ALTITUDE",
+                  value: "1.250 m.a.n.m.",
+                  class: "border-blueo",
+                },
+                {
+                  label: "DISTÂNCIA",
+                  value: "100 km a Sudoeste",
+                },
+              ],
+            },
+          ],
+        },
+        energy: {
+          label: "Portfólio e Pontuações",
+          groups: [
+            {
+              title: "Linhas de Vinhos",
+              fields: [
+                {
+                  label: "ESTATE",
+                  value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
+                },
+                {
+                  label: "RESERVE",
+                  value: [
+                    "Malbec",
+                    "Cabernet Sauvignon",
+                    "Petit Verdot",
+                    "Chardonnay",
+                  ],
+                },
+                {
+                  label: "CORTE",
+                  value: ["Red Blend"],
+                },
+                {
+                  label: "Novos Lançamentos",
+                  value: [
+                    "Inspiración Blend de Tintos",
+                    "Malbec Elijo Creer",
+                    "Reserve Chardonnay",
+                  ],
+                },
+              ],
+            },
+            {
+              title: "Linha Avatar",
+              featured: [
+                {
+                  label: "LINHA AVATAR",
+                  value: "Conceito Inovador",
+                  subText: "Malbec, Cab, Syrah, Bonarda",
+                },
+              ],
+              fields: [
+                {
+                  label: "Variedades Disponíveis",
+                  value: [
+                    "Torrontés",
+                    "Chardonnay",
+                    "Malbec",
+                    "Cabernet Sauvignon",
+                    "Bonarda",
+                  ],
+                },
+                {
+                  label: "Ultra Range",
+                  value: ["Malbec", "Cabernet Sauvignon", "Syrah"],
+                },
+                {
+                  label: "Extra Brut",
+                  value: ["Pink Pinot Noir"],
+                },
+                {
+                  label: "Revolución Range",
+                  value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
+                },
+              ],
+            },
+            {
+              title: "Reconhecimentos",
+              borderColor: "border-indigo-900",
+              fields: [
+                {
+                  label: "Estate Malbec 2022",
+                  value: "90 pts",
+                  subText: "Descorchados",
+                },
+                {
+                  label: "Avatar Malbec 2022 - 2023",
+                  value: "90 pts (2022) - 90 pts (2023)",
+                  subText: "James Suckling - Descorchados",
+                },
+                {
+                  label: "Reserve Malbec 2017",
+                  value: "92 pts",
+                  subText: "Tim Atkin MW",
+                },
+                {
+                  label: "Reserve Cabernet 2017",
+                  value: "90 pts",
+                  subText: "Tim Atkin MW",
+                },
+                {
+                  label: "Gran Corte 2015",
+                  value: "93 pts",
+                  subText: "James Suckling",
+                },
+                {
+                  label: "Inspiración 2021 Blend de Tintos",
+                  value: "91 pts",
+                  subText: "James Suckling",
+                },
+              ],
+            },
+          ],
+        },
+        improvements: {
+          label: "Infraestrutura",
+          fields: [
+            {
+              label: "EDIFÍCIO",
+              value: "Histórico (1862)",
+              subText: "Conservado e renovado",
+            },
+            {
+              label: "TECNOLOGIA",
+              value: "Enologia de precisão",
+            },
+            {
+              label: "MATURAÇÃO",
+              value: "Barricas de Carvalho Francês",
+              subText: "Sala de barricas",
+            },
+            {
+              label: "NOSSOS VINHEDOS",
+              value: "Lunlunta, Agrelo, Vale de Uco",
+            },
+          ],
+        },
+        locationDetails: {
+          label: "Localização",
+          map: {
+            lat: -33.0525,
+            lng: -68.8045,
+          },
+          featured: [
+            {
+              label: "VINÍCOLA",
+              value: "Maipú, Mendoza",
+            },
+            {
+              label: "ACESSIBILIDADE",
+              value: "Próxima à Cidade",
+            },
+          ],
+          groups: [
+            {
+              title: "Distâncias até a Vinícola",
+              fields: [
+                {
+                  label: "Mendoza Capital",
+                  value: "20-25 min",
+                },
+                {
+                  label: "Aeroporto",
+                  value: "35 min",
+                },
+              ],
+            },
+          ],
+        },
+        legal: {
+          label: "Documentos",
+          groups: [
+            {
+              fields: [
+                {
+                  label: "Mais Informações",
+                  value: "Ver apresentação dos vinhos",
+                  link: "/docs/Presentación-Bodega-Casir-dos-Santos-ESP.pdf",
+                },
+                {
+                  label: "Status",
+                  value: "Em Produção",
                 },
               ],
             },
