@@ -12,17 +12,17 @@ const properties = [
     image: "/images/sinfin/bodega-sinfin.jpg",
     content: {
       "es-AR": {
-        title: "Bodega SinFin - Mendoza, Argentina",
+        title: "Bodega Sin Fin - Mendoza, Argentina",
         info: "440 Hectáreas",
         button: "Ver Bodega",
       },
       "en-US": {
-        title: "SinFin Winery - Mendoza, Argentina",
+        title: "Sin Fin Winery - Mendoza, Argentina",
         info: "440 Hectares",
         button: "View Winery",
       },
       "pt-BR": {
-        title: "Vinícola SinFin - Mendoza, Argentina",
+        title: "Vinícola Sin Fin - Mendoza, Argentina",
         info: "440 Hectares",
         button: "Ver Vinícola",
       },
