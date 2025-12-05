@@ -119,7 +119,8 @@
     "builtArea": "Área construída",
     "totalArea": "Área total",
     "aptitude": "Aptidão",
-    "save": "Salvar"
+    "save": "Salvar",
+    "contact": "Contatar"
   },
   "PropertyDetailPage": {
     "breadcrumb": {
