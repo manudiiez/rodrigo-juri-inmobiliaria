@@ -26,13 +26,13 @@ export default function NavbarMinimalista() {
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-10">
             <Link
-              href="/propiedades"
+              href="/propiedades?type=bodegas"
               className="text-white hover:text-white/80 transition-colors text-sm uppercase tracking-widest"
             >
               {t("wineries")}
             </Link>
             <Link
-              href="/propiedades"
+              href="/propiedades?type=fincas"
               className="text-white hover:text-white/80 transition-colors text-sm uppercase tracking-widest"
             >
               {t("buyFarms")}

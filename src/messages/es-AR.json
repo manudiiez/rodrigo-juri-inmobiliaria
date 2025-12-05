@@ -107,6 +107,8 @@
     "apply": "Aplicar",
     "viewing": "Visualizando {count} de {total} propiedades en venta en Argentina",
     "showingProperties": "Mostrando propiedades comercializadas por Valle de Uco Real State.",
+    "noResults": "No se encontraron propiedades",
+    "noResultsDescription": "Intenta ajustar los filtros para encontrar más opciones.",
     "sortBy": "Ordenar:",
     "exclusive": "Exclusive (Default)",
     "priceHighToLow": "Precio: Mayor a menor",

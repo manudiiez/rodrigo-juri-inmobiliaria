@@ -76,7 +76,7 @@ export default function Buscador() {
         <button
           type="button"
           className="ml-2 flex h-8 w-8 items-center justify-center rounded-full border border-slate-500 hover:bg-slate-100/10 transition-colors cursor-pointer"
-          onClick={() => route.push(`/propiedades?search=${search}`)}
+          onClick={() => route.push(`/propiedades`)}
         >
           <svg
             aria-hidden="true"

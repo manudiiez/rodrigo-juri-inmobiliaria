@@ -107,6 +107,8 @@
     "apply": "Apply",
     "viewing": "Viewing {count} of {total} properties for sale in Argentina",
     "showingProperties": "Showing properties marketed by Valle de Uco Real State.",
+    "noResults": "No properties found",
+    "noResultsDescription": "Try adjusting the filters to find more options.",
     "sortBy": "Sort by:",
     "exclusive": "Exclusive (Default)",
     "priceHighToLow": "Price: High to Low",
