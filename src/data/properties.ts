@@ -1,788 +1,788 @@
 export const properties = [
-  {
-    slug: "finca-los-alamos-vinedos-lujan",
-    type: "finca",
-    price: {
-      value: 777000, //
-      currency: "USD",
-      pricePerHectare: 18500,
-    },
-    hectares: 42, //
+  // {
+  //   slug: "finca-los-alamos-vinedos-lujan",
+  //   type: "finca",
+  //   price: {
+  //     value: 777000, //
+  //     currency: "USD",
+  //     pricePerHectare: 18500,
+  //   },
+  //   hectares: 42, //
 
-    // Datos para el Mapa Interactivo
-    location: {
-      lat: -33.0162,
-      lng: -68.8751,
-      address: "Luján de Cuyo, Mendoza",
-      province: "Mendoza",
-      country: "AR",
-      state: "Tupungato",
-    },
+  //   // Datos para el Mapa Interactivo
+  //   location: {
+  //     lat: -33.0162,
+  //     lng: -68.8751,
+  //     address: "Luján de Cuyo, Mendoza",
+  //     province: "Mendoza",
+  //     country: "AR",
+  //     state: "Tupungato",
+  //   },
 
-    images: [
-      { url: "/finca1.jpg" },
-      { url: "/finca2.jpg" },
-      { url: "/finca1.jpg" },
-      { url: "/finca2.jpg" },
-      { url: "/finca1.jpg" },
-      { url: "/finca2.jpg" },
-    ],
+  //   images: [
+  //     { url: "/finca1.jpg" },
+  //     { url: "/finca2.jpg" },
+  //     { url: "/finca1.jpg" },
+  //     { url: "/finca2.jpg" },
+  //     { url: "/finca1.jpg" },
+  //     { url: "/finca2.jpg" },
+  //   ],
 
-    content: {
-      "es-AR": {
-        title: "Finca Los Álamos con Viñedos",
+  //   content: {
+  //     "es-AR": {
+  //       title: "Finca Los Álamos con Viñedos",
 
-        description: {
-          text: "Excepcional finca con viñedos en venta en Valle de Uco, cerca de Tupungato, provincia de Mendoza. Esta propiedad de 42 hectáreas representa una oportunidad única para inversores o amantes del vino que buscan combinar producción vitivinícola de calidad con un estilo de vida campestre de lujo.\n\n  La finca cuenta con viñedos de alta calidad plantados con las mejores variedades de la región, principalmente Malbec y Cabernet Sauvignon. El sistema de riego por goteo tecnificado instalado en 2018 garantiza la máxima eficiencia hídrica y calidad de producción.\n\n  Con una productividad de 12.000 kg/ha y precios de uva en 0.45 USD/kg, esta propiedad representa una excelente oportunidad de inversión con retornos comprobados.",
-          callout: {
-            label: "APTITUD PRODUCTIVA",
-            value: "Viñedos premium / Olivos",
-          },
-        },
+  //       description: {
+  //         text: "Excepcional finca con viñedos en venta en Valle de Uco, cerca de Tupungato, provincia de Mendoza. Esta propiedad de 42 hectáreas representa una oportunidad única para inversores o amantes del vino que buscan combinar producción vitivinícola de calidad con un estilo de vida campestre de lujo.\n\n  La finca cuenta con viñedos de alta calidad plantados con las mejores variedades de la región, principalmente Malbec y Cabernet Sauvignon. El sistema de riego por goteo tecnificado instalado en 2018 garantiza la máxima eficiencia hídrica y calidad de producción.\n\n  Con una productividad de 12.000 kg/ha y precios de uva en 0.45 USD/kg, esta propiedad representa una excelente oportunidad de inversión con retornos comprobados.",
+  //         callout: {
+  //           label: "APTITUD PRODUCTIVA",
+  //           value: "Viñedos premium / Olivos",
+  //         },
+  //       },
 
-        sections: [
-          { id: "resumen", label: "Resumen" },
-          { id: "ficha-tecnica", label: "Ficha Técnica" },
-          { id: "infraestructura", label: "Infraestructura" },
-          { id: "productividad", label: "Productividad" },
-          { id: "ubicacion", label: "Ubicación" },
-          { id: "documentacion", label: "Documentación" },
-          { id: "contacto-finca", label: "Contacto" },
-        ],
+  //       sections: [
+  //         { id: "resumen", label: "Resumen" },
+  //         { id: "ficha-tecnica", label: "Ficha Técnica" },
+  //         { id: "infraestructura", label: "Infraestructura" },
+  //         { id: "productividad", label: "Productividad" },
+  //         { id: "ubicacion", label: "Ubicación" },
+  //         { id: "documentacion", label: "Documentación" },
+  //         { id: "contacto-finca", label: "Contacto" },
+  //       ],
 
-        // --- 1. FICHA TÉCNICA (Suelo y Clima) ---
-        summary: [
-          {
-            label: "Superficie Total",
-            value: "42 has",
-          },
-          {
-            label: "PRECIO POR HECTÁREA",
-            value: "18,500",
-            extra: "USD/has",
-          },
-          {
-            label: "ALTITUD",
-            value: "950",
-            extra: "msnm",
-          },
-          {
-            label: "ESTADO ACTUAL",
-            value: "En producción",
-            class: "text-lg mt-4",
-          },
-        ],
-        // --- 1. FICHA TÉCNICA (Suelo y Clima) ---
-        techSpecs: {
-          label: "Ficha Técnica",
-          groups: [
-            {
-              title: "Suelo y Clima",
-              fields: [
-                {
-                  label: "TIPO DE SUELO",
-                  value: "Franco-arcilloso",
-                },
-                {
-                  label: "TEXTURA",
-                  value: "Equilibrada",
-                },
-                {
-                  label: "PH DEL SUELO",
-                  value: "7.2 (neutro)",
-                },
-                {
-                  label: "MATERIA ORGÁNICA",
-                  value: "2.8%",
-                },
-                {
-                  label: "PENDIENTE",
-                  value: "2-5% (suave)",
-                },
-                {
-                  label: "DRENAJE",
-                  value: "Bueno",
-                },
-                {
-                  label: "GRADOS DÍA",
-                  value: "1450 (ideal viñedos)",
-                  class: "border-secondary",
-                },
-                {
-                  label: "HELADAS",
-                  value: "Tardías (octubre)",
-                },
-              ],
-            },
-            {
-              title: "Agua y Riego",
-              fields: [
-                {
-                  label: "DERECHO DE AGUA",
-                  value: "1,2 l/s/ha",
-                  class: "border-blueo",
-                },
-                {
-                  label: "CAUDAL TOTAL",
-                  value: "50 l/s",
-                  class: "border-blueo",
-                },
-                {
-                  label: "FUENTE",
-                  value: "Río Mendoza",
-                },
-                {
-                  label: "TURNO DE RIEGO",
-                  value: "Cada 15 días",
-                },
-                {
-                  label: "CONDUCTIVIDAD ELÉCTRICA",
-                  value: "0.8 dS/m",
-                  subText: "(excelente)",
-                  class: "border-blueo",
-                },
-                {
-                  label: "PH DEL AGUA",
-                  value: "7.5",
-                },
-                {
-                  label: "SISTEMA DE RIEGO",
-                  value: "Goteo tecnificado",
-                  class: "border-secondary",
-                },
-                {
-                  label: "AÑO DE INSTALACIÓN",
-                  value: "2018",
-                },
-              ],
-            },
-          ],
-        },
+  //       // --- 1. FICHA TÉCNICA (Suelo y Clima) ---
+  //       summary: [
+  //         {
+  //           label: "Superficie Total",
+  //           value: "42 has",
+  //         },
+  //         {
+  //           label: "PRECIO POR HECTÁREA",
+  //           value: "18,500",
+  //           extra: "USD/has",
+  //         },
+  //         {
+  //           label: "ALTITUD",
+  //           value: "950",
+  //           extra: "msnm",
+  //         },
+  //         {
+  //           label: "ESTADO ACTUAL",
+  //           value: "En producción",
+  //           class: "text-lg mt-4",
+  //         },
+  //       ],
+  //       // --- 1. FICHA TÉCNICA (Suelo y Clima) ---
+  //       techSpecs: {
+  //         label: "Ficha Técnica",
+  //         groups: [
+  //           {
+  //             title: "Suelo y Clima",
+  //             fields: [
+  //               {
+  //                 label: "TIPO DE SUELO",
+  //                 value: "Franco-arcilloso",
+  //               },
+  //               {
+  //                 label: "TEXTURA",
+  //                 value: "Equilibrada",
+  //               },
+  //               {
+  //                 label: "PH DEL SUELO",
+  //                 value: "7.2 (neutro)",
+  //               },
+  //               {
+  //                 label: "MATERIA ORGÁNICA",
+  //                 value: "2.8%",
+  //               },
+  //               {
+  //                 label: "PENDIENTE",
+  //                 value: "2-5% (suave)",
+  //               },
+  //               {
+  //                 label: "DRENAJE",
+  //                 value: "Bueno",
+  //               },
+  //               {
+  //                 label: "GRADOS DÍA",
+  //                 value: "1450 (ideal viñedos)",
+  //                 class: "border-secondary",
+  //               },
+  //               {
+  //                 label: "HELADAS",
+  //                 value: "Tardías (octubre)",
+  //               },
+  //             ],
+  //           },
+  //           {
+  //             title: "Agua y Riego",
+  //             fields: [
+  //               {
+  //                 label: "DERECHO DE AGUA",
+  //                 value: "1,2 l/s/ha",
+  //                 class: "border-blueo",
+  //               },
+  //               {
+  //                 label: "CAUDAL TOTAL",
+  //                 value: "50 l/s",
+  //                 class: "border-blueo",
+  //               },
+  //               {
+  //                 label: "FUENTE",
+  //                 value: "Río Mendoza",
+  //               },
+  //               {
+  //                 label: "TURNO DE RIEGO",
+  //                 value: "Cada 15 días",
+  //               },
+  //               {
+  //                 label: "CONDUCTIVIDAD ELÉCTRICA",
+  //                 value: "0.8 dS/m",
+  //                 subText: "(excelente)",
+  //                 class: "border-blueo",
+  //               },
+  //               {
+  //                 label: "PH DEL AGUA",
+  //                 value: "7.5",
+  //               },
+  //               {
+  //                 label: "SISTEMA DE RIEGO",
+  //                 value: "Goteo tecnificado",
+  //                 class: "border-secondary",
+  //               },
+  //               {
+  //                 label: "AÑO DE INSTALACIÓN",
+  //                 value: "2018",
+  //               },
+  //             ],
+  //           },
+  //         ],
+  //       },
 
-        // --- 3. INSTALACIONES Y MEJORAS ---
-        improvements: {
-          label: "Instalaciones y Mejoras",
-          fields: [
-            {
-              label: "CASA PRINCIPAL",
-              value: "120 m² (3 dormitorios)",
-              subText: "Estado: Muy bueno",
-            },
-            { label: "GALPÓN", value: "200 m²" },
-            {
-              label: "SALA DE RIEGO",
-              value: "Automatizada",
-            },
-            {
-              label: "CERCOS",
-              value: "Perimetral completo",
-            },
-            {
-              label: "CAMINOS INTERNOS",
-              value: "Consolidados",
-            },
-            {
-              label: "POZO DE AGUA",
-              value: "No (riego por canal)",
-            },
-            {
-              label: "TANQUE AUSTRALIANO",
-              value: "50.000 litros",
-            },
-          ],
-        },
+  //       // --- 3. INSTALACIONES Y MEJORAS ---
+  //       improvements: {
+  //         label: "Instalaciones y Mejoras",
+  //         fields: [
+  //           {
+  //             label: "CASA PRINCIPAL",
+  //             value: "120 m² (3 dormitorios)",
+  //             subText: "Estado: Muy bueno",
+  //           },
+  //           { label: "GALPÓN", value: "200 m²" },
+  //           {
+  //             label: "SALA DE RIEGO",
+  //             value: "Automatizada",
+  //           },
+  //           {
+  //             label: "CERCOS",
+  //             value: "Perimetral completo",
+  //           },
+  //           {
+  //             label: "CAMINOS INTERNOS",
+  //             value: "Consolidados",
+  //           },
+  //           {
+  //             label: "POZO DE AGUA",
+  //             value: "No (riego por canal)",
+  //           },
+  //           {
+  //             label: "TANQUE AUSTRALIANO",
+  //             value: "50.000 litros",
+  //           },
+  //         ],
+  //       },
 
-        // --- 4. ENERGÍA Y PRODUCTIVIDAD ---
-        energy: {
-          label: "Energía y Productividad",
-          groups: [
-            {
-              title: "Suministro Eléctrico",
-              fields: [
-                {
-                  label: "TIPO DE ENERGÍA",
-                  value: "Trifásica",
-                  class: "border-secondary",
-                },
-                {
-                  label: "POTENCIA",
-                  value: "25 kW",
-                  class: "border-secondary",
-                },
-                { label: "TRANSFORMADOR", value: "Propio" },
-                { label: "MEDIDOR", value: "Individual" },
-              ],
-            },
-            {
-              title: "Producción Vitivinícola",
-              borderColor: "border-indigo-900", // Color oscuro (Vino/Noche)
-              featured: [
-                {
-                  label: "PRODUCTIVIDAD",
-                  value: "12.000 kg/ha",
-                  subText: "Rendimiento por hectárea",
-                },
-                {
-                  label: "PRECIO UVA 2024",
-                  value: "0.45 USD/kg",
-                  subText: "Precio de mercado",
-                },
-              ],
-              fields: [
-                {
-                  label: "VARIEDADES",
-                  value: ["Malbec", "Cabernet"],
-                  class: "border-secondary",
-                }, //
-                { label: "EDAD DE VIÑEDOS", value: "8-12 años" },
-              ],
-            },
-          ],
-        },
+  //       // --- 4. ENERGÍA Y PRODUCTIVIDAD ---
+  //       energy: {
+  //         label: "Energía y Productividad",
+  //         groups: [
+  //           {
+  //             title: "Suministro Eléctrico",
+  //             fields: [
+  //               {
+  //                 label: "TIPO DE ENERGÍA",
+  //                 value: "Trifásica",
+  //                 class: "border-secondary",
+  //               },
+  //               {
+  //                 label: "POTENCIA",
+  //                 value: "25 kW",
+  //                 class: "border-secondary",
+  //               },
+  //               { label: "TRANSFORMADOR", value: "Propio" },
+  //               { label: "MEDIDOR", value: "Individual" },
+  //             ],
+  //           },
+  //           {
+  //             title: "Producción Vitivinícola",
+  //             borderColor: "border-indigo-900", // Color oscuro (Vino/Noche)
+  //             featured: [
+  //               {
+  //                 label: "PRODUCTIVIDAD",
+  //                 value: "12.000 kg/ha",
+  //                 subText: "Rendimiento por hectárea",
+  //               },
+  //               {
+  //                 label: "PRECIO UVA 2024",
+  //                 value: "0.45 USD/kg",
+  //                 subText: "Precio de mercado",
+  //               },
+  //             ],
+  //             fields: [
+  //               {
+  //                 label: "VARIEDADES",
+  //                 value: ["Malbec", "Cabernet"],
+  //                 class: "border-secondary",
+  //               }, //
+  //               { label: "EDAD DE VIÑEDOS", value: "8-12 años" },
+  //             ],
+  //           },
+  //         ],
+  //       },
 
-        // --- 5. UBICACIÓN Y ACCESOS (Datos de lista) ---
-        locationDetails: {
-          label: "Ubicación y Accesos",
-          map: {
-            lat: -33.0162,
-            lng: -68.8751,
-          },
-          featured: [
-            { label: "ACCESO PRINCIPAL", value: "RP 15 + 2 km ripio" },
-            { label: "DISTANCIA A MENDOZA", value: "35 km" },
-          ],
-          groups: [
-            {
-              title: "Servicios Cercanos",
-              fields: [
-                { label: "Centro Urbano", value: "5 km" },
-                { label: "Bodegas", value: "3-8 km" },
-                { label: "Cooperativa", value: "6 km" },
-                { label: "Escuela", value: "4 km" },
-                { label: "Hospital", value: "12 km" },
-                { label: "Aeropuerto", value: "45 km" },
-              ],
-            },
-          ],
-        },
+  //       // --- 5. UBICACIÓN Y ACCESOS (Datos de lista) ---
+  //       locationDetails: {
+  //         label: "Ubicación y Accesos",
+  //         map: {
+  //           lat: -33.0162,
+  //           lng: -68.8751,
+  //         },
+  //         featured: [
+  //           { label: "ACCESO PRINCIPAL", value: "RP 15 + 2 km ripio" },
+  //           { label: "DISTANCIA A MENDOZA", value: "35 km" },
+  //         ],
+  //         groups: [
+  //           {
+  //             title: "Servicios Cercanos",
+  //             fields: [
+  //               { label: "Centro Urbano", value: "5 km" },
+  //               { label: "Bodegas", value: "3-8 km" },
+  //               { label: "Cooperativa", value: "6 km" },
+  //               { label: "Escuela", value: "4 km" },
+  //               { label: "Hospital", value: "12 km" },
+  //               { label: "Aeropuerto", value: "45 km" },
+  //             ],
+  //           },
+  //         ],
+  //       },
 
-        // --- 6. DOCUMENTACIÓN LEGAL ---
-        legal: {
-          label: "Documentación Legal",
-          groups: [
-            {
-              fields: [
-                { label: "ESCRITURA", value: "Al día" },
-                { label: "MENSURA", value: "2020 (actualizada)" },
-                { label: "PLANOS MUNICIPALES", value: "Aprobados" },
-                { label: "IMPUESTOS", value: "Al día" },
-                { label: "APTO CRÉDITO", value: "Sí" },
-                { label: "INHIBICIONES", value: "Libre" },
-              ],
-            },
-          ],
-        },
-      },
-      "en-US": {
-        title: "Los Álamos Estate with Vineyards",
+  //       // --- 6. DOCUMENTACIÓN LEGAL ---
+  //       legal: {
+  //         label: "Documentación Legal",
+  //         groups: [
+  //           {
+  //             fields: [
+  //               { label: "ESCRITURA", value: "Al día" },
+  //               { label: "MENSURA", value: "2020 (actualizada)" },
+  //               { label: "PLANOS MUNICIPALES", value: "Aprobados" },
+  //               { label: "IMPUESTOS", value: "Al día" },
+  //               { label: "APTO CRÉDITO", value: "Sí" },
+  //               { label: "INHIBICIONES", value: "Libre" },
+  //             ],
+  //           },
+  //         ],
+  //       },
+  //     },
+  //     "en-US": {
+  //       title: "Los Álamos Estate with Vineyards",
 
-        description: {
-          text: "Exceptional vineyard estate for sale in Valle de Uco, near Tupungato, Mendoza province. This 42-hectare property represents a unique opportunity for investors or wine lovers looking to combine quality wine production with a luxury country lifestyle.\n\nThe estate features high-quality vineyards planted with the region's best varieties, mainly Malbec and Cabernet Sauvignon. The technified drip irrigation system installed in 2018 ensures maximum water efficiency and production quality.\n\nWith a productivity of 12,000 kg/ha and grape prices at 0.45 USD/kg, this property represents an excellent investment opportunity with proven returns.",
-          callout: {
-            label: "PRODUCTIVE APTITUDE",
-            value: "Premium Vineyards / Olive groves",
-          },
-        },
+  //       description: {
+  //         text: "Exceptional vineyard estate for sale in Valle de Uco, near Tupungato, Mendoza province. This 42-hectare property represents a unique opportunity for investors or wine lovers looking to combine quality wine production with a luxury country lifestyle.\n\nThe estate features high-quality vineyards planted with the region's best varieties, mainly Malbec and Cabernet Sauvignon. The technified drip irrigation system installed in 2018 ensures maximum water efficiency and production quality.\n\nWith a productivity of 12,000 kg/ha and grape prices at 0.45 USD/kg, this property represents an excellent investment opportunity with proven returns.",
+  //         callout: {
+  //           label: "PRODUCTIVE APTITUDE",
+  //           value: "Premium Vineyards / Olive groves",
+  //         },
+  //       },
 
-        sections: [
-          { id: "resumen", label: "Summary" },
-          { id: "ficha-tecnica", label: "Technical Sheet" },
-          { id: "infraestructura", label: "Infrastructure" },
-          { id: "productividad", label: "Productivity" },
-          { id: "ubicacion", label: "Location" },
-          { id: "documentacion", label: "Documentation" },
-          { id: "contacto-finca", label: "Contact" },
-        ],
+  //       sections: [
+  //         { id: "resumen", label: "Summary" },
+  //         { id: "ficha-tecnica", label: "Technical Sheet" },
+  //         { id: "infraestructura", label: "Infrastructure" },
+  //         { id: "productividad", label: "Productivity" },
+  //         { id: "ubicacion", label: "Location" },
+  //         { id: "documentacion", label: "Documentation" },
+  //         { id: "contacto-finca", label: "Contact" },
+  //       ],
 
-        summary: [
-          {
-            label: "Total Area",
-            value: "42 has",
-          },
-          {
-            label: "PRICE PER HECTARE",
-            value: "18,500",
-            extra: "USD/has",
-          },
-          {
-            label: "ALTITUDE",
-            value: "950",
-            extra: "masl",
-          },
-          {
-            label: "CURRENT STATUS",
-            value: "In production",
-            class: "text-lg mt-4",
-          },
-        ],
+  //       summary: [
+  //         {
+  //           label: "Total Area",
+  //           value: "42 has",
+  //         },
+  //         {
+  //           label: "PRICE PER HECTARE",
+  //           value: "18,500",
+  //           extra: "USD/has",
+  //         },
+  //         {
+  //           label: "ALTITUDE",
+  //           value: "950",
+  //           extra: "masl",
+  //         },
+  //         {
+  //           label: "CURRENT STATUS",
+  //           value: "In production",
+  //           class: "text-lg mt-4",
+  //         },
+  //       ],
 
-        techSpecs: {
-          label: "Technical Sheet",
-          groups: [
-            {
-              title: "Soil and Climate",
-              fields: [
-                {
-                  label: "SOIL TYPE",
-                  value: "Sandy-clay",
-                },
-                {
-                  label: "TEXTURE",
-                  value: "Balanced",
-                },
-                {
-                  label: "SOIL PH",
-                  value: "7.2 (neutral)",
-                },
-                {
-                  label: "ORGANIC MATTER",
-                  value: "2.8%",
-                },
-                {
-                  label: "SLOPE",
-                  value: "2-5% (gentle)",
-                },
-                {
-                  label: "DRAINAGE",
-                  value: "Good",
-                },
-                {
-                  label: "DEGREE DAYS",
-                  value: "1450 (ideal vineyards)",
-                  class: "border-secondary",
-                },
-                {
-                  label: "FROST",
-                  value: "Late (October)",
-                },
-              ],
-            },
-            {
-              title: "Water and Irrigation",
-              fields: [
-                {
-                  label: "WATER RIGHTS",
-                  value: "1.2 l/s/ha",
-                  class: "border-blueo",
-                },
-                {
-                  label: "TOTAL FLOW",
-                  value: "50 l/s",
-                  class: "border-blueo",
-                },
-                {
-                  label: "SOURCE",
-                  value: "Mendoza River",
-                },
-                {
-                  label: "IRRIGATION TURN",
-                  value: "Every 15 days",
-                },
-                {
-                  label: "ELECTRICAL CONDUCTIVITY",
-                  value: "0.8 dS/m",
-                  subText: "(excellent)",
-                  class: "border-blueo",
-                },
-                {
-                  label: "WATER PH",
-                  value: "7.5",
-                },
-                {
-                  label: "IRRIGATION SYSTEM",
-                  value: "Technified drip",
-                  class: "border-secondary",
-                },
-                {
-                  label: "INSTALLATION YEAR",
-                  value: "2018",
-                },
-              ],
-            },
-          ],
-        },
+  //       techSpecs: {
+  //         label: "Technical Sheet",
+  //         groups: [
+  //           {
+  //             title: "Soil and Climate",
+  //             fields: [
+  //               {
+  //                 label: "SOIL TYPE",
+  //                 value: "Sandy-clay",
+  //               },
+  //               {
+  //                 label: "TEXTURE",
+  //                 value: "Balanced",
+  //               },
+  //               {
+  //                 label: "SOIL PH",
+  //                 value: "7.2 (neutral)",
+  //               },
+  //               {
+  //                 label: "ORGANIC MATTER",
+  //                 value: "2.8%",
+  //               },
+  //               {
+  //                 label: "SLOPE",
+  //                 value: "2-5% (gentle)",
+  //               },
+  //               {
+  //                 label: "DRAINAGE",
+  //                 value: "Good",
+  //               },
+  //               {
+  //                 label: "DEGREE DAYS",
+  //                 value: "1450 (ideal vineyards)",
+  //                 class: "border-secondary",
+  //               },
+  //               {
+  //                 label: "FROST",
+  //                 value: "Late (October)",
+  //               },
+  //             ],
+  //           },
+  //           {
+  //             title: "Water and Irrigation",
+  //             fields: [
+  //               {
+  //                 label: "WATER RIGHTS",
+  //                 value: "1.2 l/s/ha",
+  //                 class: "border-blueo",
+  //               },
+  //               {
+  //                 label: "TOTAL FLOW",
+  //                 value: "50 l/s",
+  //                 class: "border-blueo",
+  //               },
+  //               {
+  //                 label: "SOURCE",
+  //                 value: "Mendoza River",
+  //               },
+  //               {
+  //                 label: "IRRIGATION TURN",
+  //                 value: "Every 15 days",
+  //               },
+  //               {
+  //                 label: "ELECTRICAL CONDUCTIVITY",
+  //                 value: "0.8 dS/m",
+  //                 subText: "(excellent)",
+  //                 class: "border-blueo",
+  //               },
+  //               {
+  //                 label: "WATER PH",
+  //                 value: "7.5",
+  //               },
+  //               {
+  //                 label: "IRRIGATION SYSTEM",
+  //                 value: "Technified drip",
+  //                 class: "border-secondary",
+  //               },
+  //               {
+  //                 label: "INSTALLATION YEAR",
+  //                 value: "2018",
+  //               },
+  //             ],
+  //           },
+  //         ],
+  //       },
 
-        improvements: {
-          label: "Facilities and Improvements",
-          fields: [
-            {
-              label: "MAIN HOUSE",
-              value: "120 m² (3 bedrooms)",
-              subText: "Condition: Very good",
-            },
-            { label: "WAREHOUSE", value: "200 m²" },
-            {
-              label: "IRRIGATION ROOM",
-              value: "Automated",
-            },
-            {
-              label: "FENCING",
-              value: "Complete perimeter",
-            },
-            {
-              label: "INTERNAL ROADS",
-              value: "Consolidated",
-            },
-            {
-              label: "WATER WELL",
-              value: "No (canal irrigation)",
-            },
-            {
-              label: "AUSTRALIAN TANK",
-              value: "50,000 liters",
-            },
-          ],
-        },
+  //       improvements: {
+  //         label: "Facilities and Improvements",
+  //         fields: [
+  //           {
+  //             label: "MAIN HOUSE",
+  //             value: "120 m² (3 bedrooms)",
+  //             subText: "Condition: Very good",
+  //           },
+  //           { label: "WAREHOUSE", value: "200 m²" },
+  //           {
+  //             label: "IRRIGATION ROOM",
+  //             value: "Automated",
+  //           },
+  //           {
+  //             label: "FENCING",
+  //             value: "Complete perimeter",
+  //           },
+  //           {
+  //             label: "INTERNAL ROADS",
+  //             value: "Consolidated",
+  //           },
+  //           {
+  //             label: "WATER WELL",
+  //             value: "No (canal irrigation)",
+  //           },
+  //           {
+  //             label: "AUSTRALIAN TANK",
+  //             value: "50,000 liters",
+  //           },
+  //         ],
+  //       },
 
-        energy: {
-          label: "Energy and Productivity",
-          groups: [
-            {
-              title: "Electrical Supply",
-              fields: [
-                {
-                  label: "ENERGY TYPE",
-                  value: "Three-phase",
-                  class: "border-secondary",
-                },
-                {
-                  label: "POWER",
-                  value: "25 kW",
-                  class: "border-secondary",
-                },
-                { label: "TRANSFORMER", value: "Private" },
-                { label: "METER", value: "Individual" },
-              ],
-            },
-            {
-              title: "Wine Production",
-              borderColor: "border-indigo-900",
-              featured: [
-                {
-                  label: "PRODUCTIVITY",
-                  value: "12,000 kg/ha",
-                  subText: "Yield per hectare",
-                },
-                {
-                  label: "2024 GRAPE PRICE",
-                  value: "0.45 USD/kg",
-                  subText: "Market price",
-                },
-              ],
-              fields: [
-                {
-                  label: "VARIETIES",
-                  value: ["Malbec", "Cabernet"],
-                  class: "border-secondary",
-                },
-                { label: "VINEYARD AGE", value: "8-12 years" },
-              ],
-            },
-          ],
-        },
+  //       energy: {
+  //         label: "Energy and Productivity",
+  //         groups: [
+  //           {
+  //             title: "Electrical Supply",
+  //             fields: [
+  //               {
+  //                 label: "ENERGY TYPE",
+  //                 value: "Three-phase",
+  //                 class: "border-secondary",
+  //               },
+  //               {
+  //                 label: "POWER",
+  //                 value: "25 kW",
+  //                 class: "border-secondary",
+  //               },
+  //               { label: "TRANSFORMER", value: "Private" },
+  //               { label: "METER", value: "Individual" },
+  //             ],
+  //           },
+  //           {
+  //             title: "Wine Production",
+  //             borderColor: "border-indigo-900",
+  //             featured: [
+  //               {
+  //                 label: "PRODUCTIVITY",
+  //                 value: "12,000 kg/ha",
+  //                 subText: "Yield per hectare",
+  //               },
+  //               {
+  //                 label: "2024 GRAPE PRICE",
+  //                 value: "0.45 USD/kg",
+  //                 subText: "Market price",
+  //               },
+  //             ],
+  //             fields: [
+  //               {
+  //                 label: "VARIETIES",
+  //                 value: ["Malbec", "Cabernet"],
+  //                 class: "border-secondary",
+  //               },
+  //               { label: "VINEYARD AGE", value: "8-12 years" },
+  //             ],
+  //           },
+  //         ],
+  //       },
 
-        locationDetails: {
-          label: "Location and Access",
-          map: {
-            lat: -33.0162,
-            lng: -68.8751,
-          },
-          featured: [
-            { label: "MAIN ACCESS", value: "RP 15 + 2 km gravel road" },
-            { label: "DISTANCE TO MENDOZA", value: "35 km" },
-          ],
-          groups: [
-            {
-              title: "Nearby Services",
-              fields: [
-                { label: "Urban Center", value: "5 km" },
-                { label: "Wineries", value: "3-8 km" },
-                { label: "Cooperative", value: "6 km" },
-                { label: "School", value: "4 km" },
-                { label: "Hospital", value: "12 km" },
-                { label: "Airport", value: "45 km" },
-              ],
-            },
-          ],
-        },
+  //       locationDetails: {
+  //         label: "Location and Access",
+  //         map: {
+  //           lat: -33.0162,
+  //           lng: -68.8751,
+  //         },
+  //         featured: [
+  //           { label: "MAIN ACCESS", value: "RP 15 + 2 km gravel road" },
+  //           { label: "DISTANCE TO MENDOZA", value: "35 km" },
+  //         ],
+  //         groups: [
+  //           {
+  //             title: "Nearby Services",
+  //             fields: [
+  //               { label: "Urban Center", value: "5 km" },
+  //               { label: "Wineries", value: "3-8 km" },
+  //               { label: "Cooperative", value: "6 km" },
+  //               { label: "School", value: "4 km" },
+  //               { label: "Hospital", value: "12 km" },
+  //               { label: "Airport", value: "45 km" },
+  //             ],
+  //           },
+  //         ],
+  //       },
 
-        legal: {
-          label: "Legal Documentation",
-          groups: [
-            {
-              fields: [
-                { label: "DEED", value: "Up to date" },
-                { label: "SURVEY", value: "2020 (updated)" },
-                { label: "MUNICIPAL PLANS", value: "Approved" },
-                { label: "TAXES", value: "Up to date" },
-                { label: "CREDIT ELIGIBLE", value: "Yes" },
-                { label: "LIENS", value: "Free" },
-              ],
-            },
-          ],
-        },
-      },
-      "pt-BR": {
-        title: "Fazenda Los Álamos com Vinhedos",
+  //       legal: {
+  //         label: "Legal Documentation",
+  //         groups: [
+  //           {
+  //             fields: [
+  //               { label: "DEED", value: "Up to date" },
+  //               { label: "SURVEY", value: "2020 (updated)" },
+  //               { label: "MUNICIPAL PLANS", value: "Approved" },
+  //               { label: "TAXES", value: "Up to date" },
+  //               { label: "CREDIT ELIGIBLE", value: "Yes" },
+  //               { label: "LIENS", value: "Free" },
+  //             ],
+  //           },
+  //         ],
+  //       },
+  //     },
+  //     "pt-BR": {
+  //       title: "Fazenda Los Álamos com Vinhedos",
 
-        description: {
-          text: "Excepcional fazenda com vinhedos à venda no Valle de Uco, perto de Tupungato, província de Mendoza. Esta propriedade de 42 hectares representa uma oportunidade única para investidores ou amantes do vinho que buscam combinar produção vitivinícola de qualidade com um estilo de vida campestre de luxo.\n\nA fazenda possui vinhedos de alta qualidade plantados com as melhores variedades da região, principalmente Malbec e Cabernet Sauvignon. O sistema de irrigação por gotejamento tecnificado instalado em 2018 garante máxima eficiência hídrica e qualidade de produção.\n\nCom uma produtividade de 12.000 kg/ha e preços de uva em 0,45 USD/kg, esta propriedade representa uma excelente oportunidade de investimento com retornos comprovados.",
-          callout: {
-            label: "APTIDÃO PRODUTIVA",
-            value: "Vinhedos premium / Oliveiras",
-          },
-        },
+  //       description: {
+  //         text: "Excepcional fazenda com vinhedos à venda no Valle de Uco, perto de Tupungato, província de Mendoza. Esta propriedade de 42 hectares representa uma oportunidade única para investidores ou amantes do vinho que buscam combinar produção vitivinícola de qualidade com um estilo de vida campestre de luxo.\n\nA fazenda possui vinhedos de alta qualidade plantados com as melhores variedades da região, principalmente Malbec e Cabernet Sauvignon. O sistema de irrigação por gotejamento tecnificado instalado em 2018 garante máxima eficiência hídrica e qualidade de produção.\n\nCom uma produtividade de 12.000 kg/ha e preços de uva em 0,45 USD/kg, esta propriedade representa uma excelente oportunidade de investimento com retornos comprovados.",
+  //         callout: {
+  //           label: "APTIDÃO PRODUTIVA",
+  //           value: "Vinhedos premium / Oliveiras",
+  //         },
+  //       },
 
-        sections: [
-          { id: "resumen", label: "Resumo" },
-          { id: "ficha-tecnica", label: "Ficha Técnica" },
-          { id: "infraestructura", label: "Infraestrutura" },
-          { id: "productividad", label: "Produtividade" },
-          { id: "ubicacion", label: "Localização" },
-          { id: "documentacion", label: "Documentação" },
-          { id: "contacto-finca", label: "Contato" },
-        ],
+  //       sections: [
+  //         { id: "resumen", label: "Resumo" },
+  //         { id: "ficha-tecnica", label: "Ficha Técnica" },
+  //         { id: "infraestructura", label: "Infraestrutura" },
+  //         { id: "productividad", label: "Produtividade" },
+  //         { id: "ubicacion", label: "Localização" },
+  //         { id: "documentacion", label: "Documentação" },
+  //         { id: "contacto-finca", label: "Contato" },
+  //       ],
 
-        summary: [
-          {
-            label: "Área Total",
-            value: "42 has",
-          },
-          {
-            label: "PREÇO POR HECTARE",
-            value: "18.500",
-            extra: "USD/has",
-          },
-          {
-            label: "ALTITUDE",
-            value: "950",
-            extra: "msnm",
-          },
-          {
-            label: "STATUS ATUAL",
-            value: "Em produção",
-            class: "text-lg mt-4",
-          },
-        ],
+  //       summary: [
+  //         {
+  //           label: "Área Total",
+  //           value: "42 has",
+  //         },
+  //         {
+  //           label: "PREÇO POR HECTARE",
+  //           value: "18.500",
+  //           extra: "USD/has",
+  //         },
+  //         {
+  //           label: "ALTITUDE",
+  //           value: "950",
+  //           extra: "msnm",
+  //         },
+  //         {
+  //           label: "STATUS ATUAL",
+  //           value: "Em produção",
+  //           class: "text-lg mt-4",
+  //         },
+  //       ],
 
-        techSpecs: {
-          label: "Ficha Técnica",
-          groups: [
-            {
-              title: "Solo e Clima",
-              fields: [
-                {
-                  label: "TIPO DE SOLO",
-                  value: "Franco-argiloso",
-                },
-                {
-                  label: "TEXTURA",
-                  value: "Equilibrada",
-                },
-                {
-                  label: "PH DO SOLO",
-                  value: "7.2 (neutro)",
-                },
-                {
-                  label: "MATÉRIA ORGÂNICA",
-                  value: "2.8%",
-                },
-                {
-                  label: "DECLIVE",
-                  value: "2-5% (suave)",
-                },
-                {
-                  label: "DRENAGEM",
-                  value: "Boa",
-                },
-                {
-                  label: "GRAUS DIA",
-                  value: "1450 (ideal vinhedos)",
-                  class: "border-secondary",
-                },
-                {
-                  label: "GEADAS",
-                  value: "Tardias (outubro)",
-                },
-              ],
-            },
-            {
-              title: "Água e Irrigação",
-              fields: [
-                {
-                  label: "DIREITO DE ÁGUA",
-                  value: "1,2 l/s/ha",
-                  class: "border-blueo",
-                },
-                {
-                  label: "VAZÃO TOTAL",
-                  value: "50 l/s",
-                  class: "border-blueo",
-                },
-                {
-                  label: "FONTE",
-                  value: "Rio Mendoza",
-                },
-                {
-                  label: "TURNO DE IRRIGAÇÃO",
-                  value: "A cada 15 dias",
-                },
-                {
-                  label: "CONDUTIVIDADE ELÉTRICA",
-                  value: "0.8 dS/m",
-                  subText: "(excelente)",
-                  class: "border-blueo",
-                },
-                {
-                  label: "PH DA ÁGUA",
-                  value: "7.5",
-                },
-                {
-                  label: "SISTEMA DE IRRIGAÇÃO",
-                  value: "Gotejamento tecnificado",
-                  class: "border-secondary",
-                },
-                {
-                  label: "ANO DE INSTALAÇÃO",
-                  value: "2018",
-                },
-              ],
-            },
-          ],
-        },
+  //       techSpecs: {
+  //         label: "Ficha Técnica",
+  //         groups: [
+  //           {
+  //             title: "Solo e Clima",
+  //             fields: [
+  //               {
+  //                 label: "TIPO DE SOLO",
+  //                 value: "Franco-argiloso",
+  //               },
+  //               {
+  //                 label: "TEXTURA",
+  //                 value: "Equilibrada",
+  //               },
+  //               {
+  //                 label: "PH DO SOLO",
+  //                 value: "7.2 (neutro)",
+  //               },
+  //               {
+  //                 label: "MATÉRIA ORGÂNICA",
+  //                 value: "2.8%",
+  //               },
+  //               {
+  //                 label: "DECLIVE",
+  //                 value: "2-5% (suave)",
+  //               },
+  //               {
+  //                 label: "DRENAGEM",
+  //                 value: "Boa",
+  //               },
+  //               {
+  //                 label: "GRAUS DIA",
+  //                 value: "1450 (ideal vinhedos)",
+  //                 class: "border-secondary",
+  //               },
+  //               {
+  //                 label: "GEADAS",
+  //                 value: "Tardias (outubro)",
+  //               },
+  //             ],
+  //           },
+  //           {
+  //             title: "Água e Irrigação",
+  //             fields: [
+  //               {
+  //                 label: "DIREITO DE ÁGUA",
+  //                 value: "1,2 l/s/ha",
+  //                 class: "border-blueo",
+  //               },
+  //               {
+  //                 label: "VAZÃO TOTAL",
+  //                 value: "50 l/s",
+  //                 class: "border-blueo",
+  //               },
+  //               {
+  //                 label: "FONTE",
+  //                 value: "Rio Mendoza",
+  //               },
+  //               {
+  //                 label: "TURNO DE IRRIGAÇÃO",
+  //                 value: "A cada 15 dias",
+  //               },
+  //               {
+  //                 label: "CONDUTIVIDADE ELÉTRICA",
+  //                 value: "0.8 dS/m",
+  //                 subText: "(excelente)",
+  //                 class: "border-blueo",
+  //               },
+  //               {
+  //                 label: "PH DA ÁGUA",
+  //                 value: "7.5",
+  //               },
+  //               {
+  //                 label: "SISTEMA DE IRRIGAÇÃO",
+  //                 value: "Gotejamento tecnificado",
+  //                 class: "border-secondary",
+  //               },
+  //               {
+  //                 label: "ANO DE INSTALAÇÃO",
+  //                 value: "2018",
+  //               },
+  //             ],
+  //           },
+  //         ],
+  //       },
 
-        improvements: {
-          label: "Instalações e Melhorias",
-          fields: [
-            {
-              label: "CASA PRINCIPAL",
-              value: "120 m² (3 quartos)",
-              subText: "Estado: Muito bom",
-            },
-            { label: "GALPÃO", value: "200 m²" },
-            {
-              label: "SALA DE IRRIGAÇÃO",
-              value: "Automatizada",
-            },
-            {
-              label: "CERCAS",
-              value: "Perímetro completo",
-            },
-            {
-              label: "CAMINHOS INTERNOS",
-              value: "Consolidados",
-            },
-            {
-              label: "POÇO DE ÁGUA",
-              value: "Não (irrigação por canal)",
-            },
-            {
-              label: "TANQUE AUSTRALIANO",
-              value: "50.000 litros",
-            },
-          ],
-        },
+  //       improvements: {
+  //         label: "Instalações e Melhorias",
+  //         fields: [
+  //           {
+  //             label: "CASA PRINCIPAL",
+  //             value: "120 m² (3 quartos)",
+  //             subText: "Estado: Muito bom",
+  //           },
+  //           { label: "GALPÃO", value: "200 m²" },
+  //           {
+  //             label: "SALA DE IRRIGAÇÃO",
+  //             value: "Automatizada",
+  //           },
+  //           {
+  //             label: "CERCAS",
+  //             value: "Perímetro completo",
+  //           },
+  //           {
+  //             label: "CAMINHOS INTERNOS",
+  //             value: "Consolidados",
+  //           },
+  //           {
+  //             label: "POÇO DE ÁGUA",
+  //             value: "Não (irrigação por canal)",
+  //           },
+  //           {
+  //             label: "TANQUE AUSTRALIANO",
+  //             value: "50.000 litros",
+  //           },
+  //         ],
+  //       },
 
-        energy: {
-          label: "Energia e Produtividade",
-          groups: [
-            {
-              title: "Fornecimento Elétrico",
-              fields: [
-                {
-                  label: "TIPO DE ENERGIA",
-                  value: "Trifásica",
-                  class: "border-secondary",
-                },
-                {
-                  label: "POTÊNCIA",
-                  value: "25 kW",
-                  class: "border-secondary",
-                },
-                { label: "TRANSFORMADOR", value: "Próprio" },
-                { label: "MEDIDOR", value: "Individual" },
-              ],
-            },
-            {
-              title: "Produção Vitivinícola",
-              borderColor: "border-indigo-900",
-              featured: [
-                {
-                  label: "PRODUTIVIDADE",
-                  value: "12.000 kg/ha",
-                  subText: "Rendimento por hectare",
-                },
-                {
-                  label: "PREÇO UVA 2024",
-                  value: "0.45 USD/kg",
-                  subText: "Preço de mercado",
-                },
-              ],
-              fields: [
-                {
-                  label: "VARIEDADES",
-                  value: ["Malbec", "Cabernet"],
-                  class: "border-secondary",
-                },
-                { label: "IDADE DOS VINHEDOS", value: "8-12 anos" },
-              ],
-            },
-          ],
-        },
+  //       energy: {
+  //         label: "Energia e Produtividade",
+  //         groups: [
+  //           {
+  //             title: "Fornecimento Elétrico",
+  //             fields: [
+  //               {
+  //                 label: "TIPO DE ENERGIA",
+  //                 value: "Trifásica",
+  //                 class: "border-secondary",
+  //               },
+  //               {
+  //                 label: "POTÊNCIA",
+  //                 value: "25 kW",
+  //                 class: "border-secondary",
+  //               },
+  //               { label: "TRANSFORMADOR", value: "Próprio" },
+  //               { label: "MEDIDOR", value: "Individual" },
+  //             ],
+  //           },
+  //           {
+  //             title: "Produção Vitivinícola",
+  //             borderColor: "border-indigo-900",
+  //             featured: [
+  //               {
+  //                 label: "PRODUTIVIDADE",
+  //                 value: "12.000 kg/ha",
+  //                 subText: "Rendimento por hectare",
+  //               },
+  //               {
+  //                 label: "PREÇO UVA 2024",
+  //                 value: "0.45 USD/kg",
+  //                 subText: "Preço de mercado",
+  //               },
+  //             ],
+  //             fields: [
+  //               {
+  //                 label: "VARIEDADES",
+  //                 value: ["Malbec", "Cabernet"],
+  //                 class: "border-secondary",
+  //               },
+  //               { label: "IDADE DOS VINHEDOS", value: "8-12 anos" },
+  //             ],
+  //           },
+  //         ],
+  //       },
 
-        locationDetails: {
-          label: "Localização e Acessos",
-          map: {
-            lat: -33.0162,
-            lng: -68.8751,
-          },
-          featured: [
-            { label: "ACESSO PRINCIPAL", value: "RP 15 + 2 km cascalho" },
-            { label: "DISTÂNCIA A MENDOZA", value: "35 km" },
-          ],
-          groups: [
-            {
-              title: "Serviços Próximos",
-              fields: [
-                { label: "Centro Urbano", value: "5 km" },
-                { label: "Vinícolas", value: "3-8 km" },
-                { label: "Cooperativa", value: "6 km" },
-                { label: "Escola", value: "4 km" },
-                { label: "Hospital", value: "12 km" },
-                { label: "Aeroporto", value: "45 km" },
-              ],
-            },
-          ],
-        },
+  //       locationDetails: {
+  //         label: "Localização e Acessos",
+  //         map: {
+  //           lat: -33.0162,
+  //           lng: -68.8751,
+  //         },
+  //         featured: [
+  //           { label: "ACESSO PRINCIPAL", value: "RP 15 + 2 km cascalho" },
+  //           { label: "DISTÂNCIA A MENDOZA", value: "35 km" },
+  //         ],
+  //         groups: [
+  //           {
+  //             title: "Serviços Próximos",
+  //             fields: [
+  //               { label: "Centro Urbano", value: "5 km" },
+  //               { label: "Vinícolas", value: "3-8 km" },
+  //               { label: "Cooperativa", value: "6 km" },
+  //               { label: "Escola", value: "4 km" },
+  //               { label: "Hospital", value: "12 km" },
+  //               { label: "Aeroporto", value: "45 km" },
+  //             ],
+  //           },
+  //         ],
+  //       },
 
-        legal: {
-          label: "Documentação Legal",
-          groups: [
-            {
-              fields: [
-                { label: "ESCRITURA", value: "Em dia" },
-                { label: "MEDIÇÃO", value: "2020 (atualizada)" },
-                { label: "PLANOS MUNICIPAIS", value: "Aprovados" },
-                { label: "IMPOSTOS", value: "Em dia" },
-                { label: "APTO CRÉDITO", value: "Sim" },
-                { label: "ÔNUS", value: "Livre" },
-              ],
-            },
-          ],
-        },
-      },
-    },
-  },
+  //       legal: {
+  //         label: "Documentação Legal",
+  //         groups: [
+  //           {
+  //             fields: [
+  //               { label: "ESCRITURA", value: "Em dia" },
+  //               { label: "MEDIÇÃO", value: "2020 (atualizada)" },
+  //               { label: "PLANOS MUNICIPAIS", value: "Aprovados" },
+  //               { label: "IMPOSTOS", value: "Em dia" },
+  //               { label: "APTO CRÉDITO", value: "Sim" },
+  //               { label: "ÔNUS", value: "Livre" },
+  //             ],
+  //           },
+  //         ],
+  //       },
+  //     },
+  //   },
+  // },
   {
     slug: "bodega-sinfin-maipu-mendoza",
     type: "bodega",
