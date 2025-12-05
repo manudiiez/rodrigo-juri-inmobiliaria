@@ -798,7 +798,7 @@ export const properties = [
       address: "Maipú, Mendoza (a 20 min de la Ciudad)",
       province: "Mendoza",
       country: "AR",
-      state: "Valle de Uco",
+      state: "Maipú",
     },
     images: [
       {
@@ -1571,7 +1571,7 @@ export const properties = [
     location: {
       lat: -33.0525,
       lng: -68.8045,
-      address: "Videla Aranda, Maipú",
+      address: "Maipú, Mendoza",
       province: "Mendoza",
       country: "AR",
       state: "Maipú",

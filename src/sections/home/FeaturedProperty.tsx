@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 const properties = [
   {
     slug: "bodega-sinfin-maipu-mendoza",
-    location: "Valle de Uco",
+    location: "Maipú",
     image: "/images/sinfin/bodega-sinfin.jpg",
     content: {
       "es-AR": {
