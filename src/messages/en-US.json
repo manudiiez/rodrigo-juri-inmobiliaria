@@ -1,43 +1,43 @@
 {
   "HomePage": {
     "Hero": {
-      "title": "Find an estate that suits your lifestyle.",
+      "title": "Find farms and wineries that fit your style.",
       "buy": "Buy",
       "sell": "Sell",
       "contact": "Contact"
     },
     "FeaturedProperty": {
-      "viewProperty": "View estate",
+      "viewProperty": "View property",
       "goToProperty": "Go to property"
     },
     "About": {
-      "intro": "For those seeking an exceptional estate and lifestyle,",
-      "highlight": "there is no better choice than Valle de Uco Real Estate.",
-      "mission": "Backed by years of experience and with the mission to revolutionize the way of investing in estates in Mendoza, Rodrigo Juri, licensed real estate broker, makes a difference for his clients at every step of the way in Tupungato."
+      "intro": "For those seeking a property and an exceptional life,",
+      "highlight": "there is no better option than Valle de Uco Real State.",
+      "mission": "Backed by years of experience and with the mission to renew the way of investing in Mendoza, Rodrigo Juri, licensed real estate broker, makes a difference for his clients at every step of the way."
     },
     "PropertiesGrid": {
-      "title": "Featured Estates and Farms",
-      "viewAll": "View all rural properties",
+      "title": "Featured Wineries and Farms",
+      "viewAll": "View all properties",
       "hectares": "hectares"
     },
     "History": {
       "sectionLabel": "Our story",
       "title": "Our story",
-      "paragraph1": "The only specialized network in Mendoza estates that interprets the new lifestyle of those seeking to invest and enjoy in Tupungato. Inspired by an innovative spirit and years of market experience, Rodrigo Juri, licensed real estate broker, leads a differential proposal focused on productive estates, recreational properties, and investment projects with high potential.",
-      "paragraph2": "Beyond the mountain views, vineyards, and unique properties of the area, the goal is to offer you a tailored lifestyle: whether you're looking for an estate for an agricultural, tourism, wine-making project, a strategic investment, or simply a refuge surrounded by nature.",
-      "paragraph3": "With a selection of estates for sale in Valle de Uco and other strategic areas of Mendoza, you can find, through Rodrigo Juri's advisory, the ideal property for your project or investment, no matter where in the world you are.",
+      "paragraph1": "The only network specialized in wineries and farms in Mendoza that interprets the new lifestyle of those seeking to invest and enjoy. Inspired by an innovative spirit and years of market experience, Rodrigo Juri, licensed real estate broker, leads a differential proposal focused on productive properties, recreation and investment projects with high potential.",
+      "paragraph2": "Beyond the mountain views, vineyards and unique properties of the area, the goal is to offer you a lifestyle tailored to your needs: whether you are looking for an operating winery, a farm for an agricultural, tourism, wine project, a strategic investment or simply a refuge surrounded by nature.",
+      "paragraph3": "With a selection of wineries and farms for sale in Mendoza, you can find, through Rodrigo Juri's advice, the ideal property for your project or investment, no matter where in the world you are.",
       "stat1Value": "+150",
-      "stat1Label": "Estates in Mendoza",
+      "stat1Label": "Properties in Mendoza",
       "stat2Value": "+20",
       "stat2Label": "Years of experience",
       "stat3Value": "+500",
-      "stat3Label": "HECTARES TRADED",
+      "stat3Label": "HECTARES MARKETED",
       "stat4Value": "100%",
-      "stat4Label": "PERSONALIZED ADVISORY FOR INVESTORS"
+      "stat4Label": "PERSONALIZED ADVICE FOR INVESTORS"
     },
     "Contact": {
       "title": "Connect with us",
-      "description": "Our team of experts is ready to help you find the perfect estate or sell your estate at the best market price.",
+      "description": "Our team of experts is ready to help you find the perfect property or sell your property at the best market price.",
       "phoneLabel": "Phone",
       "phone": "+54 9 261 412-3456",
       "emailLabel": "Email",
@@ -54,8 +54,8 @@
   },
   "Navbar": {
     "brandName": "Valle de Uco",
-    "brandSubtitle": "Real Estate",
-    "properties": "Estates",
+    "brandSubtitle": "Real State",
+    "properties": "Properties",
     "about": "About",
     "contact": "Contact",
     "sellWithUs": "Sell with us",
@@ -64,19 +64,19 @@
   },
   "Footer": {
     "brandName": "Valle de Uco",
-    "brandSubtitle": "Real Estate",
-    "description": "Specialists in premium estates and rural properties in Mendoza. Personalized advice to find your ideal investment in the heart of Valle de Uco.",
+    "brandSubtitle": "Real State",
+    "description": "Specialists in premium wineries and farms in Mendoza. Personalized advice to find your ideal investment.",
     "navigationTitle": "Navigation",
-    "propertiesForSale": "Estates for Sale",
+    "propertiesForSale": "Properties for Sale",
     "aboutUs": "About Us",
-    "sellYourProperty": "Sell Your Estate",
+    "sellYourProperty": "Sell Your Property",
     "contact": "Contact",
     "contactTitle": "Contact",
     "phone": "+54 261 123 4567",
     "email": "info@valledeuco.com",
     "location": "Tupungato, Mendoza",
     "country": "Argentina",
-    "copyright": "Valle de Uco Real Estate. All rights reserved.",
+    "copyright": "Valle de Uco Real State. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsAndConditions": "Terms and Conditions"
   },
@@ -105,8 +105,8 @@
     "noMax": "no max.",
     "clear": "Clear",
     "apply": "Apply",
-    "viewing": "Viewing {count} of {total} estates for sale in Argentina",
-    "showingProperties": "Showing properties marketed by Valle de Uco Real Estate.",
+    "viewing": "Viewing {count} of {total} properties for sale in Argentina",
+    "showingProperties": "Showing properties marketed by Valle de Uco Real State.",
     "sortBy": "Sort by:",
     "exclusive": "Exclusive (Default)",
     "priceHighToLow": "Price: High to Low",
@@ -214,71 +214,71 @@
     },
     "contact": {
       "title": "Start today",
-      "description": "Receive personalized advice to find the ideal estate in Tupungato and the rest of Mendoza, according to your project: agricultural, tourist, wine-making, investment or to enjoy with family.",
-      "firstName": "First Name",
-      "lastName": "Last Name",
+      "description": "Receive personalized advice to find the ideal property in Mendoza, according to your project: operating winery, agricultural, tourism, wine farm, investment or to enjoy with family.",
+      "firstName": "First name",
+      "lastName": "Last name",
       "email": "Email",
       "phone": "Phone",
       "message": "Message",
       "messagePlaceholder": "Tell me about your idea...",
-      "submit": "Send inquiry",
+      "submit": "Submit inquiry",
       "required": "*"
     }
   },
   "SellPage": {
     "hero": {
       "title": "Sell with us",
-      "subtitle": "Exceptional estates deserve exceptional service."
+      "subtitle": "Exceptional properties deserve exceptional advice."
     },
     "form": {
       "title": "Start today",
-      "description": "Get access to a professional valuation and a sales strategy designed especially for estates in Tupungato and the rest of Mendoza, to obtain the best value for your property.",
-      "firstName": "First Name",
-      "lastName": "Last Name",
+      "description": "Access a professional appraisal and a sales strategy specially designed for wineries and farms in Mendoza, to get the best value for your property.",
+      "firstName": "First name",
+      "lastName": "Last name",
       "email": "Email",
       "phone": "Phone",
       "message": "Message",
       "messagePlaceholder": "Tell me about your property…",
-      "submit": "Send inquiry",
+      "submit": "Submit inquiry",
       "required": "*"
     },
     "statistics": {
       "title": "Unmatched market reach",
-      "description": "Your estate deserves maximum exposure. My platform combines online and offline channels to reach qualified buyers and investors in Mendoza, Argentina, and abroad.",
+      "description": "Your property deserves maximum exposure. My platform combines online and offline channels to reach qualified buyers and investors in Mendoza, Argentina and abroad.",
       "stat1Value": "+10,000",
       "stat1Label": "POTENTIAL CONTACTS AND INVESTORS",
-      "stat1Description": "Proprietary network and strategic alliances in the agricultural and wine sectors.",
+      "stat1Description": "Own network and strategic alliances in the agricultural and wine sector.",
       "stat2Value": "+300",
-      "stat2Label": "ANNUAL ESTATE INQUIRIES",
-      "stat2Description": "Active owners and buyers interested in Tupungato and surrounding areas.",
+      "stat2Label": "ANNUAL INQUIRIES",
+      "stat2Description": "Active owners and buyers interested in Mendoza and surrounding areas.",
       "stat3Value": "100%",
-      "stat3Label": "FOCUS ON ESTATES AND FARMS",
-      "stat3Description": "Specialization in rural, productive, and investment properties."
+      "stat3Label": "FOCUS ON WINERIES AND FARMS",
+      "stat3Description": "Specialization in wine, rural, productive and investment properties."
     },
     "marketing": {
-      "title": "Comprehensive marketing strategy for your estate",
-      "description": "I use specific marketing tools to highlight the productive, tourism, and investment value of each property and connect it with the right buyer.",
+      "title": "Comprehensive marketing strategy for your property",
+      "description": "I use specific marketing tools to highlight the productive, tourism and investment value of each property and connect it with the right buyer.",
       "card1Title": "Targeted digital advertising",
-      "card1Description": "Campaigns on real estate portals, social media, and investor databases interested in Mendoza.",
+      "card1Description": "Campaigns on real estate portals, social media and databases of investors interested in Mendoza.",
       "card2Title": "Commercial material and plans",
-      "card2Description": "Digital brochures, technical information, maps, and clear production data to facilitate investment decisions.",
-      "card3Title": "Network of contacts and alliances",
-      "card3Description": "Connection with wineries, developers, producers, and national and international investors interested in the area.",
+      "card2Description": "Digital brochures, technical information, maps and clear production data to facilitate investment decisions.",
+      "card3Title": "Contact network and partnerships",
+      "card3Description": "Connection with wineries, developers, producers and national and international investors interested in the area.",
       "card4Title": "Professional photography and video",
-      "card4Description": "Images, video, and aerial drone footage to showcase the estate's potential, views, and production."
+      "card4Description": "Images, video and aerial drone shots to show the potential of the property, its views and production."
     },
     "whyChoose": {
-      "title": "Why estate owners choose Rodrigo Juri",
-      "description": "Estate owners in Tupungato and other areas of Mendoza trust a specialized advisor to sell safely, at the best value, and with a clear process from start to finish.",
+      "title": "Why property owners choose Rodrigo Juri",
+      "description": "Owners of wineries and farms in Mendoza trust a specialized advisor to sell safely, at the best value and with a clear process from start to finish.",
       "stat1Value": "98%",
       "stat1Title": "Client satisfaction",
-      "stat1Description": "Most owners value transparency, personalized treatment, and follow-up throughout the sale.",
+      "stat1Description": "Most owners value transparency, personalized treatment and follow-up throughout the sale.",
       "stat2Value": "98%",
       "stat2Title": "Of listing value achieved",
-      "stat2Description": "Professional negotiation to get close to the expected price, taking care of both the economic value and the terms of the operation.",
+      "stat2Description": "Professional negotiation to approach the expected price, taking care of both economic value and operation conditions.",
       "stat3Value": "100%",
       "stat3Title": "Serious offers received",
-      "stat3Description": "Pricing and marketing strategy focused on real buyers and investors, not just simple inquiries."
+      "stat3Description": "Price and marketing strategy focused on real buyers and investors, not just simple inquiries."
     }
   },
   "LanguageSwitcher": {
