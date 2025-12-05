@@ -70,16 +70,20 @@ html {
   appearance: none;
   width: 20px;
   height: 20px;
-  background: var(--bordeaux);
+  background: var(--secondary);
   border-radius: 50%;
   cursor: pointer;
+  position: relative;
+  z-index: 3;
 }
 
 .range-slider::-moz-range-thumb {
   width: 20px;
   height: 20px;
-  background: var(--bordeaux);
+  background: var(--secondary);
   border-radius: 50%;
   cursor: pointer;
   border: none;
+  position: relative;
+  z-index: 3;
 }
