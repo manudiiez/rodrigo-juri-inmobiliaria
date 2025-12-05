@@ -29,13 +29,13 @@ export default function NavbarMinimalista() {
               href="/propiedades"
               className="text-white hover:text-white/80 transition-colors text-sm uppercase tracking-widest"
             >
-              {t("properties")}
+              {t("wineries")}
             </Link>
             <Link
-              href="/vender#nosotros"
+              href="/propiedades"
               className="text-white hover:text-white/80 transition-colors text-sm uppercase tracking-widest"
             >
-              {t("about")}
+              {t("buyFarms")}
             </Link>
             <Link
               href="/vender#contacto"
@@ -83,14 +83,14 @@ export default function NavbarMinimalista() {
                 className="block text-sm text-white/80 uppercase tracking-widest"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                {t("properties")}
+                {t("wineries")}
               </Link>
               <Link
-                href="/vender#nosotros"
+                href="/propiedades"
                 className="block text-sm text-white/80 uppercase tracking-widest"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                {t("about")}
+                {t("buyFarms")}
               </Link>
               <Link
                 href="/vender#contacto"

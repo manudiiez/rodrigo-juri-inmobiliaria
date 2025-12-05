@@ -12,7 +12,7 @@
     },
     "About": {
       "intro": "Para quienes buscan una finca y una vida excepcional,",
-      "highlight": "no hay mejor opción que Valle de uco International Realty.",
+      "highlight": "no hay mejor opción que Valle de uco Real State.",
       "mission": "Respaldado por años de experiencia y con la misión de renovar la forma de invertir en fincas en Mendoza, Rodrigo Juri, corredor inmobiliario matriculado, marca la diferencia para sus clientes en cada paso del camino en Tupungato."
     },
     "PropertiesGrid": {
@@ -54,15 +54,17 @@
   },
   "Navbar": {
     "brandName": "Valle de Uco",
-    "brandSubtitle": "International Realty",
+    "brandSubtitle": "Real State",
     "properties": "Fincas",
     "about": "Nosotros",
     "contact": "Contacto",
-    "sellWithUs": "Venda con nosotros"
+    "sellWithUs": "Venda con nosotros",
+    "buyFarms": "Fincas",
+    "wineries": "Bodegas"
   },
   "Footer": {
     "brandName": "Valle de Uco",
-    "brandSubtitle": "International Realty",
+    "brandSubtitle": "Real State",
     "description": "Especialistas en fincas premium y propiedades rurales en Mendoza. Asesoramiento personalizado para encontrar tu inversión ideal en el corazón del Valle de Uco.",
     "navigationTitle": "Navegación",
     "propertiesForSale": "Fincas en Venta",
@@ -74,7 +76,7 @@
     "email": "info@valledeuco.com",
     "location": "Tupungato, Mendoza",
     "country": "Argentina",
-    "copyright": "Valle de Uco International Realty. Todos los derechos reservados.",
+    "copyright": "Valle de Uco Real State. Todos los derechos reservados.",
     "privacyPolicy": "Política de Privacidad",
     "termsAndConditions": "Términos y Condiciones"
   },
@@ -82,8 +84,13 @@
     "searchPlaceholder": "Argentina",
     "buy": "Comprar",
     "rent": "Alquilar",
+    "farms": "Fincas",
+    "wineries": "Bodegas",
     "soilType": "Tipo de suelo",
+    "zone": "Zona",
     "all": "Todos",
+    "maipu": "Maipú",
+    "valleDeUco": "Valle de Uco",
     "vineyards": "Viñedos",
     "winemaking": "Vitivinícola",
     "recreational": "Recreativo",
@@ -99,7 +106,7 @@
     "clear": "Borrar",
     "apply": "Aplicar",
     "viewing": "Visualizando {count} de {total} fincas en venta en Argentina",
-    "showingProperties": "Mostrando inmuebles comercializados por Valle de Uco International Realty.",
+    "showingProperties": "Mostrando inmuebles comercializados por Valle de Uco Real State.",
     "sortBy": "Ordenar:",
     "exclusive": "Exclusive (Default)",
     "priceHighToLow": "Precio: Mayor a menor",

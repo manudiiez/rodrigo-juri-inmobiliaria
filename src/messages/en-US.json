@@ -12,7 +12,7 @@
     },
     "About": {
       "intro": "For those seeking an exceptional estate and lifestyle,",
-      "highlight": "there is no better choice than Valle de Uco International Realty.",
+      "highlight": "there is no better choice than Valle de Uco Real Estate.",
       "mission": "Backed by years of experience and with the mission to revolutionize the way of investing in estates in Mendoza, Rodrigo Juri, licensed real estate broker, makes a difference for his clients at every step of the way in Tupungato."
     },
     "PropertiesGrid": {
@@ -54,15 +54,17 @@
   },
   "Navbar": {
     "brandName": "Valle de Uco",
-    "brandSubtitle": "International Realty",
+    "brandSubtitle": "Real Estate",
     "properties": "Estates",
     "about": "About",
     "contact": "Contact",
-    "sellWithUs": "Sell with us"
+    "sellWithUs": "Sell with us",
+    "buyFarms": "Farms",
+    "wineries": "Wineries"
   },
   "Footer": {
     "brandName": "Valle de Uco",
-    "brandSubtitle": "International Realty",
+    "brandSubtitle": "Real Estate",
     "description": "Specialists in premium estates and rural properties in Mendoza. Personalized advice to find your ideal investment in the heart of Valle de Uco.",
     "navigationTitle": "Navigation",
     "propertiesForSale": "Estates for Sale",
@@ -74,7 +76,7 @@
     "email": "info@valledeuco.com",
     "location": "Tupungato, Mendoza",
     "country": "Argentina",
-    "copyright": "Valle de Uco International Realty. All rights reserved.",
+    "copyright": "Valle de Uco Real Estate. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsAndConditions": "Terms and Conditions"
   },
@@ -82,8 +84,13 @@
     "searchPlaceholder": "Argentina",
     "buy": "Buy",
     "rent": "Rent",
+    "farms": "Farms",
+    "wineries": "Wineries",
     "soilType": "Soil type",
+    "zone": "Zone",
     "all": "All",
+    "maipu": "Maipú",
+    "valleDeUco": "Uco Valley",
     "vineyards": "Vineyards",
     "winemaking": "Winemaking",
     "recreational": "Recreational",
@@ -99,7 +106,7 @@
     "clear": "Clear",
     "apply": "Apply",
     "viewing": "Viewing {count} of {total} estates for sale in Argentina",
-    "showingProperties": "Showing properties marketed by Valle de Uco International Realty.",
+    "showingProperties": "Showing properties marketed by Valle de Uco Real Estate.",
     "sortBy": "Sort by:",
     "exclusive": "Exclusive (Default)",
     "priceHighToLow": "Price: High to Low",

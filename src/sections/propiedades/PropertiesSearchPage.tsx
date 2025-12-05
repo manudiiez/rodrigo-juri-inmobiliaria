@@ -11,7 +11,7 @@ import { properties as propertiesData } from "@/data/properties";
 export default function PropertiesSearchPage() {
   const t = useTranslations("PropertiesPage");
   const locale = useLocale();
-  const [activeFilter, setActiveFilter] = useState("comprar");
+  const [activeFilter, setActiveFilter] = useState("bodegas");
   const [searchInput, setSearchInput] = useState("");
   const [showPriceFilter, setShowPriceFilter] = useState(false);
   const [showHectaresFilter, setShowHectaresFilter] = useState(false);

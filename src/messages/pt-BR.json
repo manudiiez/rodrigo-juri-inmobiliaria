@@ -12,7 +12,7 @@
     },
     "About": {
       "intro": "Para quem busca uma fazenda e uma vida excepcional,",
-      "highlight": "não há melhor opção do que Valle de Uco International Realty.",
+      "highlight": "não há melhor opção do que Valle de Uco Real State.",
       "mission": "Apoiado por anos de experiência e com a missão de renovar a forma de investir em fazendas em Mendoza, Rodrigo Juri, corretor imobiliário matriculado, faz a diferença para seus clientes em cada passo do caminho em Tupungato."
     },
     "PropertiesGrid": {
@@ -54,15 +54,17 @@
   },
   "Navbar": {
     "brandName": "Valle de Uco",
-    "brandSubtitle": "International Realty",
+    "brandSubtitle": "Real State",
     "properties": "Fazendas",
     "about": "Sobre nós",
     "contact": "Contato",
-    "sellWithUs": "Venda conosco"
+    "sellWithUs": "Venda conosco",
+    "buyFarms": "Fazendas",
+    "wineries": "Vinícolas"
   },
   "Footer": {
     "brandName": "Valle de Uco",
-    "brandSubtitle": "International Realty",
+    "brandSubtitle": "Real State",
     "description": "Especialistas em fazendas premium e propriedades rurais em Mendoza. Assessoria personalizada para encontrar seu investimento ideal no coração do Valle de Uco.",
     "navigationTitle": "Navegação",
     "propertiesForSale": "Fazendas à Venda",
@@ -74,7 +76,7 @@
     "email": "info@valledeuco.com",
     "location": "Tupungato, Mendoza",
     "country": "Argentina",
-    "copyright": "Valle de Uco International Realty. Todos os direitos reservados.",
+    "copyright": "Valle de Uco Real State. Todos os direitos reservados.",
     "privacyPolicy": "Política de Privacidade",
     "termsAndConditions": "Termos e Condições"
   },
@@ -82,8 +84,13 @@
     "searchPlaceholder": "Argentina",
     "buy": "Comprar",
     "rent": "Alugar",
+    "farms": "Fazendas",
+    "wineries": "Vinícolas",
     "soilType": "Tipo de solo",
+    "zone": "Zona",
     "all": "Todos",
+    "maipu": "Maipú",
+    "valleDeUco": "Vale de Uco",
     "vineyards": "Vinhedos",
     "winemaking": "Vinícola",
     "recreational": "Recreativo",
@@ -99,7 +106,7 @@
     "clear": "Limpar",
     "apply": "Aplicar",
     "viewing": "Visualizando {count} de {total} fazendas à venda na Argentina",
-    "showingProperties": "Mostrando imóveis comercializados por Valle de Uco International Realty.",
+    "showingProperties": "Mostrando imóveis comercializados por Valle de Uco Real State.",
     "sortBy": "Ordenar:",
     "exclusive": "Exclusivo (Padrão)",
     "priceHighToLow": "Preço: Maior ao menor",

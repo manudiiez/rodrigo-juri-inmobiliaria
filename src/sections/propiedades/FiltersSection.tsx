@@ -48,27 +48,27 @@ export default function FiltersSection({
   return (
     <div className="flex flex-wrap items-center gap-4">
       <button
-        onClick={() => setActiveFilter("comprar")}
+        onClick={() => setActiveFilter("bodegas")}
         className={`px-6 py-2 text-sm uppercase tracking-widest border transition-colors ${
-          activeFilter === "comprar"
+          activeFilter === "bodegas"
             ? "bg-[#0A1628] text-white border-[#0A1628]"
             : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
         }`}
       >
-        {t("buy")}
+        {t("wineries")}
       </button>
       <button
-        onClick={() => setActiveFilter("alquilar")}
+        onClick={() => setActiveFilter("fincas")}
         className={`px-6 py-2 text-sm uppercase tracking-widest border transition-colors ${
-          activeFilter === "alquilar"
+          activeFilter === "fincas"
             ? "bg-[#0A1628] text-white border-[#0A1628]"
             : "bg-white text-gray-700 border-gray-300 hover:border-gray-400"
         }`}
       >
-        {t("rent")}
+        {t("farms")}
       </button>
 
-      {/* Tipo de Suelo */}
+      {/* Zona */}
       <div className="relative filter-dropdown">
         <button
           onClick={(e) => {
@@ -79,7 +79,7 @@ export default function FiltersSection({
           }}
           className="px-6 py-2 text-sm uppercase tracking-widest border border-gray-300 bg-white text-gray-700 hover:border-gray-400 transition-colors"
         >
-          {selectedTipoSuelo || t("soilType")}
+          {selectedTipoSuelo || t("zone")}
         </button>
 
         {showTipoSueloFilter && (
@@ -95,48 +95,21 @@ export default function FiltersSection({
             </button>
             <button
               onClick={() => {
-                setSelectedTipoSuelo(t("vineyards"));
+                setSelectedTipoSuelo(t("maipu"));
                 setShowTipoSueloFilter(false);
               }}
               className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors border-b border-gray-200"
             >
-              {t("vineyards")}
+              {t("maipu")}
             </button>
             <button
               onClick={() => {
-                setSelectedTipoSuelo(t("winemaking"));
-                setShowTipoSueloFilter(false);
-              }}
-              className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors border-b border-gray-200"
-            >
-              {t("winemaking")}
-            </button>
-            <button
-              onClick={() => {
-                setSelectedTipoSuelo(t("recreational"));
-                setShowTipoSueloFilter(false);
-              }}
-              className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors border-b border-gray-200"
-            >
-              {t("recreational")}
-            </button>
-            <button
-              onClick={() => {
-                setSelectedTipoSuelo(t("agricultural"));
-                setShowTipoSueloFilter(false);
-              }}
-              className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors border-b border-gray-200"
-            >
-              {t("agricultural")}
-            </button>
-            <button
-              onClick={() => {
-                setSelectedTipoSuelo(t("livestock"));
+                setSelectedTipoSuelo(t("valleDeUco"));
                 setShowTipoSueloFilter(false);
               }}
               className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors"
             >
-              {t("livestock")}
+              {t("valleDeUco")}
             </button>
           </div>
         )}
