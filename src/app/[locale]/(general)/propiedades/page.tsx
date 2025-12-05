@@ -17,15 +17,18 @@ export default async function PropertiesPage({
   searchParams,
   params,
 }: {
-  searchParams: SearchParams;
-  params: { locale: string };
+  searchParams: Promise<SearchParams>;
+  params: Promise<{ locale: string }>;
 }) {
-  const t = await getTranslations('PropertiesPage');
-  const locale = params.locale;
-
+  const resolvedParams = await params;
+  const resolvedSearchParams = await searchParams;
+  const locale = resolvedParams.locale;
+  const t = await getTranslations({ locale, namespace: 'PropertiesPage' });
+  console.log("Locale recibido:", locale);
   // Transformar los datos de properties.ts al formato que espera PropertyListItem
   const allProperties = propertiesData.map((prop, index) => {
     const content = prop.content[locale as keyof typeof prop.content] || prop.content["es-AR"];
+    console.log("Contenido de la propiedad:", content);
     const priceValue = prop.price.value as number | null;
     const pricePerHa = prop.price.pricePerHectare as number | null;
 
@@ -59,14 +62,14 @@ export default async function PropertiesPage({
   // Aplicar filtros
   let filtered = [...allProperties];
 
-  const activeFilter = searchParams.type || "bodegas";
-  const selectedTipoSuelo = searchParams.zone || "";
-  const searchInput = searchParams.search || "";
-  const minPrice = Number(searchParams.minPrice) || 0;
-  const maxPrice = Number(searchParams.maxPrice) || 10000000;
-  const minHectares = Number(searchParams.minHectares) || 0;
-  const maxHectares = Number(searchParams.maxHectares) || 500;
-  const sortBy = searchParams.sortBy || "featured";
+  const activeFilter = resolvedSearchParams.type || "bodegas";
+  const selectedTipoSuelo = resolvedSearchParams.zone || "";
+  const searchInput = resolvedSearchParams.search || "";
+  const minPrice = Number(resolvedSearchParams.minPrice) || 0;
+  const maxPrice = Number(resolvedSearchParams.maxPrice) || 10000000;
+  const minHectares = Number(resolvedSearchParams.minHectares) || 0;
+  const maxHectares = Number(resolvedSearchParams.maxHectares) || 500;
+  const sortBy = resolvedSearchParams.sortBy || "featured";
 
   // Filtrar por tipo (bodega o finca)
   if (activeFilter === "bodegas") {
