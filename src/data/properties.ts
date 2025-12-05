@@ -844,9 +844,9 @@ export const properties = [
     ],
     content: {
       "es-AR": {
-        title: "Bodega SinFin: Capacidad Industrial y Enoturismo en Maipú",
+        title: "Bodega Sin Fin: Capacidad Industrial y Enoturismo en Maipú",
         description: {
-          text: "Excelente oportunidad de inversión en una bodega familiar con sólida trayectoria y fuerte posicionamiento internacional, ubicada en Maipú, Mendoza. Operativa desde 1975 en la producción de uvas y desde 2005 en la elaboración de vinos de alta gama, Bodega SinFin combina una gran escala industrial con una filosofía de calidad premium.\n\nLa propiedad cuenta con una capacidad total de vasija de 6.000.000 de litros y gestiona una superficie de 440 hectáreas de viñedos (propios y de terceros) distribuidos en los terruños más prestigiosos de la provincia. Se destaca por ser una de las pocas bodegas especializadas en 'Bulk Wine' (vino a granel) de alta gama, exportando a mercados exigentes como EE.UU., Reino Unido y China, habiendo sido premiada internacionalmente en Ámsterdam.\n\nAdemás de su perfil productivo, posee una unidad de enoturismo y eventos totalmente desarrollada, con salones, jardines y una cava subterránea histórica, generando un flujo de ingresos diversificado.",
+          text: "Excelente oportunidad de inversión en una bodega familiar con sólida trayectoria y fuerte posicionamiento internacional, ubicada en Maipú, Mendoza. Operativa desde 1975 en la producción de uvas y desde 2005 en la elaboración de vinos de alta gama, Bodega Sin Fin combina una gran escala industrial con una filosofía de calidad premium.\n\nLa propiedad cuenta con una capacidad total de vasija de 6.000.000 de litros y gestiona una superficie de 440 hectáreas de viñedos (propios y de terceros) distribuidos en los terruños más prestigiosos de la provincia. Se destaca por ser una de las pocas bodegas especializadas en 'Bulk Wine' (vino a granel) de alta gama, exportando a mercados exigentes como EE.UU., Reino Unido y China, habiendo sido premiada internacionalmente en Ámsterdam.\n\nAdemás de su perfil productivo, posee una unidad de enoturismo y eventos totalmente desarrollada, con salones, jardines y una cava subterránea histórica, generando un flujo de ingresos diversificado.",
           callout: {
             label: "PERFIL DE NEGOCIO",
             value: "Exportación Granel Premium / Enoturismo / Eventos",
@@ -1082,9 +1082,9 @@ export const properties = [
         },
       },
       "en-US": {
-        title: "SinFin Winery: Industrial Capacity and Wine Tourism in Maipú",
+        title: "Sin Fin Winery: Industrial Capacity and Wine Tourism in Maipú",
         description: {
-          text: "Excellent investment opportunity in a family winery with a solid track record and strong international positioning, located in Maipú, Mendoza. Operational since 1975 in grape production and since 2005 in high-end winemaking, Bodega SinFin combines large industrial scale with a premium quality philosophy.\n\nThe property has a total vessel capacity of 6,000,000 liters and manages 440 hectares of vineyards (owned and third-party) distributed across the most prestigious terroirs of the province. It stands out as one of the few wineries specializing in high-end 'Bulk Wine', exporting to demanding markets such as the USA, UK, and China, having been internationally awarded in Amsterdam.\n\nIn addition to its production profile, it has a fully developed wine tourism and events unit, with halls, gardens, and a historic underground cellar, generating a diversified income stream.",
+          text: "Excellent investment opportunity in a family winery with a solid track record and strong international positioning, located in Maipú, Mendoza. Operational since 1975 in grape production and since 2005 in high-end winemaking, Sin Fin Winery combines large industrial scale with a premium quality philosophy.\n\nThe property has a total vessel capacity of 6,000,000 liters and manages 440 hectares of vineyards (owned and third-party) distributed across the most prestigious terroirs of the province. It stands out as one of the few wineries specializing in high-end 'Bulk Wine', exporting to demanding markets such as the USA, UK, and China, having been internationally awarded in Amsterdam.\n\nIn addition to its production profile, it has a fully developed wine tourism and events unit, with halls, gardens, and a historic underground cellar, generating a diversified income stream.",
           callout: {
             label: "BUSINESS PROFILE",
             value: "Premium Bulk Export / Wine Tourism / Events",
@@ -1320,9 +1320,9 @@ export const properties = [
         },
       },
       "pt-BR": {
-        title: "Vinícola SinFin: Capacidade Industrial e Enoturismo em Maipú",
+        title: "Vinícola Sin Fin: Capacidade Industrial e Enoturismo em Maipú",
         description: {
-          text: "Excelente oportunidade de investimento em uma vinícola familiar com sólida trajetória e forte posicionamento internacional, localizada em Maipú, Mendoza. Operacional desde 1975 na produção de uvas e desde 2005 na elaboração de vinhos de alta gama, a Bodega SinFin combina grande escala industrial com uma filosofia de qualidade premium.\n\nA propriedade conta com uma capacidade total de vasilhame de 6.000.000 de litros e administra uma superfície de 440 hectares de vinhedos (próprios e de terceiros) distribuídos nos terroirs mais prestigiosos da província. Destaca-se por ser uma das poucas vinícolas especializadas em 'Bulk Wine' (vinho a granel) de alta gama, exportando para mercados exigentes como EUA, Reino Unido e China, tendo sido premiada internacionalmente em Amsterdã.\n\nAlém do seu perfil produtivo, possui uma unidade de enoturismo e eventos totalmente desenvolvida, com salões, jardins e uma adega subterrânea histórica, gerando um fluxo de receitas diversificado.",
+          text: "Excelente oportunidade de investimento em uma vinícola familiar com sólida trajetória e forte posicionamento internacional, localizada em Maipú, Mendoza. Operacional desde 1975 na produção de uvas e desde 2005 na elaboração de vinhos de alta gama, a Vinícola Sin Fin combina grande escala industrial com uma filosofia de qualidade premium.\n\nA propriedade conta com uma capacidade total de vasilhame de 6.000.000 de litros e administra uma superfície de 440 hectares de vinhedos (próprios e de terceiros) distribuídos nos terroirs mais prestigiosos da província. Destaca-se por ser uma das poucas vinícolas especializadas em 'Bulk Wine' (vinho a granel) de alta gama, exportando para mercados exigentes como EUA, Reino Unido e China, tendo sido premiada internacionalmente em Amsterdã.\n\nAlém do seu perfil produtivo, possui uma unidade de enoturismo e eventos totalmente desenvolvida, com salões, jardins e uma adega subterrânea histórica, gerando um fluxo de receitas diversificado.",
           callout: {
             label: "PERFIL DE NEGÓCIO",
             value: "Exportação Granel Premium / Enoturismo / Eventos",
