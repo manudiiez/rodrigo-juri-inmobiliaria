@@ -52,8 +52,8 @@ export default function PropertiesSearchPage() {
   const allProperties = useMemo(() => {
     return propertiesData.map((prop, index) => {
       const content = prop.content[locale as keyof typeof prop.content] || prop.content["es-AR"];
-      const priceValue = prop.price.value ?? null;
-      const pricePerHa = prop.price.pricePerHectare ?? null;
+      const priceValue = prop.price.value as number | null;
+      const pricePerHa = prop.price.pricePerHectare as number | null;
 
       return {
         id: index + 1,
