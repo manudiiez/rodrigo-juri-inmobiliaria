@@ -1901,27 +1901,27 @@ export const properties = [
     images: [
       {
         url: "/images/penedoborges/bodega-penedo-borges-1.png",
-        class: 'object-cover',
+        class: "object-cover",
       },
       {
         url: "/images/penedoborges/bodega-penedo-borges-2.png",
-        class: 'object-cover',
+        class: "object-cover",
       },
       {
         url: "/images/penedoborges/bodega-penedo-borges-3.png",
-        class: 'object-cover',
+        class: "object-cover",
       },
       {
         url: "/images/penedoborges/bodega-penedo-borges-4.png",
-        class: 'object-cover',
+        class: "object-cover",
       },
       {
         url: "/images/penedoborges/bodega-penedo-borges-5.png",
-        class: 'object-contain',
+        class: "object-contain",
       },
       {
         url: "/images/penedoborges/bodega-penedo-borges-6.png",
-        class: 'object-contain',
+        class: "object-contain",
       },
     ],
     content: {
@@ -3202,7 +3202,7 @@ export const properties = [
   },
   {
     slug: "campo-la-junta-malargue-mendoza",
-    type: "campo",
+    type: "finca",
     price: {
       value: null,
       currency: "USD",
@@ -4228,9 +4228,9 @@ export const properties = [
         ],
       },
       "en-US": {
-        title: "Productive Farm: Plums, Vineyards & Machinery Included",
+        title: "Farm in San Rafael - Machinery Included",
         description: {
-          text: "Excellent investment opportunity in a 41.5-hectare productive farm, offered as a 'turnkey' sale (machinery and tools included) with financing options available. The property is in full production with 31 hectares of plums and 10.5 hectares of vineyards, completely covered with anti-hail netting in good condition.\n\nThe operational infrastructure is complete: it features an electrified well for water supply and an internal irrigation system with canals and ditches in optimal condition. Additionally, it includes an extensive machinery fleet featuring tractors (New Holland and John Deere) and multiple agricultural implements, allowing for immediate operation without additional equipment investment.\n\nRegarding construction, the farm has three brick houses (East, Center, and West) totaling over 300 m2, along with a warehouse and shed totaling 150 m2. The surroundings are purely agricultural, bordered by other producing farms.",
+          text: "Excellent investment opportunity in a 41.5-hectare productive farm, offered as a 'turnkey' operation (includes machinery and tools) with financing available. The property is in full production with 31 hectares of plums and 10.5 hectares of vineyards, fully covered with anti-hail netting in good condition.\n\nThe operational infrastructure is complete: it features an electrified well for water supply and an irrigation system with internal channels and ditches in optimal condition. Additionally, it boasts an extensive machinery fleet including tractors (New Holland and John Deere) and multiple agricultural implements, allowing for immediate operation without additional equipment investment.\n\nRegarding construction, the farm has three brick houses (East, Center, and West House) totaling over 300 m² covered, along with a warehouse and open shed totaling 150 m². The environment is purely agricultural, surrounded by productive farms.",
           callout: {
             label: "OPPORTUNITY",
             value: "Sale with Financing / Machinery Included",
@@ -4243,17 +4243,16 @@ export const properties = [
             extra: "USD (Financed)",
           },
           {
-            label: "Cultivated Area",
+            label: "Cultivated Surface",
             value: "41.5",
             extra: "Hectares",
           },
           {
-            label: "Protection",
-            value: "100%",
-            extra: "Anti-hail Netting",
+            label: "Buildings",
+            value: "5",
           },
           {
-            label: "Status",
+            label: "Equipment",
             value: "Machinery Included",
             class: "text-lg mt-4",
           },
@@ -4267,13 +4266,13 @@ export const properties = [
           },
           {
             id: "ficha-tecnica",
-            label: "Crops & Irrigation",
+            label: "Crops and Irrigation",
             type: "grouped-fields",
             data: {
-              label: "Crops & Irrigation",
+              label: "Crops and Irrigation",
               groups: [
                 {
-                  title: "Productive Areas",
+                  title: "Productive Surfaces",
                   fields: [
                     {
                       label: "PLUMS",
@@ -4292,7 +4291,7 @@ export const properties = [
                     {
                       label: "NET CONDITION",
                       value: "7 years old",
-                      subText: "Half useful life",
+                      subText: "Half of useful life",
                     },
                   ],
                 },
@@ -4305,8 +4304,8 @@ export const properties = [
                     },
                     {
                       label: "DISTRIBUTION",
-                      value: "Ditches and Canals",
-                      subText: "Good conditions",
+                      value: "Ditches and Channels",
+                      subText: "Good condition",
                     },
                   ],
                 },
@@ -4324,28 +4323,28 @@ export const properties = [
                   fields: [
                     {
                       label: "EAST HOUSE",
-                      value: "100 m2",
+                      value: "100 m²",
                       subText: "60 years old",
                     },
                     {
                       label: "CENTER HOUSE",
-                      value: "110 m2",
+                      value: "110 m²",
                       subText: "70 years old",
                     },
                     {
                       label: "WEST HOUSE",
-                      value: "100 m2",
-                      subText: "House + Apt (40 years)",
+                      value: "100 m²",
+                      subText: "House + Apt (40 years old)",
                     },
                     {
                       label: "WAREHOUSE",
-                      value: "75 m2",
-                      subText: "Brick/Zinc (10 years)",
+                      value: "75 m²",
+                      subText: "Brick and sheet metal (10 years old)",
                     },
                     {
-                      label: "SHED",
-                      value: "75 m2",
-                      subText: "Open structure (10 years)",
+                      label: "OPEN SHED",
+                      value: "75 m²",
+                      subText: "Open structure (10 years old)",
                     },
                   ],
                 },
@@ -4354,10 +4353,10 @@ export const properties = [
           },
           {
             id: "productividad",
-            label: "Machinery & Equipment",
+            label: "Machinery and Equipment",
             type: "grouped-fields",
             data: {
-              label: "Machinery & Equipment (Included)",
+              label: "Machinery and Equipment (Included)",
               groups: [
                 {
                   title: "Tractors",
@@ -4388,11 +4387,11 @@ export const properties = [
                     },
                     {
                       label: "Treatment",
-                      value: ["Pehuenche Sulfator", "Herbicide Machine"],
+                      value: ["Pehuenche Sprayer", "Herbicide Machine"],
                     },
                     {
-                      label: "Misc",
-                      value: ["Cart", "Hand tools", "Various implements"],
+                      label: "Miscellaneous",
+                      value: ["Trailer", "Hand tools", "Various implements"],
                     },
                   ],
                 },
@@ -4404,7 +4403,7 @@ export const properties = [
             label: "Location",
             type: "map-location",
             data: {
-              label: "Location & Surroundings",
+              label: "Location and Surroundings",
               map: {
                 lat: null,
                 lng: null,
@@ -4421,12 +4420,12 @@ export const properties = [
               ],
               groups: [
                 {
-                  title: "Environment Features",
+                  title: "Area Characteristics",
                   fields: [
                     {
                       label: "Neighborhood",
                       value: "Similar properties",
-                      subText: "Good and regular conditions",
+                      subText: "Good and fair conditions",
                     },
                   ],
                 },
@@ -4438,10 +4437,10 @@ export const properties = [
             label: "Legal",
             type: "fields-list",
             data: {
-              label: "Documents",
+              label: "Documentation",
               groups: [
                 {
-                  title: "Sales Conditions",
+                  title: "Sale Conditions",
                   fields: [
                     {
                       label: "PRICE",
@@ -4451,7 +4450,7 @@ export const properties = [
                     {
                       label: "FINANCING",
                       value: "Available",
-                      subText: "Consult terms",
+                      subText: "Consult conditions",
                     },
                   ],
                 },
@@ -4467,12 +4466,12 @@ export const properties = [
         ],
       },
       "pt-BR": {
-        title: "Fazenda Produtiva: Ameixeiras, Vinhedos e Maquinário Incluído",
+        title: "Fazenda em San Rafael - Maquinário Incluído",
         description: {
-          text: "Excelente oportunidade de investimento em fazenda produtiva de 41,5 hectares, oferecida na modalidade 'porteira fechada' (inclui máquinas e ferramentas) e com possibilidade de financiamento. A propriedade encontra-se em plena produção com 31 hectares de ameixeiras e 10,5 hectares de vinhedos, totalmente cobertos com tela antigranizo em bom estado de conservação.\n\nA infraestrutura operacional é completa: conta com um poço eletrificado para o abastecimento de água e um sistema de irrigação com canais e valas internas em ótimas condições. Além disso, dispõe de uma frota de maquinário extensa que inclui tratores (New Holland e John Deere) e múltiplos implementos agrícolas, permitindo a operação imediata sem investimentos adicionais em equipamentos.\n\nQuanto às construções, a fazenda possui três casas de alvenaria (Casa Leste, Centro e Oeste) somando mais de 300 m2 cobertos, juntamente com um galpão e armazém de 150 m2 totais. O entorno é puramente agrícola, cercado por fazendas em produção.",
+          text: "Excelente oportunidade de investimento em fazenda produtiva de 41,5 hectares, oferecida na modalidade 'porteira fechada' (inclui máquinas e ferramentas) e com possibilidade de financiamento. A propriedade encontra-se em plena produção com 31 hectares de ameixeiras e 10,5 hectares de vinhedos, totalmente cobertos com tela antigranizo em bom estado de conservação.\n\nA infraestrutura operacional é completa: conta com poço eletrificado para abastecimento de água e sistema de irrigação com canais e valas internas em ótimas condições. Além disso, dispõe de um extenso parque de máquinas que inclui tratores (New Holland e John Deere) e múltiplos implementos agrícolas, permitindo operação imediata sem investimentos adicionais em equipamentos.\n\nQuanto às construções, a fazenda possui três casas de alvenaria (Casa Leste, Centro e Oeste) totalizando mais de 300 m² cobertos, juntamente com um galpão e cobertura de 150 m² totais. O ambiente é puramente agrícola, cercado por fazendas em produção.",
           callout: {
             label: "OPORTUNIDADE",
-            value: "Venda Financiada / Maquinário Incluído",
+            value: "Venda com Financiamento / Maquinário Incluído",
           },
         },
         summary: [
@@ -4482,17 +4481,16 @@ export const properties = [
             extra: "USD (Financiado)",
           },
           {
-            label: "Área Cultivada",
+            label: "Superfície Cultivada",
             value: "41,5",
             extra: "Hectares",
           },
           {
-            label: "Proteção",
-            value: "100%",
-            extra: "Tela Antigranizo",
+            label: "Construções",
+            value: "5",
           },
           {
-            label: "Status",
+            label: "Equipamentos",
             value: "Maquinário Incluído",
             class: "text-lg mt-4",
           },
@@ -4529,8 +4527,8 @@ export const properties = [
                       subText: "Estrutura completa",
                     },
                     {
-                      label: "ESTADO TELA",
-                      value: "7 anos antig.",
+                      label: "ESTADO DA TELA",
+                      value: "7 anos de uso",
                       subText: "Metade da vida útil",
                     },
                   ],
@@ -4563,27 +4561,27 @@ export const properties = [
                   fields: [
                     {
                       label: "CASA LESTE",
-                      value: "100 m2",
-                      subText: "60 anos antiguidade",
+                      value: "100 m²",
+                      subText: "60 anos de antiguidade",
                     },
                     {
                       label: "CASA CENTRO",
-                      value: "110 m2",
-                      subText: "70 anos antiguidade",
+                      value: "110 m²",
+                      subText: "70 anos de antiguidade",
                     },
                     {
                       label: "CASA OESTE",
-                      value: "100 m2",
+                      value: "100 m²",
                       subText: "Casa + Apto (40 anos)",
                     },
                     {
                       label: "GALPÃO",
-                      value: "75 m2",
-                      subText: "Tijolo e zinco (10 anos)",
+                      value: "75 m²",
+                      subText: "Tijolo e chapa (10 anos)",
                     },
                     {
-                      label: "ARMAZÉM",
-                      value: "75 m2",
+                      label: "COBERTURA",
+                      value: "75 m²",
                       subText: "Estrutura aberta (10 anos)",
                     },
                   ],
@@ -4621,7 +4619,7 @@ export const properties = [
                       value: [
                         "Arado 2 corpos",
                         "Rotovator 1.20m",
-                        "Grade 16 discos",
+                        "Grade de 16 discos",
                         "Niveladora 1.20m",
                       ],
                     },
@@ -4630,11 +4628,11 @@ export const properties = [
                       value: ["Pulverizador Pehuenche", "Máquina Herbicida"],
                     },
                     {
-                      label: "Diversos",
+                      label: "Vários",
                       value: [
                         "Carreta",
                         "Ferramentas manuais",
-                        "Implementos variados",
+                        "Implementos vários",
                       ],
                     },
                   ],
