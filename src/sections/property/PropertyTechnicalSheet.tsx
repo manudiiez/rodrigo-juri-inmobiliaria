@@ -17,6 +17,7 @@ interface groupList {
     value: string | string[];
     border?: string;
     class?: string;
+    subText?: string;
   }[];
 }
 
@@ -85,6 +86,9 @@ export default function PropertyTechnicalSheet({
                 <p className="text-lg text-gray-900">
                   {Array.isArray(field.value) ? field.value.join(', ') : field.value}
                 </p>
+                {field.subText && (
+                    <p className="text-sm text-gray-600">{field.subText}</p>
+                  )}
               </div>
             ))}
           </div>

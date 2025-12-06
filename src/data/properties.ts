@@ -2495,4 +2495,2478 @@ export const properties = [
       },
     },
   },
+  {
+    slug: "campo-la-junta-malargue-mendoza",
+    type: "campo",
+    price: {
+      value: null,
+      currency: "USD",
+      pricePerHectare: null,
+    },
+    hectares: 1305,
+    location: {
+      lat: null,
+      lng: null,
+      address: "La Junta, Malargüe (Al Este de Ruta Nacional 40)",
+      province: "Mendoza",
+      country: "AR",
+      state: "Malargüe",
+    },
+    images: [
+      {
+        url: "/images/lajunta/campo-lajunta-1.png",
+        class: "object-cover",
+      },
+      {
+        url: "/images/lajunta/campo-lajunta-2.png",
+        class: "object-cover",
+      },
+      {
+        url: "/images/lajunta/campo-lajunta-3.png",
+        class: "object-cover",
+      },
+      {
+        url: "/images/lajunta/campo-lajunta-4.png",
+        class: "object-cover",
+      },
+      {
+        url: "/images/lajunta/campo-lajunta-5.png",
+        class: "object-cover",
+      },
+    ],
+    content: {
+      "es-AR": {
+        title: "Campo en Malargüe - La Junta",
+        description: {
+          text: "Excelente oportunidad de inversión en Malargüe, Mendoza. Se trata de una fracción de campo de 1.305 hectáreas totales ubicada en el distrito de La Junta, al oeste de la Ruta Nacional 40.\n\nEl campo destaca por su disponibilidad hídrica e infraestructura base. Posee Derecho de Riego Definitivo para 213 hectáreas y factibilidad para realizar perforaciones adicionales. Actualmente cuenta con 450 hectáreas desmontadas listas para trabajar y 855 hectáreas de campo natural. La propiedad está totalmente alambrada en su perímetro, dispone de energía eléctrica conectada y una casa patronal, encontrándose lista para escriturar y transferir.",
+          callout: {
+            label: "INFRAESTRUCTURA",
+            value: "Riego Definitivo / Energía Eléctrica / Casa",
+          },
+        },
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumen",
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Superficies y Riego",
+          },
+          {
+            id: "infraestructura",
+            label: "Mejoras e Instalaciones",
+          },
+          {
+            id: "ubicacion",
+            label: "Ubicación y Accesos",
+          },
+          {
+            id: "documentacion",
+            label: "Legal",
+          },
+          {
+            id: "contacto-finca",
+            label: "Contacto",
+          },
+        ],
+        summary: [
+          {
+            label: "Superficie Total",
+            value: "1.305",
+            extra: "Hectáreas",
+          },
+          {
+            label: "Derecho de Riego",
+            value: "213",
+            extra: "Hectáreas (Definitivo)",
+          },
+          {
+            label: "Sup. Desmontada",
+            value: "450",
+            extra: "Hectáreas",
+          },
+          {
+            label: "Estado",
+            value: "Listo para transferir",
+            class: "text-lg mt-4",
+          },
+        ],
+        techSpecs: {
+          label: "Superficies y Riego",
+          groups: [
+            {
+              title: "Distribución de la Tierra",
+              fields: [
+                {
+                  label: "SUPERFICIE TOTAL",
+                  value: "1.305 Has",
+                  class: "border-secondary",
+                },
+                {
+                  label: "HECTÁREAS DESMONTADAS",
+                  value: "450 Has",
+                  subText: "Suelo trabajado",
+                },
+                {
+                  label: "CAMPO NATURAL",
+                  value: "855 Has",
+                  subText: "Monte nativo",
+                },
+              ],
+            },
+            {
+              title: "Recurso Hídrico",
+              fields: [
+                {
+                  label: "DERECHO DE RIEGO",
+                  value: "213 Has",
+                  subText: "Definitivo",
+                  class: "border-blueo",
+                },
+                {
+                  label: "AGUA SUBTERRÁNEA",
+                  value: "Factible",
+                  subText: "Apto para perforaciones",
+                },
+              ],
+            },
+          ],
+        },
+        improvements: {
+          label: "Mejoras e Instalaciones",
+          fields: [
+            {
+              label: "VIVIENDA",
+              value: "Casa Patronal",
+              subText: "Construcción existente",
+            },
+            {
+              label: "ENERGÍA",
+              value: "Red Eléctrica",
+              subText: "Conectada al predio",
+            },
+            {
+              label: "PERÍMETRO",
+              value: "Alambrado Total",
+              subText: "Cierre completo del campo",
+            },
+            {
+              label: "ACCESO",
+              value: "Tranquera",
+              subText: "Ingreso consolidado",
+            },
+          ],
+        },
+        energy: {
+          label: "Aptitud Productiva",
+          groups: [
+            {
+              title: "Potencial",
+              fields: [
+                {
+                  label: "APTITUD",
+                  value: "Mixta",
+                  subText: "Ganadera / Agrícola bajo riego",
+                },
+                {
+                  label: "DISPONIBILIDAD",
+                  value: "Inmediata",
+                  subText: "Infraestructura operativa",
+                },
+              ],
+            },
+          ],
+        },
+        locationDetails: {
+          label: "Ubicación y Accesos",
+          map: {
+            lat: null,
+            lng: null,
+          },
+          featured: [
+            {
+              label: "ZONA",
+              value: "La Junta",
+            },
+            {
+              label: "DEPARTAMENTO",
+              value: "Malargüe",
+            },
+          ],
+          groups: [
+            {
+              title: "Referencias",
+              fields: [
+                {
+                  label: "Ruta Nacional 40",
+                  value: "Al Oeste",
+                  subText: "Principal vía de acceso",
+                },
+                {
+                  label: "Malargüe Ciudad",
+                  value: "25 km",
+                  subText: "Villa Cabecera",
+                },
+                {
+                  label: "Acceso Asfaltado",
+                  value: "10 km",
+                  subText: "Desde RN40 hacia La Junta",
+                },
+                {
+                  label: "Acceso Ripio",
+                  value: "500 metros",
+                  subText: "Tramo final a tranquera",
+                },
+              ],
+            },
+          ],
+        },
+        legal: {
+          label: "Documentación",
+          groups: [
+            {
+              title: "Estado Dominial",
+              fields: [
+                {
+                  label: "SITUACIÓN",
+                  value: "Listo para Transferir",
+                  class: "border-secondary",
+                },
+                {
+                  label: "MENSURA",
+                  value: "Plano Disponible",
+                  subText: "N° 19/2001",
+                },
+              ],
+            },
+          ],
+        },
+      },
+      "en-US": {
+        title: "Land in Malargüe - La Junta",
+        description: {
+          text: "Excellent investment opportunity in Malargüe, Mendoza. A 1,305-hectare land tract located in the La Junta district, west of National Route 40.\n\nThe property stands out for its water availability and basic infrastructure. It holds Permanent Water Rights for 213 hectares and feasibility for additional drilling. Currently, it has 450 cleared hectares ready for work and 855 hectares of natural land. The property is fully fenced, has connected electrical power and a main house, and is ready for title transfer.",
+          callout: {
+            label: "INFRASTRUCTURE",
+            value: "Permanent Irrigation / Electricity / House",
+          },
+        },
+        sections: [
+          {
+            id: "resumen",
+            label: "Summary",
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Surfaces & Irrigation",
+          },
+          {
+            id: "infraestructura",
+            label: "Improvements & Facilities",
+          },
+          {
+            id: "ubicacion",
+            label: "Location & Access",
+          },
+          {
+            id: "documentacion",
+            label: "Legal",
+          },
+          {
+            id: "contacto-finca",
+            label: "Contact",
+          },
+        ],
+        summary: [
+          {
+            label: "Total Area",
+            value: "1,305",
+            extra: "Hectares",
+          },
+          {
+            label: "Water Rights",
+            value: "213",
+            extra: "Hectares (Permanent)",
+          },
+          {
+            label: "Cleared Area",
+            value: "450",
+            extra: "Hectares",
+          },
+          {
+            label: "Status",
+            value: "Ready to transfer",
+            class: "text-lg mt-4",
+          },
+        ],
+        techSpecs: {
+          label: "Surfaces & Irrigation",
+          groups: [
+            {
+              title: "Land Distribution",
+              fields: [
+                {
+                  label: "TOTAL AREA",
+                  value: "1,305 Ha",
+                  class: "border-secondary",
+                },
+                {
+                  label: "CLEARED HECTARES",
+                  value: "450 Ha",
+                  subText: "Worked soil",
+                },
+                {
+                  label: "NATURAL LAND",
+                  value: "855 Ha",
+                  subText: "Native bush",
+                },
+              ],
+            },
+            {
+              title: "Water Resources",
+              fields: [
+                {
+                  label: "WATER RIGHTS",
+                  value: "213 Ha",
+                  subText: "Permanent",
+                  class: "border-blueo",
+                },
+                {
+                  label: "GROUNDWATER",
+                  value: "Feasible",
+                  subText: "Suitable for drilling",
+                },
+              ],
+            },
+          ],
+        },
+        improvements: {
+          label: "Improvements & Facilities",
+          fields: [
+            {
+              label: "HOUSING",
+              value: "Main House",
+              subText: "Existing structure",
+            },
+            {
+              label: "ENERGY",
+              value: "Power Grid",
+              subText: "Connected to site",
+            },
+            {
+              label: "PERIMETER",
+              value: "Fully Fenced",
+              subText: "Complete enclosure",
+            },
+            {
+              label: "ACCESS",
+              value: "Farm Gate",
+              subText: "Consolidated entrance",
+            },
+          ],
+        },
+        energy: {
+          label: "Productive Aptitude",
+          groups: [
+            {
+              title: "Potential",
+              fields: [
+                {
+                  label: "APTITUDE",
+                  value: "Mixed",
+                  subText: "Livestock / Agricultural under irrigation",
+                },
+                {
+                  label: "AVAILABILITY",
+                  value: "Immediate",
+                  subText: "Operational infrastructure",
+                },
+              ],
+            },
+          ],
+        },
+        locationDetails: {
+          label: "Location & Access",
+          map: {
+            lat: null,
+            lng: null,
+          },
+          featured: [
+            {
+              label: "ZONE",
+              value: "La Junta",
+            },
+            {
+              label: "DEPARTMENT",
+              value: "Malargüe",
+            },
+          ],
+          groups: [
+            {
+              title: "References",
+              fields: [
+                {
+                  label: "National Route 40",
+                  value: "To the West",
+                  subText: "Main access road",
+                },
+                {
+                  label: "Malargüe City",
+                  value: "25 km",
+                  subText: "Head town",
+                },
+                {
+                  label: "Paved Access",
+                  value: "10 km",
+                  subText: "From RN40 to La Junta",
+                },
+                {
+                  label: "Gravel Access",
+                  value: "500 meters",
+                  subText: "Final stretch to gate",
+                },
+              ],
+            },
+          ],
+        },
+        legal: {
+          label: "Documentation",
+          groups: [
+            {
+              title: "Ownership Status",
+              fields: [
+                {
+                  label: "SITUATION",
+                  value: "Ready to Transfer",
+                  class: "border-secondary",
+                },
+                {
+                  label: "SURVEY",
+                  value: "Blueprint Available",
+                  subText: "No. 19/2001",
+                },
+              ],
+            },
+          ],
+        },
+      },
+      "pt-BR": {
+        title: "Campo em Malargüe - La Junta",
+        description: {
+          text: "Excelente oportunidade de investimento em Malargüe, Mendoza. Trata-se de uma fração de campo com um total de 1.305 hectares localizada no distrito de La Junta, a oeste da Rota Nacional 40.\n\nO campo destaca-se pela sua disponibilidade hídrica e infraestrutura básica. Possui Direito de Irrigação Definitivo para 213 hectares e viabilidade para realizar perfurações adicionais. Atualmente conta com 450 hectares limpos e prontos para trabalhar, e 855 hectares de campo natural. A propriedade está totalmente cercada em seu perímetro, dispõe de energia elétrica conectada e uma casa sede, encontrando-se pronta para escriturar e transferir.",
+          callout: {
+            label: "INFRAESTRUTURA",
+            value: "Irrigação Definitiva / Energia Elétrica / Casa",
+          },
+        },
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumo",
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Superfícies e Irrigação",
+          },
+          {
+            id: "infraestructura",
+            label: "Benfeitorias e Instalações",
+          },
+          {
+            id: "ubicacion",
+            label: "Localização e Acessos",
+          },
+          {
+            id: "documentacion",
+            label: "Legal",
+          },
+          {
+            id: "contacto-finca",
+            label: "Contato",
+          },
+        ],
+        summary: [
+          {
+            label: "Área Total",
+            value: "1.305",
+            extra: "Hectares",
+          },
+          {
+            label: "Direito de Irrigação",
+            value: "213",
+            extra: "Hectares (Definitivo)",
+          },
+          {
+            label: "Área Limpa",
+            value: "450",
+            extra: "Hectares",
+          },
+          {
+            label: "Estado",
+            value: "Pronto para transferir",
+            class: "text-lg mt-4",
+          },
+        ],
+        techSpecs: {
+          label: "Superfícies e Irrigação",
+          groups: [
+            {
+              title: "Distribuição de Terras",
+              fields: [
+                {
+                  label: "ÁREA TOTAL",
+                  value: "1.305 Ha",
+                  class: "border-secondary",
+                },
+                {
+                  label: "HECTARES LIMPOS",
+                  value: "450 Ha",
+                  subText: "Solo trabalhado",
+                },
+                {
+                  label: "CAMPO NATURAL",
+                  value: "855 Ha",
+                  subText: "Mata nativa",
+                },
+              ],
+            },
+            {
+              title: "Recursos Hídricos",
+              fields: [
+                {
+                  label: "DIREITO DE IRRIGAÇÃO",
+                  value: "213 Ha",
+                  subText: "Definitivo",
+                  class: "border-blueo",
+                },
+                {
+                  label: "ÁGUA SUBTERRÂNEA",
+                  value: "Viável",
+                  subText: "Apto para perfurações",
+                },
+              ],
+            },
+          ],
+        },
+        improvements: {
+          label: "Benfeitorias e Instalações",
+          fields: [
+            {
+              label: "MORADIA",
+              value: "Casa Sede",
+              subText: "Construção existente",
+            },
+            {
+              label: "ENERGIA",
+              value: "Rede Elétrica",
+              subText: "Conectada à propriedade",
+            },
+            {
+              label: "PERÍMETRO",
+              value: "Totalmente Cercado",
+              subText: "Fechamento completo",
+            },
+            {
+              label: "ACESSO",
+              value: "Porteira",
+              subText: "Entrada consolidada",
+            },
+          ],
+        },
+        energy: {
+          label: "Aptidão Produtiva",
+          groups: [
+            {
+              title: "Potencial",
+              fields: [
+                {
+                  label: "APTIDÃO",
+                  value: "Mista",
+                  subText: "Pecuária / Agrícola sob irrigação",
+                },
+                {
+                  label: "DISPONIBILIDADE",
+                  value: "Imediata",
+                  subText: "Infraestrutura operacional",
+                },
+              ],
+            },
+          ],
+        },
+        locationDetails: {
+          label: "Localização e Acessos",
+          map: {
+            lat: null,
+            lng: null,
+          },
+          featured: [
+            {
+              label: "ZONA",
+              value: "La Junta",
+            },
+            {
+              label: "DEPARTAMENTO",
+              value: "Malargüe",
+            },
+          ],
+          groups: [
+            {
+              title: "Referências",
+              fields: [
+                {
+                  label: "Rota Nacional 40",
+                  value: "A Oeste",
+                  subText: "Principal via de acesso",
+                },
+                {
+                  label: "Cidade de Malargüe",
+                  value: "25 km",
+                  subText: "Cidade Principal",
+                },
+                {
+                  label: "Acesso Asfaltado",
+                  value: "10 km",
+                  subText: "Da RN40 até La Junta",
+                },
+                {
+                  label: "Acesso de Cascalho",
+                  value: "500 metros",
+                  subText: "Trecho final até a porteira",
+                },
+              ],
+            },
+          ],
+        },
+        legal: {
+          label: "Documentação",
+          groups: [
+            {
+              title: "Estado Dominial",
+              fields: [
+                {
+                  label: "SITUAÇÃO",
+                  value: "Pronto para Transferir",
+                  class: "border-secondary",
+                },
+                {
+                  label: "MEDIÇÃO",
+                  value: "Planta Disponível",
+                  subText: "N° 19/2001",
+                },
+              ],
+            },
+          ],
+        },
+      },
+    },
+  },
+  {
+    slug: "finca-productiva-ciruelas-vinedos-mendoza",
+    type: "finca",
+    price: {
+      value: 500000,
+      currency: "USD",
+      pricePerHectare: null,
+    },
+    hectares: 41.5,
+    location: {
+      lat: null,
+      lng: null,
+      address: "Zona Productiva (Consultar Ubicación Exacta)",
+      province: "Mendoza",
+      country: "AR",
+      state: null,
+    },
+    images: [
+      {
+        url: "/images/fincasanrafaelmaquinaria/finca-sanrafael-maquinaria-1.jpeg",
+        class: "object-cover",
+      },
+      {
+        url: "/images/fincasanrafaelmaquinaria/finca-sanrafael-maquinaria-2.jpeg",
+        class: "object-cover",
+      },
+      {
+        url: "/images/fincasanrafaelmaquinaria/finca-sanrafael-maquinaria-3.jpeg",
+        class: "object-contain",
+      },
+      {
+        url: "/images/fincasanrafaelmaquinaria/finca-sanrafael-maquinaria-4.jpeg",
+        class: "object-contain",
+      },
+      {
+        url: "/images/fincasanrafaelmaquinaria/finca-sanrafael-maquinaria-5.jpeg",
+        class: "object-contain",
+      },
+      {
+        url: "/images/fincasanrafaelmaquinaria/finca-sanrafael-maquinaria-6.jpeg",
+        class: "object-cover",
+      },
+      {
+        url: "/images/fincasanrafaelmaquinaria/finca-sanrafael-maquinaria-7.jpeg",
+        class: "object-cover",
+      },
+      {
+        url: "/images/fincasanrafaelmaquinaria/finca-sanrafael-maquinaria-8.jpeg",
+        class: "object-cover",
+      },
+      {
+        url: "/images/fincasanrafaelmaquinaria/finca-sanrafael-maquinaria-9.jpeg",
+        class: "object-cover",
+      },
+      {
+        url: "/images/fincasanrafaelmaquinaria/finca-sanrafael-maquinaria-10.jpeg",
+        class: "object-cover",
+      },
+      {
+        url: "/images/fincasanrafaelmaquinaria/finca-sanrafael-maquinaria-11.jpeg",
+        class: "object-contain",
+      },
+      {
+        url: "/images/fincasanrafaelmaquinaria/finca-sanrafael-maquinaria-12.jpeg",
+        class: "object-contain",
+      },
+    ],
+    content: {
+      "es-AR": {
+        title: "Finca en San Rafael - Maquinaria Incluida",
+        description: {
+          text: "Excelente oportunidad de inversión en finca productiva de 41,5 hectáreas, ofrecida bajo modalidad 'a tranquera cerrada' (incluye maquinaria y herramientas) y con posibilidad de financiación. La propiedad se encuentra en plena producción con 31 hectáreas de ciruelos y 10,5 hectáreas de viñedos, totalmente cubiertos con malla antigranizo en buen estado de conservación.\n\nLa infraestructura operativa es completa: cuenta con un pozo electrificado para el abastecimiento de agua y un sistema de riego con canales y acequias internas en óptimas condiciones. Además, dispone de un parque de maquinaria extenso que incluye tractores (New Holland y John Deere) y múltiples implementos agrícolas, permitiendo la operación inmediata sin inversiones adicionales en equipamiento.\n\nEn cuanto a construcciones, la finca posee tres viviendas de material (Casa Este, Centro y Oeste) que suman más de 300 m2 cubiertos, junto con un galpón y tinglado de 150 m2 totales. El entorno es netamente agrícola, rodeado de fincas en producción.",
+          callout: {
+            label: "OPORTUNIDAD",
+            value: "Venta con Financiación / Maquinaria Incluida",
+          },
+        },
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumen",
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Cultivos y Riego",
+          },
+          {
+            id: "infraestructura",
+            label: "Construcciones",
+          },
+          {
+            id: "productividad",
+            label: "Maquinaria y Equipos",
+          },
+          {
+            id: "ubicacion",
+            label: "Ubicación",
+          },
+          {
+            id: "contacto-finca",
+            label: "Contacto",
+          },
+        ],
+        summary: [
+          {
+            label: "Precio",
+            value: "500.000",
+            extra: "USD (Financiado)",
+          },
+          {
+            label: "Superficie Cultivada",
+            value: "41,5",
+            extra: "Hectáreas",
+          },
+          {
+            label: "Construcciones",
+            value: "5",
+          },
+          {
+            label: "Equipos",
+            value: "Maquinaria Incluida",
+            class: "text-lg mt-4",
+          },
+        ],
+        techSpecs: {
+          label: "Cultivos y Riego",
+          groups: [
+            {
+              title: "Superficies Productivas",
+              fields: [
+                {
+                  label: "CIRUELOS",
+                  value: "31 ha",
+                  class: "border-secondary",
+                },
+                {
+                  label: "VIÑEDOS",
+                  value: "10,5 ha",
+                },
+                {
+                  label: "PROTECCIÓN",
+                  value: "Malla Antigranizo",
+                  subText: "Estructura completa",
+                },
+                {
+                  label: "ESTADO MALLA",
+                  value: "7 años antig.",
+                  subText: "Mitad de vida útil",
+                },
+              ],
+            },
+            {
+              title: "Recurso Hídrico",
+              fields: [
+                {
+                  label: "FUENTE",
+                  value: "Pozo Electrificado",
+                },
+                {
+                  label: "DISTRIBUCIÓN",
+                  value: "Acequias y Canales",
+                  subText: "Buenas condiciones",
+                },
+              ],
+            },
+          ],
+        },
+        improvements: {
+          label: "Infraestructura Edilicia",
+          fields: [
+            {
+              label: "CASA ESTE",
+              value: "100 m2",
+              subText: "60 años antigüedad",
+            },
+            {
+              label: "CASA CENTRO",
+              value: "110 m2",
+              subText: "70 años antigüedad",
+            },
+            {
+              label: "CASA OESTE",
+              value: "100 m2",
+              subText: "Casa + Dpto (40 años)",
+            },
+            {
+              label: "GALPÓN",
+              value: "75 m2",
+              subText: "Ladrillo y chapa (10 años)",
+            },
+            {
+              label: "TINGLADO",
+              value: "75 m2",
+              subText: "Estructura abierta (10 años)",
+            },
+          ],
+        },
+        energy: {
+          label: "Maquinaria y Equipos (Incluidos)",
+          groups: [
+            {
+              title: "Tractores",
+              fields: [
+                {
+                  label: "TRACTOR 1",
+                  value: "New Holland",
+                  class: "border-secondary",
+                },
+                {
+                  label: "TRACTOR 2",
+                  value: "John Deere",
+                },
+              ],
+            },
+            {
+              title: "Implementos",
+              borderColor: "border-indigo-900",
+              fields: [
+                {
+                  label: "Suelo",
+                  value: [
+                    "Arado 2 cuerpos",
+                    "Rotovator 1.20m",
+                    "Rastra 16 discos",
+                    "Niveleta 1.20m",
+                  ],
+                },
+                {
+                  label: "Curación",
+                  value: ["Sulfatadora Pehuenche", "Máquina Herbicida"],
+                },
+                {
+                  label: "Varios",
+                  value: [
+                    "Carro",
+                    "Herramientas de mano",
+                    "Implementos varios",
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        locationDetails: {
+          label: "Ubicación y Entorno",
+          map: {
+            lat: null,
+            lng: null,
+          },
+          featured: [
+            {
+              label: "ZONA",
+              value: "Agrícola",
+            },
+            {
+              label: "ENTORNO",
+              value: "Fincas Productivas",
+            },
+          ],
+          groups: [
+            {
+              title: "Características del Entorno",
+              fields: [
+                {
+                  label: "Vecindario",
+                  value: "Propiedades similares",
+                  subText: "Estados buenos y regulares",
+                },
+              ],
+            },
+          ],
+        },
+        legal: {
+          label: "Documentación",
+          groups: [
+            {
+              title: "Condiciones de Venta",
+              fields: [
+                {
+                  label: "PRECIO",
+                  value: "USD 500.000",
+                  class: "border-blueo",
+                },
+                {
+                  label: "FINANCIACIÓN",
+                  value: "Disponible",
+                  subText: "Consultar condiciones",
+                },
+              ],
+            },
+          ],
+        },
+      },
+      "en-US": {
+        title: "Productive Farm: Plums, Vineyards & Machinery Included",
+        description: {
+          text: "Excellent investment opportunity in a 41.5-hectare productive farm, offered as a 'turnkey' sale (machinery and tools included) with financing options available. The property is in full production with 31 hectares of plums and 10.5 hectares of vineyards, completely covered with anti-hail netting in good condition.\n\nThe operational infrastructure is complete: it features an electrified well for water supply and an internal irrigation system with canals and ditches in optimal condition. Additionally, it includes an extensive machinery fleet featuring tractors (New Holland and John Deere) and multiple agricultural implements, allowing for immediate operation without additional equipment investment.\n\nRegarding construction, the farm has three brick houses (East, Center, and West) totaling over 300 m2, along with a warehouse and shed totaling 150 m2. The surroundings are purely agricultural, bordered by other producing farms.",
+          callout: {
+            label: "OPPORTUNITY",
+            value: "Sale with Financing / Machinery Included",
+          },
+        },
+        sections: [
+          {
+            id: "resumen",
+            label: "Summary",
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Crops & Irrigation",
+          },
+          {
+            id: "infraestructura",
+            label: "Buildings",
+          },
+          {
+            id: "productividad",
+            label: "Machinery & Equipment",
+          },
+          {
+            id: "ubicacion",
+            label: "Location",
+          },
+          {
+            id: "contacto-finca",
+            label: "Contact",
+          },
+        ],
+        summary: [
+          {
+            label: "Price",
+            value: "500,000",
+            extra: "USD (Financed)",
+          },
+          {
+            label: "Cultivated Area",
+            value: "41.5",
+            extra: "Hectares",
+          },
+          {
+            label: "Protection",
+            value: "100%",
+            extra: "Anti-hail Netting",
+          },
+          {
+            label: "Status",
+            value: "Machinery Included",
+            class: "text-lg mt-4",
+          },
+        ],
+        techSpecs: {
+          label: "Crops & Irrigation",
+          groups: [
+            {
+              title: "Productive Areas",
+              fields: [
+                {
+                  label: "PLUMS",
+                  value: "31 ha",
+                  class: "border-secondary",
+                },
+                {
+                  label: "VINEYARDS",
+                  value: "10.5 ha",
+                },
+                {
+                  label: "PROTECTION",
+                  value: "Anti-hail Netting",
+                  subText: "Complete structure",
+                },
+                {
+                  label: "NET CONDITION",
+                  value: "7 years old",
+                  subText: "Half useful life",
+                },
+              ],
+            },
+            {
+              title: "Water Resources",
+              fields: [
+                {
+                  label: "SOURCE",
+                  value: "Electrified Well",
+                },
+                {
+                  label: "DISTRIBUTION",
+                  value: "Ditches and Canals",
+                  subText: "Good conditions",
+                },
+              ],
+            },
+          ],
+        },
+        improvements: {
+          label: "Building Infrastructure",
+          fields: [
+            {
+              label: "EAST HOUSE",
+              value: "100 m2",
+              subText: "60 years old",
+            },
+            {
+              label: "CENTER HOUSE",
+              value: "110 m2",
+              subText: "70 years old",
+            },
+            {
+              label: "WEST HOUSE",
+              value: "100 m2",
+              subText: "House + Apt (40 years)",
+            },
+            {
+              label: "WAREHOUSE",
+              value: "75 m2",
+              subText: "Brick/Zinc (10 years)",
+            },
+            {
+              label: "SHED",
+              value: "75 m2",
+              subText: "Open structure (10 years)",
+            },
+          ],
+        },
+        energy: {
+          label: "Machinery & Equipment (Included)",
+          groups: [
+            {
+              title: "Tractors",
+              fields: [
+                {
+                  label: "TRACTOR 1",
+                  value: "New Holland",
+                  class: "border-secondary",
+                },
+                {
+                  label: "TRACTOR 2",
+                  value: "John Deere",
+                },
+              ],
+            },
+            {
+              title: "Implements",
+              borderColor: "border-indigo-900",
+              fields: [
+                {
+                  label: "Soil",
+                  value: [
+                    "2-body Plow",
+                    "Rotovator 1.20m",
+                    "16-disc Harrow",
+                    "Leveler 1.20m",
+                  ],
+                },
+                {
+                  label: "Treatment",
+                  value: ["Pehuenche Sulfator", "Herbicide Machine"],
+                },
+                {
+                  label: "Misc",
+                  value: ["Cart", "Hand tools", "Various implements"],
+                },
+              ],
+            },
+          ],
+        },
+        locationDetails: {
+          label: "Location & Surroundings",
+          map: {
+            lat: null,
+            lng: null,
+          },
+          featured: [
+            {
+              label: "ZONE",
+              value: "Agricultural",
+            },
+            {
+              label: "SURROUNDINGS",
+              value: "Productive Farms",
+            },
+          ],
+          groups: [
+            {
+              title: "Environment Features",
+              fields: [
+                {
+                  label: "Neighborhood",
+                  value: "Similar properties",
+                  subText: "Good and regular conditions",
+                },
+              ],
+            },
+          ],
+        },
+        legal: {
+          label: "Documents",
+          groups: [
+            {
+              title: "Sales Conditions",
+              fields: [
+                {
+                  label: "PRICE",
+                  value: "USD 500,000",
+                  class: "border-blueo",
+                },
+                {
+                  label: "FINANCING",
+                  value: "Available",
+                  subText: "Consult terms",
+                },
+              ],
+            },
+          ],
+        },
+      },
+      "pt-BR": {
+        title: "Fazenda Produtiva: Ameixeiras, Vinhedos e Maquinário Incluído",
+        description: {
+          text: "Excelente oportunidade de investimento em fazenda produtiva de 41,5 hectares, oferecida na modalidade 'porteira fechada' (inclui máquinas e ferramentas) e com possibilidade de financiamento. A propriedade encontra-se em plena produção com 31 hectares de ameixeiras e 10,5 hectares de vinhedos, totalmente cobertos com tela antigranizo em bom estado de conservação.\n\nA infraestrutura operacional é completa: conta com um poço eletrificado para o abastecimento de água e um sistema de irrigação com canais e valas internas em ótimas condições. Além disso, dispõe de uma frota de maquinário extensa que inclui tratores (New Holland e John Deere) e múltiplos implementos agrícolas, permitindo a operação imediata sem investimentos adicionais em equipamentos.\n\nQuanto às construções, a fazenda possui três casas de alvenaria (Casa Leste, Centro e Oeste) somando mais de 300 m2 cobertos, juntamente com um galpão e armazém de 150 m2 totais. O entorno é puramente agrícola, cercado por fazendas em produção.",
+          callout: {
+            label: "OPORTUNIDADE",
+            value: "Venda Financiada / Maquinário Incluído",
+          },
+        },
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumo",
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Cultivos e Irrigação",
+          },
+          {
+            id: "infraestructura",
+            label: "Construções",
+          },
+          {
+            id: "productividad",
+            label: "Maquinário e Equipamentos",
+          },
+          {
+            id: "ubicacion",
+            label: "Localização",
+          },
+          {
+            id: "contacto-finca",
+            label: "Contato",
+          },
+        ],
+        summary: [
+          {
+            label: "Preço",
+            value: "500.000",
+            extra: "USD (Financiado)",
+          },
+          {
+            label: "Área Cultivada",
+            value: "41,5",
+            extra: "Hectares",
+          },
+          {
+            label: "Proteção",
+            value: "100%",
+            extra: "Tela Antigranizo",
+          },
+          {
+            label: "Status",
+            value: "Maquinário Incluído",
+            class: "text-lg mt-4",
+          },
+        ],
+        techSpecs: {
+          label: "Cultivos e Irrigação",
+          groups: [
+            {
+              title: "Superfícies Produtivas",
+              fields: [
+                {
+                  label: "AMEIXEIRAS",
+                  value: "31 ha",
+                  class: "border-secondary",
+                },
+                {
+                  label: "VINHEDOS",
+                  value: "10,5 ha",
+                },
+                {
+                  label: "PROTEÇÃO",
+                  value: "Tela Antigranizo",
+                  subText: "Estrutura completa",
+                },
+                {
+                  label: "ESTADO TELA",
+                  value: "7 anos antig.",
+                  subText: "Metade da vida útil",
+                },
+              ],
+            },
+            {
+              title: "Recurso Hídrico",
+              fields: [
+                {
+                  label: "FONTE",
+                  value: "Poço Eletrificado",
+                },
+                {
+                  label: "DISTRIBUIÇÃO",
+                  value: "Valas e Canais",
+                  subText: "Boas condições",
+                },
+              ],
+            },
+          ],
+        },
+        improvements: {
+          label: "Infraestrutura Predial",
+          fields: [
+            {
+              label: "CASA LESTE",
+              value: "100 m2",
+              subText: "60 anos antiguidade",
+            },
+            {
+              label: "CASA CENTRO",
+              value: "110 m2",
+              subText: "70 anos antiguidade",
+            },
+            {
+              label: "CASA OESTE",
+              value: "100 m2",
+              subText: "Casa + Apto (40 anos)",
+            },
+            {
+              label: "GALPÃO",
+              value: "75 m2",
+              subText: "Tijolo e zinco (10 anos)",
+            },
+            {
+              label: "ARMAZÉM",
+              value: "75 m2",
+              subText: "Estrutura aberta (10 anos)",
+            },
+          ],
+        },
+        energy: {
+          label: "Maquinário e Equipamentos (Incluídos)",
+          groups: [
+            {
+              title: "Tratores",
+              fields: [
+                {
+                  label: "TRATOR 1",
+                  value: "New Holland",
+                  class: "border-secondary",
+                },
+                {
+                  label: "TRATOR 2",
+                  value: "John Deere",
+                },
+              ],
+            },
+            {
+              title: "Implementos",
+              borderColor: "border-indigo-900",
+              fields: [
+                {
+                  label: "Solo",
+                  value: [
+                    "Arado 2 corpos",
+                    "Rotovator 1.20m",
+                    "Grade 16 discos",
+                    "Niveladora 1.20m",
+                  ],
+                },
+                {
+                  label: "Tratamento",
+                  value: ["Pulverizador Pehuenche", "Máquina Herbicida"],
+                },
+                {
+                  label: "Diversos",
+                  value: [
+                    "Carreta",
+                    "Ferramentas manuais",
+                    "Implementos variados",
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        locationDetails: {
+          label: "Localização e Entorno",
+          map: {
+            lat: null,
+            lng: null,
+          },
+          featured: [
+            {
+              label: "ZONA",
+              value: "Agrícola",
+            },
+            {
+              label: "ENTORNO",
+              value: "Fazendas Produtivas",
+            },
+          ],
+          groups: [
+            {
+              title: "Características do Entorno",
+              fields: [
+                {
+                  label: "Vizinhança",
+                  value: "Propriedades similares",
+                  subText: "Estados bons e regulares",
+                },
+              ],
+            },
+          ],
+        },
+        legal: {
+          label: "Documentação",
+          groups: [
+            {
+              title: "Condições de Venda",
+              fields: [
+                {
+                  label: "PREÇO",
+                  value: "USD 500.000",
+                  class: "border-blueo",
+                },
+                {
+                  label: "FINANCIAMENTO",
+                  value: "Disponível",
+                  subText: "Consultar condições",
+                },
+              ],
+            },
+          ],
+        },
+      },
+    },
+  },
+  {
+    slug: "bodega-penedo-borges-alto-agrelo-lujan-de-cuyo",
+    type: "bodega",
+    price: {
+      value: 4987000,
+      currency: "USD",
+      pricePerHectare: 71242,
+    },
+    hectares: 70,
+    location: {
+      lat: null,
+      lng: null,
+      address: "Ruta Internacional No 7, Km 8, Alto Agrelo",
+      province: "Mendoza",
+      country: "AR",
+      state: "Luján de Cuyo",
+    },
+    images: [],
+    content: {
+      "es-AR": {
+        title:
+          "Bodega Penedo Borges - Luján de Cuyo, Mendoza",
+        description: {
+          text: 'Oportunidad de inversión en "Bodega Penedo Borges", un activo vitivinícola consolidado ubicado estratégicamente sobre la Ruta Internacional 7 en Alto Agrelo, Luján de Cuyo. La propiedad abarca 70 hectáreas totales, con 49.4 hectáreas netas de viñedos de alta calidad en plena producción y una infraestructura edilicia completa de 1.587 m² cubiertos.\n\nLa bodega destaca por su equipamiento tecnológico de marcas líderes (Pellenc, Siprem, Mencarelli) y una capacidad de vasija diversificada en acero inoxidable, hormigón y una importante sala de barricas. El área de enoturismo y oficinas, de 400 m², ofrece instalaciones modernas con vistas a la Cordillera, complementadas por un perfil sustentable que incluye 84 paneles solares y planta de tratamiento de efluentes.\n\nLa venta incluye la totalidad de los activos tangibles: tierras (cultivadas e incultas), construcciones civiles, maquinaria de bodega, implementos agrícolas (incluyendo tractor John Deere), mobiliario y el proyecto de expansión aprobado para nuevas naves de vendimia. Es una operación "llave en mano" de activos físicos (no incluye marcas) ideal para escalar la producción en uno de los terroirs más valorados de Mendoza.',
+          callout: {
+            label: "ACTIVO INTEGRAL",
+            value: "70 Has / Bodega Equipada / Maquinaria / Turismo",
+          },
+        },
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumen",
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Capacidad y Maquinaria",
+          },
+          {
+            id: "infraestructura",
+            label: "Superficies e Instalaciones",
+          },
+          {
+            id: "productividad",
+            label: "Detalle de Viñedos",
+          },
+          {
+            id: "ubicacion",
+            label: "Ubicación",
+          },
+          {
+            id: "documentacion",
+            label: "Desglose de Tasación",
+          },
+          {
+            id: "contacto-finca",
+            label: "Contacto",
+          },
+        ],
+        summary: [
+          {
+            label: "Precio Total",
+            value: "4.987.000",
+            extra: "USD (Tasación)",
+          },
+          {
+            label: "Superficie Total",
+            value: "70",
+            extra: "Hectáreas",
+          },
+          {
+            label: "Viñedos",
+            value: "49.4",
+            extra: "Hectáreas Cultivadas",
+          },
+          {
+            label: "Edificación",
+            value: "1.587",
+            extra: "m² Cubiertos",
+          },
+          {
+            label: "Energía",
+            value: "84",
+            extra: "Paneles Solares",
+          },
+          {
+            label: "Agua",
+            value: "Pozo 150m",
+            class: "text-lg mt-4",
+          },
+        ],
+        techSpecs: {
+          label: "Capacidad y Maquinaria",
+          groups: [
+            {
+              title: "Detalle de Vasijas (Acero Inoxidable)",
+              fields: [
+                {
+                  label: "Tanques 100 hL",
+                  value: "7 Unidades",
+                  class: "border-secondary",
+                },
+                {
+                  label: "Tanques 75 hL",
+                  value: "6 Unidades",
+                },
+                {
+                  label: "Tanques 50 hL",
+                  value: "4 Unidades",
+                },
+                {
+                  label: "Tanques 40 hL",
+                  value: "1 Unidad",
+                },
+                {
+                  label: "Tanques 35 hL",
+                  value: "2 Unidades",
+                },
+                {
+                  label: "Tanques 25 hL",
+                  value: "2 Unidades",
+                },
+              ],
+            },
+            {
+              title: "Otras Vasijas",
+              fields: [
+                {
+                  label: "Recipientes Concreto",
+                  value: "2 Unidades",
+                },
+                {
+                  label: "Tanques Plásticos",
+                  value: "31 Unidades",
+                  subText: "10x10hL, 12x11hL, 9x9hL",
+                },
+                {
+                  label: "Barricas (Inv. 2025)",
+                  value: "225 Unidades",
+                  subText: "Más stock años anteriores",
+                },
+              ],
+            },
+            {
+              title: "Maquinaria de Bodega",
+              fields: [
+                {
+                  label: "Recepción/Prensado",
+                  value: "Prensa Neumática SIPREM 20",
+                  subText: "Despalilladora Pellenc Winery + Tolva tornillo",
+                },
+                {
+                  label: "Movimiento",
+                  value: "2 Bombas Mencarelli + 1 Francesca F5 T",
+                  subText: "Cintas de Selección y Elevación SIPREM",
+                },
+                {
+                  label: "Frío/Servicios",
+                  value: "Equipo Frío 75.000 Frig + Frío 21 (15CV)",
+                  subText: "Equipo Bombeo Frío-Agua + Piping",
+                },
+                {
+                  label: "Fraccionamiento",
+                  value: "Etiquetadora/Capsuladora ENOS T3",
+                  subText: "Lavadora botellas MPF SIRIA 12 + Cinta EB",
+                },
+                {
+                  label: "Logística Interna",
+                  value: "Autoelevador UTILEV 2.6 ton",
+                  subText: "Apilador eléctrico + Hidrolavadora GHIMAQ",
+                },
+              ],
+            },
+          ],
+        },
+        improvements: {
+          label: "Superficies e Instalaciones",
+          fields: [
+            {
+              label: "Turismo y Oficinas",
+              value: "400 m²",
+              subText: "Mobiliario incluido",
+            },
+            {
+              label: "Nave Bodega",
+              value: "297 m²",
+              subText: "Cubierto, semi y playones",
+            },
+            {
+              label: "Cava",
+              value: "340 m²",
+              subText: "Con Equipo Humidificación y Montacargas",
+            },
+            {
+              label: "Depósitos",
+              value: "400 m²",
+              subText: "2 Galpones",
+            },
+            {
+              label: "Vendimia/Máquinas",
+              value: "150 m²",
+            },
+            {
+              label: "Galpones Finca",
+              value: "350 m²",
+              subText: "Galpón 1 (250m2) + Galpón 2 (100m2)",
+            },
+            {
+              label: "Energía Solar",
+              value: "84 Paneles",
+              subText: "1 x 2,5 mt cada uno + Calefones Solares",
+            },
+            {
+              label: "Proyecto Ampliación",
+              value: "+204 m²",
+              subText: "2 Naves nuevas y Plataforma Vendimia",
+            },
+          ],
+        },
+        energy: {
+          label: "Detalle de Viñedos",
+          groups: [
+            {
+              title: "Plantaciones Antiguas (Año 2000-2007)",
+              fields: [
+                {
+                  label: "Malbec (2000)",
+                  value: "Espaldero Alto",
+                  class: "border-secondary",
+                  subText: "1.5m x 2.5m (120,000 m2)",
+                },
+                {
+                  label: "Cab. Sauvignon (2000)",
+                  value: "Espaldero Alto",
+                  subText: "1.5m x 2.5m (90,000 m2)",
+                },
+                {
+                  label: "Malbec (2007)",
+                  value: "Espaldero Alto",
+                  subText: "1.0m x 2.5m (120,000 m2)",
+                },
+                {
+                  label: "Otras 2007",
+                  value: "Syrah, Sauvignon Blanc, Chardonnay",
+                  subText: "30,000 - 60,000 m2 c/u",
+                },
+              ],
+            },
+            {
+              title: "Plantaciones Nuevas (2011-2022)",
+              fields: [
+                {
+                  label: "Petit Verdot (2011)",
+                  value: "20,000 m2",
+                  subText: "1.5m x 2.5m",
+                },
+                {
+                  label: "Cabernet Franc",
+                  value: "2011 y 2022",
+                  subText: "10,000 m2 (2011) + 11,000 m2 (2022)",
+                },
+                {
+                  label: "Semillón (2022)",
+                  value: "3,000 m2",
+                  subText: "1.0m x 2.5m",
+                },
+              ],
+            },
+            {
+              title: "Equipamiento Agrícola",
+              borderColor: "border-indigo-900",
+              fields: [
+                {
+                  label: "Tractor",
+                  value: "John Deere 5603",
+                  subText: "1 Unidad",
+                },
+                {
+                  label: "Pozo de Agua",
+                  value: "150 mts profundidad",
+                  subText: "Bomba Grundfos 125 Hp",
+                },
+                {
+                  label: "Reservorio",
+                  value: "1 Estanque",
+                  subText: "Equipo de riego incluido",
+                },
+              ],
+            },
+          ],
+        },
+        locationDetails: {
+          label: "Ubicación",
+          map: {
+            lat: null,
+            lng: null,
+          },
+          featured: [
+            {
+              label: "Zona",
+              value: "Alto Agrelo",
+            },
+            {
+              label: "Acceso",
+              value: "Ruta Internacional 7",
+            },
+          ],
+          groups: [
+            {
+              title: "Detalles",
+              fields: [
+                {
+                  label: "Departamento",
+                  value: "Luján de Cuyo",
+                },
+                {
+                  label: "Provincia",
+                  value: "Mendoza",
+                },
+                {
+                  label: "Entorno",
+                  value: "Corredor Bioceánico y Turístico",
+                },
+              ],
+            },
+          ],
+        },
+        legal: {
+          label: "Desglose de Tasación",
+          groups: [
+            {
+              title: "Valores Asignados (USD)",
+              fields: [
+                {
+                  label: "FINCA (Cultivada)",
+                  value: "2.000.000 USD",
+                  subText: "50 Has x 40.000 USD/Ha",
+                },
+                {
+                  label: "EDIFICIOS BODEGA",
+                  value: "1.587.000 USD",
+                  subText: "1.587 m2 x 1.000 USD/m2",
+                },
+                {
+                  label: "HERRAMIENTAS/ACCESORIOS",
+                  value: "1.200.000 USD",
+                  subText: "Tanques, Máquinas, Muebles",
+                },
+                {
+                  label: "PARTE INCULTA",
+                  value: "200.000 USD",
+                  subText: "10 Has x 20.000 USD/Ha",
+                },
+                {
+                  label: "TOTAL TASACIÓN",
+                  value: "4.987.000 USD",
+                },
+                {
+                  label: "Nota Importante",
+                  value: "Venta de Activos Tangibles",
+                  subText: "NO incluye marcas ni portafolios de vino",
+                },
+              ],
+            },
+          ],
+        },
+      },
+      "en-US": {
+        title:
+          "Penedo Borges Winery: Productive Infrastructure & Tourism in Alto Agrelo",
+        description: {
+          text: 'Investment opportunity in "Penedo Borges Winery", a consolidated wine asset strategically located on International Route 7 in Alto Agrelo, Luján de Cuyo. The property covers 70 total hectares, with 49.4 net hectares of high-quality vineyards in full production and a complete building infrastructure of 1,587 m² (covered).\n\nThe winery stands out for its technological equipment from leading brands (Pellenc, Siprem, Mencarelli) and a diversified vessel capacity in stainless steel, concrete, and a significant barrel room. The tourism and office area, spanning 400 m², offers modern facilities with views of the Andes, complemented by a sustainable profile that includes 84 solar panels and an effluent treatment plant.\n\nThe sale includes all tangible assets: land (cultivated and uncultivated), civil constructions, winery machinery, agricultural implements (including a John Deere tractor), furniture, and the approved expansion project for new harvest halls. It is a "turnkey" operation of physical assets (brands not included), ideal for scaling production in one of Mendoza\'s most valued terroirs.',
+          callout: {
+            label: "COMPREHENSIVE ASSET",
+            value: "70 Ha + Equipped Winery + Machinery + Tourism",
+          },
+        },
+        sections: [
+          {
+            id: "resumen",
+            label: "Summary",
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Capacity & Machinery",
+          },
+          {
+            id: "infraestructura",
+            label: "Surfaces & Facilities",
+          },
+          {
+            id: "productividad",
+            label: "Vineyard Details",
+          },
+          {
+            id: "ubicacion",
+            label: "Location",
+          },
+          {
+            id: "documentacion",
+            label: "Valuation Breakdown",
+          },
+          {
+            id: "contacto-finca",
+            label: "Contact",
+          },
+        ],
+        summary: [
+          {
+            label: "Total Price",
+            value: "4,987,000",
+            extra: "USD (Valuation)",
+          },
+          {
+            label: "Total Area",
+            value: "70",
+            extra: "Hectares",
+          },
+          {
+            label: "Vineyards",
+            value: "49.4",
+            extra: "Cultivated Hectares",
+          },
+          {
+            label: "Building",
+            value: "1,587",
+            extra: "Covered m²",
+          },
+          {
+            label: "Energy",
+            value: "84",
+            extra: "Solar Panels",
+          },
+          {
+            label: "Water",
+            value: "Well 150m",
+            class: "text-lg mt-4",
+          },
+        ],
+        techSpecs: {
+          label: "Capacity & Machinery",
+          groups: [
+            {
+              title: "Vessel Detail (Stainless Steel)",
+              fields: [
+                {
+                  label: "100 hL Tanks",
+                  value: "7 Units",
+                  class: "border-secondary",
+                },
+                {
+                  label: "75 hL Tanks",
+                  value: "6 Units",
+                },
+                {
+                  label: "50 hL Tanks",
+                  value: "4 Units",
+                },
+                {
+                  label: "40 hL Tanks",
+                  value: "1 Unit",
+                },
+                {
+                  label: "35 hL Tanks",
+                  value: "2 Units",
+                },
+                {
+                  label: "25 hL Tanks",
+                  value: "2 Units",
+                },
+              ],
+            },
+            {
+              title: "Other Vessels",
+              fields: [
+                {
+                  label: "Concrete Containers",
+                  value: "2 Units",
+                },
+                {
+                  label: "Plastic Tanks",
+                  value: "31 Units",
+                  subText: "10x10hL, 12x11hL, 9x9hL",
+                },
+                {
+                  label: "Barrels (2025 Inv.)",
+                  value: "225 Units",
+                  subText: "Plus previous years' stock",
+                },
+              ],
+            },
+            {
+              title: "Winery Machinery",
+              fields: [
+                {
+                  label: "Reception/Pressing",
+                  value: "SIPREM 20 Pneumatic Press",
+                  subText: "Pellenc Winery Destemmer + Screw Hopper",
+                },
+                {
+                  label: "Movement",
+                  value: "2 Mencarelli Pumps + 1 Francesca F5 T",
+                  subText: "SIPREM Selection and Elevation Belts",
+                },
+                {
+                  label: "Cooling/Services",
+                  value: "75,000 Frig Cooling Unit + Frio 21 (15CV)",
+                  subText: "Cold-Water Pumping Equipment + Piping",
+                },
+                {
+                  label: "Bottling",
+                  value: "ENOS T3 Labeler/Capsuler",
+                  subText: "MPF SIRIA 12 Bottle Washer + EB Belt",
+                },
+                {
+                  label: "Internal Logistics",
+                  value: "UTILEV 2.6 ton Forklift",
+                  subText: "Electric Stacker + GHIMAQ Pressure Washer",
+                },
+              ],
+            },
+          ],
+        },
+        improvements: {
+          label: "Surfaces & Facilities",
+          fields: [
+            {
+              label: "Tourism & Offices",
+              value: "400 m²",
+              subText: "Furniture included",
+            },
+            {
+              label: "Winery Hall",
+              value: "297 m²",
+              subText: "Covered, semi, and yards",
+            },
+            {
+              label: "Cellar (Cava)",
+              value: "340 m²",
+              subText: "With Humidification Equipment and Freight Elevator",
+            },
+            {
+              label: "Warehouses",
+              value: "400 m²",
+              subText: "2 Sheds",
+            },
+            {
+              label: "Harvest/Machines",
+              value: "150 m²",
+            },
+            {
+              label: "Farm Sheds",
+              value: "350 m²",
+              subText: "Shed 1 (250m2) + Shed 2 (100m2)",
+            },
+            {
+              label: "Solar Energy",
+              value: "84 Panels",
+              subText: "1 x 2.5 mt each + Solar Water Heaters",
+            },
+            {
+              label: "Expansion Project",
+              value: "+204 m²",
+              subText: "2 New halls and Harvest Platform",
+            },
+          ],
+        },
+        energy: {
+          label: "Vineyard Details",
+          groups: [
+            {
+              title: "Old Plantings (Year 2000-2007)",
+              fields: [
+                {
+                  label: "Malbec (2000)",
+                  value: "High Trellis",
+                  class: "border-secondary",
+                  subText: "1.5m x 2.5m (120,000 m2)",
+                },
+                {
+                  label: "Cab. Sauvignon (2000)",
+                  value: "High Trellis",
+                  subText: "1.5m x 2.5m (90,000 m2)",
+                },
+                {
+                  label: "Malbec (2007)",
+                  value: "High Trellis",
+                  subText: "1.0m x 2.5m (120,000 m2)",
+                },
+                {
+                  label: "Others 2007",
+                  value: "Syrah, Sauvignon Blanc, Chardonnay",
+                  subText: "30,000 - 60,000 m2 each",
+                },
+              ],
+            },
+            {
+              title: "New Plantings (2011-2022)",
+              fields: [
+                {
+                  label: "Petit Verdot (2011)",
+                  value: "20,000 m2",
+                  subText: "1.5m x 2.5m",
+                },
+                {
+                  label: "Cabernet Franc",
+                  value: "2011 & 2022",
+                  subText: "10,000 m2 (2011) + 11,000 m2 (2022)",
+                },
+                {
+                  label: "Semillon (2022)",
+                  value: "3,000 m2",
+                  subText: "1.0m x 2.5m",
+                },
+              ],
+            },
+            {
+              title: "Agricultural Equipment",
+              borderColor: "border-indigo-900",
+              fields: [
+                {
+                  label: "Tractor",
+                  value: "John Deere 5603",
+                  subText: "1 Unit",
+                },
+                {
+                  label: "Water Well",
+                  value: "150 mts depth",
+                  subText: "Grundfos 125 Hp Pump",
+                },
+                {
+                  label: "Reservoir",
+                  value: "1 Pond",
+                  subText: "Irrigation equipment included",
+                },
+              ],
+            },
+          ],
+        },
+        locationDetails: {
+          label: "Location",
+          map: {
+            lat: null,
+            lng: null,
+          },
+          featured: [
+            {
+              label: "Zone",
+              value: "Alto Agrelo",
+            },
+            {
+              label: "Access",
+              value: "International Route 7",
+            },
+          ],
+          groups: [
+            {
+              title: "Details",
+              fields: [
+                {
+                  label: "Department",
+                  value: "Luján de Cuyo",
+                },
+                {
+                  label: "Province",
+                  value: "Mendoza",
+                },
+                {
+                  label: "Surroundings",
+                  value: "Bio-oceanic & Tourism Corridor",
+                },
+              ],
+            },
+          ],
+        },
+        legal: {
+          label: "Valuation Breakdown",
+          groups: [
+            {
+              title: "Assigned Values (USD)",
+              fields: [
+                {
+                  label: "VINEYARD (Cultivated)",
+                  value: "2,000,000 USD",
+                  subText: "50 Ha x 40,000 USD/Ha",
+                },
+                {
+                  label: "WINERY BUILDINGS",
+                  value: "1,587,000 USD",
+                  subText: "1,587 m2 x 1,000 USD/m2",
+                },
+                {
+                  label: "TOOLS/ACCESSORIES",
+                  value: "1,200,000 USD",
+                  subText: "Tanks, Machinery, Furniture",
+                },
+                {
+                  label: "UNCULTIVATED LAND",
+                  value: "200,000 USD",
+                  subText: "10 Ha x 20,000 USD/Ha",
+                },
+                {
+                  label: "TOTAL VALUATION",
+                  value: "4,987,000 USD",
+                },
+                {
+                  label: "Important Note",
+                  value: "Sale of Tangible Assets",
+                  subText: "Does NOT include brands or wine portfolios",
+                },
+              ],
+            },
+          ],
+        },
+      },
+      "pt-BR": {
+        title:
+          "Vinícola Penedo Borges: Infraestrutura Produtiva e Enoturismo em Alto Agrelo",
+        description: {
+          text: 'Oportunidade de investimento na "Vinícola Penedo Borges", um ativo vitivinícola consolidado localizado estrategicamente na Rota Internacional 7 em Alto Agrelo, Luján de Cuyo. A propriedade abrange 70 hectares totais, com 49,4 hectares líquidos de vinhedos de alta qualidade em plena produção e uma infraestrutura de construção completa de 1.587 m² cobertos.\n\nA vinícola se destaca pelo seu equipamento tecnológico de marcas líderes (Pellenc, Siprem, Mencarelli) e uma capacidade de vasilhame diversificada em aço inoxidável, concreto e uma importante sala de barricas. A área de enoturismo e escritórios, de 400 m², oferece instalações modernas com vista para a Cordilheira, complementadas por um perfil sustentável que inclui 84 painéis solares e estação de tratamento de efluentes.\n\nA venda inclui a totalidade dos ativos tangíveis: terras (cultivadas e incultas), construções civis, maquinaria de vinícola, implementos agrícolas (incluindo trator John Deere), mobiliário e o projeto de expansão aprovado para novos galpões de vindima. É uma operação "chave na mão" de ativos físicos (não inclui marcas) ideal para escalar a produção em um dos terroirs mais valorizados de Mendoza.',
+          callout: {
+            label: "ATIVO INTEGRAL",
+            value: "70 Ha + Vinícola Equipada + Maquinaria + Turismo",
+          },
+        },
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumo",
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Capacidade e Maquinaria",
+          },
+          {
+            id: "infraestructura",
+            label: "Superfícies e Instalações",
+          },
+          {
+            id: "productividad",
+            label: "Detalhe de Vinhedos",
+          },
+          {
+            id: "ubicacion",
+            label: "Localização",
+          },
+          {
+            id: "documentacion",
+            label: "Detalhamento da Avaliação",
+          },
+          {
+            id: "contacto-finca",
+            label: "Contato",
+          },
+        ],
+        summary: [
+          {
+            label: "Preço Total",
+            value: "4.987.000",
+            extra: "USD (Avaliação)",
+          },
+          {
+            label: "Área Total",
+            value: "70",
+            extra: "Hectares",
+          },
+          {
+            label: "Vinhedos",
+            value: "49.4",
+            extra: "Hectares Cultivados",
+          },
+          {
+            label: "Edificação",
+            value: "1.587",
+            extra: "m² Cobertos",
+          },
+          {
+            label: "Energia",
+            value: "84",
+            extra: "Painéis Solares",
+          },
+          {
+            label: "Água",
+            value: "Poço 150m",
+            class: "text-lg mt-4",
+          },
+        ],
+        techSpecs: {
+          label: "Capacidade e Maquinaria",
+          groups: [
+            {
+              title: "Detalhe de Vasilhame (Aço Inoxidável)",
+              fields: [
+                {
+                  label: "Tanques 100 hL",
+                  value: "7 Unidades",
+                  class: "border-secondary",
+                },
+                {
+                  label: "Tanques 75 hL",
+                  value: "6 Unidades",
+                },
+                {
+                  label: "Tanques 50 hL",
+                  value: "4 Unidades",
+                },
+                {
+                  label: "Tanques 40 hL",
+                  value: "1 Unidade",
+                },
+                {
+                  label: "Tanques 35 hL",
+                  value: "2 Unidades",
+                },
+                {
+                  label: "Tanques 25 hL",
+                  value: "2 Unidades",
+                },
+              ],
+            },
+            {
+              title: "Outros Vasilhames",
+              fields: [
+                {
+                  label: "Recipientes Concreto",
+                  value: "2 Unidades",
+                },
+                {
+                  label: "Tanques Plásticos",
+                  value: "31 Unidades",
+                  subText: "10x10hL, 12x11hL, 9x9hL",
+                },
+                {
+                  label: "Barricas (Inv. 2025)",
+                  value: "225 Unidades",
+                  subText: "Mais estoque de anos anteriores",
+                },
+              ],
+            },
+            {
+              title: "Maquinaria de Vinícola",
+              fields: [
+                {
+                  label: "Recepção/Prensagem",
+                  value: "Prensa Pneumática SIPREM 20",
+                  subText: "Desengaçadeira Pellenc Winery + Tremonha parafuso",
+                },
+                {
+                  label: "Movimento",
+                  value: "2 Bombas Mencarelli + 1 Francesca F5 T",
+                  subText: "Esteiras de Seleção e Elevação SIPREM",
+                },
+                {
+                  label: "Frio/Serviços",
+                  value: "Equip. Frio 75.000 Frig + Frio 21 (15CV)",
+                  subText: "Equip. Bombeamento Frio-Água + Tubulação",
+                },
+                {
+                  label: "Engarrafamento",
+                  value: "Rotuladora/Capsuladora ENOS T3",
+                  subText: "Lavadora garrafas MPF SIRIA 12 + Esteira EB",
+                },
+                {
+                  label: "Logística Interna",
+                  value: "Empilhadeira UTILEV 2.6 ton",
+                  subText: "Empilhadeira elétrica + Lavadora pressão GHIMAQ",
+                },
+              ],
+            },
+          ],
+        },
+        improvements: {
+          label: "Superfícies e Instalações",
+          fields: [
+            {
+              label: "Turismo e Escritórios",
+              value: "400 m²",
+              subText: "Mobiliário incluído",
+            },
+            {
+              label: "Galpão Vinícola",
+              value: "297 m²",
+              subText: "Coberto, semi e pátios",
+            },
+            {
+              label: "Adega (Cava)",
+              value: "340 m²",
+              subText: "Com Equip. Umidificação e Monta-cargas",
+            },
+            {
+              label: "Depósitos",
+              value: "400 m²",
+              subText: "2 Galpões",
+            },
+            {
+              label: "Vindima/Máquinas",
+              value: "150 m²",
+            },
+            {
+              label: "Galpões Fazenda",
+              value: "350 m²",
+              subText: "Galpão 1 (250m2) + Galpão 2 (100m2)",
+            },
+            {
+              label: "Energia Solar",
+              value: "84 Painéis",
+              subText: "1 x 2,5 mt cada + Aquecedores Solares",
+            },
+            {
+              label: "Projeto Expansão",
+              value: "+204 m²",
+              subText: "2 Novos galpões e Plataforma Vindima",
+            },
+          ],
+        },
+        energy: {
+          label: "Detalhe de Vinhedos",
+          groups: [
+            {
+              title: "Plantações Antigas (Ano 2000-2007)",
+              fields: [
+                {
+                  label: "Malbec (2000)",
+                  value: "Espaldeira Alta",
+                  class: "border-secondary",
+                  subText: "1.5m x 2.5m (120,000 m2)",
+                },
+                {
+                  label: "Cab. Sauvignon (2000)",
+                  value: "Espaldeira Alta",
+                  subText: "1.5m x 2.5m (90,000 m2)",
+                },
+                {
+                  label: "Malbec (2007)",
+                  value: "Espaldeira Alta",
+                  subText: "1.0m x 2.5m (120,000 m2)",
+                },
+                {
+                  label: "Outras 2007",
+                  value: "Syrah, Sauvignon Blanc, Chardonnay",
+                  subText: "30,000 - 60,000 m2 cada",
+                },
+              ],
+            },
+            {
+              title: "Plantações Novas (2011-2022)",
+              fields: [
+                {
+                  label: "Petit Verdot (2011)",
+                  value: "20,000 m2",
+                  subText: "1.5m x 2.5m",
+                },
+                {
+                  label: "Cabernet Franc",
+                  value: "2011 e 2022",
+                  subText: "10,000 m2 (2011) + 11,000 m2 (2022)",
+                },
+                {
+                  label: "Semillón (2022)",
+                  value: "3,000 m2",
+                  subText: "1.0m x 2.5m",
+                },
+              ],
+            },
+            {
+              title: "Equipamento Agrícola",
+              borderColor: "border-indigo-900",
+              fields: [
+                {
+                  label: "Trator",
+                  value: "John Deere 5603",
+                  subText: "1 Unidade",
+                },
+                {
+                  label: "Poço de Água",
+                  value: "150 mts profundidade",
+                  subText: "Bomba Grundfos 125 Hp",
+                },
+                {
+                  label: "Reservatório",
+                  value: "1 Tanque",
+                  subText: "Equipamento de irrigação incluído",
+                },
+              ],
+            },
+          ],
+        },
+        locationDetails: {
+          label: "Localização",
+          map: {
+            lat: null,
+            lng: null,
+          },
+          featured: [
+            {
+              label: "Zona",
+              value: "Alto Agrelo",
+            },
+            {
+              label: "Acesso",
+              value: "Rota Internacional 7",
+            },
+          ],
+          groups: [
+            {
+              title: "Detalhes",
+              fields: [
+                {
+                  label: "Departamento",
+                  value: "Luján de Cuyo",
+                },
+                {
+                  label: "Província",
+                  value: "Mendoza",
+                },
+                {
+                  label: "Entorno",
+                  value: "Corredor Bioceânico e Turístico",
+                },
+              ],
+            },
+          ],
+        },
+        legal: {
+          label: "Detalhamento da Avaliação",
+          groups: [
+            {
+              title: "Valores Atribuídos (USD)",
+              fields: [
+                {
+                  label: "VINHEDO (Cultivado)",
+                  value: "2.000.000 USD",
+                  subText: "50 Ha x 40.000 USD/Ha",
+                },
+                {
+                  label: "EDIFÍCIOS VINÍCOLA",
+                  value: "1.587.000 USD",
+                  subText: "1.587 m2 x 1.000 USD/m2",
+                },
+                {
+                  label: "FERRAMENTAS/ACESSÓRIOS",
+                  value: "1.200.000 USD",
+                  subText: "Tanques, Máquinas, Móveis",
+                },
+                {
+                  label: "TERRA INCULTA",
+                  value: "200.000 USD",
+                  subText: "10 Ha x 20.000 USD/Ha",
+                },
+                {
+                  label: "TOTAL AVALIAÇÃO",
+                  value: "4.987.000 USD",
+                },
+                {
+                  label: "Nota Importante",
+                  value: "Venda de Ativos Tangíveis",
+                  subText: "NÃO inclui marcas nem portfólios de vinho",
+                },
+              ],
+            },
+          ],
+        },
+      },
+    },
+  },
 ];
