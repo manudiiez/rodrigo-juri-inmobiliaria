@@ -8,7 +8,7 @@ interface Property {
   slug: string;
   title: string;
   location: string;
-  zone: string;
+  zone: string | null;
   region: string;
   price: string;
   image: any;
@@ -19,10 +19,10 @@ interface Property {
   priceValue: number;
   pricePerHectare: number;
   type: string;
-  locationProvince: string;
-  locationAddress: string;
-  locationState: string;
-  locationCountry: string;
+  locationProvince: string | null;
+  locationAddress: string | null;
+  locationState: string | null;
+  locationCountry: string | null;
 }
 
 interface InitialFilters {

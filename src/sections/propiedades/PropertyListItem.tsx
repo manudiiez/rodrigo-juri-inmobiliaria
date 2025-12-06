@@ -9,6 +9,7 @@ interface Property {
   slug: string;
   title: string | undefined;
   location: string;
+  zone: string | null;
   region: string;
   price: string;
   image: { url: string, class?: string };
@@ -19,6 +20,14 @@ interface Property {
     value: string;
     extra?: string;
   }[];
+  hectares: number | null;
+  priceValue: number;
+  pricePerHectare: number;
+  type: string;
+  locationProvince: string | null;
+  locationAddress: string | null;
+  locationState: string | null;
+  locationCountry: string | null;
 } 
 
 interface PropertyListItemProps {
