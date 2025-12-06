@@ -1,22 +1,17 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations, useLocale } from "next-intl";
+import { useLocale } from "next-intl";
 import { useParams, notFound } from "next/navigation";
 import PropertyHeader from "@/sections/property/PropertyHeader";
 import PropertyImageCarousel from "@/sections/property/PropertyImageCarousel";
 import PropertySummarySection from "@/sections/property/PropertySummarySection";
-import PropertyTechnicalSheet from "@/sections/property/PropertyTechnicalSheet";
-import PropertyInfrastructure from "@/sections/property/PropertyInfrastructure";
-import PropertyProductivity from "@/sections/property/PropertyProductivity";
-import PropertyLocation from "@/sections/property/PropertyLocation";
-import PropertyDocumentation from "@/sections/property/PropertyDocumentation";
 import PropertyContactSection from "@/sections/property/PropertyContactSection";
 import SideNavigation from "@/sections/property/SideNavigation";
+import SectionRenderer from "@/sections/property/SectionRenderer";
 import { properties } from "@/data/properties";
 
 export default function PropertyDetailPage() {
-  const t = useTranslations('PropertyDetailPage.navigation');
   const locale = useLocale();
   const params = useParams();
   const slug = params.id as string;
@@ -35,16 +30,6 @@ export default function PropertyDetailPage() {
                            Object.values(propertyData.content)[0]);
 
   const [activeSection, setActiveSection] = useState("resumen");
-
-  const sections = [
-    { id: "resumen", label: t('summary') },
-    { id: "ficha-tecnica", label: t('technicalSheet') },
-    { id: "infraestructura", label: t('infrastructure') },
-    { id: "productividad", label: t('productivity') },
-    { id: "ubicacion", label: t('location') },
-    { id: "documentacion", label: t('documentation') },
-    { id: "contacto-finca", label: t('contact') },
-  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -102,25 +87,12 @@ export default function PropertyDetailPage() {
               descripcion={propertyContent.description}
             />
 
-            <PropertyTechnicalSheet
-              techSpecs={propertyContent.techSpecs}
-            />
-
-            <PropertyInfrastructure
-              instalaciones={propertyContent.improvements}
-            />
-
-            <PropertyProductivity
-              production={propertyContent.energy}
-            />
-
-            <PropertyLocation
-              location={propertyContent.locationDetails}
-            />
-
-            <PropertyDocumentation
-              legal={propertyContent.legal}
-            />
+            {/* Render sections dynamically based on their type */}
+            {propertyContent.sections
+              .filter((section: any) => section.type !== "summary" && section.type !== "contact")
+              .map((section: any) => (
+                <SectionRenderer key={section.id} section={section} />
+              ))}
 
             <PropertyContactSection />
           </div>

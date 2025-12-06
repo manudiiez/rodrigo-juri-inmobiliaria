@@ -852,15 +852,6 @@ export const properties = [
             value: "Exportación Granel Premium / Enoturismo / Eventos",
           },
         },
-        sections: [
-          { id: "resumen", label: "Resumen" },
-          { id: "ficha-tecnica", label: "Capacidad e Infraestructura" },
-          { id: "infraestructura", label: "Enoturismo y Eventos" },
-          { id: "productividad", label: "Mercados y Productos" },
-          { id: "ubicacion", label: "Ubicación" },
-          { id: "documentacion", label: "Desempeño Operativo" },
-          { id: "contacto-finca", label: "Contacto" },
-        ],
         summary: [
           {
             label: "Capacidad Total",
@@ -883,207 +874,246 @@ export const properties = [
             class: "text-lg mt-4",
           },
         ],
-        techSpecs: {
-          label: "Capacidad e Infraestructura",
-          groups: [
-            {
-              title: "Capacidad de Vasija",
-              fields: [
-                {
-                  label: "CAPACIDAD TOTAL",
-                  value: "6.000.000 Litros",
-                  class: "border-secondary",
-                },
-                {
-                  label: "CEMENTO C/ EPOXI",
-                  value: "5.740.000 Litros",
-                },
-                {
-                  label: "ACERO INOXIDABLE",
-                  value: "200.000 Litros",
-                },
-                {
-                  label: "BARRICAS ROBLE",
-                  value: "60.000 Litros",
-                  subText: "Roble Francés",
-                },
-              ],
-            },
-            {
-              title: "Viñedos y Materia Prima",
-              fields: [
-                {
-                  label: "SUPERFICIE TOTAL",
-                  value: "440 has",
-                },
-                {
-                  label: "VIÑEDOS PROPIOS",
-                  value: "90 has",
-                  class: "border-blueo",
-                },
-                {
-                  label: "VIÑEDOS TERCEROS",
-                  value: "350 has",
-                },
-                {
-                  label: "ZONAS DE CULTIVO",
-                  value:
-                    "Maipú, Luján de Cuyo, Valle de Uco, Rivadavia, San Martín, Santa Rosa y Junín",
-                  subText: "Diversidad de orígenes",
-                },
-                {
-                  label: "VARIETALES TINTOS",
-                  value:
-                    "Malbec, Cab. Franc, Cab. Sauv, Merlot, Bonarda, Syrah",
-                  class: "text-sm",
-                },
-                {
-                  label: "VARIETALES BLANCOS",
-                  value: "Sauvignon Blanc",
-                  class: "text-sm",
-                },
-              ],
-            },
-          ],
-        },
-        improvements: {
-          label: "Enoturismo y Eventos",
-          groups: [
-            {
-              fields: [
-                {
-                  label: "TURISMO",
-                  value: "Visitas y Degustaciones",
-                  subText: "Con maridajes (chocolates/picadas)",
-                },
-                {
-                  label: "ESPACIOS EVENTOS",
-                  value: "3 Salones diferenciados",
-                  subText: "Corporativos y Sociales",
-                },
-                {
-                  label: "CAVA SUBTERRÁNEA",
-                  value: "Piletas renovadas",
-                  subText: "Para eventos íntimos",
-                },
-                {
-                  label: "CASA DE FAMILIA",
-                  value: "Con piscina y viñedo",
-                  subText: "Estilo campestre",
-                },
-                {
-                  label: "GASTRONOMÍA",
-                  value: "Servicio propio",
-                  subText: "Proyección de restaurante",
-                },
-              ],
-            },
-          ],
-        },
-        energy: {
-          label: "Mercados y Productos",
-          groups: [
-            {
-              title: "Mercado Externo (Granel)",
-              fields: [
-                {
-                  label: "POSICIONAMIENTO",
-                  value: "Granel Alta Gama",
-                  class: "border-secondary",
-                },
-                {
-                  label: "DESTINOS",
-                  value: "EEUU, UK, China, Canadá",
-                  subText: "Japón, Australia, Europa",
-                },
-                {
-                  label: "RECONOCIMIENTOS",
-                  value: "Oro - WBWE Ámsterdam",
-                  subText: "Top 8 Bodegas (2018/2019)",
-                },
-              ],
-            },
-            {
-              title: "Producto Fraccionado",
-              borderColor: "border-indigo-900",
-              featured: [
-                {
-                  label: "ELABORACIÓN",
-                  value: "4.500.000 Lts",
-                  subText: "Máximo anual",
-                },
-              ],
-              fields: [
-                {
-                  label: "Guarda",
-                  value: [
-                    "Malbec",
-                    "Cabernet Franc",
-                    "Bonarda",
-                    "Sauvignon Blanc",
-                  ],
-                  class: "border-secondary",
-                },
-                {
-                  label: "Gran Guarda",
-                  value: ["Malbec", "Cabernet Franc", "Merlot"],
-                },
-                {
-                  label: "Interminable",
-                  value: ["Red Blend 1", "Blend de Malbec 2", "Red Blend 3"],
-                },
-                {
-                  label: "Fugaz",
-                  value: ["Rozado de Bequignol"],
-                },
-                {
-                  label: "Presente",
-                  value: ["Blend"],
-                },
-              ],
-            },
-          ],
-        },
-        locationDetails: {
-          label: "Ubicación",
-          map: {
-            lat: -33.0054,
-            lng: -68.7497,
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumen",
+            type: "summary",
+            data: {},
           },
-          featured: [
-            { label: "REGIÓN", value: "Maipú, Mendoza" },
-            { label: "ACCESIBILIDAD", value: "20 min de Ciudad" },
-          ],
-          groups: [
-            {
-              title: "Entorno",
-              fields: [
-                { label: "Perfil de Zona", value: "Vitivinícola histórica" },
-                { label: "Cercanía", value: "Rutas del Vino" },
-              ],
-            },
-          ],
-        },
-        legal: {
-          label: "Documentos",
-          groups: [
-            {
-              title: "Resumen Financiero (Histórico)",
-              fields: [
+          {
+            id: "ficha-tecnica",
+            label: "Capacidad e Infraestructura",
+            type: "grouped-fields",
+            data: {
+              label: "Capacidad e Infraestructura",
+              groups: [
                 {
-                  label: "ESTRUCTURA",
-                  value: "Organigrama completo",
-                  subText: "Gerencia, Enología, Comercial, RRHH",
+                  title: "Capacidad de Vasija",
+                  fields: [
+                    {
+                      label: "CAPACIDAD TOTAL",
+                      value: "6.000.000 Litros",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "CEMENTO C/ EPOXI",
+                      value: "5.740.000 Litros",
+                    },
+                    {
+                      label: "ACERO INOXIDABLE",
+                      value: "200.000 Litros",
+                    },
+                    {
+                      label: "BARRICAS ROBLE",
+                      value: "60.000 Litros",
+                      subText: "Roble Francés",
+                    },
+                  ],
                 },
                 {
-                  label: "Presentación",
-                  value: "Ver documento adjunto",
-                  link: "/docs/bodega-sinfin.pdf",
+                  title: "Viñedos y Materia Prima",
+                  fields: [
+                    {
+                      label: "SUPERFICIE TOTAL",
+                      value: "440 has",
+                    },
+                    {
+                      label: "VIÑEDOS PROPIOS",
+                      value: "90 has",
+                      class: "border-blueo",
+                    },
+                    {
+                      label: "VIÑEDOS TERCEROS",
+                      value: "350 has",
+                    },
+                    {
+                      label: "ZONAS DE CULTIVO",
+                      value:
+                        "Maipú, Luján de Cuyo, Valle de Uco, Rivadavia, San Martín, Santa Rosa y Junín",
+                      subText: "Diversidad de orígenes",
+                    },
+                    {
+                      label: "VARIETALES TINTOS",
+                      value:
+                        "Malbec, Cab. Franc, Cab. Sauv, Merlot, Bonarda, Syrah",
+                      class: "text-sm",
+                    },
+                    {
+                      label: "VARIETALES BLANCOS",
+                      value: "Sauvignon Blanc",
+                      class: "text-sm",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
+          },
+          {
+            id: "infraestructura",
+            label: "Enoturismo y Eventos",
+            type: "grouped-fields",
+            data: {
+              label: "Enoturismo y Eventos",
+              groups: [
+                {
+                  fields: [
+                    {
+                      label: "TURISMO",
+                      value: "Visitas y Degustaciones",
+                      subText: "Con maridajes (chocolates/picadas)",
+                    },
+                    {
+                      label: "ESPACIOS EVENTOS",
+                      value: "3 Salones diferenciados",
+                      subText: "Corporativos y Sociales",
+                    },
+                    {
+                      label: "CAVA SUBTERRÁNEA",
+                      value: "Piletas renovadas",
+                      subText: "Para eventos íntimos",
+                    },
+                    {
+                      label: "CASA DE FAMILIA",
+                      value: "Con piscina y viñedo",
+                      subText: "Estilo campestre",
+                    },
+                    {
+                      label: "GASTRONOMÍA",
+                      value: "Servicio propio",
+                      subText: "Proyección de restaurante",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "productividad",
+            label: "Mercados y Productos",
+            type: "grouped-fields",
+            data: {
+              label: "Mercados y Productos",
+              groups: [
+                {
+                  title: "Mercado Externo (Granel)",
+                  fields: [
+                    {
+                      label: "POSICIONAMIENTO",
+                      value: "Granel Alta Gama",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "DESTINOS",
+                      value: "EEUU, UK, China, Canadá",
+                      subText: "Japón, Australia, Europa",
+                    },
+                    {
+                      label: "RECONOCIMIENTOS",
+                      value: "Oro - WBWE Ámsterdam",
+                      subText: "Top 8 Bodegas (2018/2019)",
+                    },
+                  ],
+                },
+                {
+                  title: "Producto Fraccionado",
+                  borderColor: "border-indigo-900",
+                  featured: [
+                    {
+                      label: "ELABORACIÓN",
+                      value: "4.500.000 Lts",
+                      subText: "Máximo anual",
+                    },
+                  ],
+                  fields: [
+                    {
+                      label: "Guarda",
+                      value: [
+                        "Malbec",
+                        "Cabernet Franc",
+                        "Bonarda",
+                        "Sauvignon Blanc",
+                      ],
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "Gran Guarda",
+                      value: ["Malbec", "Cabernet Franc", "Merlot"],
+                    },
+                    {
+                      label: "Interminable",
+                      value: ["Red Blend 1", "Blend de Malbec 2", "Red Blend 3"],
+                    },
+                    {
+                      label: "Fugaz",
+                      value: ["Rozado de Bequignol"],
+                    },
+                    {
+                      label: "Presente",
+                      value: ["Blend"],
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "ubicacion",
+            label: "Ubicación",
+            type: "map-location",
+            data: {
+              label: "Ubicación",
+              map: {
+                lat: -33.0054,
+                lng: -68.7497,
+              },
+              featured: [
+                { label: "REGIÓN", value: "Maipú, Mendoza" },
+                { label: "ACCESIBILIDAD", value: "20 min de Ciudad" },
+              ],
+              groups: [
+                {
+                  title: "Entorno",
+                  fields: [
+                    { label: "Perfil de Zona", value: "Vitivinícola histórica" },
+                    { label: "Cercanía", value: "Rutas del Vino" },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "documentacion",
+            label: "Desempeño Operativo",
+            type: "fields-list",
+            data: {
+              label: "Documentos",
+              groups: [
+                {
+                  title: "Resumen Financiero (Histórico)",
+                  fields: [
+                    {
+                      label: "ESTRUCTURA",
+                      value: "Organigrama completo",
+                      subText: "Gerencia, Enología, Comercial, RRHH",
+                    },
+                    {
+                      label: "Presentación",
+                      value: "Ver documento adjunto",
+                      link: "/docs/bodega-sinfin.pdf",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contacto",
+            type: "contact",
+            data: {},
+          },
+        ],
       },
       "en-US": {
         title: "Sin Fin Winery: Industrial Capacity and Wine Tourism in Maipú",
@@ -1094,15 +1124,6 @@ export const properties = [
             value: "Premium Bulk Export / Wine Tourism / Events",
           },
         },
-        sections: [
-          { id: "resumen", label: "Summary" },
-          { id: "ficha-tecnica", label: "Capacity & Infrastructure" },
-          { id: "infraestructura", label: "Wine Tourism & Events" },
-          { id: "productividad", label: "Markets & Products" },
-          { id: "ubicacion", label: "Location" },
-          { id: "documentacion", label: "Operational Performance" },
-          { id: "contacto-finca", label: "Contact" },
-        ],
         summary: [
           {
             label: "Total Capacity",
@@ -1125,207 +1146,246 @@ export const properties = [
             class: "text-lg mt-4",
           },
         ],
-        techSpecs: {
-          label: "Capacity & Infrastructure",
-          groups: [
-            {
-              title: "Vessel Capacity",
-              fields: [
-                {
-                  label: "TOTAL CAPACITY",
-                  value: "6,000,000 Liters",
-                  class: "border-secondary",
-                },
-                {
-                  label: "EPOXY-LINED CEMENT",
-                  value: "5,740,000 Liters",
-                },
-                {
-                  label: "STAINLESS STEEL",
-                  value: "200,000 Liters",
-                },
-                {
-                  label: "OAK BARRELS",
-                  value: "60,000 Liters",
-                  subText: "French Oak",
-                },
-              ],
-            },
-            {
-              title: "Vineyards & Raw Materials",
-              fields: [
-                {
-                  label: "TOTAL AREA",
-                  value: "440 ha",
-                },
-                {
-                  label: "OWNED VINEYARDS",
-                  value: "90 ha",
-                  class: "border-blueo",
-                },
-                {
-                  label: "THIRD-PARTY VINEYARDS",
-                  value: "350 ha",
-                },
-                {
-                  label: "CULTIVATION ZONES",
-                  value:
-                    "Maipú, Luján de Cuyo, Valle de Uco, Rivadavia, San Martín, Santa Rosa y Junín",
-                  subText: "Diversity of origins",
-                },
-                {
-                  label: "RED VARIETALS",
-                  value:
-                    "Malbec, Cab. Franc, Cab. Sauv, Merlot, Bonarda, Syrah",
-                  class: "text-sm",
-                },
-                {
-                  label: "WHITE VARIETALS",
-                  value: "Sauvignon Blanc",
-                  class: "text-sm",
-                },
-              ],
-            },
-          ],
-        },
-        improvements: {
-          label: "Wine Tourism & Events",
-          groups: [
-            {
-              fields: [
-                {
-                  label: "TOURISM",
-                  value: "Visits and Tastings",
-                  subText: "With pairings (chocolates/charcuterie)",
-                },
-                {
-                  label: "EVENT SPACES",
-                  value: "3 Differentiated halls",
-                  subText: "Corporate and Social",
-                },
-                {
-                  label: "UNDERGROUND CELLAR",
-                  value: "Renovated pools",
-                  subText: "For intimate events",
-                },
-                {
-                  label: "FAMILY HOUSE",
-                  value: "With pool and vineyard",
-                  subText: "Country style",
-                },
-                {
-                  label: "GASTRONOMY",
-                  value: "In-house service",
-                  subText: "Restaurant projection",
-                },
-              ],
-            },
-          ],
-        },
-        energy: {
-          label: "Markets & Products",
-          groups: [
-            {
-              title: "Export Market (Bulk)",
-              fields: [
-                {
-                  label: "POSITIONING",
-                  value: "High-End Bulk",
-                  class: "border-secondary",
-                },
-                {
-                  label: "DESTINATIONS",
-                  value: "USA, UK, China, Canada",
-                  subText: "Japan, Australia, Europe",
-                },
-                {
-                  label: "AWARDS",
-                  value: "Gold - WBWE Amsterdam",
-                  subText: "Top 8 Wineries (2018/2019)",
-                },
-              ],
-            },
-            {
-              title: "Bottled Product",
-              borderColor: "border-indigo-900",
-              featured: [
-                {
-                  label: "PRODUCTION",
-                  value: "4,500,000 Lts",
-                  subText: "Maximum annual",
-                },
-              ],
-              fields: [
-                {
-                  label: "Reserve",
-                  value: [
-                    "Malbec",
-                    "Cabernet Franc",
-                    "Bonarda",
-                    "Sauvignon Blanc",
-                  ],
-                  class: "border-secondary",
-                },
-                {
-                  label: "Grand Reserve",
-                  value: ["Malbec", "Cabernet Franc", "Merlot"],
-                },
-                {
-                  label: "Interminable",
-                  value: ["Red Blend 1", "Malbec Blend 2", "Red Blend 3"],
-                },
-                {
-                  label: "Fugaz",
-                  value: ["Bequignol Rosé"],
-                },
-                {
-                  label: "Presente",
-                  value: ["Blend"],
-                },
-              ],
-            },
-          ],
-        },
-        locationDetails: {
-          label: "Location",
-          map: {
-            lat: -33.0054,
-            lng: -68.7497,
+        sections: [
+          {
+            id: "resumen",
+            label: "Summary",
+            type: "summary",
+            data: {},
           },
-          featured: [
-            { label: "REGION", value: "Maipú, Mendoza" },
-            { label: "ACCESSIBILITY", value: "20 min from City" },
-          ],
-          groups: [
-            {
-              title: "Surroundings",
-              fields: [
-                { label: "Zone Profile", value: "Historic wine region" },
-                { label: "Proximity", value: "Wine Routes" },
-              ],
-            },
-          ],
-        },
-        legal: {
-          label: "Documents",
-          groups: [
-            {
-              title: "Financial Summary (Historical)",
-              fields: [
+          {
+            id: "ficha-tecnica",
+            label: "Capacity & Infrastructure",
+            type: "grouped-fields",
+            data: {
+              label: "Capacity & Infrastructure",
+              groups: [
                 {
-                  label: "STRUCTURE",
-                  value: "Complete organizational chart",
-                  subText: "Management, Enology, Commercial, HR",
+                  title: "Vessel Capacity",
+                  fields: [
+                    {
+                      label: "TOTAL CAPACITY",
+                      value: "6,000,000 Liters",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "EPOXY-LINED CEMENT",
+                      value: "5,740,000 Liters",
+                    },
+                    {
+                      label: "STAINLESS STEEL",
+                      value: "200,000 Liters",
+                    },
+                    {
+                      label: "OAK BARRELS",
+                      value: "60,000 Liters",
+                      subText: "French Oak",
+                    },
+                  ],
                 },
                 {
-                  label: "Presentation",
-                  value: "See attached document",
-                  link: "/docs/bodega-sinfin.pdf",
+                  title: "Vineyards & Raw Materials",
+                  fields: [
+                    {
+                      label: "TOTAL AREA",
+                      value: "440 ha",
+                    },
+                    {
+                      label: "OWNED VINEYARDS",
+                      value: "90 ha",
+                      class: "border-blueo",
+                    },
+                    {
+                      label: "THIRD-PARTY VINEYARDS",
+                      value: "350 ha",
+                    },
+                    {
+                      label: "CULTIVATION ZONES",
+                      value:
+                        "Maipú, Luján de Cuyo, Valle de Uco, Rivadavia, San Martín, Santa Rosa y Junín",
+                      subText: "Diversity of origins",
+                    },
+                    {
+                      label: "RED VARIETALS",
+                      value:
+                        "Malbec, Cab. Franc, Cab. Sauv, Merlot, Bonarda, Syrah",
+                      class: "text-sm",
+                    },
+                    {
+                      label: "WHITE VARIETALS",
+                      value: "Sauvignon Blanc",
+                      class: "text-sm",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
+          },
+          {
+            id: "infraestructura",
+            label: "Wine Tourism & Events",
+            type: "grouped-fields",
+            data: {
+              label: "Wine Tourism & Events",
+              groups: [
+                {
+                  fields: [
+                    {
+                      label: "TOURISM",
+                      value: "Visits and Tastings",
+                      subText: "With pairings (chocolates/charcuterie)",
+                    },
+                    {
+                      label: "EVENT SPACES",
+                      value: "3 Differentiated halls",
+                      subText: "Corporate and Social",
+                    },
+                    {
+                      label: "UNDERGROUND CELLAR",
+                      value: "Renovated pools",
+                      subText: "For intimate events",
+                    },
+                    {
+                      label: "FAMILY HOUSE",
+                      value: "With pool and vineyard",
+                      subText: "Country style",
+                    },
+                    {
+                      label: "GASTRONOMY",
+                      value: "In-house service",
+                      subText: "Restaurant projection",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "productividad",
+            label: "Markets & Products",
+            type: "grouped-fields",
+            data: {
+              label: "Markets & Products",
+              groups: [
+                {
+                  title: "Export Market (Bulk)",
+                  fields: [
+                    {
+                      label: "POSITIONING",
+                      value: "High-End Bulk",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "DESTINATIONS",
+                      value: "USA, UK, China, Canada",
+                      subText: "Japan, Australia, Europe",
+                    },
+                    {
+                      label: "AWARDS",
+                      value: "Gold - WBWE Amsterdam",
+                      subText: "Top 8 Wineries (2018/2019)",
+                    },
+                  ],
+                },
+                {
+                  title: "Bottled Product",
+                  borderColor: "border-indigo-900",
+                  featured: [
+                    {
+                      label: "PRODUCTION",
+                      value: "4,500,000 Lts",
+                      subText: "Maximum annual",
+                    },
+                  ],
+                  fields: [
+                    {
+                      label: "Reserve",
+                      value: [
+                        "Malbec",
+                        "Cabernet Franc",
+                        "Bonarda",
+                        "Sauvignon Blanc",
+                      ],
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "Grand Reserve",
+                      value: ["Malbec", "Cabernet Franc", "Merlot"],
+                    },
+                    {
+                      label: "Interminable",
+                      value: ["Red Blend 1", "Malbec Blend 2", "Red Blend 3"],
+                    },
+                    {
+                      label: "Fugaz",
+                      value: ["Bequignol Rosé"],
+                    },
+                    {
+                      label: "Presente",
+                      value: ["Blend"],
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "ubicacion",
+            label: "Location",
+            type: "map-location",
+            data: {
+              label: "Location",
+              map: {
+                lat: -33.0054,
+                lng: -68.7497,
+              },
+              featured: [
+                { label: "REGION", value: "Maipú, Mendoza" },
+                { label: "ACCESSIBILITY", value: "20 min from City" },
+              ],
+              groups: [
+                {
+                  title: "Surroundings",
+                  fields: [
+                    { label: "Zone Profile", value: "Historic wine region" },
+                    { label: "Proximity", value: "Wine Routes" },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "documentacion",
+            label: "Operational Performance",
+            type: "fields-list",
+            data: {
+              label: "Documents",
+              groups: [
+                {
+                  title: "Financial Summary (Historical)",
+                  fields: [
+                    {
+                      label: "STRUCTURE",
+                      value: "Complete organizational chart",
+                      subText: "Management, Enology, Commercial, HR",
+                    },
+                    {
+                      label: "Presentation",
+                      value: "See attached document",
+                      link: "/docs/bodega-sinfin.pdf",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contact",
+            type: "contact",
+            data: {},
+          },
+        ],
       },
       "pt-BR": {
         title: "Vinícola Sin Fin: Capacidade Industrial e Enoturismo em Maipú",
@@ -1336,15 +1396,6 @@ export const properties = [
             value: "Exportação Granel Premium / Enoturismo / Eventos",
           },
         },
-        sections: [
-          { id: "resumen", label: "Resumo" },
-          { id: "ficha-tecnica", label: "Capacidade e Infraestrutura" },
-          { id: "infraestructura", label: "Enoturismo e Eventos" },
-          { id: "productividad", label: "Mercados e Produtos" },
-          { id: "ubicacion", label: "Localização" },
-          { id: "documentacion", label: "Desempenho Operacional" },
-          { id: "contacto-finca", label: "Contato" },
-        ],
         summary: [
           {
             label: "Capacidade Total",
@@ -1367,207 +1418,246 @@ export const properties = [
             class: "text-lg mt-4",
           },
         ],
-        techSpecs: {
-          label: "Capacidade e Infraestrutura",
-          groups: [
-            {
-              title: "Capacidade de Vasilhame",
-              fields: [
-                {
-                  label: "CAPACIDADE TOTAL",
-                  value: "6.000.000 Litros",
-                  class: "border-secondary",
-                },
-                {
-                  label: "CIMENTO C/ EPÓXI",
-                  value: "5.740.000 Litros",
-                },
-                {
-                  label: "AÇO INOXIDÁVEL",
-                  value: "200.000 Litros",
-                },
-                {
-                  label: "BARRICAS DE CARVALHO",
-                  value: "60.000 Litros",
-                  subText: "Carvalho Francês",
-                },
-              ],
-            },
-            {
-              title: "Vinhedos e Matéria-Prima",
-              fields: [
-                {
-                  label: "ÁREA TOTAL",
-                  value: "440 ha",
-                },
-                {
-                  label: "VINHEDOS PRÓPRIOS",
-                  value: "90 ha",
-                  class: "border-blueo",
-                },
-                {
-                  label: "VINHEDOS DE TERCEIROS",
-                  value: "350 ha",
-                },
-                {
-                  label: "ZONAS DE CULTIVO",
-                  value:
-                    "Maipú, Luján de Cuyo, Valle de Uco, Rivadavia, San Martín, Santa Rosa y Junín",
-                  subText: "Diversidade de origens",
-                },
-                {
-                  label: "VARIETAIS TINTOS",
-                  value:
-                    "Malbec, Cab. Franc, Cab. Sauv, Merlot, Bonarda, Syrah",
-                  class: "text-sm",
-                },
-                {
-                  label: "VARIETAIS BRANCOS",
-                  value: "Sauvignon Blanc",
-                  class: "text-sm",
-                },
-              ],
-            },
-          ],
-        },
-        improvements: {
-          label: "Enoturismo e Eventos",
-          groups: [
-            {
-              fields: [
-                {
-                  label: "TURISMO",
-                  value: "Visitas e Degustações",
-                  subText: "Com harmonizações (chocolates/tábuas)",
-                },
-                {
-                  label: "ESPAÇOS PARA EVENTOS",
-                  value: "3 Salões diferenciados",
-                  subText: "Corporativos e Sociais",
-                },
-                {
-                  label: "ADEGA SUBTERRÂNEA",
-                  value: "Tanques renovados",
-                  subText: "Para eventos íntimos",
-                },
-                {
-                  label: "CASA DA FAMÍLIA",
-                  value: "Com piscina e vinhedo",
-                  subText: "Estilo campestre",
-                },
-                {
-                  label: "GASTRONOMIA",
-                  value: "Serviço próprio",
-                  subText: "Projeção de restaurante",
-                },
-              ],
-            },
-          ],
-        },
-        energy: {
-          label: "Mercados e Produtos",
-          groups: [
-            {
-              title: "Mercado Externo (Granel)",
-              fields: [
-                {
-                  label: "POSICIONAMENTO",
-                  value: "Granel Alta Gama",
-                  class: "border-secondary",
-                },
-                {
-                  label: "DESTINOS",
-                  value: "EUA, UK, China, Canadá",
-                  subText: "Japão, Austrália, Europa",
-                },
-                {
-                  label: "RECONHECIMENTOS",
-                  value: "Ouro - WBWE Amsterdã",
-                  subText: "Top 8 Vinícolas (2018/2019)",
-                },
-              ],
-            },
-            {
-              title: "Produto Engarrafado",
-              borderColor: "border-indigo-900",
-              featured: [
-                {
-                  label: "ELABORAÇÃO",
-                  value: "4.500.000 Lts",
-                  subText: "Máximo anual",
-                },
-              ],
-              fields: [
-                {
-                  label: "Reserva",
-                  value: [
-                    "Malbec",
-                    "Cabernet Franc",
-                    "Bonarda",
-                    "Sauvignon Blanc",
-                  ],
-                  class: "border-secondary",
-                },
-                {
-                  label: "Grande Reserva",
-                  value: ["Malbec", "Cabernet Franc", "Merlot"],
-                },
-                {
-                  label: "Interminable",
-                  value: ["Red Blend 1", "Blend de Malbec 2", "Red Blend 3"],
-                },
-                {
-                  label: "Fugaz",
-                  value: ["Rosé de Bequignol"],
-                },
-                {
-                  label: "Presente",
-                  value: ["Blend"],
-                },
-              ],
-            },
-          ],
-        },
-        locationDetails: {
-          label: "Localização",
-          map: {
-            lat: -33.0054,
-            lng: -68.7497,
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumo",
+            type: "summary",
+            data: {},
           },
-          featured: [
-            { label: "REGIÃO", value: "Maipú, Mendoza" },
-            { label: "ACESSIBILIDADE", value: "20 min da Cidade" },
-          ],
-          groups: [
-            {
-              title: "Entorno",
-              fields: [
-                { label: "Perfil da Zona", value: "Vitivinícola histórica" },
-                { label: "Proximidade", value: "Rotas do Vinho" },
-              ],
-            },
-          ],
-        },
-        legal: {
-          label: "Documentos",
-          groups: [
-            {
-              title: "Resumo Financeiro (Histórico)",
-              fields: [
+          {
+            id: "ficha-tecnica",
+            label: "Capacidade e Infraestrutura",
+            type: "grouped-fields",
+            data: {
+              label: "Capacidade e Infraestrutura",
+              groups: [
                 {
-                  label: "ESTRUTURA",
-                  value: "Organograma completo",
-                  subText: "Gerência, Enologia, Comercial, RH",
+                  title: "Capacidade de Vasilhame",
+                  fields: [
+                    {
+                      label: "CAPACIDADE TOTAL",
+                      value: "6.000.000 Litros",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "CIMENTO C/ EPÓXI",
+                      value: "5.740.000 Litros",
+                    },
+                    {
+                      label: "AÇO INOXIDÁVEL",
+                      value: "200.000 Litros",
+                    },
+                    {
+                      label: "BARRICAS DE CARVALHO",
+                      value: "60.000 Litros",
+                      subText: "Carvalho Francês",
+                    },
+                  ],
                 },
                 {
-                  label: "Apresentação",
-                  value: "Ver documento anexo",
-                  link: "/docs/bodega-sinfin.pdf",
+                  title: "Vinhedos e Matéria-Prima",
+                  fields: [
+                    {
+                      label: "ÁREA TOTAL",
+                      value: "440 ha",
+                    },
+                    {
+                      label: "VINHEDOS PRÓPRIOS",
+                      value: "90 ha",
+                      class: "border-blueo",
+                    },
+                    {
+                      label: "VINHEDOS DE TERCEIROS",
+                      value: "350 ha",
+                    },
+                    {
+                      label: "ZONAS DE CULTIVO",
+                      value:
+                        "Maipú, Luján de Cuyo, Valle de Uco, Rivadavia, San Martín, Santa Rosa y Junín",
+                      subText: "Diversidade de origens",
+                    },
+                    {
+                      label: "VARIETAIS TINTOS",
+                      value:
+                        "Malbec, Cab. Franc, Cab. Sauv, Merlot, Bonarda, Syrah",
+                      class: "text-sm",
+                    },
+                    {
+                      label: "VARIETAIS BRANCOS",
+                      value: "Sauvignon Blanc",
+                      class: "text-sm",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
+          },
+          {
+            id: "infraestructura",
+            label: "Enoturismo e Eventos",
+            type: "grouped-fields",
+            data: {
+              label: "Enoturismo e Eventos",
+              groups: [
+                {
+                  fields: [
+                    {
+                      label: "TURISMO",
+                      value: "Visitas e Degustações",
+                      subText: "Com harmonizações (chocolates/tábuas)",
+                    },
+                    {
+                      label: "ESPAÇOS PARA EVENTOS",
+                      value: "3 Salões diferenciados",
+                      subText: "Corporativos e Sociais",
+                    },
+                    {
+                      label: "ADEGA SUBTERRÂNEA",
+                      value: "Tanques renovados",
+                      subText: "Para eventos íntimos",
+                    },
+                    {
+                      label: "CASA DA FAMÍLIA",
+                      value: "Com piscina e vinhedo",
+                      subText: "Estilo campestre",
+                    },
+                    {
+                      label: "GASTRONOMIA",
+                      value: "Serviço próprio",
+                      subText: "Projeção de restaurante",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "productividad",
+            label: "Mercados e Produtos",
+            type: "grouped-fields",
+            data: {
+              label: "Mercados e Produtos",
+              groups: [
+                {
+                  title: "Mercado Externo (Granel)",
+                  fields: [
+                    {
+                      label: "POSICIONAMENTO",
+                      value: "Granel Alta Gama",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "DESTINOS",
+                      value: "EUA, UK, China, Canadá",
+                      subText: "Japão, Austrália, Europa",
+                    },
+                    {
+                      label: "RECONHECIMENTOS",
+                      value: "Ouro - WBWE Amsterdã",
+                      subText: "Top 8 Vinícolas (2018/2019)",
+                    },
+                  ],
+                },
+                {
+                  title: "Produto Engarrafado",
+                  borderColor: "border-indigo-900",
+                  featured: [
+                    {
+                      label: "ELABORAÇÃO",
+                      value: "4.500.000 Lts",
+                      subText: "Máximo anual",
+                    },
+                  ],
+                  fields: [
+                    {
+                      label: "Reserva",
+                      value: [
+                        "Malbec",
+                        "Cabernet Franc",
+                        "Bonarda",
+                        "Sauvignon Blanc",
+                      ],
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "Grande Reserva",
+                      value: ["Malbec", "Cabernet Franc", "Merlot"],
+                    },
+                    {
+                      label: "Interminable",
+                      value: ["Red Blend 1", "Blend de Malbec 2", "Red Blend 3"],
+                    },
+                    {
+                      label: "Fugaz",
+                      value: ["Rosé de Bequignol"],
+                    },
+                    {
+                      label: "Presente",
+                      value: ["Blend"],
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "ubicacion",
+            label: "Localização",
+            type: "map-location",
+            data: {
+              label: "Localização",
+              map: {
+                lat: -33.0054,
+                lng: -68.7497,
+              },
+              featured: [
+                { label: "REGIÃO", value: "Maipú, Mendoza" },
+                { label: "ACESSIBILIDADE", value: "20 min da Cidade" },
+              ],
+              groups: [
+                {
+                  title: "Entorno",
+                  fields: [
+                    { label: "Perfil da Zona", value: "Vitivinícola histórica" },
+                    { label: "Proximidade", value: "Rotas do Vinho" },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "documentacion",
+            label: "Desempenho Operacional",
+            type: "fields-list",
+            data: {
+              label: "Documentos",
+              groups: [
+                {
+                  title: "Resumo Financeiro (Histórico)",
+                  fields: [
+                    {
+                      label: "ESTRUTURA",
+                      value: "Organograma completo",
+                      subText: "Gerência, Enologia, Comercial, RH",
+                    },
+                    {
+                      label: "Apresentação",
+                      value: "Ver documento anexo",
+                      link: "/docs/bodega-sinfin.pdf",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contato",
+            type: "contact",
+            data: {},
+          },
+        ],
       },
     },
   },
@@ -1629,32 +1719,6 @@ export const properties = [
               "Bodega Histórica (1862) / 3 Terroirs Premium / Muchos Reconocimientos",
           },
         },
-        sections: [
-          {
-            id: "resumen",
-            label: "Resumen",
-          },
-          {
-            id: "ficha-tecnica",
-            label: "Nuestros Viñedos",
-          },
-          {
-            id: "infraestructura",
-            label: "Infraestructura",
-          },
-          {
-            id: "productividad",
-            label: "Portfolio y Puntajes",
-          },
-          {
-            id: "ubicacion",
-            label: "Ubicación",
-          },
-          {
-            id: "contacto-finca",
-            label: "Contacto",
-          },
-        ],
         summary: [
           {
             label: "Fundación",
@@ -1677,247 +1741,286 @@ export const properties = [
             class: "text-lg mt-4",
           },
         ],
-        techSpecs: {
-          label: "Nuestros Viñedos (Terroirs)",
-          groups: [
-            {
-              title: "Finca Lunlunta (Maipú)",
-              fields: [
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumen",
+            type: "summary",
+            data: {},
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Nuestros Viñedos",
+            type: "grouped-fields",
+            data: {
+              label: "Nuestros Viñedos (Terroirs)",
+              groups: [
                 {
-                  label: "UBICACIÓN",
-                  value: "Zona baja de los Andes",
+                  title: "Finca Lunlunta (Maipú)",
+                  fields: [
+                    {
+                      label: "UBICACIÓN",
+                      value: "Zona baja de los Andes",
+                    },
+                    {
+                      label: "ALTITUD",
+                      value: "1.050 msnm",
+                    },
+                    {
+                      label: "DISTANCIA",
+                      value: "20 km de Mendoza",
+                    },
+                  ],
                 },
                 {
-                  label: "ALTITUD",
-                  value: "1.050 msnm",
+                  title: "Finca Agrelo (Luján de Cuyo)",
+                  fields: [
+                    {
+                      label: "UBICACIÓN",
+                      value: "El Valle",
+                    },
+                    {
+                      label: "ALTITUD",
+                      value: "950 msnm",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "DISTANCIA",
+                      value: "40 km al Sur",
+                    },
+                  ],
                 },
                 {
-                  label: "DISTANCIA",
-                  value: "20 km de Mendoza",
+                  title: "Valle de Uco",
+                  fields: [
+                    {
+                      label: "UBICACIÓN",
+                      value: "Ladera Sup. Andes",
+                    },
+                    {
+                      label: "ALTITUD",
+                      value: "1.250 msnm",
+                      class: "border-blueo",
+                    },
+                    {
+                      label: "DISTANCIA",
+                      value: "100 km al Suroeste",
+                    },
+                  ],
                 },
               ],
             },
-            {
-              title: "Finca Agrelo (Luján de Cuyo)",
-              fields: [
+          },
+          {
+            id: "infraestructura",
+            label: "Infraestructura",
+            type: "grouped-fields",
+            data: {
+              label: "Infraestructura",
+              groups: [
                 {
-                  label: "UBICACIÓN",
-                  value: "El Valle",
-                },
-                {
-                  label: "ALTITUD",
-                  value: "950 msnm",
-                  class: "border-secondary",
-                },
-                {
-                  label: "DISTANCIA",
-                  value: "40 km al Sur",
-                },
-              ],
-            },
-            {
-              title: "Valle de Uco",
-              fields: [
-                {
-                  label: "UBICACIÓN",
-                  value: "Ladera Sup. Andes",
-                },
-                {
-                  label: "ALTITUD",
-                  value: "1.250 msnm",
-                  class: "border-blueo",
-                },
-                {
-                  label: "DISTANCIA",
-                  value: "100 km al Suroeste",
+                  fields: [
+                    {
+                      label: "EDIFICIO",
+                      value: "Histórico (1862)",
+                      subText: "Conservado y renovado",
+                    },
+                    {
+                      label: "TECNOLOGÍA",
+                      value: "Enología de precisión",
+                    },
+                    {
+                      label: "CRIANZA",
+                      value: "Barricas Roble Francés",
+                      subText: "Sala de barricas",
+                    },
+                    {
+                      label: "NUESTROS VIÑEDOS",
+                      value: "Lunlinta, Agrelo, Valle de Uco",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
-        energy: {
-          label: "Portfolio y Puntajes",
-          groups: [
-            {
-              title: "Líneas de Vinos",
+          },
+          {
+            id: "productividad",
+            label: "Portfolio y Puntajes",
+            type: "grouped-fields",
+            data: {
+              label: "Portfolio y Puntajes",
+              groups: [
+                {
+                  title: "Líneas de Vinos",
 
-              fields: [
-                {
-                  label: "ESTATE",
-                  value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
-                },
-                {
-                  label: "RESERVE",
-                  value: [
-                    "Malbec",
-                    "Cabernet Sauvignon",
-                    "Petit Verdot",
-                    "Chardonnay",
+                  fields: [
+                    {
+                      label: "ESTATE",
+                      value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
+                    },
+                    {
+                      label: "RESERVE",
+                      value: [
+                        "Malbec",
+                        "Cabernet Sauvignon",
+                        "Petit Verdot",
+                        "Chardonnay",
+                      ],
+                    },
+                    {
+                      label: "CORTE",
+                      value: ["Red Blend"],
+                    },
+                    {
+                      label: "Nuevos Lanzamientos",
+                      value: [
+                        "Inspiración Blend de Tintas",
+                        "Malbec Elijo Creer",
+                        "Reserve Chardonnay",
+                      ],
+                    },
                   ],
                 },
                 {
-                  label: "CORTE",
-                  value: ["Red Blend"],
+                  title: "Linea Avatar",
+                  featured: [
+                    {
+                      label: "LÍNEA AVATAR",
+                      value: "Concepto Innovador",
+                      subText: "Malbec, Cab, Syrah, Bonarda",
+                    },
+                  ],
+                  fields: [
+                    {
+                      label: "Variedades Disponibles",
+                      value: [
+                        "Torrentés",
+                        "Chardonnay",
+                        "Malbec",
+                        "Cabernet Sauvignon",
+                        "Bonarda",
+                      ],
+                    },
+                    {
+                      label: "Ultra Range",
+                      value: ["Malbec", "Cabernet Sauvignon", "Syrah"],
+                    },
+                    {
+                      label: "Extra Brut",
+                      value: ["Pínk Pínot Noír"],
+                    },
+                    {
+                      label: "Revolución Range",
+                      value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
+                    },
+                  ],
                 },
                 {
-                  label: "Nuevos Lanzamientos",
-                  value: [
-                    "Inspiración Blend de Tintas",
-                    "Malbec Elijo Creer",
-                    "Reserve Chardonnay",
+                  title: "Reconocimientos",
+                  borderColor: "border-indigo-900",
+                  fields: [
+                    {
+                      label: "Estate Malbec 2022",
+                      value: "90 pts",
+                      subText: "Descorchados",
+                    },
+                    {
+                      label: "Avatar Malbec 2022 - 2023",
+                      value: "90 pts (2022) - 90 pts (2023)",
+                      subText: "James Suckling - Descorchados",
+                    },
+                    {
+                      label: "Reserve Malbec 2017",
+                      value: "92 pts",
+                      subText: "Tim Atkin Mw",
+                    },
+                    {
+                      label: "Reserve Cabernet 2017",
+                      value: "90 pts",
+                      subText: "Tim Atkin Mw",
+                    },
+                    {
+                      label: "Gran Corte 2015",
+                      value: "93 pts",
+                      subText: "James Suckling",
+                    },
+                    {
+                      label: "Inspiración 2021 Blend de Tintas",
+                      value: "91 pts",
+                      subText: "James Suckling",
+                    },
                   ],
                 },
               ],
             },
-            {
-              title: "Linea Avatar",
+          },
+          {
+            id: "ubicacion",
+            label: "Ubicación",
+            type: "map-location",
+            data: {
+              label: "Ubicación",
+              map: {
+                lat: -33.0525,
+                lng: -68.8045,
+              },
               featured: [
                 {
-                  label: "LÍNEA AVATAR",
-                  value: "Concepto Innovador",
-                  subText: "Malbec, Cab, Syrah, Bonarda",
+                  label: "BODEGA",
+                  value: "Maipú, Mendoza",
+                },
+                {
+                  label: "ACCESIBILIDAD",
+                  value: "Cercana a Ciudad",
                 },
               ],
-              fields: [
+              groups: [
                 {
-                  label: "Variedades Disponibles",
-                  value: [
-                    "Torrentés",
-                    "Chardonnay",
-                    "Malbec",
-                    "Cabernet Sauvignon",
-                    "Bonarda",
+                  title: "Distancias a la Bodega",
+                  fields: [
+                    {
+                      label: "Mendoza Capital",
+                      value: "20-25 min",
+                    },
+                    {
+                      label: "Aeropuerto",
+                      value: "35 min",
+                    },
                   ],
                 },
-                {
-                  label: "Ultra Range",
-                  value: ["Malbec", "Cabernet Sauvignon", "Syrah"],
-                },
-                {
-                  label: "Extra Brut",
-                  value: ["Pínk Pínot Noír"],
-                },
-                {
-                  label: "Revolución Range",
-                  value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
-                },
               ],
             },
-            {
-              title: "Reconocimientos",
-              borderColor: "border-indigo-900",
-              fields: [
-                {
-                  label: "Estate Malbec 2022",
-                  value: "90 pts",
-                  subText: "Descorchados",
-                },
-                {
-                  label: "Avatar Malbec 2022 - 2023",
-                  value: "90 pts (2022) - 90 pts (2023)",
-                  subText: "James Suckling - Descorchados",
-                },
-                {
-                  label: "Reserve Malbec 2017",
-                  value: "92 pts",
-                  subText: "Tim Atkin Mw",
-                },
-                {
-                  label: "Reserve Cabernet 2017",
-                  value: "90 pts",
-                  subText: "Tim Atkin Mw",
-                },
-                {
-                  label: "Gran Corte 2015",
-                  value: "93 pts",
-                  subText: "James Suckling",
-                },
-                {
-                  label: "Inspiración 2021 Blend de Tintas",
-                  value: "91 pts",
-                  subText: "James Suckling",
-                },
-              ],
-            },
-          ],
-        },
-        improvements: {
-          label: "Infraestructura",
-          groups: [
-            {
-              fields: [
-                {
-                  label: "EDIFICIO",
-                  value: "Histórico (1862)",
-                  subText: "Conservado y renovado",
-                },
-                {
-                  label: "TECNOLOGÍA",
-                  value: "Enología de precisión",
-                },
-                {
-                  label: "CRIANZA",
-                  value: "Barricas Roble Francés",
-                  subText: "Sala de barricas",
-                },
-                {
-                  label: "NUESTROS VIÑEDOS",
-                  value: "Lunlinta, Agrelo, Valle de Uco",
-                },
-              ],
-            },
-          ],
-        },
-        locationDetails: {
-          label: "Ubicación",
-          map: {
-            lat: -33.0525,
-            lng: -68.8045,
           },
-          featured: [
-            {
-              label: "BODEGA",
-              value: "Maipú, Mendoza",
-            },
-            {
-              label: "ACCESIBILIDAD",
-              value: "Cercana a Ciudad",
-            },
-          ],
-          groups: [
-            {
-              title: "Distancias a la Bodega",
-              fields: [
+          {
+            id: "documentacion",
+            label: "Documentos",
+            type: "fields-list",
+            data: {
+              label: "Documentos",
+              groups: [
                 {
-                  label: "Mendoza Capital",
-                  value: "20-25 min",
-                },
-                {
-                  label: "Aeropuerto",
-                  value: "35 min",
+                  fields: [
+                    {
+                      label: "Mas Informacion",
+                      value: "Ver presentacion vinos",
+                      link: "/docs/Presentación-Bodega-Casir-dos-Santos-ESP.pdf",
+                    },
+                    {
+                      label: "Estado",
+                      value: "En Producción",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
-        legal: {
-          label: "Documentos",
-          groups: [
-            {
-              fields: [
-                {
-                  label: "Mas Informacion",
-                  value: "Ver presentacion vinos",
-                  link: "/docs/Presentación-Bodega-Casir-dos-Santos-ESP.pdf",
-                },
-                {
-                  label: "Estado",
-                  value: "En Producción",
-                },
-              ],
-            },
-          ],
-        },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contacto",
+            type: "contact",
+            data: {},
+          },
+        ],
       },
       "en-US": {
         title: "Casir dos Santos Winery: History (1862) and High-End Wines",
@@ -1928,32 +2031,6 @@ export const properties = [
             value: "Historic Winery (1862) / 3 Premium Terroirs / Many Awards",
           },
         },
-        sections: [
-          {
-            id: "resumen",
-            label: "Summary",
-          },
-          {
-            id: "ficha-tecnica",
-            label: "Our Vineyards",
-          },
-          {
-            id: "infraestructura",
-            label: "Infrastructure",
-          },
-          {
-            id: "productividad",
-            label: "Portfolio & Scores",
-          },
-          {
-            id: "ubicacion",
-            label: "Location",
-          },
-          {
-            id: "contacto-finca",
-            label: "Contact",
-          },
-        ],
         summary: [
           {
             label: "Founded",
@@ -1976,242 +2053,285 @@ export const properties = [
             class: "text-lg mt-4",
           },
         ],
-        techSpecs: {
-          label: "Our Vineyards (Terroirs)",
-          groups: [
-            {
-              title: "Lunlunta Estate (Maipú)",
-              fields: [
+        sections: [
+          {
+            id: "resumen",
+            label: "Summary",
+            type: "summary",
+            data: {},
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Our Vineyards",
+            type: "grouped-fields",
+            data: {
+              label: "Our Vineyards (Terroirs)",
+              groups: [
                 {
-                  label: "LOCATION",
-                  value: "Lower Andes zone",
-                },
-                {
-                  label: "ALTITUDE",
-                  value: "1,050 masl",
-                },
-                {
-                  label: "DISTANCE",
-                  value: "20 km from Mendoza",
-                },
-              ],
-            },
-            {
-              title: "Agrelo Estate (Luján de Cuyo)",
-              fields: [
-                {
-                  label: "LOCATION",
-                  value: "The Valley",
-                },
-                {
-                  label: "ALTITUDE",
-                  value: "950 masl",
-                  class: "border-secondary",
-                },
-                {
-                  label: "DISTANCE",
-                  value: "40 km South",
-                },
-              ],
-            },
-            {
-              title: "Uco Valley",
-              fields: [
-                {
-                  label: "LOCATION",
-                  value: "Upper Andes Slope",
-                },
-                {
-                  label: "ALTITUDE",
-                  value: "1,250 masl",
-                  class: "border-blueo",
-                },
-                {
-                  label: "DISTANCE",
-                  value: "100 km Southwest",
-                },
-              ],
-            },
-          ],
-        },
-        energy: {
-          label: "Portfolio & Scores",
-          groups: [
-            {
-              title: "Wine Lines",
-              fields: [
-                {
-                  label: "ESTATE",
-                  value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
-                },
-                {
-                  label: "RESERVE",
-                  value: [
-                    "Malbec",
-                    "Cabernet Sauvignon",
-                    "Petit Verdot",
-                    "Chardonnay",
+                  title: "Lunlunta Estate (Maipú)",
+                  fields: [
+                    {
+                      label: "LOCATION",
+                      value: "Lower Andes zone",
+                    },
+                    {
+                      label: "ALTITUDE",
+                      value: "1,050 masl",
+                    },
+                    {
+                      label: "DISTANCE",
+                      value: "20 km from Mendoza",
+                    },
                   ],
                 },
                 {
-                  label: "CORTE",
-                  value: ["Red Blend"],
+                  title: "Agrelo Estate (Luján de Cuyo)",
+                  fields: [
+                    {
+                      label: "LOCATION",
+                      value: "The Valley",
+                    },
+                    {
+                      label: "ALTITUDE",
+                      value: "950 masl",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "DISTANCE",
+                      value: "40 km South",
+                    },
+                  ],
                 },
                 {
-                  label: "New Releases",
-                  value: [
-                    "Inspiración Red Blend",
-                    "Malbec Elijo Creer",
-                    "Reserve Chardonnay",
+                  title: "Uco Valley",
+                  fields: [
+                    {
+                      label: "LOCATION",
+                      value: "Upper Andes Slope",
+                    },
+                    {
+                      label: "ALTITUDE",
+                      value: "1,250 masl",
+                      class: "border-blueo",
+                    },
+                    {
+                      label: "DISTANCE",
+                      value: "100 km Southwest",
+                    },
                   ],
                 },
               ],
             },
-            {
-              title: "Avatar Line",
+          },
+          {
+            id: "infraestructura",
+            label: "Infrastructure",
+            type: "grouped-fields",
+            data: {
+              label: "Infrastructure",
+              groups: [
+                {
+                  fields: [
+                    {
+                      label: "BUILDING",
+                      value: "Historic (1862)",
+                      subText: "Preserved and renovated",
+                    },
+                    {
+                      label: "TECHNOLOGY",
+                      value: "Precision enology",
+                    },
+                    {
+                      label: "AGING",
+                      value: "French Oak Barrels",
+                      subText: "Barrel room",
+                    },
+                    {
+                      label: "OUR VINEYARDS",
+                      value: "Lunlunta, Agrelo, Uco Valley",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "productividad",
+            label: "Portfolio & Scores",
+            type: "grouped-fields",
+            data: {
+              label: "Portfolio & Scores",
+              groups: [
+                {
+                  title: "Wine Lines",
+                  fields: [
+                    {
+                      label: "ESTATE",
+                      value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
+                    },
+                    {
+                      label: "RESERVE",
+                      value: [
+                        "Malbec",
+                        "Cabernet Sauvignon",
+                        "Petit Verdot",
+                        "Chardonnay",
+                      ],
+                    },
+                    {
+                      label: "CORTE",
+                      value: ["Red Blend"],
+                    },
+                    {
+                      label: "New Releases",
+                      value: [
+                        "Inspiración Red Blend",
+                        "Malbec Elijo Creer",
+                        "Reserve Chardonnay",
+                      ],
+                    },
+                  ],
+                },
+                {
+                  title: "Avatar Line",
+                  featured: [
+                    {
+                      label: "AVATAR LINE",
+                      value: "Innovative Concept",
+                      subText: "Malbec, Cab, Syrah, Bonarda",
+                    },
+                  ],
+                  fields: [
+                    {
+                      label: "Available Varietals",
+                      value: [
+                        "Torrontés",
+                        "Chardonnay",
+                        "Malbec",
+                        "Cabernet Sauvignon",
+                        "Bonarda",
+                      ],
+                    },
+                    {
+                      label: "Ultra Range",
+                      value: ["Malbec", "Cabernet Sauvignon", "Syrah"],
+                    },
+                    {
+                      label: "Extra Brut",
+                      value: ["Pink Pinot Noir"],
+                    },
+                    {
+                      label: "Revolución Range",
+                      value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
+                    },
+                  ],
+                },
+                {
+                  title: "Awards",
+                  borderColor: "border-indigo-900",
+                  fields: [
+                    {
+                      label: "Estate Malbec 2022",
+                      value: "90 pts",
+                      subText: "Descorchados",
+                    },
+                    {
+                      label: "Avatar Malbec 2022 - 2023",
+                      value: "90 pts (2022) - 90 pts (2023)",
+                      subText: "James Suckling - Descorchados",
+                    },
+                    {
+                      label: "Reserve Malbec 2017",
+                      value: "92 pts",
+                      subText: "Tim Atkin MW",
+                    },
+                    {
+                      label: "Reserve Cabernet 2017",
+                      value: "90 pts",
+                      subText: "Tim Atkin MW",
+                    },
+                    {
+                      label: "Gran Corte 2015",
+                      value: "93 pts",
+                      subText: "James Suckling",
+                    },
+                    {
+                      label: "Inspiración 2021 Red Blend",
+                      value: "91 pts",
+                      subText: "James Suckling",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "ubicacion",
+            label: "Location",
+            type: "map-location",
+            data: {
+              label: "Location",
+              map: {
+                lat: -33.0525,
+                lng: -68.8045,
+              },
               featured: [
                 {
-                  label: "AVATAR LINE",
-                  value: "Innovative Concept",
-                  subText: "Malbec, Cab, Syrah, Bonarda",
+                  label: "WINERY",
+                  value: "Maipú, Mendoza",
+                },
+                {
+                  label: "ACCESSIBILITY",
+                  value: "Close to City",
                 },
               ],
-              fields: [
+              groups: [
                 {
-                  label: "Available Varietals",
-                  value: [
-                    "Torrontés",
-                    "Chardonnay",
-                    "Malbec",
-                    "Cabernet Sauvignon",
-                    "Bonarda",
+                  title: "Distances to the Winery",
+                  fields: [
+                    {
+                      label: "Mendoza City",
+                      value: "20-25 min",
+                    },
+                    {
+                      label: "Airport",
+                      value: "35 min",
+                    },
                   ],
                 },
-                {
-                  label: "Ultra Range",
-                  value: ["Malbec", "Cabernet Sauvignon", "Syrah"],
-                },
-                {
-                  label: "Extra Brut",
-                  value: ["Pink Pinot Noir"],
-                },
-                {
-                  label: "Revolución Range",
-                  value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
-                },
               ],
             },
-            {
-              title: "Awards",
-              borderColor: "border-indigo-900",
-              fields: [
-                {
-                  label: "Estate Malbec 2022",
-                  value: "90 pts",
-                  subText: "Descorchados",
-                },
-                {
-                  label: "Avatar Malbec 2022 - 2023",
-                  value: "90 pts (2022) - 90 pts (2023)",
-                  subText: "James Suckling - Descorchados",
-                },
-                {
-                  label: "Reserve Malbec 2017",
-                  value: "92 pts",
-                  subText: "Tim Atkin MW",
-                },
-                {
-                  label: "Reserve Cabernet 2017",
-                  value: "90 pts",
-                  subText: "Tim Atkin MW",
-                },
-                {
-                  label: "Gran Corte 2015",
-                  value: "93 pts",
-                  subText: "James Suckling",
-                },
-                {
-                  label: "Inspiración 2021 Red Blend",
-                  value: "91 pts",
-                  subText: "James Suckling",
-                },
-              ],
-            },
-          ],
-        },
-        improvements: {
-          label: "Infrastructure",
-          fields: [
-            {
-              label: "BUILDING",
-              value: "Historic (1862)",
-              subText: "Preserved and renovated",
-            },
-            {
-              label: "TECHNOLOGY",
-              value: "Precision enology",
-            },
-            {
-              label: "AGING",
-              value: "French Oak Barrels",
-              subText: "Barrel room",
-            },
-            {
-              label: "OUR VINEYARDS",
-              value: "Lunlunta, Agrelo, Uco Valley",
-            },
-          ],
-        },
-        locationDetails: {
-          label: "Location",
-          map: {
-            lat: -33.0525,
-            lng: -68.8045,
           },
-          featured: [
-            {
-              label: "WINERY",
-              value: "Maipú, Mendoza",
-            },
-            {
-              label: "ACCESSIBILITY",
-              value: "Close to City",
-            },
-          ],
-          groups: [
-            {
-              title: "Distances to the Winery",
-              fields: [
+          {
+            id: "documentacion",
+            label: "Documents",
+            type: "fields-list",
+            data: {
+              label: "Documents",
+              groups: [
                 {
-                  label: "Mendoza City",
-                  value: "20-25 min",
-                },
-                {
-                  label: "Airport",
-                  value: "35 min",
+                  fields: [
+                    {
+                      label: "More Information",
+                      value: "See wine presentation",
+                      link: "/docs/Presentación-Bodega-Casir-dos-Santos-ESP.pdf",
+                    },
+                    {
+                      label: "Status",
+                      value: "In Production",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
-        legal: {
-          label: "Documents",
-          groups: [
-            {
-              fields: [
-                {
-                  label: "More Information",
-                  value: "See wine presentation",
-                  link: "/docs/Presentación-Bodega-Casir-dos-Santos-ESP.pdf",
-                },
-                {
-                  label: "Status",
-                  value: "In Production",
-                },
-              ],
-            },
-          ],
-        },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contact",
+            type: "contact",
+            data: {},
+          },
+        ],
       },
       "pt-BR": {
         title:
@@ -2224,32 +2344,6 @@ export const properties = [
               "Vinícola Histórica (1862) / 3 Terroirs Premium / Muitos Reconhecimentos",
           },
         },
-        sections: [
-          {
-            id: "resumen",
-            label: "Resumo",
-          },
-          {
-            id: "ficha-tecnica",
-            label: "Nossos Vinhedos",
-          },
-          {
-            id: "infraestructura",
-            label: "Infraestrutura",
-          },
-          {
-            id: "productividad",
-            label: "Portfólio e Pontuações",
-          },
-          {
-            id: "ubicacion",
-            label: "Localização",
-          },
-          {
-            id: "contacto-finca",
-            label: "Contato",
-          },
-        ],
         summary: [
           {
             label: "Fundação",
@@ -2272,242 +2366,285 @@ export const properties = [
             class: "text-lg mt-4",
           },
         ],
-        techSpecs: {
-          label: "Nossos Vinhedos (Terroirs)",
-          groups: [
-            {
-              title: "Fazenda Lunlunta (Maipú)",
-              fields: [
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumo",
+            type: "summary",
+            data: {},
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Nossos Vinhedos",
+            type: "grouped-fields",
+            data: {
+              label: "Nossos Vinhedos (Terroirs)",
+              groups: [
                 {
-                  label: "LOCALIZAÇÃO",
-                  value: "Zona baixa dos Andes",
-                },
-                {
-                  label: "ALTITUDE",
-                  value: "1.050 m.a.n.m.",
-                },
-                {
-                  label: "DISTÂNCIA",
-                  value: "20 km de Mendoza",
-                },
-              ],
-            },
-            {
-              title: "Fazenda Agrelo (Luján de Cuyo)",
-              fields: [
-                {
-                  label: "LOCALIZAÇÃO",
-                  value: "O Vale",
-                },
-                {
-                  label: "ALTITUDE",
-                  value: "950 m.a.n.m.",
-                  class: "border-secondary",
-                },
-                {
-                  label: "DISTÂNCIA",
-                  value: "40 km ao Sul",
-                },
-              ],
-            },
-            {
-              title: "Vale de Uco",
-              fields: [
-                {
-                  label: "LOCALIZAÇÃO",
-                  value: "Encosta Superior dos Andes",
-                },
-                {
-                  label: "ALTITUDE",
-                  value: "1.250 m.a.n.m.",
-                  class: "border-blueo",
-                },
-                {
-                  label: "DISTÂNCIA",
-                  value: "100 km a Sudoeste",
-                },
-              ],
-            },
-          ],
-        },
-        energy: {
-          label: "Portfólio e Pontuações",
-          groups: [
-            {
-              title: "Linhas de Vinhos",
-              fields: [
-                {
-                  label: "ESTATE",
-                  value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
-                },
-                {
-                  label: "RESERVE",
-                  value: [
-                    "Malbec",
-                    "Cabernet Sauvignon",
-                    "Petit Verdot",
-                    "Chardonnay",
+                  title: "Fazenda Lunlunta (Maipú)",
+                  fields: [
+                    {
+                      label: "LOCALIZAÇÃO",
+                      value: "Zona baixa dos Andes",
+                    },
+                    {
+                      label: "ALTITUDE",
+                      value: "1.050 m.a.n.m.",
+                    },
+                    {
+                      label: "DISTÂNCIA",
+                      value: "20 km de Mendoza",
+                    },
                   ],
                 },
                 {
-                  label: "CORTE",
-                  value: ["Red Blend"],
+                  title: "Fazenda Agrelo (Luján de Cuyo)",
+                  fields: [
+                    {
+                      label: "LOCALIZAÇÃO",
+                      value: "O Vale",
+                    },
+                    {
+                      label: "ALTITUDE",
+                      value: "950 m.a.n.m.",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "DISTÂNCIA",
+                      value: "40 km ao Sul",
+                    },
+                  ],
                 },
                 {
-                  label: "Novos Lançamentos",
-                  value: [
-                    "Inspiración Blend de Tintos",
-                    "Malbec Elijo Creer",
-                    "Reserve Chardonnay",
+                  title: "Vale de Uco",
+                  fields: [
+                    {
+                      label: "LOCALIZAÇÃO",
+                      value: "Encosta Superior dos Andes",
+                    },
+                    {
+                      label: "ALTITUDE",
+                      value: "1.250 m.a.n.m.",
+                      class: "border-blueo",
+                    },
+                    {
+                      label: "DISTÂNCIA",
+                      value: "100 km a Sudoeste",
+                    },
                   ],
                 },
               ],
             },
-            {
-              title: "Linha Avatar",
+          },
+          {
+            id: "infraestructura",
+            label: "Infraestrutura",
+            type: "grouped-fields",
+            data: {
+              label: "Infraestrutura",
+              groups: [
+                {
+                  fields: [
+                    {
+                      label: "EDIFÍCIO",
+                      value: "Histórico (1862)",
+                      subText: "Conservado e renovado",
+                    },
+                    {
+                      label: "TECNOLOGIA",
+                      value: "Enologia de precisão",
+                    },
+                    {
+                      label: "MATURAÇÃO",
+                      value: "Barricas de Carvalho Francês",
+                      subText: "Sala de barricas",
+                    },
+                    {
+                      label: "NOSSOS VINHEDOS",
+                      value: "Lunlunta, Agrelo, Vale de Uco",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "productividad",
+            label: "Portfólio e Pontuações",
+            type: "grouped-fields",
+            data: {
+              label: "Portfólio e Pontuações",
+              groups: [
+                {
+                  title: "Linhas de Vinhos",
+                  fields: [
+                    {
+                      label: "ESTATE",
+                      value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
+                    },
+                    {
+                      label: "RESERVE",
+                      value: [
+                        "Malbec",
+                        "Cabernet Sauvignon",
+                        "Petit Verdot",
+                        "Chardonnay",
+                      ],
+                    },
+                    {
+                      label: "CORTE",
+                      value: ["Red Blend"],
+                    },
+                    {
+                      label: "Novos Lançamentos",
+                      value: [
+                        "Inspiración Blend de Tintos",
+                        "Malbec Elijo Creer",
+                        "Reserve Chardonnay",
+                      ],
+                    },
+                  ],
+                },
+                {
+                  title: "Linha Avatar",
+                  featured: [
+                    {
+                      label: "LINHA AVATAR",
+                      value: "Conceito Inovador",
+                      subText: "Malbec, Cab, Syrah, Bonarda",
+                    },
+                  ],
+                  fields: [
+                    {
+                      label: "Variedades Disponíveis",
+                      value: [
+                        "Torrontés",
+                        "Chardonnay",
+                        "Malbec",
+                        "Cabernet Sauvignon",
+                        "Bonarda",
+                      ],
+                    },
+                    {
+                      label: "Ultra Range",
+                      value: ["Malbec", "Cabernet Sauvignon", "Syrah"],
+                    },
+                    {
+                      label: "Extra Brut",
+                      value: ["Pink Pinot Noir"],
+                    },
+                    {
+                      label: "Revolución Range",
+                      value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
+                    },
+                  ],
+                },
+                {
+                  title: "Reconhecimentos",
+                  borderColor: "border-indigo-900",
+                  fields: [
+                    {
+                      label: "Estate Malbec 2022",
+                      value: "90 pts",
+                      subText: "Descorchados",
+                    },
+                    {
+                      label: "Avatar Malbec 2022 - 2023",
+                      value: "90 pts (2022) - 90 pts (2023)",
+                      subText: "James Suckling - Descorchados",
+                    },
+                    {
+                      label: "Reserve Malbec 2017",
+                      value: "92 pts",
+                      subText: "Tim Atkin MW",
+                    },
+                    {
+                      label: "Reserve Cabernet 2017",
+                      value: "90 pts",
+                      subText: "Tim Atkin MW",
+                    },
+                    {
+                      label: "Gran Corte 2015",
+                      value: "93 pts",
+                      subText: "James Suckling",
+                    },
+                    {
+                      label: "Inspiración 2021 Blend de Tintos",
+                      value: "91 pts",
+                      subText: "James Suckling",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "ubicacion",
+            label: "Localização",
+            type: "map-location",
+            data: {
+              label: "Localização",
+              map: {
+                lat: -33.0525,
+                lng: -68.8045,
+              },
               featured: [
                 {
-                  label: "LINHA AVATAR",
-                  value: "Conceito Inovador",
-                  subText: "Malbec, Cab, Syrah, Bonarda",
+                  label: "VINÍCOLA",
+                  value: "Maipú, Mendoza",
+                },
+                {
+                  label: "ACESSIBILIDADE",
+                  value: "Próxima à Cidade",
                 },
               ],
-              fields: [
+              groups: [
                 {
-                  label: "Variedades Disponíveis",
-                  value: [
-                    "Torrontés",
-                    "Chardonnay",
-                    "Malbec",
-                    "Cabernet Sauvignon",
-                    "Bonarda",
+                  title: "Distâncias até a Vinícola",
+                  fields: [
+                    {
+                      label: "Mendoza Capital",
+                      value: "20-25 min",
+                    },
+                    {
+                      label: "Aeroporto",
+                      value: "35 min",
+                    },
                   ],
                 },
-                {
-                  label: "Ultra Range",
-                  value: ["Malbec", "Cabernet Sauvignon", "Syrah"],
-                },
-                {
-                  label: "Extra Brut",
-                  value: ["Pink Pinot Noir"],
-                },
-                {
-                  label: "Revolución Range",
-                  value: ["Malbec", "Cabernet Sauvignon", "Petit Verdot"],
-                },
               ],
             },
-            {
-              title: "Reconhecimentos",
-              borderColor: "border-indigo-900",
-              fields: [
-                {
-                  label: "Estate Malbec 2022",
-                  value: "90 pts",
-                  subText: "Descorchados",
-                },
-                {
-                  label: "Avatar Malbec 2022 - 2023",
-                  value: "90 pts (2022) - 90 pts (2023)",
-                  subText: "James Suckling - Descorchados",
-                },
-                {
-                  label: "Reserve Malbec 2017",
-                  value: "92 pts",
-                  subText: "Tim Atkin MW",
-                },
-                {
-                  label: "Reserve Cabernet 2017",
-                  value: "90 pts",
-                  subText: "Tim Atkin MW",
-                },
-                {
-                  label: "Gran Corte 2015",
-                  value: "93 pts",
-                  subText: "James Suckling",
-                },
-                {
-                  label: "Inspiración 2021 Blend de Tintos",
-                  value: "91 pts",
-                  subText: "James Suckling",
-                },
-              ],
-            },
-          ],
-        },
-        improvements: {
-          label: "Infraestrutura",
-          fields: [
-            {
-              label: "EDIFÍCIO",
-              value: "Histórico (1862)",
-              subText: "Conservado e renovado",
-            },
-            {
-              label: "TECNOLOGIA",
-              value: "Enologia de precisão",
-            },
-            {
-              label: "MATURAÇÃO",
-              value: "Barricas de Carvalho Francês",
-              subText: "Sala de barricas",
-            },
-            {
-              label: "NOSSOS VINHEDOS",
-              value: "Lunlunta, Agrelo, Vale de Uco",
-            },
-          ],
-        },
-        locationDetails: {
-          label: "Localização",
-          map: {
-            lat: -33.0525,
-            lng: -68.8045,
           },
-          featured: [
-            {
-              label: "VINÍCOLA",
-              value: "Maipú, Mendoza",
-            },
-            {
-              label: "ACESSIBILIDADE",
-              value: "Próxima à Cidade",
-            },
-          ],
-          groups: [
-            {
-              title: "Distâncias até a Vinícola",
-              fields: [
+          {
+            id: "documentacion",
+            label: "Documentos",
+            type: "fields-list",
+            data: {
+              label: "Documentos",
+              groups: [
                 {
-                  label: "Mendoza Capital",
-                  value: "20-25 min",
-                },
-                {
-                  label: "Aeroporto",
-                  value: "35 min",
+                  fields: [
+                    {
+                      label: "Mais Informações",
+                      value: "Ver apresentação dos vinhos",
+                      link: "/docs/Presentación-Bodega-Casir-dos-Santos-ESP.pdf",
+                    },
+                    {
+                      label: "Status",
+                      value: "Em Produção",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
-        legal: {
-          label: "Documentos",
-          groups: [
-            {
-              fields: [
-                {
-                  label: "Mais Informações",
-                  value: "Ver apresentação dos vinhos",
-                  link: "/docs/Presentación-Bodega-Casir-dos-Santos-ESP.pdf",
-                },
-                {
-                  label: "Status",
-                  value: "Em Produção",
-                },
-              ],
-            },
-          ],
-        },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contato",
+            type: "contact",
+            data: {},
+          },
+        ],
       },
     },
   },
@@ -2560,32 +2697,6 @@ export const properties = [
             value: "Riego Definitivo / Energía Eléctrica / Casa",
           },
         },
-        sections: [
-          {
-            id: "resumen",
-            label: "Resumen",
-          },
-          {
-            id: "ficha-tecnica",
-            label: "Superficies y Riego",
-          },
-          {
-            id: "infraestructura",
-            label: "Mejoras e Instalaciones",
-          },
-          {
-            id: "ubicacion",
-            label: "Ubicación y Accesos",
-          },
-          {
-            id: "documentacion",
-            label: "Legal",
-          },
-          {
-            id: "contacto-finca",
-            label: "Contacto",
-          },
-        ],
         summary: [
           {
             label: "Superficie Total",
@@ -2608,160 +2719,199 @@ export const properties = [
             class: "text-lg mt-4",
           },
         ],
-        techSpecs: {
-          label: "Superficies y Riego",
-          groups: [
-            {
-              title: "Distribución de la Tierra",
-              fields: [
-                {
-                  label: "SUPERFICIE TOTAL",
-                  value: "1.305 Has",
-                  class: "border-secondary",
-                },
-                {
-                  label: "HECTÁREAS DESMONTADAS",
-                  value: "450 Has",
-                  subText: "Suelo trabajado",
-                },
-                {
-                  label: "CAMPO NATURAL",
-                  value: "855 Has",
-                  subText: "Monte nativo",
-                },
-              ],
-            },
-            {
-              title: "Recurso Hídrico",
-              fields: [
-                {
-                  label: "DERECHO DE RIEGO",
-                  value: "213 Has",
-                  subText: "Definitivo",
-                  class: "border-blueo",
-                },
-                {
-                  label: "AGUA SUBTERRÁNEA",
-                  value: "Factible",
-                  subText: "Apto para perforaciones",
-                },
-              ],
-            },
-          ],
-        },
-        improvements: {
-          label: "Mejoras e Instalaciones",
-          groups: [
-            {
-              fields: [
-                {
-                  label: "VIVIENDA",
-                  value: "Casa Patronal",
-                  subText: "Construcción existente",
-                },
-                {
-                  label: "ENERGÍA",
-                  value: "Red Eléctrica",
-                  subText: "Conectada al predio",
-                },
-                {
-                  label: "PERÍMETRO",
-                  value: "Alambrado Total",
-                  subText: "Cierre completo del campo",
-                },
-                {
-                  label: "ACCESO",
-                  value: "Tranquera",
-                  subText: "Ingreso consolidado",
-                },
-              ],
-            },
-          ],
-        },
-        energy: {
-          label: "Aptitud Productiva",
-          groups: [
-            {
-              title: "Potencial",
-              fields: [
-                {
-                  label: "APTITUD",
-                  value: "Mixta",
-                  subText: "Ganadera / Agrícola bajo riego",
-                },
-                {
-                  label: "DISPONIBILIDAD",
-                  value: "Inmediata",
-                  subText: "Infraestructura operativa",
-                },
-              ],
-            },
-          ],
-        },
-        locationDetails: {
-          label: "Ubicación y Accesos",
-          map: {
-            lat: null,
-            lng: null,
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumen",
+            type: "summary",
+            data: {},
           },
-          featured: [
-            {
-              label: "ZONA",
-              value: "La Junta",
-            },
-            {
-              label: "DEPARTAMENTO",
-              value: "Malargüe",
-            },
-          ],
-          groups: [
-            {
-              title: "Referencias",
-              fields: [
+          {
+            id: "ficha-tecnica",
+            label: "Superficies y Riego",
+            type: "grouped-fields",
+            data: {
+              label: "Superficies y Riego",
+              groups: [
                 {
-                  label: "Ruta Nacional 40",
-                  value: "Al Oeste",
-                  subText: "Principal vía de acceso",
+                  title: "Distribución de la Tierra",
+                  fields: [
+                    {
+                      label: "SUPERFICIE TOTAL",
+                      value: "1.305 Has",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "HECTÁREAS DESMONTADAS",
+                      value: "450 Has",
+                      subText: "Suelo trabajado",
+                    },
+                    {
+                      label: "CAMPO NATURAL",
+                      value: "855 Has",
+                      subText: "Monte nativo",
+                    },
+                  ],
                 },
                 {
-                  label: "Malargüe Ciudad",
-                  value: "25 km",
-                  subText: "Villa Cabecera",
-                },
-                {
-                  label: "Acceso Asfaltado",
-                  value: "10 km",
-                  subText: "Desde RN40 hacia La Junta",
-                },
-                {
-                  label: "Acceso Ripio",
-                  value: "500 metros",
-                  subText: "Tramo final a tranquera",
-                },
-              ],
-            },
-          ],
-        },
-        legal: {
-          label: "Documentación",
-          groups: [
-            {
-              title: "Estado Dominial",
-              fields: [
-                {
-                  label: "SITUACIÓN",
-                  value: "Listo para Transferir",
-                  class: "border-secondary",
-                },
-                {
-                  label: "MENSURA",
-                  value: "Plano Disponible",
-                  subText: "N° 19/2001",
+                  title: "Recurso Hídrico",
+                  fields: [
+                    {
+                      label: "DERECHO DE RIEGO",
+                      value: "213 Has",
+                      subText: "Definitivo",
+                      class: "border-blueo",
+                    },
+                    {
+                      label: "AGUA SUBTERRÁNEA",
+                      value: "Factible",
+                      subText: "Apto para perforaciones",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
+          },
+          {
+            id: "infraestructura",
+            label: "Mejoras e Instalaciones",
+            type: "grouped-fields",
+            data: {
+              label: "Mejoras e Instalaciones",
+              groups: [
+                {
+                  fields: [
+                    {
+                      label: "VIVIENDA",
+                      value: "Casa Patronal",
+                      subText: "Construcción existente",
+                    },
+                    {
+                      label: "ENERGÍA",
+                      value: "Red Eléctrica",
+                      subText: "Conectada al predio",
+                    },
+                    {
+                      label: "PERÍMETRO",
+                      value: "Alambrado Total",
+                      subText: "Cierre completo del campo",
+                    },
+                    {
+                      label: "ACCESO",
+                      value: "Tranquera",
+                      subText: "Ingreso consolidado",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "productividad",
+            label: "Aptitud Productiva",
+            type: "grouped-fields",
+            data: {
+              label: "Aptitud Productiva",
+              groups: [
+                {
+                  title: "Potencial",
+                  fields: [
+                    {
+                      label: "APTITUD",
+                      value: "Mixta",
+                      subText: "Ganadera / Agrícola bajo riego",
+                    },
+                    {
+                      label: "DISPONIBILIDAD",
+                      value: "Inmediata",
+                      subText: "Infraestructura operativa",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "ubicacion",
+            label: "Ubicación y Accesos",
+            type: "map-location",
+            data: {
+              label: "Ubicación y Accesos",
+              map: {
+                lat: null,
+                lng: null,
+              },
+              featured: [
+                {
+                  label: "ZONA",
+                  value: "La Junta",
+                },
+                {
+                  label: "DEPARTAMENTO",
+                  value: "Malargüe",
+                },
+              ],
+              groups: [
+                {
+                  title: "Referencias",
+                  fields: [
+                    {
+                      label: "Ruta Nacional 40",
+                      value: "Al Oeste",
+                      subText: "Principal vía de acceso",
+                    },
+                    {
+                      label: "Malargüe Ciudad",
+                      value: "25 km",
+                      subText: "Villa Cabecera",
+                    },
+                    {
+                      label: "Acceso Asfaltado",
+                      value: "10 km",
+                      subText: "Desde RN40 hacia La Junta",
+                    },
+                    {
+                      label: "Acceso Ripio",
+                      value: "500 metros",
+                      subText: "Tramo final a tranquera",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "documentacion",
+            label: "Legal",
+            type: "fields-list",
+            data: {
+              label: "Documentación",
+              groups: [
+                {
+                  title: "Estado Dominial",
+                  fields: [
+                    {
+                      label: "SITUACIÓN",
+                      value: "Listo para Transferir",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "MENSURA",
+                      value: "Plano Disponible",
+                      subText: "N° 19/2001",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contacto",
+            type: "contact",
+            data: {},
+          },
+        ],
       },
       "en-US": {
         title: "Land in Malargüe - La Junta",
@@ -2772,32 +2922,6 @@ export const properties = [
             value: "Permanent Irrigation / Electricity / House",
           },
         },
-        sections: [
-          {
-            id: "resumen",
-            label: "Summary",
-          },
-          {
-            id: "ficha-tecnica",
-            label: "Surfaces & Irrigation",
-          },
-          {
-            id: "infraestructura",
-            label: "Improvements & Facilities",
-          },
-          {
-            id: "ubicacion",
-            label: "Location & Access",
-          },
-          {
-            id: "documentacion",
-            label: "Legal",
-          },
-          {
-            id: "contacto-finca",
-            label: "Contact",
-          },
-        ],
         summary: [
           {
             label: "Total Area",
@@ -2820,156 +2944,199 @@ export const properties = [
             class: "text-lg mt-4",
           },
         ],
-        techSpecs: {
-          label: "Surfaces & Irrigation",
-          groups: [
-            {
-              title: "Land Distribution",
-              fields: [
-                {
-                  label: "TOTAL AREA",
-                  value: "1,305 Ha",
-                  class: "border-secondary",
-                },
-                {
-                  label: "CLEARED HECTARES",
-                  value: "450 Ha",
-                  subText: "Worked soil",
-                },
-                {
-                  label: "NATURAL LAND",
-                  value: "855 Ha",
-                  subText: "Native bush",
-                },
-              ],
-            },
-            {
-              title: "Water Resources",
-              fields: [
-                {
-                  label: "WATER RIGHTS",
-                  value: "213 Ha",
-                  subText: "Permanent",
-                  class: "border-blueo",
-                },
-                {
-                  label: "GROUNDWATER",
-                  value: "Feasible",
-                  subText: "Suitable for drilling",
-                },
-              ],
-            },
-          ],
-        },
-        improvements: {
-          label: "Improvements & Facilities",
-          fields: [
-            {
-              label: "HOUSING",
-              value: "Main House",
-              subText: "Existing structure",
-            },
-            {
-              label: "ENERGY",
-              value: "Power Grid",
-              subText: "Connected to site",
-            },
-            {
-              label: "PERIMETER",
-              value: "Fully Fenced",
-              subText: "Complete enclosure",
-            },
-            {
-              label: "ACCESS",
-              value: "Farm Gate",
-              subText: "Consolidated entrance",
-            },
-          ],
-        },
-        energy: {
-          label: "Productive Aptitude",
-          groups: [
-            {
-              title: "Potential",
-              fields: [
-                {
-                  label: "APTITUDE",
-                  value: "Mixed",
-                  subText: "Livestock / Agricultural under irrigation",
-                },
-                {
-                  label: "AVAILABILITY",
-                  value: "Immediate",
-                  subText: "Operational infrastructure",
-                },
-              ],
-            },
-          ],
-        },
-        locationDetails: {
-          label: "Location & Access",
-          map: {
-            lat: null,
-            lng: null,
+        sections: [
+          {
+            id: "resumen",
+            label: "Summary",
+            type: "summary",
+            data: {},
           },
-          featured: [
-            {
-              label: "ZONE",
-              value: "La Junta",
-            },
-            {
-              label: "DEPARTMENT",
-              value: "Malargüe",
-            },
-          ],
-          groups: [
-            {
-              title: "References",
-              fields: [
+          {
+            id: "ficha-tecnica",
+            label: "Surfaces & Irrigation",
+            type: "grouped-fields",
+            data: {
+              label: "Surfaces & Irrigation",
+              groups: [
                 {
-                  label: "National Route 40",
-                  value: "To the West",
-                  subText: "Main access road",
+                  title: "Land Distribution",
+                  fields: [
+                    {
+                      label: "TOTAL AREA",
+                      value: "1,305 Ha",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "CLEARED HECTARES",
+                      value: "450 Ha",
+                      subText: "Worked soil",
+                    },
+                    {
+                      label: "NATURAL LAND",
+                      value: "855 Ha",
+                      subText: "Native bush",
+                    },
+                  ],
                 },
                 {
-                  label: "Malargüe City",
-                  value: "25 km",
-                  subText: "Head town",
-                },
-                {
-                  label: "Paved Access",
-                  value: "10 km",
-                  subText: "From RN40 to La Junta",
-                },
-                {
-                  label: "Gravel Access",
-                  value: "500 meters",
-                  subText: "Final stretch to gate",
-                },
-              ],
-            },
-          ],
-        },
-        legal: {
-          label: "Documentation",
-          groups: [
-            {
-              title: "Ownership Status",
-              fields: [
-                {
-                  label: "SITUATION",
-                  value: "Ready to Transfer",
-                  class: "border-secondary",
-                },
-                {
-                  label: "SURVEY",
-                  value: "Blueprint Available",
-                  subText: "No. 19/2001",
+                  title: "Water Resources",
+                  fields: [
+                    {
+                      label: "WATER RIGHTS",
+                      value: "213 Ha",
+                      subText: "Permanent",
+                      class: "border-blueo",
+                    },
+                    {
+                      label: "GROUNDWATER",
+                      value: "Feasible",
+                      subText: "Suitable for drilling",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
+          },
+          {
+            id: "infraestructura",
+            label: "Improvements & Facilities",
+            type: "grouped-fields",
+            data: {
+              label: "Improvements & Facilities",
+              groups: [
+                {
+                  fields: [
+                    {
+                      label: "HOUSING",
+                      value: "Main House",
+                      subText: "Existing structure",
+                    },
+                    {
+                      label: "ENERGY",
+                      value: "Power Grid",
+                      subText: "Connected to site",
+                    },
+                    {
+                      label: "PERIMETER",
+                      value: "Fully Fenced",
+                      subText: "Complete enclosure",
+                    },
+                    {
+                      label: "ACCESS",
+                      value: "Farm Gate",
+                      subText: "Consolidated entrance",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "productividad",
+            label: "Productive Aptitude",
+            type: "grouped-fields",
+            data: {
+              label: "Productive Aptitude",
+              groups: [
+                {
+                  title: "Potential",
+                  fields: [
+                    {
+                      label: "APTITUDE",
+                      value: "Mixed",
+                      subText: "Livestock / Agricultural under irrigation",
+                    },
+                    {
+                      label: "AVAILABILITY",
+                      value: "Immediate",
+                      subText: "Operational infrastructure",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "ubicacion",
+            label: "Location & Access",
+            type: "map-location",
+            data: {
+              label: "Location & Access",
+              map: {
+                lat: null,
+                lng: null,
+              },
+              featured: [
+                {
+                  label: "ZONE",
+                  value: "La Junta",
+                },
+                {
+                  label: "DEPARTMENT",
+                  value: "Malargüe",
+                },
+              ],
+              groups: [
+                {
+                  title: "References",
+                  fields: [
+                    {
+                      label: "National Route 40",
+                      value: "To the West",
+                      subText: "Main access road",
+                    },
+                    {
+                      label: "Malargüe City",
+                      value: "25 km",
+                      subText: "Head town",
+                    },
+                    {
+                      label: "Paved Access",
+                      value: "10 km",
+                      subText: "From RN40 to La Junta",
+                    },
+                    {
+                      label: "Gravel Access",
+                      value: "500 meters",
+                      subText: "Final stretch to gate",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "documentacion",
+            label: "Legal",
+            type: "fields-list",
+            data: {
+              label: "Documentation",
+              groups: [
+                {
+                  title: "Ownership Status",
+                  fields: [
+                    {
+                      label: "SITUATION",
+                      value: "Ready to Transfer",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "SURVEY",
+                      value: "Blueprint Available",
+                      subText: "No. 19/2001",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contact",
+            type: "contact",
+            data: {},
+          },
+        ],
       },
       "pt-BR": {
         title: "Campo em Malargüe - La Junta",
@@ -2980,32 +3147,6 @@ export const properties = [
             value: "Irrigação Definitiva / Energia Elétrica / Casa",
           },
         },
-        sections: [
-          {
-            id: "resumen",
-            label: "Resumo",
-          },
-          {
-            id: "ficha-tecnica",
-            label: "Superfícies e Irrigação",
-          },
-          {
-            id: "infraestructura",
-            label: "Benfeitorias e Instalações",
-          },
-          {
-            id: "ubicacion",
-            label: "Localização e Acessos",
-          },
-          {
-            id: "documentacion",
-            label: "Legal",
-          },
-          {
-            id: "contacto-finca",
-            label: "Contato",
-          },
-        ],
         summary: [
           {
             label: "Área Total",
@@ -3028,156 +3169,199 @@ export const properties = [
             class: "text-lg mt-4",
           },
         ],
-        techSpecs: {
-          label: "Superfícies e Irrigação",
-          groups: [
-            {
-              title: "Distribuição de Terras",
-              fields: [
-                {
-                  label: "ÁREA TOTAL",
-                  value: "1.305 Ha",
-                  class: "border-secondary",
-                },
-                {
-                  label: "HECTARES LIMPOS",
-                  value: "450 Ha",
-                  subText: "Solo trabalhado",
-                },
-                {
-                  label: "CAMPO NATURAL",
-                  value: "855 Ha",
-                  subText: "Mata nativa",
-                },
-              ],
-            },
-            {
-              title: "Recursos Hídricos",
-              fields: [
-                {
-                  label: "DIREITO DE IRRIGAÇÃO",
-                  value: "213 Ha",
-                  subText: "Definitivo",
-                  class: "border-blueo",
-                },
-                {
-                  label: "ÁGUA SUBTERRÂNEA",
-                  value: "Viável",
-                  subText: "Apto para perfurações",
-                },
-              ],
-            },
-          ],
-        },
-        improvements: {
-          label: "Benfeitorias e Instalações",
-          fields: [
-            {
-              label: "MORADIA",
-              value: "Casa Sede",
-              subText: "Construção existente",
-            },
-            {
-              label: "ENERGIA",
-              value: "Rede Elétrica",
-              subText: "Conectada à propriedade",
-            },
-            {
-              label: "PERÍMETRO",
-              value: "Totalmente Cercado",
-              subText: "Fechamento completo",
-            },
-            {
-              label: "ACESSO",
-              value: "Porteira",
-              subText: "Entrada consolidada",
-            },
-          ],
-        },
-        energy: {
-          label: "Aptidão Produtiva",
-          groups: [
-            {
-              title: "Potencial",
-              fields: [
-                {
-                  label: "APTIDÃO",
-                  value: "Mista",
-                  subText: "Pecuária / Agrícola sob irrigação",
-                },
-                {
-                  label: "DISPONIBILIDADE",
-                  value: "Imediata",
-                  subText: "Infraestrutura operacional",
-                },
-              ],
-            },
-          ],
-        },
-        locationDetails: {
-          label: "Localização e Acessos",
-          map: {
-            lat: null,
-            lng: null,
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumo",
+            type: "summary",
+            data: {},
           },
-          featured: [
-            {
-              label: "ZONA",
-              value: "La Junta",
-            },
-            {
-              label: "DEPARTAMENTO",
-              value: "Malargüe",
-            },
-          ],
-          groups: [
-            {
-              title: "Referências",
-              fields: [
+          {
+            id: "ficha-tecnica",
+            label: "Superfícies e Irrigação",
+            type: "grouped-fields",
+            data: {
+              label: "Superfícies e Irrigação",
+              groups: [
                 {
-                  label: "Rota Nacional 40",
-                  value: "A Oeste",
-                  subText: "Principal via de acesso",
+                  title: "Distribuição de Terras",
+                  fields: [
+                    {
+                      label: "ÁREA TOTAL",
+                      value: "1.305 Ha",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "HECTARES LIMPOS",
+                      value: "450 Ha",
+                      subText: "Solo trabalhado",
+                    },
+                    {
+                      label: "CAMPO NATURAL",
+                      value: "855 Ha",
+                      subText: "Mata nativa",
+                    },
+                  ],
                 },
                 {
-                  label: "Cidade de Malargüe",
-                  value: "25 km",
-                  subText: "Cidade Principal",
-                },
-                {
-                  label: "Acesso Asfaltado",
-                  value: "10 km",
-                  subText: "Da RN40 até La Junta",
-                },
-                {
-                  label: "Acesso de Cascalho",
-                  value: "500 metros",
-                  subText: "Trecho final até a porteira",
-                },
-              ],
-            },
-          ],
-        },
-        legal: {
-          label: "Documentação",
-          groups: [
-            {
-              title: "Estado Dominial",
-              fields: [
-                {
-                  label: "SITUAÇÃO",
-                  value: "Pronto para Transferir",
-                  class: "border-secondary",
-                },
-                {
-                  label: "MEDIÇÃO",
-                  value: "Planta Disponível",
-                  subText: "N° 19/2001",
+                  title: "Recursos Hídricos",
+                  fields: [
+                    {
+                      label: "DIREITO DE IRRIGAÇÃO",
+                      value: "213 Ha",
+                      subText: "Definitivo",
+                      class: "border-blueo",
+                    },
+                    {
+                      label: "ÁGUA SUBTERRÂNEA",
+                      value: "Viável",
+                      subText: "Apto para perfurações",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
+          },
+          {
+            id: "infraestructura",
+            label: "Benfeitorias e Instalações",
+            type: "grouped-fields",
+            data: {
+              label: "Benfeitorias e Instalações",
+              groups: [
+                {
+                  fields: [
+                    {
+                      label: "MORADIA",
+                      value: "Casa Sede",
+                      subText: "Construção existente",
+                    },
+                    {
+                      label: "ENERGIA",
+                      value: "Rede Elétrica",
+                      subText: "Conectada à propriedade",
+                    },
+                    {
+                      label: "PERÍMETRO",
+                      value: "Totalmente Cercado",
+                      subText: "Fechamento completo",
+                    },
+                    {
+                      label: "ACESSO",
+                      value: "Porteira",
+                      subText: "Entrada consolidada",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "productividad",
+            label: "Aptidão Produtiva",
+            type: "grouped-fields",
+            data: {
+              label: "Aptidão Produtiva",
+              groups: [
+                {
+                  title: "Potencial",
+                  fields: [
+                    {
+                      label: "APTIDÃO",
+                      value: "Mista",
+                      subText: "Pecuária / Agrícola sob irrigação",
+                    },
+                    {
+                      label: "DISPONIBILIDADE",
+                      value: "Imediata",
+                      subText: "Infraestrutura operacional",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "ubicacion",
+            label: "Localização e Acessos",
+            type: "map-location",
+            data: {
+              label: "Localização e Acessos",
+              map: {
+                lat: null,
+                lng: null,
+              },
+              featured: [
+                {
+                  label: "ZONA",
+                  value: "La Junta",
+                },
+                {
+                  label: "DEPARTAMENTO",
+                  value: "Malargüe",
+                },
+              ],
+              groups: [
+                {
+                  title: "Referências",
+                  fields: [
+                    {
+                      label: "Rota Nacional 40",
+                      value: "A Oeste",
+                      subText: "Principal via de acesso",
+                    },
+                    {
+                      label: "Cidade de Malargüe",
+                      value: "25 km",
+                      subText: "Cidade Principal",
+                    },
+                    {
+                      label: "Acesso Asfaltado",
+                      value: "10 km",
+                      subText: "Da RN40 até La Junta",
+                    },
+                    {
+                      label: "Acesso de Cascalho",
+                      value: "500 metros",
+                      subText: "Trecho final até a porteira",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "documentacion",
+            label: "Legal",
+            type: "fields-list",
+            data: {
+              label: "Documentação",
+              groups: [
+                {
+                  title: "Estado Dominial",
+                  fields: [
+                    {
+                      label: "SITUAÇÃO",
+                      value: "Pronto para Transferir",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "MEDIÇÃO",
+                      value: "Planta Disponível",
+                      subText: "N° 19/2001",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contato",
+            type: "contact",
+            data: {},
+          },
+        ],
       },
     },
   },
@@ -3258,32 +3442,6 @@ export const properties = [
             value: "Venta con Financiación / Maquinaria Incluida",
           },
         },
-        sections: [
-          {
-            id: "resumen",
-            label: "Resumen",
-          },
-          {
-            id: "ficha-tecnica",
-            label: "Cultivos y Riego",
-          },
-          {
-            id: "infraestructura",
-            label: "Construcciones",
-          },
-          {
-            id: "productividad",
-            label: "Maquinaria y Equipos",
-          },
-          {
-            id: "ubicacion",
-            label: "Ubicación",
-          },
-          {
-            id: "contacto-finca",
-            label: "Contacto",
-          },
-        ],
         summary: [
           {
             label: "Precio",
@@ -3305,178 +3463,217 @@ export const properties = [
             class: "text-lg mt-4",
           },
         ],
-        techSpecs: {
-          label: "Cultivos y Riego",
-          groups: [
-            {
-              title: "Superficies Productivas",
-              fields: [
-                {
-                  label: "CIRUELOS",
-                  value: "31 ha",
-                  class: "border-secondary",
-                },
-                {
-                  label: "VIÑEDOS",
-                  value: "10,5 ha",
-                },
-                {
-                  label: "PROTECCIÓN",
-                  value: "Malla Antigranizo",
-                  subText: "Estructura completa",
-                },
-                {
-                  label: "ESTADO MALLA",
-                  value: "7 años antig.",
-                  subText: "Mitad de vida útil",
-                },
-              ],
-            },
-            {
-              title: "Recurso Hídrico",
-              fields: [
-                {
-                  label: "FUENTE",
-                  value: "Pozo Electrificado",
-                },
-                {
-                  label: "DISTRIBUCIÓN",
-                  value: "Acequias y Canales",
-                  subText: "Buenas condiciones",
-                },
-              ],
-            },
-          ],
-        },
-        improvements: {
-          label: "Infraestructura Edilicia",
-          groups: [
-            {
-              fields: [
-                {
-                  label: "CASA ESTE",
-                  value: "100 m2",
-                  subText: "60 años antigüedad",
-                },
-                {
-                  label: "CASA CENTRO",
-                  value: "110 m2",
-                  subText: "70 años antigüedad",
-                },
-                {
-                  label: "CASA OESTE",
-                  value: "100 m2",
-                  subText: "Casa + Dpto (40 años)",
-                },
-                {
-                  label: "GALPÓN",
-                  value: "75 m2",
-                  subText: "Ladrillo y chapa (10 años)",
-                },
-                {
-                  label: "TINGLADO",
-                  value: "75 m2",
-                  subText: "Estructura abierta (10 años)",
-                },
-              ],
-            },
-          ],
-        },
-        energy: {
-          label: "Maquinaria y Equipos (Incluidos)",
-          groups: [
-            {
-              title: "Tractores",
-              fields: [
-                {
-                  label: "TRACTOR 1",
-                  value: "New Holland",
-                  class: "border-secondary",
-                },
-                {
-                  label: "TRACTOR 2",
-                  value: "John Deere",
-                },
-              ],
-            },
-            {
-              title: "Implementos",
-              borderColor: "border-indigo-900",
-              fields: [
-                {
-                  label: "Suelo",
-                  value: [
-                    "Arado 2 cuerpos",
-                    "Rotovator 1.20m",
-                    "Rastra 16 discos",
-                    "Niveleta 1.20m",
-                  ],
-                },
-                {
-                  label: "Curación",
-                  value: ["Sulfatadora Pehuenche", "Máquina Herbicida"],
-                },
-                {
-                  label: "Varios",
-                  value: [
-                    "Carro",
-                    "Herramientas de mano",
-                    "Implementos varios",
-                  ],
-                },
-              ],
-            },
-          ],
-        },
-        locationDetails: {
-          label: "Ubicación y Entorno",
-          map: {
-            lat: null,
-            lng: null,
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumen",
+            type: "summary",
+            data: {},
           },
-          featured: [
-            {
-              label: "ZONA",
-              value: "Agrícola",
-            },
-            {
-              label: "ENTORNO",
-              value: "Fincas Productivas",
-            },
-          ],
-          groups: [
-            {
-              title: "Características del Entorno",
-              fields: [
+          {
+            id: "ficha-tecnica",
+            label: "Cultivos y Riego",
+            type: "grouped-fields",
+            data: {
+              label: "Cultivos y Riego",
+              groups: [
                 {
-                  label: "Vecindario",
-                  value: "Propiedades similares",
-                  subText: "Estados buenos y regulares",
+                  title: "Superficies Productivas",
+                  fields: [
+                    {
+                      label: "CIRUELOS",
+                      value: "31 ha",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "VIÑEDOS",
+                      value: "10,5 ha",
+                    },
+                    {
+                      label: "PROTECCIÓN",
+                      value: "Malla Antigranizo",
+                      subText: "Estructura completa",
+                    },
+                    {
+                      label: "ESTADO MALLA",
+                      value: "7 años antig.",
+                      subText: "Mitad de vida útil",
+                    },
+                  ],
+                },
+                {
+                  title: "Recurso Hídrico",
+                  fields: [
+                    {
+                      label: "FUENTE",
+                      value: "Pozo Electrificado",
+                    },
+                    {
+                      label: "DISTRIBUCIÓN",
+                      value: "Acequias y Canales",
+                      subText: "Buenas condiciones",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
-        legal: {
-          label: "Documentación",
-          groups: [
-            {
-              title: "Condiciones de Venta",
-              fields: [
+          },
+          {
+            id: "infraestructura",
+            label: "Construcciones",
+            type: "grouped-fields",
+            data: {
+              label: "Infraestructura Edilicia",
+              groups: [
                 {
-                  label: "PRECIO",
-                  value: "USD 500.000",
-                  class: "border-blueo",
-                },
-                {
-                  label: "FINANCIACIÓN",
-                  value: "Disponible",
-                  subText: "Consultar condiciones",
+                  fields: [
+                    {
+                      label: "CASA ESTE",
+                      value: "100 m2",
+                      subText: "60 años antigüedad",
+                    },
+                    {
+                      label: "CASA CENTRO",
+                      value: "110 m2",
+                      subText: "70 años antigüedad",
+                    },
+                    {
+                      label: "CASA OESTE",
+                      value: "100 m2",
+                      subText: "Casa + Dpto (40 años)",
+                    },
+                    {
+                      label: "GALPÓN",
+                      value: "75 m2",
+                      subText: "Ladrillo y chapa (10 años)",
+                    },
+                    {
+                      label: "TINGLADO",
+                      value: "75 m2",
+                      subText: "Estructura abierta (10 años)",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
+          },
+          {
+            id: "productividad",
+            label: "Maquinaria y Equipos",
+            type: "grouped-fields",
+            data: {
+              label: "Maquinaria y Equipos (Incluidos)",
+              groups: [
+                {
+                  title: "Tractores",
+                  fields: [
+                    {
+                      label: "TRACTOR 1",
+                      value: "New Holland",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "TRACTOR 2",
+                      value: "John Deere",
+                    },
+                  ],
+                },
+                {
+                  title: "Implementos",
+                  borderColor: "border-indigo-900",
+                  fields: [
+                    {
+                      label: "Suelo",
+                      value: [
+                        "Arado 2 cuerpos",
+                        "Rotovator 1.20m",
+                        "Rastra 16 discos",
+                        "Niveleta 1.20m",
+                      ],
+                    },
+                    {
+                      label: "Curación",
+                      value: ["Sulfatadora Pehuenche", "Máquina Herbicida"],
+                    },
+                    {
+                      label: "Varios",
+                      value: [
+                        "Carro",
+                        "Herramientas de mano",
+                        "Implementos varios",
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "ubicacion",
+            label: "Ubicación",
+            type: "map-location",
+            data: {
+              label: "Ubicación y Entorno",
+              map: {
+                lat: null,
+                lng: null,
+              },
+              featured: [
+                {
+                  label: "ZONA",
+                  value: "Agrícola",
+                },
+                {
+                  label: "ENTORNO",
+                  value: "Fincas Productivas",
+                },
+              ],
+              groups: [
+                {
+                  title: "Características del Entorno",
+                  fields: [
+                    {
+                      label: "Vecindario",
+                      value: "Propiedades similares",
+                      subText: "Estados buenos y regulares",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "documentacion",
+            label: "Legal",
+            type: "fields-list",
+            data: {
+              label: "Documentación",
+              groups: [
+                {
+                  title: "Condiciones de Venta",
+                  fields: [
+                    {
+                      label: "PRECIO",
+                      value: "USD 500.000",
+                      class: "border-blueo",
+                    },
+                    {
+                      label: "FINANCIACIÓN",
+                      value: "Disponible",
+                      subText: "Consultar condiciones",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contacto",
+            type: "contact",
+            data: {},
+          },
+        ],
       },
       "en-US": {
         title: "Productive Farm: Plums, Vineyards & Machinery Included",
@@ -3487,32 +3684,6 @@ export const properties = [
             value: "Sale with Financing / Machinery Included",
           },
         },
-        sections: [
-          {
-            id: "resumen",
-            label: "Summary",
-          },
-          {
-            id: "ficha-tecnica",
-            label: "Crops & Irrigation",
-          },
-          {
-            id: "infraestructura",
-            label: "Buildings",
-          },
-          {
-            id: "productividad",
-            label: "Machinery & Equipment",
-          },
-          {
-            id: "ubicacion",
-            label: "Location",
-          },
-          {
-            id: "contacto-finca",
-            label: "Contact",
-          },
-        ],
         summary: [
           {
             label: "Price",
@@ -3535,170 +3706,213 @@ export const properties = [
             class: "text-lg mt-4",
           },
         ],
-        techSpecs: {
-          label: "Crops & Irrigation",
-          groups: [
-            {
-              title: "Productive Areas",
-              fields: [
+        sections: [
+          {
+            id: "resumen",
+            label: "Summary",
+            type: "summary",
+            data: {},
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Crops & Irrigation",
+            type: "grouped-fields",
+            data: {
+              label: "Crops & Irrigation",
+              groups: [
                 {
-                  label: "PLUMS",
-                  value: "31 ha",
-                  class: "border-secondary",
-                },
-                {
-                  label: "VINEYARDS",
-                  value: "10.5 ha",
-                },
-                {
-                  label: "PROTECTION",
-                  value: "Anti-hail Netting",
-                  subText: "Complete structure",
-                },
-                {
-                  label: "NET CONDITION",
-                  value: "7 years old",
-                  subText: "Half useful life",
-                },
-              ],
-            },
-            {
-              title: "Water Resources",
-              fields: [
-                {
-                  label: "SOURCE",
-                  value: "Electrified Well",
-                },
-                {
-                  label: "DISTRIBUTION",
-                  value: "Ditches and Canals",
-                  subText: "Good conditions",
-                },
-              ],
-            },
-          ],
-        },
-        improvements: {
-          label: "Building Infrastructure",
-          fields: [
-            {
-              label: "EAST HOUSE",
-              value: "100 m2",
-              subText: "60 years old",
-            },
-            {
-              label: "CENTER HOUSE",
-              value: "110 m2",
-              subText: "70 years old",
-            },
-            {
-              label: "WEST HOUSE",
-              value: "100 m2",
-              subText: "House + Apt (40 years)",
-            },
-            {
-              label: "WAREHOUSE",
-              value: "75 m2",
-              subText: "Brick/Zinc (10 years)",
-            },
-            {
-              label: "SHED",
-              value: "75 m2",
-              subText: "Open structure (10 years)",
-            },
-          ],
-        },
-        energy: {
-          label: "Machinery & Equipment (Included)",
-          groups: [
-            {
-              title: "Tractors",
-              fields: [
-                {
-                  label: "TRACTOR 1",
-                  value: "New Holland",
-                  class: "border-secondary",
-                },
-                {
-                  label: "TRACTOR 2",
-                  value: "John Deere",
-                },
-              ],
-            },
-            {
-              title: "Implements",
-              borderColor: "border-indigo-900",
-              fields: [
-                {
-                  label: "Soil",
-                  value: [
-                    "2-body Plow",
-                    "Rotovator 1.20m",
-                    "16-disc Harrow",
-                    "Leveler 1.20m",
+                  title: "Productive Areas",
+                  fields: [
+                    {
+                      label: "PLUMS",
+                      value: "31 ha",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "VINEYARDS",
+                      value: "10.5 ha",
+                    },
+                    {
+                      label: "PROTECTION",
+                      value: "Anti-hail Netting",
+                      subText: "Complete structure",
+                    },
+                    {
+                      label: "NET CONDITION",
+                      value: "7 years old",
+                      subText: "Half useful life",
+                    },
                   ],
                 },
                 {
-                  label: "Treatment",
-                  value: ["Pehuenche Sulfator", "Herbicide Machine"],
-                },
-                {
-                  label: "Misc",
-                  value: ["Cart", "Hand tools", "Various implements"],
+                  title: "Water Resources",
+                  fields: [
+                    {
+                      label: "SOURCE",
+                      value: "Electrified Well",
+                    },
+                    {
+                      label: "DISTRIBUTION",
+                      value: "Ditches and Canals",
+                      subText: "Good conditions",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
-        locationDetails: {
-          label: "Location & Surroundings",
-          map: {
-            lat: null,
-            lng: null,
           },
-          featured: [
-            {
-              label: "ZONE",
-              value: "Agricultural",
-            },
-            {
-              label: "SURROUNDINGS",
-              value: "Productive Farms",
-            },
-          ],
-          groups: [
-            {
-              title: "Environment Features",
-              fields: [
+          {
+            id: "infraestructura",
+            label: "Buildings",
+            type: "grouped-fields",
+            data: {
+              label: "Building Infrastructure",
+              groups: [
                 {
-                  label: "Neighborhood",
-                  value: "Similar properties",
-                  subText: "Good and regular conditions",
+                  fields: [
+                    {
+                      label: "EAST HOUSE",
+                      value: "100 m2",
+                      subText: "60 years old",
+                    },
+                    {
+                      label: "CENTER HOUSE",
+                      value: "110 m2",
+                      subText: "70 years old",
+                    },
+                    {
+                      label: "WEST HOUSE",
+                      value: "100 m2",
+                      subText: "House + Apt (40 years)",
+                    },
+                    {
+                      label: "WAREHOUSE",
+                      value: "75 m2",
+                      subText: "Brick/Zinc (10 years)",
+                    },
+                    {
+                      label: "SHED",
+                      value: "75 m2",
+                      subText: "Open structure (10 years)",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
-        legal: {
-          label: "Documents",
-          groups: [
-            {
-              title: "Sales Conditions",
-              fields: [
+          },
+          {
+            id: "productividad",
+            label: "Machinery & Equipment",
+            type: "grouped-fields",
+            data: {
+              label: "Machinery & Equipment (Included)",
+              groups: [
                 {
-                  label: "PRICE",
-                  value: "USD 500,000",
-                  class: "border-blueo",
+                  title: "Tractors",
+                  fields: [
+                    {
+                      label: "TRACTOR 1",
+                      value: "New Holland",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "TRACTOR 2",
+                      value: "John Deere",
+                    },
+                  ],
                 },
                 {
-                  label: "FINANCING",
-                  value: "Available",
-                  subText: "Consult terms",
+                  title: "Implements",
+                  borderColor: "border-indigo-900",
+                  fields: [
+                    {
+                      label: "Soil",
+                      value: [
+                        "2-body Plow",
+                        "Rotovator 1.20m",
+                        "16-disc Harrow",
+                        "Leveler 1.20m",
+                      ],
+                    },
+                    {
+                      label: "Treatment",
+                      value: ["Pehuenche Sulfator", "Herbicide Machine"],
+                    },
+                    {
+                      label: "Misc",
+                      value: ["Cart", "Hand tools", "Various implements"],
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
+          },
+          {
+            id: "ubicacion",
+            label: "Location",
+            type: "map-location",
+            data: {
+              label: "Location & Surroundings",
+              map: {
+                lat: null,
+                lng: null,
+              },
+              featured: [
+                {
+                  label: "ZONE",
+                  value: "Agricultural",
+                },
+                {
+                  label: "SURROUNDINGS",
+                  value: "Productive Farms",
+                },
+              ],
+              groups: [
+                {
+                  title: "Environment Features",
+                  fields: [
+                    {
+                      label: "Neighborhood",
+                      value: "Similar properties",
+                      subText: "Good and regular conditions",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "documentacion",
+            label: "Legal",
+            type: "fields-list",
+            data: {
+              label: "Documents",
+              groups: [
+                {
+                  title: "Sales Conditions",
+                  fields: [
+                    {
+                      label: "PRICE",
+                      value: "USD 500,000",
+                      class: "border-blueo",
+                    },
+                    {
+                      label: "FINANCING",
+                      value: "Available",
+                      subText: "Consult terms",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contact",
+            type: "contact",
+            data: {},
+          },
+        ],
       },
       "pt-BR": {
         title: "Fazenda Produtiva: Ameixeiras, Vinhedos e Maquinário Incluído",
@@ -3709,32 +3923,6 @@ export const properties = [
             value: "Venda Financiada / Maquinário Incluído",
           },
         },
-        sections: [
-          {
-            id: "resumen",
-            label: "Resumo",
-          },
-          {
-            id: "ficha-tecnica",
-            label: "Cultivos e Irrigação",
-          },
-          {
-            id: "infraestructura",
-            label: "Construções",
-          },
-          {
-            id: "productividad",
-            label: "Maquinário e Equipamentos",
-          },
-          {
-            id: "ubicacion",
-            label: "Localização",
-          },
-          {
-            id: "contacto-finca",
-            label: "Contato",
-          },
-        ],
         summary: [
           {
             label: "Preço",
@@ -3757,174 +3945,217 @@ export const properties = [
             class: "text-lg mt-4",
           },
         ],
-        techSpecs: {
-          label: "Cultivos e Irrigação",
-          groups: [
-            {
-              title: "Superfícies Produtivas",
-              fields: [
-                {
-                  label: "AMEIXEIRAS",
-                  value: "31 ha",
-                  class: "border-secondary",
-                },
-                {
-                  label: "VINHEDOS",
-                  value: "10,5 ha",
-                },
-                {
-                  label: "PROTEÇÃO",
-                  value: "Tela Antigranizo",
-                  subText: "Estrutura completa",
-                },
-                {
-                  label: "ESTADO TELA",
-                  value: "7 anos antig.",
-                  subText: "Metade da vida útil",
-                },
-              ],
-            },
-            {
-              title: "Recurso Hídrico",
-              fields: [
-                {
-                  label: "FONTE",
-                  value: "Poço Eletrificado",
-                },
-                {
-                  label: "DISTRIBUIÇÃO",
-                  value: "Valas e Canais",
-                  subText: "Boas condições",
-                },
-              ],
-            },
-          ],
-        },
-        improvements: {
-          label: "Infraestrutura Predial",
-          fields: [
-            {
-              label: "CASA LESTE",
-              value: "100 m2",
-              subText: "60 anos antiguidade",
-            },
-            {
-              label: "CASA CENTRO",
-              value: "110 m2",
-              subText: "70 anos antiguidade",
-            },
-            {
-              label: "CASA OESTE",
-              value: "100 m2",
-              subText: "Casa + Apto (40 anos)",
-            },
-            {
-              label: "GALPÃO",
-              value: "75 m2",
-              subText: "Tijolo e zinco (10 anos)",
-            },
-            {
-              label: "ARMAZÉM",
-              value: "75 m2",
-              subText: "Estrutura aberta (10 anos)",
-            },
-          ],
-        },
-        energy: {
-          label: "Maquinário e Equipamentos (Incluídos)",
-          groups: [
-            {
-              title: "Tratores",
-              fields: [
-                {
-                  label: "TRATOR 1",
-                  value: "New Holland",
-                  class: "border-secondary",
-                },
-                {
-                  label: "TRATOR 2",
-                  value: "John Deere",
-                },
-              ],
-            },
-            {
-              title: "Implementos",
-              borderColor: "border-indigo-900",
-              fields: [
-                {
-                  label: "Solo",
-                  value: [
-                    "Arado 2 corpos",
-                    "Rotovator 1.20m",
-                    "Grade 16 discos",
-                    "Niveladora 1.20m",
-                  ],
-                },
-                {
-                  label: "Tratamento",
-                  value: ["Pulverizador Pehuenche", "Máquina Herbicida"],
-                },
-                {
-                  label: "Diversos",
-                  value: [
-                    "Carreta",
-                    "Ferramentas manuais",
-                    "Implementos variados",
-                  ],
-                },
-              ],
-            },
-          ],
-        },
-        locationDetails: {
-          label: "Localização e Entorno",
-          map: {
-            lat: null,
-            lng: null,
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumo",
+            type: "summary",
+            data: {},
           },
-          featured: [
-            {
-              label: "ZONA",
-              value: "Agrícola",
-            },
-            {
-              label: "ENTORNO",
-              value: "Fazendas Produtivas",
-            },
-          ],
-          groups: [
-            {
-              title: "Características do Entorno",
-              fields: [
+          {
+            id: "ficha-tecnica",
+            label: "Cultivos e Irrigação",
+            type: "grouped-fields",
+            data: {
+              label: "Cultivos e Irrigação",
+              groups: [
                 {
-                  label: "Vizinhança",
-                  value: "Propriedades similares",
-                  subText: "Estados bons e regulares",
+                  title: "Superfícies Produtivas",
+                  fields: [
+                    {
+                      label: "AMEIXEIRAS",
+                      value: "31 ha",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "VINHEDOS",
+                      value: "10,5 ha",
+                    },
+                    {
+                      label: "PROTEÇÃO",
+                      value: "Tela Antigranizo",
+                      subText: "Estrutura completa",
+                    },
+                    {
+                      label: "ESTADO TELA",
+                      value: "7 anos antig.",
+                      subText: "Metade da vida útil",
+                    },
+                  ],
+                },
+                {
+                  title: "Recurso Hídrico",
+                  fields: [
+                    {
+                      label: "FONTE",
+                      value: "Poço Eletrificado",
+                    },
+                    {
+                      label: "DISTRIBUIÇÃO",
+                      value: "Valas e Canais",
+                      subText: "Boas condições",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
-        legal: {
-          label: "Documentação",
-          groups: [
-            {
-              title: "Condições de Venda",
-              fields: [
+          },
+          {
+            id: "infraestructura",
+            label: "Construções",
+            type: "grouped-fields",
+            data: {
+              label: "Infraestrutura Predial",
+              groups: [
                 {
-                  label: "PREÇO",
-                  value: "USD 500.000",
-                  class: "border-blueo",
-                },
-                {
-                  label: "FINANCIAMENTO",
-                  value: "Disponível",
-                  subText: "Consultar condições",
+                  fields: [
+                    {
+                      label: "CASA LESTE",
+                      value: "100 m2",
+                      subText: "60 anos antiguidade",
+                    },
+                    {
+                      label: "CASA CENTRO",
+                      value: "110 m2",
+                      subText: "70 anos antiguidade",
+                    },
+                    {
+                      label: "CASA OESTE",
+                      value: "100 m2",
+                      subText: "Casa + Apto (40 anos)",
+                    },
+                    {
+                      label: "GALPÃO",
+                      value: "75 m2",
+                      subText: "Tijolo e zinco (10 anos)",
+                    },
+                    {
+                      label: "ARMAZÉM",
+                      value: "75 m2",
+                      subText: "Estrutura aberta (10 anos)",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
+          },
+          {
+            id: "productividad",
+            label: "Maquinário e Equipamentos",
+            type: "grouped-fields",
+            data: {
+              label: "Maquinário e Equipamentos (Incluídos)",
+              groups: [
+                {
+                  title: "Tratores",
+                  fields: [
+                    {
+                      label: "TRATOR 1",
+                      value: "New Holland",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "TRATOR 2",
+                      value: "John Deere",
+                    },
+                  ],
+                },
+                {
+                  title: "Implementos",
+                  borderColor: "border-indigo-900",
+                  fields: [
+                    {
+                      label: "Solo",
+                      value: [
+                        "Arado 2 corpos",
+                        "Rotovator 1.20m",
+                        "Grade 16 discos",
+                        "Niveladora 1.20m",
+                      ],
+                    },
+                    {
+                      label: "Tratamento",
+                      value: ["Pulverizador Pehuenche", "Máquina Herbicida"],
+                    },
+                    {
+                      label: "Diversos",
+                      value: [
+                        "Carreta",
+                        "Ferramentas manuais",
+                        "Implementos variados",
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "ubicacion",
+            label: "Localização",
+            type: "map-location",
+            data: {
+              label: "Localização e Entorno",
+              map: {
+                lat: null,
+                lng: null,
+              },
+              featured: [
+                {
+                  label: "ZONA",
+                  value: "Agrícola",
+                },
+                {
+                  label: "ENTORNO",
+                  value: "Fazendas Produtivas",
+                },
+              ],
+              groups: [
+                {
+                  title: "Características do Entorno",
+                  fields: [
+                    {
+                      label: "Vizinhança",
+                      value: "Propriedades similares",
+                      subText: "Estados bons e regulares",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "documentacion",
+            label: "Legal",
+            type: "fields-list",
+            data: {
+              label: "Documentação",
+              groups: [
+                {
+                  title: "Condições de Venda",
+                  fields: [
+                    {
+                      label: "PREÇO",
+                      value: "USD 500.000",
+                      class: "border-blueo",
+                    },
+                    {
+                      label: "FINANCIAMENTO",
+                      value: "Disponível",
+                      subText: "Consultar condições",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contato",
+            type: "contact",
+            data: {},
+          },
+        ],
       },
     },
   },
@@ -3957,36 +4188,6 @@ export const properties = [
             value: "70 Has / Bodega Equipada / Maquinaria / Turismo",
           },
         },
-        sections: [
-          {
-            id: "resumen",
-            label: "Resumen",
-          },
-          {
-            id: "ficha-tecnica",
-            label: "Capacidad y Maquinaria",
-          },
-          {
-            id: "infraestructura",
-            label: "Superficies e Instalaciones",
-          },
-          {
-            id: "productividad",
-            label: "Detalle de Viñedos",
-          },
-          {
-            id: "ubicacion",
-            label: "Ubicación",
-          },
-          {
-            id: "documentacion",
-            label: "Desglose de Tasación",
-          },
-          {
-            id: "contacto-finca",
-            label: "Contacto",
-          },
-        ],
         summary: [
           {
             label: "Precio Total",
@@ -4019,285 +4220,324 @@ export const properties = [
             class: "text-lg mt-4",
           },
         ],
-        techSpecs: {
-          label: "Capacidad y Maquinaria",
-          groups: [
-            {
-              title: "Detalle de Vasijas (Acero Inoxidable)",
-              fields: [
-                {
-                  label: "Tanques 100 hL",
-                  value: "7 Unidades",
-                  class: "border-secondary",
-                },
-                {
-                  label: "Tanques 75 hL",
-                  value: "6 Unidades",
-                },
-                {
-                  label: "Tanques 50 hL",
-                  value: "4 Unidades",
-                },
-                {
-                  label: "Tanques 40 hL",
-                  value: "1 Unidad",
-                },
-                {
-                  label: "Tanques 35 hL",
-                  value: "2 Unidades",
-                },
-                {
-                  label: "Tanques 25 hL",
-                  value: "2 Unidades",
-                },
-              ],
-            },
-            {
-              title: "Otras Vasijas",
-              fields: [
-                {
-                  label: "Recipientes Concreto",
-                  value: "2 Unidades",
-                },
-                {
-                  label: "Tanques Plásticos",
-                  value: "31 Unidades",
-                  subText: "10x10hL, 12x11hL, 9x9hL",
-                },
-                {
-                  label: "Barricas (Inv. 2025)",
-                  value: "225 Unidades",
-                  subText: "Más stock años anteriores",
-                },
-              ],
-            },
-            {
-              title: "Maquinaria de Bodega",
-              fields: [
-                {
-                  label: "Recepción/Prensado",
-                  value: "Prensa Neumática SIPREM 20",
-                  subText: "Despalilladora Pellenc Winery + Tolva tornillo",
-                },
-                {
-                  label: "Movimiento",
-                  value: "2 Bombas Mencarelli + 1 Francesca F5 T",
-                  subText: "Cintas de Selección y Elevación SIPREM",
-                },
-                {
-                  label: "Frío/Servicios",
-                  value: "Equipo Frío 75.000 Frig + Frío 21 (15CV)",
-                  subText: "Equipo Bombeo Frío-Agua + Piping",
-                },
-                {
-                  label: "Fraccionamiento",
-                  value: "Etiquetadora/Capsuladora ENOS T3",
-                  subText: "Lavadora botellas MPF SIRIA 12 + Cinta EB",
-                },
-                {
-                  label: "Logística Interna",
-                  value: "Autoelevador UTILEV 2.6 ton",
-                  subText: "Apilador eléctrico + Hidrolavadora GHIMAQ",
-                },
-              ],
-            },
-          ],
-        },
-        improvements: {
-          label: "Superficies e Instalaciones",
-          groups: [
-            {
-              fields: [
-                {
-                  label: "Turismo y Oficinas",
-                  value: "400 m²",
-                  subText: "Mobiliario incluido",
-                },
-                {
-                  label: "Nave Bodega",
-                  value: "297 m²",
-                  subText: "Cubierto, semi y playones",
-                },
-                {
-                  label: "Cava",
-                  value: "340 m²",
-                  subText: "Con Equipo Humidificación y Montacargas",
-                },
-                {
-                  label: "Depósitos",
-                  value: "400 m²",
-                  subText: "2 Galpones",
-                },
-                {
-                  label: "Vendimia/Máquinas",
-                  value: "150 m²",
-                },
-                {
-                  label: "Galpones Finca",
-                  value: "350 m²",
-                  subText: "Galpón 1 (250m2) + Galpón 2 (100m2)",
-                },
-                {
-                  label: "Energía Solar",
-                  value: "84 Paneles",
-                  subText: "1 x 2,5 mt cada uno + Calefones Solares",
-                },
-                {
-                  label: "Proyecto Ampliación",
-                  value: "+204 m²",
-                  subText: "2 Naves nuevas y Plataforma Vendimia",
-                },
-              ],
-            },
-          ],
-        },
-        energy: {
-          label: "Detalle de Viñedos",
-          groups: [
-            {
-              title: "Plantaciones Antiguas (Año 2000-2007)",
-              fields: [
-                {
-                  label: "Malbec (2000)",
-                  value: "Espaldero Alto",
-                  class: "border-secondary",
-                  subText: "1.5m x 2.5m (120,000 m2)",
-                },
-                {
-                  label: "Cab. Sauvignon (2000)",
-                  value: "Espaldero Alto",
-                  subText: "1.5m x 2.5m (90,000 m2)",
-                },
-                {
-                  label: "Malbec (2007)",
-                  value: "Espaldero Alto",
-                  subText: "1.0m x 2.5m (120,000 m2)",
-                },
-                {
-                  label: "Otras 2007",
-                  value: "Syrah, Sauvignon Blanc, Chardonnay",
-                  subText: "30,000 - 60,000 m2 c/u",
-                },
-              ],
-            },
-            {
-              title: "Plantaciones Nuevas (2011-2022)",
-              fields: [
-                {
-                  label: "Petit Verdot (2011)",
-                  value: "20,000 m2",
-                  subText: "1.5m x 2.5m",
-                },
-                {
-                  label: "Cabernet Franc",
-                  value: "2011 y 2022",
-                  subText: "10,000 m2 (2011) + 11,000 m2 (2022)",
-                },
-                {
-                  label: "Semillón (2022)",
-                  value: "3,000 m2",
-                  subText: "1.0m x 2.5m",
-                },
-              ],
-            },
-            {
-              title: "Equipamiento Agrícola",
-              borderColor: "border-indigo-900",
-              fields: [
-                {
-                  label: "Tractor",
-                  value: "John Deere 5603",
-                  subText: "1 Unidad",
-                },
-                {
-                  label: "Pozo de Agua",
-                  value: "150 mts profundidad",
-                  subText: "Bomba Grundfos 125 Hp",
-                },
-                {
-                  label: "Reservorio",
-                  value: "1 Estanque",
-                  subText: "Equipo de riego incluido",
-                },
-              ],
-            },
-          ],
-        },
-        locationDetails: {
-          label: "Ubicación",
-          map: {
-            lat: null,
-            lng: null,
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumen",
+            type: "summary",
+            data: {},
           },
-          featured: [
-            {
-              label: "Zona",
-              value: "Alto Agrelo",
-            },
-            {
-              label: "Acceso",
-              value: "Ruta Internacional 7",
-            },
-          ],
-          groups: [
-            {
-              title: "Detalles",
-              fields: [
+          {
+            id: "ficha-tecnica",
+            label: "Capacidad y Maquinaria",
+            type: "grouped-fields",
+            data: {
+              label: "Capacidad y Maquinaria",
+              groups: [
                 {
-                  label: "Departamento",
-                  value: "Luján de Cuyo",
+                  title: "Detalle de Vasijas (Acero Inoxidable)",
+                  fields: [
+                    {
+                      label: "Tanques 100 hL",
+                      value: "7 Unidades",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "Tanques 75 hL",
+                      value: "6 Unidades",
+                    },
+                    {
+                      label: "Tanques 50 hL",
+                      value: "4 Unidades",
+                    },
+                    {
+                      label: "Tanques 40 hL",
+                      value: "1 Unidad",
+                    },
+                    {
+                      label: "Tanques 35 hL",
+                      value: "2 Unidades",
+                    },
+                    {
+                      label: "Tanques 25 hL",
+                      value: "2 Unidades",
+                    },
+                  ],
                 },
                 {
-                  label: "Provincia",
-                  value: "Mendoza",
+                  title: "Otras Vasijas",
+                  fields: [
+                    {
+                      label: "Recipientes Concreto",
+                      value: "2 Unidades",
+                    },
+                    {
+                      label: "Tanques Plásticos",
+                      value: "31 Unidades",
+                      subText: "10x10hL, 12x11hL, 9x9hL",
+                    },
+                    {
+                      label: "Barricas (Inv. 2025)",
+                      value: "225 Unidades",
+                      subText: "Más stock años anteriores",
+                    },
+                  ],
                 },
                 {
-                  label: "Entorno",
-                  value: "Corredor Bioceánico y Turístico",
+                  title: "Maquinaria de Bodega",
+                  fields: [
+                    {
+                      label: "Recepción/Prensado",
+                      value: "Prensa Neumática SIPREM 20",
+                      subText: "Despalilladora Pellenc Winery + Tolva tornillo",
+                    },
+                    {
+                      label: "Movimiento",
+                      value: "2 Bombas Mencarelli + 1 Francesca F5 T",
+                      subText: "Cintas de Selección y Elevación SIPREM",
+                    },
+                    {
+                      label: "Frío/Servicios",
+                      value: "Equipo Frío 75.000 Frig + Frío 21 (15CV)",
+                      subText: "Equipo Bombeo Frío-Agua + Piping",
+                    },
+                    {
+                      label: "Fraccionamiento",
+                      value: "Etiquetadora/Capsuladora ENOS T3",
+                      subText: "Lavadora botellas MPF SIRIA 12 + Cinta EB",
+                    },
+                    {
+                      label: "Logística Interna",
+                      value: "Autoelevador UTILEV 2.6 ton",
+                      subText: "Apilador eléctrico + Hidrolavadora GHIMAQ",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
-        legal: {
-          label: "Desglose de Tasación",
-          groups: [
-            {
-              title: "Valores Asignados (USD)",
-              fields: [
+          },
+          {
+            id: "infraestructura",
+            label: "Superficies e Instalaciones",
+            type: "grouped-fields",
+            data: {
+              label: "Superficies e Instalaciones",
+              groups: [
                 {
-                  label: "FINCA (Cultivada)",
-                  value: "2.000.000 USD",
-                  subText: "50 Has x 40.000 USD/Ha",
-                },
-                {
-                  label: "EDIFICIOS BODEGA",
-                  value: "1.587.000 USD",
-                  subText: "1.587 m2 x 1.000 USD/m2",
-                },
-                {
-                  label: "HERRAMIENTAS/ACCESORIOS",
-                  value: "1.200.000 USD",
-                  subText: "Tanques, Máquinas, Muebles",
-                },
-                {
-                  label: "PARTE INCULTA",
-                  value: "200.000 USD",
-                  subText: "10 Has x 20.000 USD/Ha",
-                },
-                {
-                  label: "TOTAL TASACIÓN",
-                  value: "4.987.000 USD",
-                },
-                {
-                  label: "Nota Importante",
-                  value: "Venta de Activos Tangibles",
-                  subText: "NO incluye marcas ni portafolios de vino",
+                  fields: [
+                    {
+                      label: "Turismo y Oficinas",
+                      value: "400 m²",
+                      subText: "Mobiliario incluido",
+                    },
+                    {
+                      label: "Nave Bodega",
+                      value: "297 m²",
+                      subText: "Cubierto, semi y playones",
+                    },
+                    {
+                      label: "Cava",
+                      value: "340 m²",
+                      subText: "Con Equipo Humidificación y Montacargas",
+                    },
+                    {
+                      label: "Depósitos",
+                      value: "400 m²",
+                      subText: "2 Galpones",
+                    },
+                    {
+                      label: "Vendimia/Máquinas",
+                      value: "150 m²",
+                    },
+                    {
+                      label: "Galpones Finca",
+                      value: "350 m²",
+                      subText: "Galpón 1 (250m2) + Galpón 2 (100m2)",
+                    },
+                    {
+                      label: "Energía Solar",
+                      value: "84 Paneles",
+                      subText: "1 x 2,5 mt cada uno + Calefones Solares",
+                    },
+                    {
+                      label: "Proyecto Ampliación",
+                      value: "+204 m²",
+                      subText: "2 Naves nuevas y Plataforma Vendimia",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
+          },
+          {
+            id: "productividad",
+            label: "Detalle de Viñedos",
+            type: "grouped-fields",
+            data: {
+              label: "Detalle de Viñedos",
+              groups: [
+                {
+                  title: "Plantaciones Antiguas (Año 2000-2007)",
+                  fields: [
+                    {
+                      label: "Malbec (2000)",
+                      value: "Espaldero Alto",
+                      class: "border-secondary",
+                      subText: "1.5m x 2.5m (120,000 m2)",
+                    },
+                    {
+                      label: "Cab. Sauvignon (2000)",
+                      value: "Espaldero Alto",
+                      subText: "1.5m x 2.5m (90,000 m2)",
+                    },
+                    {
+                      label: "Malbec (2007)",
+                      value: "Espaldero Alto",
+                      subText: "1.0m x 2.5m (120,000 m2)",
+                    },
+                    {
+                      label: "Otras 2007",
+                      value: "Syrah, Sauvignon Blanc, Chardonnay",
+                      subText: "30,000 - 60,000 m2 c/u",
+                    },
+                  ],
+                },
+                {
+                  title: "Plantaciones Nuevas (2011-2022)",
+                  fields: [
+                    {
+                      label: "Petit Verdot (2011)",
+                      value: "20,000 m2",
+                      subText: "1.5m x 2.5m",
+                    },
+                    {
+                      label: "Cabernet Franc",
+                      value: "2011 y 2022",
+                      subText: "10,000 m2 (2011) + 11,000 m2 (2022)",
+                    },
+                    {
+                      label: "Semillón (2022)",
+                      value: "3,000 m2",
+                      subText: "1.0m x 2.5m",
+                    },
+                  ],
+                },
+                {
+                  title: "Equipamiento Agrícola",
+                  borderColor: "border-indigo-900",
+                  fields: [
+                    {
+                      label: "Tractor",
+                      value: "John Deere 5603",
+                      subText: "1 Unidad",
+                    },
+                    {
+                      label: "Pozo de Agua",
+                      value: "150 mts profundidad",
+                      subText: "Bomba Grundfos 125 Hp",
+                    },
+                    {
+                      label: "Reservorio",
+                      value: "1 Estanque",
+                      subText: "Equipo de riego incluido",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "ubicacion",
+            label: "Ubicación",
+            type: "map-location",
+            data: {
+              label: "Ubicación",
+              map: {
+                lat: null,
+                lng: null,
+              },
+              featured: [
+                {
+                  label: "Zona",
+                  value: "Alto Agrelo",
+                },
+                {
+                  label: "Acceso",
+                  value: "Ruta Internacional 7",
+                },
+              ],
+              groups: [
+                {
+                  title: "Detalles",
+                  fields: [
+                    {
+                      label: "Departamento",
+                      value: "Luján de Cuyo",
+                    },
+                    {
+                      label: "Provincia",
+                      value: "Mendoza",
+                    },
+                    {
+                      label: "Entorno",
+                      value: "Corredor Bioceánico y Turístico",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "documentacion",
+            label: "Desglose de Tasación",
+            type: "fields-list",
+            data: {
+              label: "Desglose de Tasación",
+              groups: [
+                {
+                  title: "Valores Asignados (USD)",
+                  fields: [
+                    {
+                      label: "FINCA (Cultivada)",
+                      value: "2.000.000 USD",
+                      subText: "50 Has x 40.000 USD/Ha",
+                    },
+                    {
+                      label: "EDIFICIOS BODEGA",
+                      value: "1.587.000 USD",
+                      subText: "1.587 m2 x 1.000 USD/m2",
+                    },
+                    {
+                      label: "HERRAMIENTAS/ACCESORIOS",
+                      value: "1.200.000 USD",
+                      subText: "Tanques, Máquinas, Muebles",
+                    },
+                    {
+                      label: "PARTE INCULTA",
+                      value: "200.000 USD",
+                      subText: "10 Has x 20.000 USD/Ha",
+                    },
+                    {
+                      label: "TOTAL TASACIÓN",
+                      value: "4.987.000 USD",
+                    },
+                    {
+                      label: "Nota Importante",
+                      value: "Venta de Activos Tangibles",
+                      subText: "NO incluye marcas ni portafolios de vino",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contacto",
+            type: "contact",
+            data: {},
+          },
+        ],
       },
       "en-US": {
         title:
@@ -4309,36 +4549,6 @@ export const properties = [
             value: "70 Ha + Equipped Winery + Machinery + Tourism",
           },
         },
-        sections: [
-          {
-            id: "resumen",
-            label: "Summary",
-          },
-          {
-            id: "ficha-tecnica",
-            label: "Capacity & Machinery",
-          },
-          {
-            id: "infraestructura",
-            label: "Surfaces & Facilities",
-          },
-          {
-            id: "productividad",
-            label: "Vineyard Details",
-          },
-          {
-            id: "ubicacion",
-            label: "Location",
-          },
-          {
-            id: "documentacion",
-            label: "Valuation Breakdown",
-          },
-          {
-            id: "contacto-finca",
-            label: "Contact",
-          },
-        ],
         summary: [
           {
             label: "Total Price",
@@ -4371,281 +4581,324 @@ export const properties = [
             class: "text-lg mt-4",
           },
         ],
-        techSpecs: {
-          label: "Capacity & Machinery",
-          groups: [
-            {
-              title: "Vessel Detail (Stainless Steel)",
-              fields: [
-                {
-                  label: "100 hL Tanks",
-                  value: "7 Units",
-                  class: "border-secondary",
-                },
-                {
-                  label: "75 hL Tanks",
-                  value: "6 Units",
-                },
-                {
-                  label: "50 hL Tanks",
-                  value: "4 Units",
-                },
-                {
-                  label: "40 hL Tanks",
-                  value: "1 Unit",
-                },
-                {
-                  label: "35 hL Tanks",
-                  value: "2 Units",
-                },
-                {
-                  label: "25 hL Tanks",
-                  value: "2 Units",
-                },
-              ],
-            },
-            {
-              title: "Other Vessels",
-              fields: [
-                {
-                  label: "Concrete Containers",
-                  value: "2 Units",
-                },
-                {
-                  label: "Plastic Tanks",
-                  value: "31 Units",
-                  subText: "10x10hL, 12x11hL, 9x9hL",
-                },
-                {
-                  label: "Barrels (2025 Inv.)",
-                  value: "225 Units",
-                  subText: "Plus previous years' stock",
-                },
-              ],
-            },
-            {
-              title: "Winery Machinery",
-              fields: [
-                {
-                  label: "Reception/Pressing",
-                  value: "SIPREM 20 Pneumatic Press",
-                  subText: "Pellenc Winery Destemmer + Screw Hopper",
-                },
-                {
-                  label: "Movement",
-                  value: "2 Mencarelli Pumps + 1 Francesca F5 T",
-                  subText: "SIPREM Selection and Elevation Belts",
-                },
-                {
-                  label: "Cooling/Services",
-                  value: "75,000 Frig Cooling Unit + Frio 21 (15CV)",
-                  subText: "Cold-Water Pumping Equipment + Piping",
-                },
-                {
-                  label: "Bottling",
-                  value: "ENOS T3 Labeler/Capsuler",
-                  subText: "MPF SIRIA 12 Bottle Washer + EB Belt",
-                },
-                {
-                  label: "Internal Logistics",
-                  value: "UTILEV 2.6 ton Forklift",
-                  subText: "Electric Stacker + GHIMAQ Pressure Washer",
-                },
-              ],
-            },
-          ],
-        },
-        improvements: {
-          label: "Surfaces & Facilities",
-          fields: [
-            {
-              label: "Tourism & Offices",
-              value: "400 m²",
-              subText: "Furniture included",
-            },
-            {
-              label: "Winery Hall",
-              value: "297 m²",
-              subText: "Covered, semi, and yards",
-            },
-            {
-              label: "Cellar (Cava)",
-              value: "340 m²",
-              subText: "With Humidification Equipment and Freight Elevator",
-            },
-            {
-              label: "Warehouses",
-              value: "400 m²",
-              subText: "2 Sheds",
-            },
-            {
-              label: "Harvest/Machines",
-              value: "150 m²",
-            },
-            {
-              label: "Farm Sheds",
-              value: "350 m²",
-              subText: "Shed 1 (250m2) + Shed 2 (100m2)",
-            },
-            {
-              label: "Solar Energy",
-              value: "84 Panels",
-              subText: "1 x 2.5 mt each + Solar Water Heaters",
-            },
-            {
-              label: "Expansion Project",
-              value: "+204 m²",
-              subText: "2 New halls and Harvest Platform",
-            },
-          ],
-        },
-        energy: {
-          label: "Vineyard Details",
-          groups: [
-            {
-              title: "Old Plantings (Year 2000-2007)",
-              fields: [
-                {
-                  label: "Malbec (2000)",
-                  value: "High Trellis",
-                  class: "border-secondary",
-                  subText: "1.5m x 2.5m (120,000 m2)",
-                },
-                {
-                  label: "Cab. Sauvignon (2000)",
-                  value: "High Trellis",
-                  subText: "1.5m x 2.5m (90,000 m2)",
-                },
-                {
-                  label: "Malbec (2007)",
-                  value: "High Trellis",
-                  subText: "1.0m x 2.5m (120,000 m2)",
-                },
-                {
-                  label: "Others 2007",
-                  value: "Syrah, Sauvignon Blanc, Chardonnay",
-                  subText: "30,000 - 60,000 m2 each",
-                },
-              ],
-            },
-            {
-              title: "New Plantings (2011-2022)",
-              fields: [
-                {
-                  label: "Petit Verdot (2011)",
-                  value: "20,000 m2",
-                  subText: "1.5m x 2.5m",
-                },
-                {
-                  label: "Cabernet Franc",
-                  value: "2011 & 2022",
-                  subText: "10,000 m2 (2011) + 11,000 m2 (2022)",
-                },
-                {
-                  label: "Semillon (2022)",
-                  value: "3,000 m2",
-                  subText: "1.0m x 2.5m",
-                },
-              ],
-            },
-            {
-              title: "Agricultural Equipment",
-              borderColor: "border-indigo-900",
-              fields: [
-                {
-                  label: "Tractor",
-                  value: "John Deere 5603",
-                  subText: "1 Unit",
-                },
-                {
-                  label: "Water Well",
-                  value: "150 mts depth",
-                  subText: "Grundfos 125 Hp Pump",
-                },
-                {
-                  label: "Reservoir",
-                  value: "1 Pond",
-                  subText: "Irrigation equipment included",
-                },
-              ],
-            },
-          ],
-        },
-        locationDetails: {
-          label: "Location",
-          map: {
-            lat: null,
-            lng: null,
+        sections: [
+          {
+            id: "resumen",
+            label: "Summary",
+            type: "summary",
+            data: {},
           },
-          featured: [
-            {
-              label: "Zone",
-              value: "Alto Agrelo",
-            },
-            {
-              label: "Access",
-              value: "International Route 7",
-            },
-          ],
-          groups: [
-            {
-              title: "Details",
-              fields: [
+          {
+            id: "ficha-tecnica",
+            label: "Capacity & Machinery",
+            type: "grouped-fields",
+            data: {
+              label: "Capacity & Machinery",
+              groups: [
                 {
-                  label: "Department",
-                  value: "Luján de Cuyo",
+                  title: "Vessel Detail (Stainless Steel)",
+                  fields: [
+                    {
+                      label: "100 hL Tanks",
+                      value: "7 Units",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "75 hL Tanks",
+                      value: "6 Units",
+                    },
+                    {
+                      label: "50 hL Tanks",
+                      value: "4 Units",
+                    },
+                    {
+                      label: "40 hL Tanks",
+                      value: "1 Unit",
+                    },
+                    {
+                      label: "35 hL Tanks",
+                      value: "2 Units",
+                    },
+                    {
+                      label: "25 hL Tanks",
+                      value: "2 Units",
+                    },
+                  ],
                 },
                 {
-                  label: "Province",
-                  value: "Mendoza",
+                  title: "Other Vessels",
+                  fields: [
+                    {
+                      label: "Concrete Containers",
+                      value: "2 Units",
+                    },
+                    {
+                      label: "Plastic Tanks",
+                      value: "31 Units",
+                      subText: "10x10hL, 12x11hL, 9x9hL",
+                    },
+                    {
+                      label: "Barrels (2025 Inv.)",
+                      value: "225 Units",
+                      subText: "Plus previous years' stock",
+                    },
+                  ],
                 },
                 {
-                  label: "Surroundings",
-                  value: "Bio-oceanic & Tourism Corridor",
+                  title: "Winery Machinery",
+                  fields: [
+                    {
+                      label: "Reception/Pressing",
+                      value: "SIPREM 20 Pneumatic Press",
+                      subText: "Pellenc Winery Destemmer + Screw Hopper",
+                    },
+                    {
+                      label: "Movement",
+                      value: "2 Mencarelli Pumps + 1 Francesca F5 T",
+                      subText: "SIPREM Selection and Elevation Belts",
+                    },
+                    {
+                      label: "Cooling/Services",
+                      value: "75,000 Frig Cooling Unit + Frio 21 (15CV)",
+                      subText: "Cold-Water Pumping Equipment + Piping",
+                    },
+                    {
+                      label: "Bottling",
+                      value: "ENOS T3 Labeler/Capsuler",
+                      subText: "MPF SIRIA 12 Bottle Washer + EB Belt",
+                    },
+                    {
+                      label: "Internal Logistics",
+                      value: "UTILEV 2.6 ton Forklift",
+                      subText: "Electric Stacker + GHIMAQ Pressure Washer",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
-        legal: {
-          label: "Valuation Breakdown",
-          groups: [
-            {
-              title: "Assigned Values (USD)",
-              fields: [
+          },
+          {
+            id: "infraestructura",
+            label: "Surfaces & Facilities",
+            type: "grouped-fields",
+            data: {
+              label: "Surfaces & Facilities",
+              groups: [
                 {
-                  label: "VINEYARD (Cultivated)",
-                  value: "2,000,000 USD",
-                  subText: "50 Ha x 40,000 USD/Ha",
-                },
-                {
-                  label: "WINERY BUILDINGS",
-                  value: "1,587,000 USD",
-                  subText: "1,587 m2 x 1,000 USD/m2",
-                },
-                {
-                  label: "TOOLS/ACCESSORIES",
-                  value: "1,200,000 USD",
-                  subText: "Tanks, Machinery, Furniture",
-                },
-                {
-                  label: "UNCULTIVATED LAND",
-                  value: "200,000 USD",
-                  subText: "10 Ha x 20,000 USD/Ha",
-                },
-                {
-                  label: "TOTAL VALUATION",
-                  value: "4,987,000 USD",
-                },
-                {
-                  label: "Important Note",
-                  value: "Sale of Tangible Assets",
-                  subText: "Does NOT include brands or wine portfolios",
+                  fields: [
+                    {
+                      label: "Tourism & Offices",
+                      value: "400 m²",
+                      subText: "Furniture included",
+                    },
+                    {
+                      label: "Winery Hall",
+                      value: "297 m²",
+                      subText: "Covered, semi, and yards",
+                    },
+                    {
+                      label: "Cellar (Cava)",
+                      value: "340 m²",
+                      subText: "With Humidification Equipment and Freight Elevator",
+                    },
+                    {
+                      label: "Warehouses",
+                      value: "400 m²",
+                      subText: "2 Sheds",
+                    },
+                    {
+                      label: "Harvest/Machines",
+                      value: "150 m²",
+                    },
+                    {
+                      label: "Farm Sheds",
+                      value: "350 m²",
+                      subText: "Shed 1 (250m2) + Shed 2 (100m2)",
+                    },
+                    {
+                      label: "Solar Energy",
+                      value: "84 Panels",
+                      subText: "1 x 2.5 mt each + Solar Water Heaters",
+                    },
+                    {
+                      label: "Expansion Project",
+                      value: "+204 m²",
+                      subText: "2 New halls and Harvest Platform",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
+          },
+          {
+            id: "productividad",
+            label: "Vineyard Details",
+            type: "grouped-fields",
+            data: {
+              label: "Vineyard Details",
+              groups: [
+                {
+                  title: "Old Plantings (Year 2000-2007)",
+                  fields: [
+                    {
+                      label: "Malbec (2000)",
+                      value: "High Trellis",
+                      class: "border-secondary",
+                      subText: "1.5m x 2.5m (120,000 m2)",
+                    },
+                    {
+                      label: "Cab. Sauvignon (2000)",
+                      value: "High Trellis",
+                      subText: "1.5m x 2.5m (90,000 m2)",
+                    },
+                    {
+                      label: "Malbec (2007)",
+                      value: "High Trellis",
+                      subText: "1.0m x 2.5m (120,000 m2)",
+                    },
+                    {
+                      label: "Others 2007",
+                      value: "Syrah, Sauvignon Blanc, Chardonnay",
+                      subText: "30,000 - 60,000 m2 each",
+                    },
+                  ],
+                },
+                {
+                  title: "New Plantings (2011-2022)",
+                  fields: [
+                    {
+                      label: "Petit Verdot (2011)",
+                      value: "20,000 m2",
+                      subText: "1.5m x 2.5m",
+                    },
+                    {
+                      label: "Cabernet Franc",
+                      value: "2011 & 2022",
+                      subText: "10,000 m2 (2011) + 11,000 m2 (2022)",
+                    },
+                    {
+                      label: "Semillon (2022)",
+                      value: "3,000 m2",
+                      subText: "1.0m x 2.5m",
+                    },
+                  ],
+                },
+                {
+                  title: "Agricultural Equipment",
+                  borderColor: "border-indigo-900",
+                  fields: [
+                    {
+                      label: "Tractor",
+                      value: "John Deere 5603",
+                      subText: "1 Unit",
+                    },
+                    {
+                      label: "Water Well",
+                      value: "150 mts depth",
+                      subText: "Grundfos 125 Hp Pump",
+                    },
+                    {
+                      label: "Reservoir",
+                      value: "1 Pond",
+                      subText: "Irrigation equipment included",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "ubicacion",
+            label: "Location",
+            type: "map-location",
+            data: {
+              label: "Location",
+              map: {
+                lat: null,
+                lng: null,
+              },
+              featured: [
+                {
+                  label: "Zone",
+                  value: "Alto Agrelo",
+                },
+                {
+                  label: "Access",
+                  value: "International Route 7",
+                },
+              ],
+              groups: [
+                {
+                  title: "Details",
+                  fields: [
+                    {
+                      label: "Department",
+                      value: "Luján de Cuyo",
+                    },
+                    {
+                      label: "Province",
+                      value: "Mendoza",
+                    },
+                    {
+                      label: "Surroundings",
+                      value: "Bio-oceanic & Tourism Corridor",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "documentacion",
+            label: "Valuation Breakdown",
+            type: "fields-list",
+            data: {
+              label: "Valuation Breakdown",
+              groups: [
+                {
+                  title: "Assigned Values (USD)",
+                  fields: [
+                    {
+                      label: "VINEYARD (Cultivated)",
+                      value: "2,000,000 USD",
+                      subText: "50 Ha x 40,000 USD/Ha",
+                    },
+                    {
+                      label: "WINERY BUILDINGS",
+                      value: "1,587,000 USD",
+                      subText: "1,587 m2 x 1,000 USD/m2",
+                    },
+                    {
+                      label: "TOOLS/ACCESSORIES",
+                      value: "1,200,000 USD",
+                      subText: "Tanks, Machinery, Furniture",
+                    },
+                    {
+                      label: "UNCULTIVATED LAND",
+                      value: "200,000 USD",
+                      subText: "10 Ha x 20,000 USD/Ha",
+                    },
+                    {
+                      label: "TOTAL VALUATION",
+                      value: "4,987,000 USD",
+                    },
+                    {
+                      label: "Important Note",
+                      value: "Sale of Tangible Assets",
+                      subText: "Does NOT include brands or wine portfolios",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contact",
+            type: "contact",
+            data: {},
+          },
+        ],
       },
       "pt-BR": {
         title:
@@ -4657,36 +4910,6 @@ export const properties = [
             value: "70 Ha + Vinícola Equipada + Maquinaria + Turismo",
           },
         },
-        sections: [
-          {
-            id: "resumen",
-            label: "Resumo",
-          },
-          {
-            id: "ficha-tecnica",
-            label: "Capacidade e Maquinaria",
-          },
-          {
-            id: "infraestructura",
-            label: "Superfícies e Instalações",
-          },
-          {
-            id: "productividad",
-            label: "Detalhe de Vinhedos",
-          },
-          {
-            id: "ubicacion",
-            label: "Localização",
-          },
-          {
-            id: "documentacion",
-            label: "Detalhamento da Avaliação",
-          },
-          {
-            id: "contacto-finca",
-            label: "Contato",
-          },
-        ],
         summary: [
           {
             label: "Preço Total",
@@ -4719,281 +4942,324 @@ export const properties = [
             class: "text-lg mt-4",
           },
         ],
-        techSpecs: {
-          label: "Capacidade e Maquinaria",
-          groups: [
-            {
-              title: "Detalhe de Vasilhame (Aço Inoxidável)",
-              fields: [
-                {
-                  label: "Tanques 100 hL",
-                  value: "7 Unidades",
-                  class: "border-secondary",
-                },
-                {
-                  label: "Tanques 75 hL",
-                  value: "6 Unidades",
-                },
-                {
-                  label: "Tanques 50 hL",
-                  value: "4 Unidades",
-                },
-                {
-                  label: "Tanques 40 hL",
-                  value: "1 Unidade",
-                },
-                {
-                  label: "Tanques 35 hL",
-                  value: "2 Unidades",
-                },
-                {
-                  label: "Tanques 25 hL",
-                  value: "2 Unidades",
-                },
-              ],
-            },
-            {
-              title: "Outros Vasilhames",
-              fields: [
-                {
-                  label: "Recipientes Concreto",
-                  value: "2 Unidades",
-                },
-                {
-                  label: "Tanques Plásticos",
-                  value: "31 Unidades",
-                  subText: "10x10hL, 12x11hL, 9x9hL",
-                },
-                {
-                  label: "Barricas (Inv. 2025)",
-                  value: "225 Unidades",
-                  subText: "Mais estoque de anos anteriores",
-                },
-              ],
-            },
-            {
-              title: "Maquinaria de Vinícola",
-              fields: [
-                {
-                  label: "Recepção/Prensagem",
-                  value: "Prensa Pneumática SIPREM 20",
-                  subText: "Desengaçadeira Pellenc Winery + Tremonha parafuso",
-                },
-                {
-                  label: "Movimento",
-                  value: "2 Bombas Mencarelli + 1 Francesca F5 T",
-                  subText: "Esteiras de Seleção e Elevação SIPREM",
-                },
-                {
-                  label: "Frio/Serviços",
-                  value: "Equip. Frio 75.000 Frig + Frio 21 (15CV)",
-                  subText: "Equip. Bombeamento Frio-Água + Tubulação",
-                },
-                {
-                  label: "Engarrafamento",
-                  value: "Rotuladora/Capsuladora ENOS T3",
-                  subText: "Lavadora garrafas MPF SIRIA 12 + Esteira EB",
-                },
-                {
-                  label: "Logística Interna",
-                  value: "Empilhadeira UTILEV 2.6 ton",
-                  subText: "Empilhadeira elétrica + Lavadora pressão GHIMAQ",
-                },
-              ],
-            },
-          ],
-        },
-        improvements: {
-          label: "Superfícies e Instalações",
-          fields: [
-            {
-              label: "Turismo e Escritórios",
-              value: "400 m²",
-              subText: "Mobiliário incluído",
-            },
-            {
-              label: "Galpão Vinícola",
-              value: "297 m²",
-              subText: "Coberto, semi e pátios",
-            },
-            {
-              label: "Adega (Cava)",
-              value: "340 m²",
-              subText: "Com Equip. Umidificação e Monta-cargas",
-            },
-            {
-              label: "Depósitos",
-              value: "400 m²",
-              subText: "2 Galpões",
-            },
-            {
-              label: "Vindima/Máquinas",
-              value: "150 m²",
-            },
-            {
-              label: "Galpões Fazenda",
-              value: "350 m²",
-              subText: "Galpão 1 (250m2) + Galpão 2 (100m2)",
-            },
-            {
-              label: "Energia Solar",
-              value: "84 Painéis",
-              subText: "1 x 2,5 mt cada + Aquecedores Solares",
-            },
-            {
-              label: "Projeto Expansão",
-              value: "+204 m²",
-              subText: "2 Novos galpões e Plataforma Vindima",
-            },
-          ],
-        },
-        energy: {
-          label: "Detalhe de Vinhedos",
-          groups: [
-            {
-              title: "Plantações Antigas (Ano 2000-2007)",
-              fields: [
-                {
-                  label: "Malbec (2000)",
-                  value: "Espaldeira Alta",
-                  class: "border-secondary",
-                  subText: "1.5m x 2.5m (120,000 m2)",
-                },
-                {
-                  label: "Cab. Sauvignon (2000)",
-                  value: "Espaldeira Alta",
-                  subText: "1.5m x 2.5m (90,000 m2)",
-                },
-                {
-                  label: "Malbec (2007)",
-                  value: "Espaldeira Alta",
-                  subText: "1.0m x 2.5m (120,000 m2)",
-                },
-                {
-                  label: "Outras 2007",
-                  value: "Syrah, Sauvignon Blanc, Chardonnay",
-                  subText: "30,000 - 60,000 m2 cada",
-                },
-              ],
-            },
-            {
-              title: "Plantações Novas (2011-2022)",
-              fields: [
-                {
-                  label: "Petit Verdot (2011)",
-                  value: "20,000 m2",
-                  subText: "1.5m x 2.5m",
-                },
-                {
-                  label: "Cabernet Franc",
-                  value: "2011 e 2022",
-                  subText: "10,000 m2 (2011) + 11,000 m2 (2022)",
-                },
-                {
-                  label: "Semillón (2022)",
-                  value: "3,000 m2",
-                  subText: "1.0m x 2.5m",
-                },
-              ],
-            },
-            {
-              title: "Equipamento Agrícola",
-              borderColor: "border-indigo-900",
-              fields: [
-                {
-                  label: "Trator",
-                  value: "John Deere 5603",
-                  subText: "1 Unidade",
-                },
-                {
-                  label: "Poço de Água",
-                  value: "150 mts profundidade",
-                  subText: "Bomba Grundfos 125 Hp",
-                },
-                {
-                  label: "Reservatório",
-                  value: "1 Tanque",
-                  subText: "Equipamento de irrigação incluído",
-                },
-              ],
-            },
-          ],
-        },
-        locationDetails: {
-          label: "Localização",
-          map: {
-            lat: null,
-            lng: null,
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumo",
+            type: "summary",
+            data: {},
           },
-          featured: [
-            {
-              label: "Zona",
-              value: "Alto Agrelo",
-            },
-            {
-              label: "Acesso",
-              value: "Rota Internacional 7",
-            },
-          ],
-          groups: [
-            {
-              title: "Detalhes",
-              fields: [
+          {
+            id: "ficha-tecnica",
+            label: "Capacidade e Maquinaria",
+            type: "grouped-fields",
+            data: {
+              label: "Capacidade e Maquinaria",
+              groups: [
                 {
-                  label: "Departamento",
-                  value: "Luján de Cuyo",
+                  title: "Detalhe de Vasilhame (Aço Inoxidável)",
+                  fields: [
+                    {
+                      label: "Tanques 100 hL",
+                      value: "7 Unidades",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "Tanques 75 hL",
+                      value: "6 Unidades",
+                    },
+                    {
+                      label: "Tanques 50 hL",
+                      value: "4 Unidades",
+                    },
+                    {
+                      label: "Tanques 40 hL",
+                      value: "1 Unidade",
+                    },
+                    {
+                      label: "Tanques 35 hL",
+                      value: "2 Unidades",
+                    },
+                    {
+                      label: "Tanques 25 hL",
+                      value: "2 Unidades",
+                    },
+                  ],
                 },
                 {
-                  label: "Província",
-                  value: "Mendoza",
+                  title: "Outros Vasilhames",
+                  fields: [
+                    {
+                      label: "Recipientes Concreto",
+                      value: "2 Unidades",
+                    },
+                    {
+                      label: "Tanques Plásticos",
+                      value: "31 Unidades",
+                      subText: "10x10hL, 12x11hL, 9x9hL",
+                    },
+                    {
+                      label: "Barricas (Inv. 2025)",
+                      value: "225 Unidades",
+                      subText: "Mais estoque de anos anteriores",
+                    },
+                  ],
                 },
                 {
-                  label: "Entorno",
-                  value: "Corredor Bioceânico e Turístico",
+                  title: "Maquinaria de Vinícola",
+                  fields: [
+                    {
+                      label: "Recepção/Prensagem",
+                      value: "Prensa Pneumática SIPREM 20",
+                      subText: "Desengaçadeira Pellenc Winery + Tremonha parafuso",
+                    },
+                    {
+                      label: "Movimento",
+                      value: "2 Bombas Mencarelli + 1 Francesca F5 T",
+                      subText: "Esteiras de Seleção e Elevação SIPREM",
+                    },
+                    {
+                      label: "Frio/Serviços",
+                      value: "Equip. Frio 75.000 Frig + Frio 21 (15CV)",
+                      subText: "Equip. Bombeamento Frio-Água + Tubulação",
+                    },
+                    {
+                      label: "Engarrafamento",
+                      value: "Rotuladora/Capsuladora ENOS T3",
+                      subText: "Lavadora garrafas MPF SIRIA 12 + Esteira EB",
+                    },
+                    {
+                      label: "Logística Interna",
+                      value: "Empilhadeira UTILEV 2.6 ton",
+                      subText: "Empilhadeira elétrica + Lavadora pressão GHIMAQ",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
-        legal: {
-          label: "Detalhamento da Avaliação",
-          groups: [
-            {
-              title: "Valores Atribuídos (USD)",
-              fields: [
+          },
+          {
+            id: "infraestructura",
+            label: "Superfícies e Instalações",
+            type: "grouped-fields",
+            data: {
+              label: "Superfícies e Instalações",
+              groups: [
                 {
-                  label: "VINHEDO (Cultivado)",
-                  value: "2.000.000 USD",
-                  subText: "50 Ha x 40.000 USD/Ha",
-                },
-                {
-                  label: "EDIFÍCIOS VINÍCOLA",
-                  value: "1.587.000 USD",
-                  subText: "1.587 m2 x 1.000 USD/m2",
-                },
-                {
-                  label: "FERRAMENTAS/ACESSÓRIOS",
-                  value: "1.200.000 USD",
-                  subText: "Tanques, Máquinas, Móveis",
-                },
-                {
-                  label: "TERRA INCULTA",
-                  value: "200.000 USD",
-                  subText: "10 Ha x 20.000 USD/Ha",
-                },
-                {
-                  label: "TOTAL AVALIAÇÃO",
-                  value: "4.987.000 USD",
-                },
-                {
-                  label: "Nota Importante",
-                  value: "Venda de Ativos Tangíveis",
-                  subText: "NÃO inclui marcas nem portfólios de vinho",
+                  fields: [
+                    {
+                      label: "Turismo e Escritórios",
+                      value: "400 m²",
+                      subText: "Mobiliário incluído",
+                    },
+                    {
+                      label: "Galpão Vinícola",
+                      value: "297 m²",
+                      subText: "Coberto, semi e pátios",
+                    },
+                    {
+                      label: "Adega (Cava)",
+                      value: "340 m²",
+                      subText: "Com Equip. Umidificação e Monta-cargas",
+                    },
+                    {
+                      label: "Depósitos",
+                      value: "400 m²",
+                      subText: "2 Galpões",
+                    },
+                    {
+                      label: "Vindima/Máquinas",
+                      value: "150 m²",
+                    },
+                    {
+                      label: "Galpões Fazenda",
+                      value: "350 m²",
+                      subText: "Galpão 1 (250m2) + Galpão 2 (100m2)",
+                    },
+                    {
+                      label: "Energia Solar",
+                      value: "84 Painéis",
+                      subText: "1 x 2,5 mt cada + Aquecedores Solares",
+                    },
+                    {
+                      label: "Projeto Expansão",
+                      value: "+204 m²",
+                      subText: "2 Novos galpões e Plataforma Vindima",
+                    },
+                  ],
                 },
               ],
             },
-          ],
-        },
+          },
+          {
+            id: "productividad",
+            label: "Detalhe de Vinhedos",
+            type: "grouped-fields",
+            data: {
+              label: "Detalhe de Vinhedos",
+              groups: [
+                {
+                  title: "Plantações Antigas (Ano 2000-2007)",
+                  fields: [
+                    {
+                      label: "Malbec (2000)",
+                      value: "Espaldeira Alta",
+                      class: "border-secondary",
+                      subText: "1.5m x 2.5m (120,000 m2)",
+                    },
+                    {
+                      label: "Cab. Sauvignon (2000)",
+                      value: "Espaldeira Alta",
+                      subText: "1.5m x 2.5m (90,000 m2)",
+                    },
+                    {
+                      label: "Malbec (2007)",
+                      value: "Espaldeira Alta",
+                      subText: "1.0m x 2.5m (120,000 m2)",
+                    },
+                    {
+                      label: "Outras 2007",
+                      value: "Syrah, Sauvignon Blanc, Chardonnay",
+                      subText: "30,000 - 60,000 m2 cada",
+                    },
+                  ],
+                },
+                {
+                  title: "Plantações Novas (2011-2022)",
+                  fields: [
+                    {
+                      label: "Petit Verdot (2011)",
+                      value: "20,000 m2",
+                      subText: "1.5m x 2.5m",
+                    },
+                    {
+                      label: "Cabernet Franc",
+                      value: "2011 e 2022",
+                      subText: "10,000 m2 (2011) + 11,000 m2 (2022)",
+                    },
+                    {
+                      label: "Semillón (2022)",
+                      value: "3,000 m2",
+                      subText: "1.0m x 2.5m",
+                    },
+                  ],
+                },
+                {
+                  title: "Equipamento Agrícola",
+                  borderColor: "border-indigo-900",
+                  fields: [
+                    {
+                      label: "Trator",
+                      value: "John Deere 5603",
+                      subText: "1 Unidade",
+                    },
+                    {
+                      label: "Poço de Água",
+                      value: "150 mts profundidade",
+                      subText: "Bomba Grundfos 125 Hp",
+                    },
+                    {
+                      label: "Reservatório",
+                      value: "1 Tanque",
+                      subText: "Equipamento de irrigação incluído",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "ubicacion",
+            label: "Localização",
+            type: "map-location",
+            data: {
+              label: "Localização",
+              map: {
+                lat: null,
+                lng: null,
+              },
+              featured: [
+                {
+                  label: "Zona",
+                  value: "Alto Agrelo",
+                },
+                {
+                  label: "Acesso",
+                  value: "Rota Internacional 7",
+                },
+              ],
+              groups: [
+                {
+                  title: "Detalhes",
+                  fields: [
+                    {
+                      label: "Departamento",
+                      value: "Luján de Cuyo",
+                    },
+                    {
+                      label: "Província",
+                      value: "Mendoza",
+                    },
+                    {
+                      label: "Entorno",
+                      value: "Corredor Bioceânico e Turístico",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "documentacion",
+            label: "Detalhamento da Avaliação",
+            type: "fields-list",
+            data: {
+              label: "Detalhamento da Avaliação",
+              groups: [
+                {
+                  title: "Valores Atribuídos (USD)",
+                  fields: [
+                    {
+                      label: "VINHEDO (Cultivado)",
+                      value: "2.000.000 USD",
+                      subText: "50 Ha x 40.000 USD/Ha",
+                    },
+                    {
+                      label: "EDIFÍCIOS VINÍCOLA",
+                      value: "1.587.000 USD",
+                      subText: "1.587 m2 x 1.000 USD/m2",
+                    },
+                    {
+                      label: "FERRAMENTAS/ACESSÓRIOS",
+                      value: "1.200.000 USD",
+                      subText: "Tanques, Máquinas, Móveis",
+                    },
+                    {
+                      label: "TERRA INCULTA",
+                      value: "200.000 USD",
+                      subText: "10 Ha x 20.000 USD/Ha",
+                    },
+                    {
+                      label: "TOTAL AVALIAÇÃO",
+                      value: "4.987.000 USD",
+                    },
+                    {
+                      label: "Nota Importante",
+                      value: "Venda de Ativos Tangíveis",
+                      subText: "NÃO inclui marcas nem portfólios de vinho",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contato",
+            type: "contact",
+            data: {},
+          },
+        ],
       },
     },
   },
