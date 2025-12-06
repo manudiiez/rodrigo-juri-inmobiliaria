@@ -4,7 +4,10 @@ import { useTranslations } from "next-intl";
 
 interface InstalacionesYMejoras {
   label: string;
-  fields: { label: string; value: string; subText?: string }[];
+  groups: {
+    title?: string;
+    fields: { label: string; value: string; subText?: string }[];
+  }[];
 }
 
 interface PropertyInfrastructureProps {
@@ -16,8 +19,8 @@ export default function PropertyInfrastructure({
   instalaciones,
 }: PropertyInfrastructureProps) {
   const t = useTranslations("PropertyDetailPage.infrastructure");
-  // Guard: don't render if instalaciones or fields missing
-  if (!instalaciones || !Array.isArray(instalaciones.fields) || instalaciones.fields.length === 0) return null;
+  // Guard: don't render if instalaciones or groups missing
+  if (!instalaciones || !Array.isArray(instalaciones.groups) || instalaciones.groups.length === 0) return null;
 
   return (
     <section id="infraestructura" className="mb-20 scroll-mt-24">
@@ -25,22 +28,30 @@ export default function PropertyInfrastructure({
         {instalaciones.label}
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {instalaciones.fields.map((instalacion, index) => (
-          <div className="bg-gray-50 p-6" key={`${index}-field-infrastructure`}>
-            <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-              {instalacion.label}
-            </p>
-            <p className="text-lg text-gray-900 mb-1">{instalacion.value}</p>
-            {instalacion.subText && (
-              <p className="text-sm text-gray-600">
-                {instalacion.subText}
-              </p>
-            )}
+      {instalaciones.groups.map((group, groupIndex) => (
+        <div key={`group-${groupIndex}`}>
+          {group.title && (
+            <h3 className="text-xl font-medium text-gray-800 mb-4 mt-8">
+              {group.title}
+            </h3>
+          )}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            {group.fields.map((instalacion, index) => (
+              <div className="bg-gray-50 p-6" key={`${groupIndex}-${index}-field-infrastructure`}>
+                <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
+                  {instalacion.label}
+                </p>
+                <p className="text-lg text-gray-900 mb-1">{instalacion.value}</p>
+                {instalacion.subText && (
+                  <p className="text-sm text-gray-600">
+                    {instalacion.subText}
+                  </p>
+                )}
+              </div>
+            ))}
           </div>
-        ))}
-        
-      </div>
+        </div>
+      ))}
     </section>
   );
 }

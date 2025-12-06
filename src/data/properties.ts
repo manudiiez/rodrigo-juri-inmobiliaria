@@ -948,31 +948,35 @@ export const properties = [
         },
         improvements: {
           label: "Enoturismo y Eventos",
-          fields: [
+          groups: [
             {
-              label: "TURISMO",
-              value: "Visitas y Degustaciones",
-              subText: "Con maridajes (chocolates/picadas)",
-            },
-            {
-              label: "ESPACIOS EVENTOS",
-              value: "3 Salones diferenciados",
-              subText: "Corporativos y Sociales",
-            },
-            {
-              label: "CAVA SUBTERRÁNEA",
-              value: "Piletas renovadas",
-              subText: "Para eventos íntimos",
-            },
-            {
-              label: "CASA DE FAMILIA",
-              value: "Con piscina y viñedo",
-              subText: "Estilo campestre",
-            },
-            {
-              label: "GASTRONOMÍA",
-              value: "Servicio propio",
-              subText: "Proyección de restaurante",
+              fields: [
+                {
+                  label: "TURISMO",
+                  value: "Visitas y Degustaciones",
+                  subText: "Con maridajes (chocolates/picadas)",
+                },
+                {
+                  label: "ESPACIOS EVENTOS",
+                  value: "3 Salones diferenciados",
+                  subText: "Corporativos y Sociales",
+                },
+                {
+                  label: "CAVA SUBTERRÁNEA",
+                  value: "Piletas renovadas",
+                  subText: "Para eventos íntimos",
+                },
+                {
+                  label: "CASA DE FAMILIA",
+                  value: "Con piscina y viñedo",
+                  subText: "Estilo campestre",
+                },
+                {
+                  label: "GASTRONOMÍA",
+                  value: "Servicio propio",
+                  subText: "Proyección de restaurante",
+                },
+              ],
             },
           ],
         },
@@ -1186,31 +1190,35 @@ export const properties = [
         },
         improvements: {
           label: "Wine Tourism & Events",
-          fields: [
+          groups: [
             {
-              label: "TOURISM",
-              value: "Visits and Tastings",
-              subText: "With pairings (chocolates/charcuterie)",
-            },
-            {
-              label: "EVENT SPACES",
-              value: "3 Differentiated halls",
-              subText: "Corporate and Social",
-            },
-            {
-              label: "UNDERGROUND CELLAR",
-              value: "Renovated pools",
-              subText: "For intimate events",
-            },
-            {
-              label: "FAMILY HOUSE",
-              value: "With pool and vineyard",
-              subText: "Country style",
-            },
-            {
-              label: "GASTRONOMY",
-              value: "In-house service",
-              subText: "Restaurant projection",
+              fields: [
+                {
+                  label: "TOURISM",
+                  value: "Visits and Tastings",
+                  subText: "With pairings (chocolates/charcuterie)",
+                },
+                {
+                  label: "EVENT SPACES",
+                  value: "3 Differentiated halls",
+                  subText: "Corporate and Social",
+                },
+                {
+                  label: "UNDERGROUND CELLAR",
+                  value: "Renovated pools",
+                  subText: "For intimate events",
+                },
+                {
+                  label: "FAMILY HOUSE",
+                  value: "With pool and vineyard",
+                  subText: "Country style",
+                },
+                {
+                  label: "GASTRONOMY",
+                  value: "In-house service",
+                  subText: "Restaurant projection",
+                },
+              ],
             },
           ],
         },
@@ -1424,31 +1432,35 @@ export const properties = [
         },
         improvements: {
           label: "Enoturismo e Eventos",
-          fields: [
+          groups: [
             {
-              label: "TURISMO",
-              value: "Visitas e Degustações",
-              subText: "Com harmonizações (chocolates/tábuas)",
-            },
-            {
-              label: "ESPAÇOS PARA EVENTOS",
-              value: "3 Salões diferenciados",
-              subText: "Corporativos e Sociais",
-            },
-            {
-              label: "ADEGA SUBTERRÂNEA",
-              value: "Tanques renovados",
-              subText: "Para eventos íntimos",
-            },
-            {
-              label: "CASA DA FAMÍLIA",
-              value: "Com piscina e vinhedo",
-              subText: "Estilo campestre",
-            },
-            {
-              label: "GASTRONOMIA",
-              value: "Serviço próprio",
-              subText: "Projeção de restaurante",
+              fields: [
+                {
+                  label: "TURISMO",
+                  value: "Visitas e Degustações",
+                  subText: "Com harmonizações (chocolates/tábuas)",
+                },
+                {
+                  label: "ESPAÇOS PARA EVENTOS",
+                  value: "3 Salões diferenciados",
+                  subText: "Corporativos e Sociais",
+                },
+                {
+                  label: "ADEGA SUBTERRÂNEA",
+                  value: "Tanques renovados",
+                  subText: "Para eventos íntimos",
+                },
+                {
+                  label: "CASA DA FAMÍLIA",
+                  value: "Com piscina e vinhedo",
+                  subText: "Estilo campestre",
+                },
+                {
+                  label: "GASTRONOMIA",
+                  value: "Serviço próprio",
+                  subText: "Projeção de restaurante",
+                },
+              ],
             },
           ],
         },
@@ -1831,24 +1843,28 @@ export const properties = [
         },
         improvements: {
           label: "Infraestructura",
-          fields: [
+          groups: [
             {
-              label: "EDIFICIO",
-              value: "Histórico (1862)",
-              subText: "Conservado y renovado",
-            },
-            {
-              label: "TECNOLOGÍA",
-              value: "Enología de precisión",
-            },
-            {
-              label: "CRIANZA",
-              value: "Barricas Roble Francés",
-              subText: "Sala de barricas",
-            },
-            {
-              label: "NUESTROS VIÑEDOS",
-              value: "Lunlinta, Agrelo, Valle de Uco",
+              fields: [
+                {
+                  label: "EDIFICIO",
+                  value: "Histórico (1862)",
+                  subText: "Conservado y renovado",
+                },
+                {
+                  label: "TECNOLOGÍA",
+                  value: "Enología de precisión",
+                },
+                {
+                  label: "CRIANZA",
+                  value: "Barricas Roble Francés",
+                  subText: "Sala de barricas",
+                },
+                {
+                  label: "NUESTROS VIÑEDOS",
+                  value: "Lunlinta, Agrelo, Valle de Uco",
+                },
+              ],
             },
           ],
         },
@@ -2635,26 +2651,30 @@ export const properties = [
         },
         improvements: {
           label: "Mejoras e Instalaciones",
-          fields: [
+          groups: [
             {
-              label: "VIVIENDA",
-              value: "Casa Patronal",
-              subText: "Construcción existente",
-            },
-            {
-              label: "ENERGÍA",
-              value: "Red Eléctrica",
-              subText: "Conectada al predio",
-            },
-            {
-              label: "PERÍMETRO",
-              value: "Alambrado Total",
-              subText: "Cierre completo del campo",
-            },
-            {
-              label: "ACCESO",
-              value: "Tranquera",
-              subText: "Ingreso consolidado",
+              fields: [
+                {
+                  label: "VIVIENDA",
+                  value: "Casa Patronal",
+                  subText: "Construcción existente",
+                },
+                {
+                  label: "ENERGÍA",
+                  value: "Red Eléctrica",
+                  subText: "Conectada al predio",
+                },
+                {
+                  label: "PERÍMETRO",
+                  value: "Alambrado Total",
+                  subText: "Cierre completo del campo",
+                },
+                {
+                  label: "ACCESO",
+                  value: "Tranquera",
+                  subText: "Ingreso consolidado",
+                },
+              ],
             },
           ],
         },
@@ -3330,31 +3350,35 @@ export const properties = [
         },
         improvements: {
           label: "Infraestructura Edilicia",
-          fields: [
+          groups: [
             {
-              label: "CASA ESTE",
-              value: "100 m2",
-              subText: "60 años antigüedad",
-            },
-            {
-              label: "CASA CENTRO",
-              value: "110 m2",
-              subText: "70 años antigüedad",
-            },
-            {
-              label: "CASA OESTE",
-              value: "100 m2",
-              subText: "Casa + Dpto (40 años)",
-            },
-            {
-              label: "GALPÓN",
-              value: "75 m2",
-              subText: "Ladrillo y chapa (10 años)",
-            },
-            {
-              label: "TINGLADO",
-              value: "75 m2",
-              subText: "Estructura abierta (10 años)",
+              fields: [
+                {
+                  label: "CASA ESTE",
+                  value: "100 m2",
+                  subText: "60 años antigüedad",
+                },
+                {
+                  label: "CASA CENTRO",
+                  value: "110 m2",
+                  subText: "70 años antigüedad",
+                },
+                {
+                  label: "CASA OESTE",
+                  value: "100 m2",
+                  subText: "Casa + Dpto (40 años)",
+                },
+                {
+                  label: "GALPÓN",
+                  value: "75 m2",
+                  subText: "Ladrillo y chapa (10 años)",
+                },
+                {
+                  label: "TINGLADO",
+                  value: "75 m2",
+                  subText: "Estructura abierta (10 años)",
+                },
+              ],
             },
           ],
         },
@@ -4081,45 +4105,49 @@ export const properties = [
         },
         improvements: {
           label: "Superficies e Instalaciones",
-          fields: [
+          groups: [
             {
-              label: "Turismo y Oficinas",
-              value: "400 m²",
-              subText: "Mobiliario incluido",
-            },
-            {
-              label: "Nave Bodega",
-              value: "297 m²",
-              subText: "Cubierto, semi y playones",
-            },
-            {
-              label: "Cava",
-              value: "340 m²",
-              subText: "Con Equipo Humidificación y Montacargas",
-            },
-            {
-              label: "Depósitos",
-              value: "400 m²",
-              subText: "2 Galpones",
-            },
-            {
-              label: "Vendimia/Máquinas",
-              value: "150 m²",
-            },
-            {
-              label: "Galpones Finca",
-              value: "350 m²",
-              subText: "Galpón 1 (250m2) + Galpón 2 (100m2)",
-            },
-            {
-              label: "Energía Solar",
-              value: "84 Paneles",
-              subText: "1 x 2,5 mt cada uno + Calefones Solares",
-            },
-            {
-              label: "Proyecto Ampliación",
-              value: "+204 m²",
-              subText: "2 Naves nuevas y Plataforma Vendimia",
+              fields: [
+                {
+                  label: "Turismo y Oficinas",
+                  value: "400 m²",
+                  subText: "Mobiliario incluido",
+                },
+                {
+                  label: "Nave Bodega",
+                  value: "297 m²",
+                  subText: "Cubierto, semi y playones",
+                },
+                {
+                  label: "Cava",
+                  value: "340 m²",
+                  subText: "Con Equipo Humidificación y Montacargas",
+                },
+                {
+                  label: "Depósitos",
+                  value: "400 m²",
+                  subText: "2 Galpones",
+                },
+                {
+                  label: "Vendimia/Máquinas",
+                  value: "150 m²",
+                },
+                {
+                  label: "Galpones Finca",
+                  value: "350 m²",
+                  subText: "Galpón 1 (250m2) + Galpón 2 (100m2)",
+                },
+                {
+                  label: "Energía Solar",
+                  value: "84 Paneles",
+                  subText: "1 x 2,5 mt cada uno + Calefones Solares",
+                },
+                {
+                  label: "Proyecto Ampliación",
+                  value: "+204 m²",
+                  subText: "2 Naves nuevas y Plataforma Vendimia",
+                },
+              ],
             },
           ],
         },
