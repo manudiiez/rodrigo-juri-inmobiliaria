@@ -93,21 +93,39 @@ export default function FiltersSection({
             </button>
             <button
               onClick={() => {
-                setSelectedTipoSuelo(t("maipu"));
+                setSelectedTipoSuelo("Maipú");
                 setShowTipoSueloFilter(false);
               }}
               className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors border-b border-gray-200"
             >
-              {t("maipu")}
+              Maipú
             </button>
             <button
               onClick={() => {
-                setSelectedTipoSuelo(t("valleDeUco"));
+                setSelectedTipoSuelo("Valle de Uco");
+                setShowTipoSueloFilter(false);
+              }}
+              className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors border-b border-gray-200"
+            >
+              Valle de Uco
+            </button>
+            <button
+              onClick={() => {
+                setSelectedTipoSuelo("Malargüe");
+                setShowTipoSueloFilter(false);
+              }}
+              className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors border-b border-gray-200"
+            >
+              Malargüe
+            </button>
+            <button
+              onClick={() => {
+                setSelectedTipoSuelo("Luján de Cuyo");
                 setShowTipoSueloFilter(false);
               }}
               className="w-full px-6 py-3 text-left text-sm uppercase tracking-widest text-gray-700 hover:bg-gray-100 transition-colors"
             >
-              {t("valleDeUco")}
+              Luján de Cuyo
             </button>
           </div>
         )}

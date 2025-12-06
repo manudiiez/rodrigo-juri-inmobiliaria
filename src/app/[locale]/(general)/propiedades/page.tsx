@@ -82,6 +82,7 @@ export default async function PropertiesPage({
   if (selectedTipoSuelo) {
     const zonaNormalizada = selectedTipoSuelo.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     filtered = filtered.filter(p => {
+      if (!p.zone) return false;
       const provinciaNormalizada = p.zone.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
       return provinciaNormalizada.includes(zonaNormalizada) || zonaNormalizada.includes(provinciaNormalizada);
     });
