@@ -3,6 +3,7 @@
 import PropertyGroupedFields from "./PropertyGroupedFields";
 import PropertyMapSection from "./PropertyMapSection";
 import PropertyFieldsList from "./PropertyFieldsList";
+import PropertyTextDesc from "./PropertyTextDesc";
 
 interface Section {
   id: string;
@@ -27,6 +28,9 @@ export default function SectionRenderer({ section }: SectionRendererProps) {
 
     case "fields-list":
       return <PropertyFieldsList id={id} label={label} data={data} />;
+
+    case "text-desc":
+      return <PropertyTextDesc id={id} label={label} data={data} />;
 
     case "summary":
     case "contact":

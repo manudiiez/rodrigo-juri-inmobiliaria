@@ -8,7 +8,7 @@ interface SectionData {
     lng: number;
   };
   featured?: { label: string; value: string }[];
-  groups: {
+  groups?: {
     featured?: boolean;
     title?: string;
     fields: { label: string; value: string }[];
@@ -28,8 +28,8 @@ export default function PropertyMapSection({
 }: PropertyMapSectionProps) {
   const t = useTranslations("PropertyDetailPage.location");
 
-  // Guard: don't render if data or map or groups missing
-  if (!data || !data.map || !Array.isArray(data.groups) || data.groups.length === 0) return null;
+  // Guard: don't render if data or map missing
+  if (!data || !data.map) return null;
 
   return (
     <section id={id} className="mb-20 scroll-mt-24">
@@ -78,7 +78,7 @@ export default function PropertyMapSection({
           ))}
         </div>
       )}
-      {data.groups.map((group, groupIndex) => (
+      {data.groups && data.groups.map((group, groupIndex) => (
         <div key={`${groupIndex}-group-${id}`}>
           <h4 className="text-xl font-light text-gray-900 mb-4">
             {group.title}
