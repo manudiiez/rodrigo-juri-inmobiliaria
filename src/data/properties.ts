@@ -4709,4 +4709,541 @@ export const properties = [
       },
     },
   },
+  {
+    slug: "finca-bautem-barrancas-maipu-mendoza",
+    type: "finca",
+    price: {
+      value: null,
+      currency: "USD",
+      pricePerHectare: null,
+    },
+    hectares: 208,
+    location: {
+      lat: -33.0823,
+      lng: -68.7009,
+      address: "Barrancas, Maipú, Mendoza",
+      province: "Mendoza",
+      country: "AR",
+      state: "Maipú",
+    },
+    images: [
+      {
+        url: "/images/fincabautem/finca-bautem-1.png",
+      },
+      {
+        url: "/images/fincabautem/finca-bautem-2.png",
+      },
+      {
+        url: "/images/fincabautem/finca-bautem-3.png",
+        class: "object-contain",
+      },
+      {
+        url: "/images/fincabautem/finca-bautem-4.png",
+        class: "object-contain",
+      },
+      {
+        url: "/images/fincabautem/finca-bautem-5.png",
+      },
+      {
+        url: "/images/fincabautem/finca-bautem-6.png",
+      },
+      {
+        url: "/images/fincabautem/finca-bautem-7.png",
+      },
+      {
+        url: "/images/fincabautem/finca-bautem-8.png",
+        class: "object-contain",
+      },
+      {
+        url: "/images/fincabautem/finca-bautem-9.png",
+        class: "object-contain",
+      },
+      {
+        url: "/images/fincabautem/finca-bautem-10.png",
+      },
+      {
+        url: "/images/fincabautem/finca-bautem-11.png",
+      },
+      {
+        url: "/images/fincabautem/finca-bautem-12.png",
+      },
+      {
+        url: "/images/fincabautem/finca-bautem-13.png",
+        class: "object-contain",
+      },
+      {
+        url: "/images/fincabautem/finca-bautem-14.png",
+      },
+      {
+        url: "/images/fincabautem/finca-bautem-15.png",
+      },
+      {
+        url: "/images/fincabautem/finca-bautem-16.png",
+      },
+      {
+        url: "/images/fincabautem/finca-bautem-17.png",
+      },
+      {
+        url: "/images/fincabautem/finca-bautem-18.png",
+        class: "object-contain",
+      },
+    ],
+    content: {
+      "es-AR": {
+        title: "Finca Bautem en Maipu - Viñedos Premium y Almendros",
+        description: {
+          text: "Oportunidad única de inversión en una finca de 208 hectáreas ubicada en Barrancas, Maipú, dentro de la prestigiosa Indicación Geográfica Barrancas. La zona se caracteriza por un suelo arenoso y pedregoso de origen aluvial, con excelente drenaje, ideal para la producción vitivinícola premium.\n\nLa propiedad combina 70,21 hectáreas de viñedos con variedades de alta gama (Malbec, Cabernet Franc, Petit Verdot, Syrah, entre otras) y 40,9 hectáreas de almendros (variedades Marinada y Tarraco). La finca provee uva a bodegas reconocidas como Catena Zapata, Trapiche, Kaiken, Viña Cobos, Bressia y Escorihuela Gascón, entre otras.\n\nDestaca por su infraestructura tecnológica de última generación: parque solar de 216 paneles fotovoltaicos, sistema de riego por goteo con 3 pozos, estación meteorológica, red de sensores NDVI, monitoreo por drones y vivero propio. Incluye módulos habitacionales modernos, sala de degustación, quincho para eventos y línea de partido de almendras con selectora óptica. Además, cuenta con proyecto arquitectónico de bodega diseñado e inspirado en el Modulor de Le Corbusier.",
+          callout: {
+            label: "PERFIL DE NEGOCIO",
+            value:
+              "Viñedos Premium / Almendros / Tecnología Eco-Friendly / Marcas Propias",
+          },
+        },
+        summary: [
+          {
+            label: "Superficie Total",
+            value: "208",
+            extra: "Hectáreas",
+          },
+          {
+            label: "Viñedos",
+            value: "70,21",
+            extra: "Hectáreas",
+          },
+          {
+            label: "Almendros",
+            value: "40,9",
+            extra: "Hectáreas",
+          },
+          {
+            label: "Estado",
+            value: "En plena producción",
+            class: "text-lg mt-4",
+          },
+        ],
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumen",
+            type: "summary",
+            data: {},
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Infraestructura y Tecnología",
+            type: "grouped-fields",
+            data: {
+              label: "Infraestructura y Tecnología",
+              groups: [
+                {
+                  title: "Sistema de Riego y Energía",
+                  fields: [
+                    {
+                      label: "SUPERFICIE TOTAL",
+                      value: "208 Hectáreas",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "SISTEMA DE RIEGO",
+                      value: "Goteo",
+                      subText: "Tecnología de precisión",
+                    },
+                    {
+                      label: "POZOS DE RIEGO",
+                      value: "3 pozos",
+                      subText: "Con salas de bombas",
+                    },
+                    {
+                      label: "PARQUE SOLAR",
+                      value: "216 paneles",
+                      subText: "Fotovoltaicos",
+                      class: "border-secondary",
+                    },
+                  ],
+                },
+                {
+                  title: "Tecnología Agrícola",
+                  fields: [
+                    {
+                      label: "MONITOREO",
+                      value: "Indicadores NDVI",
+                      subText: "Imágenes satelitales y drones",
+                    },
+                    {
+                      label: "ESTACIÓN METEOROLÓGICA",
+                      value: "Instalada",
+                      subText: "Datos en tiempo real",
+                    },
+                    {
+                      label: "RED DE SENSORES",
+                      value: "Operativa",
+                      subText: "Control integral",
+                    },
+                    {
+                      label: "PULVERIZACIÓN",
+                      value: "Ultra bajo volumen",
+                      subText: "Eco-Friendly",
+                    },
+                    {
+                      label: "VIVERO PROPIO",
+                      value: "Producción de plantas",
+                      subText: "Genética controlada",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "vinedos",
+            label: "Viñedos",
+            type: "grouped-fields",
+            data: {
+              label: "Viñedos - Detalle de Plantación",
+              groups: [
+                {
+                  title: "Superficie y Rendimiento",
+                  fields: [
+                    {
+                      label: "PLANTACIÓN TOTAL VID",
+                      value: "70,21 has",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "RENDIMIENTO PROMEDIO",
+                      value: "147 QQ/Ha",
+                    },
+                    {
+                      label: "PRODUCCIÓN ANUAL",
+                      value: "10.000 QQ",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "COSECHA",
+                      value: "Febrero - Abril",
+                    },
+                    {
+                      label: "PODA",
+                      value: "Julio - Septiembre",
+                    },
+                  ],
+                },
+                {
+                  title: "Varietales Plantados",
+                  fields: [
+                    {
+                      label: "MALBEC",
+                      value: "35,92 has",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "PETIT VERDOT",
+                      value: "8,4 has",
+                    },
+                    {
+                      label: "CABERNET FRANC",
+                      value: "6,8 has",
+                    },
+                    {
+                      label: "CABERNET SAUVIGNON",
+                      value: "5,0 has",
+                    },
+                    {
+                      label: "SYRAH",
+                      value: "4,45 has",
+                    },
+                    {
+                      label: "BONARDA",
+                      value: "3,1 has",
+                    },
+                    {
+                      label: "TANNAT",
+                      value: "2,9 has",
+                    },
+                    {
+                      label: "MOSCATEL",
+                      value: "0,5 has",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "almendros",
+            label: "Almendros",
+            type: "grouped-fields",
+            data: {
+              label: "Almendros - Detalle de Plantación",
+              groups: [
+                {
+                  title: "Superficie y Variedades",
+                  fields: [
+                    {
+                      label: "PLANTACIÓN TOTAL",
+                      value: "40,9 has",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "VARIEDAD MARINADA",
+                      value: "38,4 has",
+                    },
+                    {
+                      label: "VARIEDAD TARRACO",
+                      value: "2,5 has",
+                    },
+                    {
+                      label: "EXPANSIÓN PREVISTA",
+                      value: "+20 has",
+                      subText: "Por plantar",
+                    },
+                  ],
+                },
+                {
+                  title: "Producción y Procesamiento",
+                  fields: [
+                    {
+                      label: "RENDIMIENTO ANUAL",
+                      value: "1000-1200 kg/ha",
+                      subText: "Pepa",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "PARTIDERO",
+                      value: "Línea de partido",
+                      subText: "Con selectora óptica",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "infraestructura-edilicia",
+            label: "Construcciones",
+            type: "grouped-fields",
+            data: {
+              label: "Módulos Habitacionales y Espacios",
+              style: 2,
+              groups: [
+                {
+                  fields: [
+                    {
+                      label: "MÓDULOS HABITACIONALES",
+                      value: "3 módulos",
+                      subText: "Dormitorios, living, cocina integrada",
+                    },
+                    {
+                      label: "SALA DE DEGUSTACIÓN",
+                      value: "Operativa",
+                      subText: "Con vista a viñedos",
+                    },
+                    {
+                      label: "SALA DE MÁQUINAS",
+                      value: "Equipada",
+                      subText: "Tractores y maquinaria",
+                    },
+                    {
+                      label: "QUINCHO",
+                      value: "Eventos y degustaciones",
+                      subText: "Parrilla, fogonero, jardín",
+                    },
+                    {
+                      label: "ESTACIONAMIENTO",
+                      value: "Disponible",
+                    },
+                    {
+                      label: "SENDERO",
+                      value: "Vegetación autóctona",
+                      subText: "Jarillas nativas",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "clientes",
+            label: "Clientes de Uva",
+            type: "grouped-fields",
+            data: {
+              label: "Bodegas Compradoras de Uva",
+              groups: [
+                {
+                  title: "Clientes Principales",
+                  fields: [
+                    {
+                      label: "BODEGAS PREMIUM",
+                      value: [
+                        "Catena Zapata",
+                        "Trapiche",
+                        "Kaiken",
+                        "Viña Cobos",
+                        "Bressia",
+                      ],
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "OTRAS BODEGAS",
+                      value: [
+                        "Escorihuela Gascón",
+                        "Bodega Argento",
+                        "Pascual Toso",
+                        "Siete Fincas",
+                        "Los Haroldos",
+                        "Martino Wines",
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "marcas-propias",
+            label: "Marcas Propias",
+            type: "grouped-fields",
+            data: {
+              label: "Portfolio de Vinos - Grupo Salute",
+              groups: [
+                {
+                  title: "Bodegas del Grupo",
+                  fields: [
+                    {
+                      label: "ABITO WINES",
+                      value: "Vinos Single-Vineyard",
+                      subText: "Malbec, Cabernet Franc, Petit Verdot",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "BONOMO MONTIEL",
+                      value: "Vinos de Autor",
+                      subText: "Malbec, Cabernet Franc, Rosé Brut Nature",
+                    },
+                    {
+                      label: "CONEJO NEGRO",
+                      value: "Vinos Contemporáneos",
+                      subText: "Blend",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "proyecto-bodega",
+            label: "Proyecto Bodega",
+            type: "text-desc",
+            data: {
+              groups: [
+                {
+                  title: "Diseño Arquitectónico Inspirado en Le Corbusier",
+                  content:
+                    "La finca cuenta con un proyecto arquitectónico de bodega inspirado en el Modulor de Le Corbusier, que buscaba la relación matemática entre las medidas del hombre y la naturaleza. El viñedo invita a ser descubierto de la misma manera que Le Corbusier descubrió su relación matemática, activando los sentidos a otro nivel. Este concepto se desarrolla y refleja también en el diseño de las etiquetas de vino. El proyecto incluye maqueta y planos de desarrollo.",
+                },
+              ],
+            },
+          },
+          {
+            id: "terroir",
+            label: "Terroir",
+            type: "grouped-fields",
+            data: {
+              label: "Características del Terroir",
+              groups: [
+                {
+                  title: "Barrancas IG",
+                  fields: [
+                    {
+                      label: "INDICACIÓN GEOGRÁFICA",
+                      value: "Barrancas IG",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "TIPO DE SUELO",
+                      value: "Arenoso Pedregoso",
+                      subText: "Origen aluvial",
+                    },
+                    {
+                      label: "DRENAJE",
+                      value: "Muy bueno",
+                    },
+                    {
+                      label: "COMPOSICIÓN",
+                      value: "Homogénea",
+                    },
+                    {
+                      label: "COORDENADAS",
+                      value: "33°4'56.05\"S 68°42'3.31\"O",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "ubicacion",
+            label: "Ubicación",
+            type: "map-location",
+            data: {
+              label: "Ubicación",
+              map: {
+                lat: -33.0823,
+                lng: -68.7009,
+              },
+              featured: [
+                { label: "REGIÓN", value: "Barrancas, Maipú" },
+                { label: "INDICACIÓN GEOGRÁFICA", value: "Barrancas IG" },
+              ],
+              groups: [
+                {
+                  title: "Entorno",
+                  fields: [
+                    {
+                      label: "Perfil de Zona",
+                      value: "Vitivinícola premium",
+                    },
+                    {
+                      label: "Vecinos",
+                      value: "Gauchezco, Flichmann, Toso, Domiciano, Agostino",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "documentacion",
+            label: "Documentación",
+            type: "fields-list",
+            data: {
+              label: "Documentos",
+              groups: [
+                {
+                  title: "Información Disponible",
+                  fields: [
+                    {
+                      label: "PRESENTACIÓN",
+                      value: "Ver documento adjunto",
+                      link: "/docs/finca-bautem-presentacion.pdf",
+                    },
+                    {
+                      label: "ESTADO",
+                      value: "En plena producción",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contacto",
+            type: "contact",
+            data: {},
+          },
+        ],
+      },
+    },
+  },
 ];

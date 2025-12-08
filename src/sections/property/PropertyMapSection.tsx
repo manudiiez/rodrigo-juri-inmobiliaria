@@ -85,7 +85,7 @@ export default function PropertyMapSection({
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {group.fields.map((field, fieldIndex) => (
-              <div className="flex items-center justify-between border-b border-gray-200 pb-3" key={`${fieldIndex}-field-${id}`}>
+              <div className="flex items-start gap-8 justify-between border-b border-gray-200 pb-3" key={`${fieldIndex}-field-${id}`}>
                 <span className="text-gray-700">{field.label}</span>
                 <span className="text-gray-900 font-medium">
                   {field.value}
