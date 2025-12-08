@@ -5244,6 +5244,916 @@ export const properties = [
           },
         ],
       },
+      "en-US": {
+        title: "Bautem Estate in Maipú - Premium Vineyards and Almond Groves",
+        description: {
+          text: "Unique investment opportunity in a 208-hectare estate located in Barrancas, Maipú, within the prestigious Barrancas Geographic Indication. The area is characterized by sandy and stony soil of alluvial origin, with excellent drainage, ideal for premium wine production.\n\nThe property combines 70.21 hectares of vineyards with high-end varieties (Malbec, Cabernet Franc, Petit Verdot, Syrah, among others) and 40.9 hectares of almond trees (Marinada and Tarraco varieties). The estate supplies grapes to renowned wineries such as Catena Zapata, Trapiche, Kaiken, Viña Cobos, Bressia, and Escorihuela Gascón, among others.\n\nIt stands out for its state-of-the-art technological infrastructure: solar park with 216 photovoltaic panels, drip irrigation system with 3 wells, weather station, NDVI sensor network, drone monitoring, and its own nursery. It includes modern housing modules, tasting room, event pavilion, and almond processing line with optical sorter. Additionally, it features an architectural winery project designed and inspired by Le Corbusier's Modulor.",
+          callout: {
+            label: "BUSINESS PROFILE",
+            value:
+              "Premium Vineyards / Almond Groves / Eco-Friendly Technology / Own Brands",
+          },
+        },
+        summary: [
+          {
+            label: "Total Area",
+            value: "208",
+            extra: "Hectares",
+          },
+          {
+            label: "Vineyards",
+            value: "70.21",
+            extra: "Hectares",
+          },
+          {
+            label: "Almond Groves",
+            value: "40.9",
+            extra: "Hectares",
+          },
+          {
+            label: "Status",
+            value: "In full production",
+            class: "text-lg mt-4",
+          },
+        ],
+        sections: [
+          {
+            id: "resumen",
+            label: "Summary",
+            type: "summary",
+            data: {},
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Infrastructure & Technology",
+            type: "grouped-fields",
+            data: {
+              label: "Infrastructure & Technology",
+              groups: [
+                {
+                  title: "Irrigation & Energy Systems",
+                  fields: [
+                    {
+                      label: "TOTAL AREA",
+                      value: "208 Hectares",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "IRRIGATION SYSTEM",
+                      value: "Drip",
+                      subText: "Precision technology",
+                    },
+                    {
+                      label: "IRRIGATION WELLS",
+                      value: "3 wells",
+                      subText: "With pump rooms",
+                    },
+                    {
+                      label: "SOLAR PARK",
+                      value: "216 panels",
+                      subText: "Photovoltaic",
+                      class: "border-secondary",
+                    },
+                  ],
+                },
+                {
+                  title: "Agricultural Technology",
+                  fields: [
+                    {
+                      label: "MONITORING",
+                      value: "NDVI Indicators",
+                      subText: "Satellite imagery and drones",
+                    },
+                    {
+                      label: "WEATHER STATION",
+                      value: "Installed",
+                      subText: "Real-time data",
+                    },
+                    {
+                      label: "SENSOR NETWORK",
+                      value: "Operational",
+                      subText: "Comprehensive control",
+                    },
+                    {
+                      label: "SPRAYING",
+                      value: "Ultra-low volume",
+                      subText: "Eco-Friendly",
+                    },
+                    {
+                      label: "OWN NURSERY",
+                      value: "Plant production",
+                      subText: "Controlled genetics",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "vinedos",
+            label: "Vineyards",
+            type: "grouped-fields",
+            data: {
+              label: "Vineyards - Planting Details",
+              groups: [
+                {
+                  title: "Area & Yield",
+                  fields: [
+                    {
+                      label: "TOTAL VINE PLANTATION",
+                      value: "70.21 ha",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "AVERAGE YIELD",
+                      value: "147 QQ/Ha",
+                    },
+                    {
+                      label: "ANNUAL PRODUCTION",
+                      value: "10,000 QQ",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "HARVEST",
+                      value: "February - April",
+                    },
+                    {
+                      label: "PRUNING",
+                      value: "July - September",
+                    },
+                  ],
+                },
+                {
+                  title: "Planted Varietals",
+                  fields: [
+                    {
+                      label: "MALBEC",
+                      value: "35.92 ha",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "PETIT VERDOT",
+                      value: "8.4 ha",
+                    },
+                    {
+                      label: "CABERNET FRANC",
+                      value: "6.8 ha",
+                    },
+                    {
+                      label: "CABERNET SAUVIGNON",
+                      value: "5.0 ha",
+                    },
+                    {
+                      label: "SYRAH",
+                      value: "4.45 ha",
+                    },
+                    {
+                      label: "BONARDA",
+                      value: "3.1 ha",
+                    },
+                    {
+                      label: "TANNAT",
+                      value: "2.9 ha",
+                    },
+                    {
+                      label: "MUSCAT",
+                      value: "0.5 ha",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "almendros",
+            label: "Almond Groves",
+            type: "grouped-fields",
+            data: {
+              label: "Almond Groves - Planting Details",
+              groups: [
+                {
+                  title: "Area & Varieties",
+                  fields: [
+                    {
+                      label: "TOTAL PLANTATION",
+                      value: "40.9 ha",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "MARINADA VARIETY",
+                      value: "38.4 ha",
+                    },
+                    {
+                      label: "TARRACO VARIETY",
+                      value: "2.5 ha",
+                    },
+                    {
+                      label: "PLANNED EXPANSION",
+                      value: "+20 ha",
+                      subText: "To be planted",
+                    },
+                  ],
+                },
+                {
+                  title: "Production & Processing",
+                  fields: [
+                    {
+                      label: "ANNUAL YIELD",
+                      value: "1000-1200 kg/ha",
+                      subText: "Kernel",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "PROCESSING LINE",
+                      value: "Cracking line",
+                      subText: "With optical sorter",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "infraestructura-edilicia",
+            label: "Buildings",
+            type: "grouped-fields",
+            data: {
+              label: "Housing Modules & Spaces",
+              style: 2,
+              groups: [
+                {
+                  fields: [
+                    {
+                      label: "HOUSING MODULES",
+                      value: "3 modules",
+                      subText: "Bedrooms, living room, integrated kitchen",
+                    },
+                    {
+                      label: "TASTING ROOM",
+                      value: "Operational",
+                      subText: "With vineyard views",
+                    },
+                    {
+                      label: "MACHINERY ROOM",
+                      value: "Equipped",
+                      subText: "Tractors and machinery",
+                    },
+                    {
+                      label: "EVENT PAVILION",
+                      value: "Events and tastings",
+                      subText: "BBQ, fire pit, garden",
+                    },
+                    {
+                      label: "PARKING",
+                      value: "Available",
+                    },
+                    {
+                      label: "TRAIL",
+                      value: "Native vegetation",
+                      subText: "Native jarilla bushes",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "clientes",
+            label: "Grape Clients",
+            type: "grouped-fields",
+            data: {
+              label: "Grape Purchasing Wineries",
+              groups: [
+                {
+                  title: "Main Clients",
+                  fields: [
+                    {
+                      label: "PREMIUM WINERIES",
+                      value: [
+                        "Catena Zapata",
+                        "Trapiche",
+                        "Kaiken",
+                        "Viña Cobos",
+                        "Bressia",
+                      ],
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "OTHER WINERIES",
+                      value: [
+                        "Escorihuela Gascón",
+                        "Bodega Argento",
+                        "Pascual Toso",
+                        "Siete Fincas",
+                        "Los Haroldos",
+                        "Martino Wines",
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "marcas-propias",
+            label: "Own Brands",
+            type: "grouped-fields",
+            data: {
+              label: "Wine Portfolio - Grupo Salute",
+              groups: [
+                {
+                  title: "Group Wineries",
+                  fields: [
+                    {
+                      label: "ABITO WINES",
+                      value: "Single-Vineyard Wines",
+                      subText: "Malbec, Cabernet Franc, Petit Verdot",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "BONOMO MONTIEL",
+                      value: "Author Wines",
+                      subText: "Malbec, Cabernet Franc, Rosé Brut Nature",
+                    },
+                    {
+                      label: "CONEJO NEGRO",
+                      value: "Contemporary Wines",
+                      subText: "Blend",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "proyecto-bodega",
+            label: "Winery Project",
+            type: "text-desc",
+            data: {
+              groups: [
+                {
+                  title: "Architectural Design Inspired by Le Corbusier",
+                  content:
+                    "The estate features an architectural winery project inspired by Le Corbusier's Modulor, which sought the mathematical relationship between human measurements and nature. The vineyard invites discovery in the same way Le Corbusier discovered his mathematical relationship, activating the senses to another level. This concept is also developed and reflected in the wine label design. The project includes scale model and development plans.",
+                },
+              ],
+            },
+          },
+          {
+            id: "terroir",
+            label: "Terroir",
+            type: "grouped-fields",
+            data: {
+              label: "Terroir Characteristics",
+              groups: [
+                {
+                  title: "Barrancas GI",
+                  fields: [
+                    {
+                      label: "GEOGRAPHIC INDICATION",
+                      value: "Barrancas GI",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "SOIL TYPE",
+                      value: "Sandy Stony",
+                      subText: "Alluvial origin",
+                    },
+                    {
+                      label: "DRAINAGE",
+                      value: "Very good",
+                    },
+                    {
+                      label: "COMPOSITION",
+                      value: "Homogeneous",
+                    },
+                    {
+                      label: "COORDINATES",
+                      value: "33°4'56.05\"S 68°42'3.31\"W",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "ubicacion",
+            label: "Location",
+            type: "map-location",
+            data: {
+              label: "Location",
+              map: {
+                lat: -33.0823,
+                lng: -68.7009,
+              },
+              featured: [
+                { label: "REGION", value: "Barrancas, Maipú" },
+                { label: "GEOGRAPHIC INDICATION", value: "Barrancas GI" },
+              ],
+              groups: [
+                {
+                  title: "Surroundings",
+                  fields: [
+                    {
+                      label: "Zone Profile",
+                      value: "Premium wine region",
+                    },
+                    {
+                      label: "Neighbors",
+                      value: "Gauchezco, Flichmann, Toso, Domiciano, Agostino",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "documentacion",
+            label: "Documentation",
+            type: "fields-list",
+            data: {
+              label: "Documents",
+              groups: [
+                {
+                  title: "Available Information",
+                  fields: [
+                    {
+                      label: "PRESENTATION",
+                      value: "See attached document",
+                      link: "/docs/finca-bautem-presentacion.pdf",
+                    },
+                    {
+                      label: "STATUS",
+                      value: "In full production",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contact",
+            type: "contact",
+            data: {},
+          },
+        ],
+      },
+      "pt-BR": {
+        title: "Fazenda Bautem em Maipú - Vinhedos Premium e Amendoeiras",
+        description: {
+          text: "Oportunidade única de investimento em uma fazenda de 208 hectares localizada em Barrancas, Maipú, dentro da prestigiosa Indicação Geográfica Barrancas. A zona se caracteriza por um solo arenoso e pedregoso de origem aluvial, com excelente drenagem, ideal para a produção vitivinícola premium.\n\nA propriedade combina 70,21 hectares de vinhedos com variedades de alta gama (Malbec, Cabernet Franc, Petit Verdot, Syrah, entre outras) e 40,9 hectares de amendoeiras (variedades Marinada e Tarraco). A fazenda fornece uvas para vinícolas renomadas como Catena Zapata, Trapiche, Kaiken, Viña Cobos, Bressia e Escorihuela Gascón, entre outras.\n\nDestaca-se pela sua infraestrutura tecnológica de última geração: parque solar de 216 painéis fotovoltaicos, sistema de irrigação por gotejo com 3 poços, estação meteorológica, rede de sensores NDVI, monitoramento por drones e viveiro próprio. Inclui módulos habitacionais modernos, sala de degustação, espaço gourmet para eventos e linha de processamento de amêndoas com seletora óptica. Além disso, conta com projeto arquitetônico de vinícola desenhado e inspirado no Modulor de Le Corbusier.",
+          callout: {
+            label: "PERFIL DE NEGÓCIO",
+            value:
+              "Vinhedos Premium / Amendoeiras / Tecnologia Eco-Friendly / Marcas Próprias",
+          },
+        },
+        summary: [
+          {
+            label: "Área Total",
+            value: "208",
+            extra: "Hectares",
+          },
+          {
+            label: "Vinhedos",
+            value: "70,21",
+            extra: "Hectares",
+          },
+          {
+            label: "Amendoeiras",
+            value: "40,9",
+            extra: "Hectares",
+          },
+          {
+            label: "Status",
+            value: "Em plena produção",
+            class: "text-lg mt-4",
+          },
+        ],
+        sections: [
+          {
+            id: "resumen",
+            label: "Resumo",
+            type: "summary",
+            data: {},
+          },
+          {
+            id: "ficha-tecnica",
+            label: "Infraestrutura e Tecnologia",
+            type: "grouped-fields",
+            data: {
+              label: "Infraestrutura e Tecnologia",
+              groups: [
+                {
+                  title: "Sistema de Irrigação e Energia",
+                  fields: [
+                    {
+                      label: "ÁREA TOTAL",
+                      value: "208 Hectares",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "SISTEMA DE IRRIGAÇÃO",
+                      value: "Gotejo",
+                      subText: "Tecnologia de precisão",
+                    },
+                    {
+                      label: "POÇOS DE IRRIGAÇÃO",
+                      value: "3 poços",
+                      subText: "Com salas de bombas",
+                    },
+                    {
+                      label: "PARQUE SOLAR",
+                      value: "216 painéis",
+                      subText: "Fotovoltaicos",
+                      class: "border-secondary",
+                    },
+                  ],
+                },
+                {
+                  title: "Tecnologia Agrícola",
+                  fields: [
+                    {
+                      label: "MONITORAMENTO",
+                      value: "Indicadores NDVI",
+                      subText: "Imagens de satélite e drones",
+                    },
+                    {
+                      label: "ESTAÇÃO METEOROLÓGICA",
+                      value: "Instalada",
+                      subText: "Dados em tempo real",
+                    },
+                    {
+                      label: "REDE DE SENSORES",
+                      value: "Operacional",
+                      subText: "Controle integral",
+                    },
+                    {
+                      label: "PULVERIZAÇÃO",
+                      value: "Ultra baixo volume",
+                      subText: "Eco-Friendly",
+                    },
+                    {
+                      label: "VIVEIRO PRÓPRIO",
+                      value: "Produção de plantas",
+                      subText: "Genética controlada",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "vinedos",
+            label: "Vinhedos",
+            type: "grouped-fields",
+            data: {
+              label: "Vinhedos - Detalhe de Plantação",
+              groups: [
+                {
+                  title: "Área e Rendimento",
+                  fields: [
+                    {
+                      label: "PLANTAÇÃO TOTAL DE VIDEIRAS",
+                      value: "70,21 ha",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "RENDIMENTO MÉDIO",
+                      value: "147 QQ/Ha",
+                    },
+                    {
+                      label: "PRODUÇÃO ANUAL",
+                      value: "10.000 QQ",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "COLHEITA",
+                      value: "Fevereiro - Abril",
+                    },
+                    {
+                      label: "PODA",
+                      value: "Julho - Setembro",
+                    },
+                  ],
+                },
+                {
+                  title: "Variedades Plantadas",
+                  fields: [
+                    {
+                      label: "MALBEC",
+                      value: "35,92 ha",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "PETIT VERDOT",
+                      value: "8,4 ha",
+                    },
+                    {
+                      label: "CABERNET FRANC",
+                      value: "6,8 ha",
+                    },
+                    {
+                      label: "CABERNET SAUVIGNON",
+                      value: "5,0 ha",
+                    },
+                    {
+                      label: "SYRAH",
+                      value: "4,45 ha",
+                    },
+                    {
+                      label: "BONARDA",
+                      value: "3,1 ha",
+                    },
+                    {
+                      label: "TANNAT",
+                      value: "2,9 ha",
+                    },
+                    {
+                      label: "MOSCATEL",
+                      value: "0,5 ha",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "almendros",
+            label: "Amendoeiras",
+            type: "grouped-fields",
+            data: {
+              label: "Amendoeiras - Detalhe de Plantação",
+              groups: [
+                {
+                  title: "Área e Variedades",
+                  fields: [
+                    {
+                      label: "PLANTAÇÃO TOTAL",
+                      value: "40,9 ha",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "VARIEDADE MARINADA",
+                      value: "38,4 ha",
+                    },
+                    {
+                      label: "VARIEDADE TARRACO",
+                      value: "2,5 ha",
+                    },
+                    {
+                      label: "EXPANSÃO PREVISTA",
+                      value: "+20 ha",
+                      subText: "A plantar",
+                    },
+                  ],
+                },
+                {
+                  title: "Produção e Processamento",
+                  fields: [
+                    {
+                      label: "RENDIMENTO ANUAL",
+                      value: "1000-1200 kg/ha",
+                      subText: "Amêndoa",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "PROCESSAMENTO",
+                      value: "Linha de quebra",
+                      subText: "Com seletora óptica",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "infraestructura-edilicia",
+            label: "Construções",
+            type: "grouped-fields",
+            data: {
+              label: "Módulos Habitacionais e Espaços",
+              style: 2,
+              groups: [
+                {
+                  fields: [
+                    {
+                      label: "MÓDULOS HABITACIONAIS",
+                      value: "3 módulos",
+                      subText: "Quartos, sala, cozinha integrada",
+                    },
+                    {
+                      label: "SALA DE DEGUSTAÇÃO",
+                      value: "Operacional",
+                      subText: "Com vista para os vinhedos",
+                    },
+                    {
+                      label: "SALA DE MÁQUINAS",
+                      value: "Equipada",
+                      subText: "Tratores e maquinário",
+                    },
+                    {
+                      label: "ESPAÇO GOURMET",
+                      value: "Eventos e degustações",
+                      subText: "Churrasqueira, fogueira, jardim",
+                    },
+                    {
+                      label: "ESTACIONAMENTO",
+                      value: "Disponível",
+                    },
+                    {
+                      label: "TRILHA",
+                      value: "Vegetação nativa",
+                      subText: "Jarillas nativas",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "clientes",
+            label: "Clientes de Uva",
+            type: "grouped-fields",
+            data: {
+              label: "Vinícolas Compradoras de Uva",
+              groups: [
+                {
+                  title: "Clientes Principais",
+                  fields: [
+                    {
+                      label: "VINÍCOLAS PREMIUM",
+                      value: [
+                        "Catena Zapata",
+                        "Trapiche",
+                        "Kaiken",
+                        "Viña Cobos",
+                        "Bressia",
+                      ],
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "OUTRAS VINÍCOLAS",
+                      value: [
+                        "Escorihuela Gascón",
+                        "Bodega Argento",
+                        "Pascual Toso",
+                        "Siete Fincas",
+                        "Los Haroldos",
+                        "Martino Wines",
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "marcas-propias",
+            label: "Marcas Próprias",
+            type: "grouped-fields",
+            data: {
+              label: "Portfólio de Vinhos - Grupo Salute",
+              groups: [
+                {
+                  title: "Vinícolas do Grupo",
+                  fields: [
+                    {
+                      label: "ABITO WINES",
+                      value: "Vinhos Single-Vineyard",
+                      subText: "Malbec, Cabernet Franc, Petit Verdot",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "BONOMO MONTIEL",
+                      value: "Vinhos de Autor",
+                      subText: "Malbec, Cabernet Franc, Rosé Brut Nature",
+                    },
+                    {
+                      label: "CONEJO NEGRO",
+                      value: "Vinhos Contemporâneos",
+                      subText: "Blend",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "proyecto-bodega",
+            label: "Projeto Vinícola",
+            type: "text-desc",
+            data: {
+              groups: [
+                {
+                  title: "Design Arquitetônico Inspirado em Le Corbusier",
+                  content:
+                    "A fazenda conta com um projeto arquitetônico de vinícola inspirado no Modulor de Le Corbusier, que buscava a relação matemática entre as medidas do homem e a natureza. O vinhedo convida a ser descoberto da mesma maneira que Le Corbusier descobriu sua relação matemática, ativando os sentidos a outro nível. Este conceito também se desenvolve e reflete no design dos rótulos de vinho. O projeto inclui maquete e planos de desenvolvimento.",
+                },
+              ],
+            },
+          },
+          {
+            id: "terroir",
+            label: "Terroir",
+            type: "grouped-fields",
+            data: {
+              label: "Características do Terroir",
+              groups: [
+                {
+                  title: "Barrancas IG",
+                  fields: [
+                    {
+                      label: "INDICAÇÃO GEOGRÁFICA",
+                      value: "Barrancas IG",
+                      class: "border-secondary",
+                    },
+                    {
+                      label: "TIPO DE SOLO",
+                      value: "Arenoso Pedregoso",
+                      subText: "Origem aluvial",
+                    },
+                    {
+                      label: "DRENAGEM",
+                      value: "Muito boa",
+                    },
+                    {
+                      label: "COMPOSIÇÃO",
+                      value: "Homogênea",
+                    },
+                    {
+                      label: "COORDENADAS",
+                      value: "33°4'56.05\"S 68°42'3.31\"O",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "ubicacion",
+            label: "Localização",
+            type: "map-location",
+            data: {
+              label: "Localização",
+              map: {
+                lat: -33.0823,
+                lng: -68.7009,
+              },
+              featured: [
+                { label: "REGIÃO", value: "Barrancas, Maipú" },
+                { label: "INDICAÇÃO GEOGRÁFICA", value: "Barrancas IG" },
+              ],
+              groups: [
+                {
+                  title: "Entorno",
+                  fields: [
+                    {
+                      label: "Perfil da Zona",
+                      value: "Vitivinícola premium",
+                    },
+                    {
+                      label: "Vizinhos",
+                      value: "Gauchezco, Flichmann, Toso, Domiciano, Agostino",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "documentacion",
+            label: "Documentação",
+            type: "fields-list",
+            data: {
+              label: "Documentos",
+              groups: [
+                {
+                  title: "Informação Disponível",
+                  fields: [
+                    {
+                      label: "APRESENTAÇÃO",
+                      value: "Ver documento anexo",
+                      link: "/docs/finca-bautem-presentacion.pdf",
+                    },
+                    {
+                      label: "STATUS",
+                      value: "Em plena produção",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+          {
+            id: "contacto-finca",
+            label: "Contato",
+            type: "contact",
+            data: {},
+          },
+        ],
+      },
     },
   },
 ];
