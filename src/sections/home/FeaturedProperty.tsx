@@ -29,24 +29,46 @@ const properties = [
     },
   },
   {
-    slug: "bodega-casir-dos-santos-maipu-mendoza",
-    location: "Maipú",
-    image: "/images/casirdossantos/bodega-casirdossantos-1.jpg",
+    slug: "bodega-penedo-borges-alto-agrelo-lujan-de-cuyo",
+    location: "Luján de Cuyo",
+    image: "/images/penedoborges/bodega-penedo-borges-1.png",
     content: {
       "es-AR": {
-        title: "Bodega Casir dos Santos - Mendoza, Argentina",
-        info: "Vinos de Alta Gama",
+        title: "Bodega Penedo Borges - Mendoza, Argentina",
+        info: "70 Hectáreas",
         button: "Ver Bodega",
       },
       "en-US": {
-        title: "Casir dos Santos Winery - Mendoza, Argentina",
-        info: "Premium Wines",
+        title: "Penedo Borges Winery - Mendoza, Argentina",
+        info: "70 Hectares",
         button: "View Winery",
       },
       "pt-BR": {
-        title: "Vinícola Casir dos Santos - Mendoza, Argentina",
-        info: "Vinhos Premium",
+        title: "Vinícola Penedo Borges - Mendoza, Argentina",
+        info: "70 Hectares",
         button: "Ver Vinícola",
+      },
+    },
+  },
+  {
+    slug: "finca-productiva-ciruelas-vinedos-mendoza",
+    location: "San Rafael",
+    image: "/images/fincasanrafaelmaquinaria/finca-sanrafael-maquinaria-1.jpeg",
+    content: {
+      "es-AR": {
+        title: "Finca - Mendoza, Argentina",
+        info: "Maquinaria Incluida",
+        button: "Ver Finca",
+      },
+      "en-US": {
+        title: "Farm - Mendoza, Argentina",
+        info: "Machines Included",
+        button: "View Farm",
+      },
+      "pt-BR": {
+        title: "Fazenda - Mendoza, Argentina",
+        info: "Máquinas Incluídas",
+        button: "Ver Fazenda",
       },
     },
   },
@@ -59,7 +81,7 @@ export default function FeaturedProperty() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % properties.length);
-    }, 10000); // Cambia cada 5 segundos
+    }, 7000); // Cambia cada 7 segundos
 
     return () => clearInterval(interval);
   }, []);

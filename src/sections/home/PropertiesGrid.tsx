@@ -33,24 +33,46 @@ const properties2 = [
 
 const properties = [
   {
-    slug: "bodega-sinfin-maipu-mendoza",
-    location: "Valle de Uco, Mendoza",
-    image: "/images/sinfin/bodega-sinfin.jpg",
+    slug: "campo-la-junta-malargue-mendoza",
+    location: "La Junta, Malargue, Mendoza",
+    image: "/images/lajunta/campo-lajunta-1.png",
     content: {
       "es-AR": {
-        title: "Bodega SinFin",
-        info: "440 hectáreas",
-        info2: "6 M Capacidad total",
+        title: "Campo en La Junta",
+        info: "1.305 hectáreas",
+        info2: "Con Vivienda",
       },
       "en-US": {
-        title: "SinFin Winery",
-        info: "440 hectares",
-        info2: "6 M Total Capacity",
+        title: "La Junta Field",
+        info: "1,305 hectares",
+        info2: "With Housing",
       },
       "pt-BR": {
-        title: "Vinícola SinFin",
-        info: "440 hectares",
-        info2: "6 M Capacidade total",
+        title: "Campo em La Junta",
+        info: "1.305 hectares",
+        info2: "Com Moradia",
+      },
+    },
+  },
+  {
+    slug: "bodega-penedo-borges-alto-agrelo-lujan-de-cuyo",
+    location: "Luján de Cuyo, Mendoza",
+    image: "/images/penedoborges/bodega-penedo-borges-1.png",
+    content: {
+      "es-AR": {
+        title: "Bodega Penedo Borges",
+        info: "70 Hectáreas",
+        info2: "49,4 Superficie Cultivada",
+      },
+      "en-US": {
+        title: "Penedo Borges Winery - Mendoza, Argentina",
+        info: "70 Hectares",
+        button: "View Winery",
+      },
+      "pt-BR": {
+        title: "Vinícola Penedo Borges - Mendoza, Argentina",
+        info: "70 Hectares",
+        button: "Ver Vinícola",
       },
     },
   },
