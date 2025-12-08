@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 const properties2 = [
   {
@@ -102,6 +102,7 @@ const properties = [
 
 export default function PropertiesGrid() {
   const t = useTranslations('HomePage.PropertiesGrid');
+  const locale = useLocale();
 
   return (
     <section className="bg-gray-50 py-24">
@@ -120,19 +121,19 @@ export default function PropertiesGrid() {
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src={property.image}
-                  alt={property.content["es-AR"].title}
+                  alt={property.content[locale as keyof typeof property.content]?.title || property.content["es-AR"].title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-light text-gray-900 mb-2 group-hover:text-bordeaux transition-colors">
-                  {property.content["es-AR"].title}
+                  {property.content[locale as keyof typeof property.content]?.title || property.content["es-AR"].title}
                 </h3>
                 <p className="text-gray-600 text-sm mb-4">{property.location}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-gray-900 text-lg font-light">{property.content["es-AR"].info}</span>
-                  <span className="text-gray-500 text-sm">{property.content["es-AR"].info2}</span>
+                  <span className="text-gray-900 text-lg font-light">{property.content[locale as keyof typeof property.content]?.info || property.content["es-AR"].info}</span>
+                  <span className="text-gray-500 text-sm">{property.content[locale as keyof typeof property.content]?.info2 || property.content["es-AR"].info2}</span>
                 </div>
               </div>
             </Link>

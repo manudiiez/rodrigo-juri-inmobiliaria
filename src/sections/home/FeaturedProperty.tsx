@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 const properties = [
   {
@@ -76,6 +76,7 @@ const properties = [
 
 export default function FeaturedProperty() {
   const t = useTranslations("HomePage.FeaturedProperty");
+  const locale = useLocale();
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -121,11 +122,11 @@ export default function FeaturedProperty() {
                 </h2>
                 <div className="flex items-center gap-4 mb-6">
                   <span className="text-white/80 text-lg">
-                    {property.content["es-AR"].title}
+                    {property.content[locale as keyof typeof property.content]?.title || property.content["es-AR"].title}
                   </span>
                   <span className="text-white/60">•</span>
                   <span className="text-white text-2xl font-light">
-                    {property.content["es-AR"].info}
+                    {property.content[locale as keyof typeof property.content]?.info || property.content["es-AR"].info}
                   </span>
                 </div>
                 <Link
@@ -133,7 +134,7 @@ export default function FeaturedProperty() {
                   className="inline-flex items-center gap-2 text-white hover:gap-4 transition-all group"
                 >
                   <span className="text-sm uppercase tracking-widest font-medium">
-                    {property.content["es-AR"].button}
+                    {property.content[locale as keyof typeof property.content]?.button || property.content["es-AR"].button}
                   </span>
                   <svg
                     className="w-5 h-5"
